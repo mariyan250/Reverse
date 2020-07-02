@@ -1,10 +1,10 @@
 import React from 'react';
-import style from './app.module.scss';
+import './index.scss';
 
 const App = () => {
   return (
     <div>
-      <h1 className={style.title}>Welcome</h1>
+      <h1 className="title">Welcome</h1>
     </div>
   );
 };
