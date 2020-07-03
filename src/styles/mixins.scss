@@ -1,3 +1,4 @@
+// Auth Button
 .auth-button {
   background: var(--background-red);
   padding: var(--padding-xs);
@@ -11,5 +12,23 @@
   &:hover {
     background: var(--background-red-hover);
     cursor: pointer;
+  }
+}
+
+// Inputs
+.row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--margin-m);
+
+  label {
+    font-size: 18px;
+    margin-bottom: var(--margin-xs);
+  }
+
+  input {
+    font-size: 20px;
+    padding: var(--padding-xxs);
+    outline-color: var(--text-red);
   }
 }
