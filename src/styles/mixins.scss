@@ -1,0 +1,14 @@
+.auth-button {
+  background: var(--background-red);
+  padding: var(--padding-xs);
+  font-size: 20px;
+  border: none;
+  color: var(--text-white);
+  margin-top: var(--margin-s);
+  animation: appear 1 0.5s;
+
+  &:hover {
+    background: var(--background-red-hover);
+    cursor: pointer;
+  }
+}

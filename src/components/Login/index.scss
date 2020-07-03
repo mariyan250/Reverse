@@ -1,0 +1,105 @@
+.login {
+  display: flex;
+  flex-direction: column;
+
+  .login-intro {
+    background: url('/img/login.jpg');
+    background-position: 10%;
+    background-size: cover;
+
+    .black-layer {
+      background: var(--background-black-transparent);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+
+      h2,
+      h3 {
+        color: var(--text-white);
+        text-align: center;
+        font-weight: 500;
+      }
+
+      h2 {
+        font-size: 48px;
+      }
+
+      h3 {
+        font-size: 28px;
+        margin-top: var(--margin-xxs);
+        margin-bottom: var(--margin-xxl);
+
+      }
+
+      span {
+        background: var(--background-red);
+        display: inline-block;
+        padding: 0 var(--padding-xs);
+        margin: var(--margin-xs) 0;
+      }
+    }
+  }
+
+  .aside {
+    padding: var(--padding-xxl) var(--padding-l);
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: var(--padding-xxl) 0;
+
+      h2 {
+        text-align: center;
+        font-size: 42px;
+        margin-top: var(--margin-xl);
+        margin-bottom: var(--margin-xxl);
+      }
+
+      .row {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: var(--margin-m);
+
+        label {
+          font-size: 18px;
+          margin-bottom: var(--margin-xs);
+        }
+
+        input {
+          font-size: 20px;
+          padding: var(--padding-xxs);
+          outline-color: var(--text-red);
+        }
+      }
+
+      .register-btn {
+        margin: var(--margin-l) 0 var(--margin-s);
+        align-self: flex-end;
+        font-size: 18px;
+        text-decoration: none;
+        color: var(--text-black);
+      }
+    }
+  }
+}
+
+// Responsive
+@media screen and (min-width: 500px) {
+  .login {
+    flex-direction: row;
+
+    .login-intro {
+      flex: 2.5;
+    }
+
+    .aside {
+      flex: 1;
+      margin: auto 0;
+      padding: var(--padding-xxl);
+    }
+  }
+}
