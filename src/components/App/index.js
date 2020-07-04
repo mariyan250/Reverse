@@ -14,8 +14,7 @@ import NotFound from '../NotFound';
 export const UserContext = createContext();
 
 const App = () => {
-  const data = { name: 'Mariyan V.', email: 'mariyan250@gmail.com' };
-  const [user, setUser] = useState(data);
+  const [user] = useState(null);
 
   return (
     <UserContext.Provider value={{ user }}>
