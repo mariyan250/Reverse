@@ -2,7 +2,7 @@
 .auth-button {
   background: var(--background-red);
   padding: var(--padding-xs);
-  font-size: 20px;
+  font-size: 18px;
   border: none;
   outline: none;
   color: var(--text-white);
@@ -22,12 +22,12 @@
   margin-bottom: var(--margin-m);
 
   label {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: var(--margin-xs);
   }
 
   input {
-    font-size: 20px;
+    font-size: 18px;
     padding: var(--padding-xxs);
     outline-color: var(--text-red);
   }
