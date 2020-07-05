@@ -1,16 +1,16 @@
 // Auth Button
-.auth-button {
-  background: var(--background-red);
-  padding: var(--padding-xs);
+@mixin authButton {
+  background: $background-red;
+  padding: $padding-xs;
   font-size: 18px;
   border: none;
   outline: none;
-  color: var(--text-white);
-  margin-top: var(--margin-s);
+  color: $text-white;
+  margin-top: $margin-s;
   animation: appear 1 0.5s;
 
   &:hover {
-    background: var(--background-red-hover);
+    background: $background-red-hover;
     cursor: pointer;
   }
 }
@@ -19,16 +19,16 @@
 .row {
   display: flex;
   flex-direction: column;
-  margin-bottom: var(--margin-m);
+  margin-bottom: $margin-m;
 
   label {
     font-size: 16px;
-    margin-bottom: var(--margin-xs);
+    margin-bottom: $margin-xs;
   }
 
   input {
     font-size: 18px;
-    padding: var(--padding-xxs);
-    outline-color: var(--text-red);
+    padding: $padding-xxs;
+    outline-color: $text-red;
   }
 }

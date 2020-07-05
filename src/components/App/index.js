@@ -8,19 +8,22 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 // Components
 import Home from '../Home';
 import Login from '../Login';
+import HomeLogged from '../HomeLogged';
 import Register from '../Register';
 import NotFound from '../NotFound';
 
 export const UserContext = createContext();
 
 const App = () => {
+  const data = { username: 'mariyan250', email: 'mariyan250' };
   const [user] = useState(null);
 
   return (
     <UserContext.Provider value={{ user }}>
       <BrowserRouter>
         <Switch>
-          <Route exact path='/' component={user ? Home : Login} />
+          <Route exact path='/' component={user ? HomeLogged : Home} />
+          {!user && <Route path='/login' component={Login} />}
           {!user && <Route path='/register' component={Register} />}
           <Route path="*" component={NotFound} />
         </Switch>

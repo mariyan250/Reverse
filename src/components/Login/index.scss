@@ -1,3 +1,5 @@
+@import '../../index.scss';
+
 .login {
   display: flex;
   flex-direction: column;
@@ -8,7 +10,7 @@
     background-size: cover;
 
     .black-layer {
-      background: var(--background-black-transparent);
+      background: $background-black-transparent;
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -18,7 +20,7 @@
 
       h2,
       h3 {
-        color: var(--text-white);
+        color: $text-white;
         text-align: center;
         font-weight: 500;
       }
@@ -29,42 +31,46 @@
 
       h3 {
         font-size: 28px;
-        margin-top: var(--margin-xxs);
-        margin-bottom: var(--margin-xxl);
+        margin-top: $margin-xxs;
+        margin-bottom: $margin-xxl;
 
       }
 
       span {
-        background: var(--background-red);
+        background: $background-red;
         display: inline-block;
-        padding: 0 var(--padding-xs);
-        margin: var(--margin-xs) 0;
+        padding: 0 $padding-xs;
+        margin: $margin-xs 0;
       }
     }
   }
 
   .aside {
-    padding: var(--padding-xxl) var(--padding-l);
+    padding: $padding-xxl $padding-l;
 
     form {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: var(--padding-xxl) 0;
+      padding: $padding-xxl 0;
 
       h2 {
         text-align: center;
         font-size: 42px;
-        margin-top: var(--margin-xl);
-        margin-bottom: var(--margin-xxl);
+        margin-top: $margin-xl;
+        margin-bottom: $margin-xxl;
+      }
+
+      .auth-button {
+        @include authButton;
       }
 
       .register-btn {
-        margin: var(--margin-l) 0 var(--margin-s);
+        margin: $margin-l 0 $margin-s;
         align-self: flex-end;
         font-size: 16px;
         text-decoration: none;
-        color: var(--text-black);
+        color: $text-black;
       }
     }
   }
@@ -83,7 +89,7 @@
     .aside {
       flex: 1;
       margin: auto 0;
-      padding: var(--padding-xxl);
+      padding: $padding-xxl;
     }
   }
 }
