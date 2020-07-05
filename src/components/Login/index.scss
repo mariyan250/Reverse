@@ -31,34 +31,34 @@
 
       h3 {
         font-size: 28px;
-        margin-top: $margin-xxs;
-        margin-bottom: $margin-xxl;
+        margin-top: $spacing-xxs;
+        margin-bottom: $spacing-xxl;
 
       }
 
       span {
         background: $background-red;
         display: inline-block;
-        padding: 0 $padding-xs;
-        margin: $margin-xs 0;
+        padding: 0 $spacing-xs;
+        margin: $spacing-xs 0;
       }
     }
   }
 
   .aside {
-    padding: $padding-xxl $padding-l;
+    padding: $spacing-xxl $spacing-l;
 
     form {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: $padding-xxl 0;
+      padding: $spacing-xxl 0;
 
       h2 {
         text-align: center;
         font-size: 42px;
-        margin-top: $margin-xl;
-        margin-bottom: $margin-xxl;
+        margin-top: $spacing-xl;
+        margin-bottom: $spacing-xxl;
       }
 
       .auth-button {
@@ -66,7 +66,7 @@
       }
 
       .register-btn {
-        margin: $margin-l 0 $margin-s;
+        margin: $spacing-l 0 $spacing-s;
         align-self: flex-end;
         font-size: 16px;
         text-decoration: none;
@@ -89,7 +89,7 @@
     .aside {
       flex: 1;
       margin: auto 0;
-      padding: $padding-xxl;
+      padding: $spacing-xxl;
     }
   }
 }

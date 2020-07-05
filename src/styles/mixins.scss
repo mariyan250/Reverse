@@ -1,12 +1,12 @@
 // Auth Button
 @mixin authButton {
   background: $background-red;
-  padding: $padding-xs;
+  padding: $spacing-xs;
   font-size: 18px;
   border: none;
   outline: none;
   color: $text-white;
-  margin-top: $margin-s;
+  margin-top: $spacing-s;
   animation: appear 1 0.5s;
 
   &:hover {
@@ -19,16 +19,16 @@
 .row {
   display: flex;
   flex-direction: column;
-  margin-bottom: $margin-m;
+  margin-bottom: $spacing-m;
 
   label {
     font-size: 16px;
-    margin-bottom: $margin-xs;
+    margin-bottom: $spacing-xs;
   }
 
   input {
     font-size: 18px;
-    padding: $padding-xxs;
+    padding: $spacing-xxs;
     outline-color: $text-red;
   }
 }
