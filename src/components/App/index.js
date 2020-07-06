@@ -15,7 +15,6 @@ import NotFound from '../NotFound';
 export const UserContext = createContext();
 
 const App = () => {
-  // const data = { username: 'mariyan250', email: 'mariyan250' };
   const [user] = useState(null);
 
   return (
