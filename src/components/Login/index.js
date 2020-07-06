@@ -27,9 +27,9 @@ const Login = () => {
         </section>
       </section>
 
-      <aside className="aside p-md-5 p-4 align-self-center">
+      <aside className="aside align-items-center align-self-center px-md-4 px-4 py-5">
         <form onSubmit={handleLogin}
-          className="d-flex flex-column justify-content-center"
+          className="d-flex flex-column justify-content-center px-md-2 px-0"
         >
           <h2 className="text-center my-5">Sign In</h2>
 

@@ -19,7 +19,9 @@
 @mixin authInput {
   display: flex;
   flex-direction: column;
+  align-self: center;
   margin-bottom: $spacing-m;
+  width: 100%;
 
   label {
     font-size: 16px;
