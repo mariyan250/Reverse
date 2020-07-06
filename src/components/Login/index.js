@@ -15,17 +15,23 @@ const Login = () => {
   }
 
   return (
-    <main className="login">
+    <main className="login d-md-flex">
       <section className="login-intro">
-        <section className="black-layer">
-          <h2>Welcome to <span>Reverse</span></h2>
-          <h3>Sell your items now!</h3>
+        <section
+          className="black-layer d-flex flex-column justify-content-center align-items-center vh-100"
+        >
+          <h2 className="text-center font-weight-bold"> Welcome to
+          <span className="d-inline-block pl-2 pr-2 mt-2 mb-2 ml-md-3">Reverse</span>
+          </h2>
+          <h3 className="text-center mt-1 mb-5">Sell your items now!</h3>
         </section>
       </section>
 
-      <aside className="aside">
-        <form onSubmit={handleLogin}>
-          <h2>Sign In</h2>
+      <aside className="aside p-md-5 p-4 align-self-center">
+        <form onSubmit={handleLogin}
+          className="d-flex flex-column justify-content-center"
+        >
+          <h2 className="text-center mt-5 mb-5">Sign In</h2>
 
           <div className="row">
             <label htmlFor="email">Email</label>
@@ -41,7 +47,9 @@ const Login = () => {
 
           <button className="auth-button">Submit</button>
 
-          <Link to="/register" className="register-btn">Don't have an account?</Link>
+          <Link to="/register"
+            className="register-btn  mt-4 align-self-end text-decoration-none"
+          >Don't have an account?</Link>
         </form>
       </aside>
     </main >

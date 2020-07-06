@@ -16,7 +16,7 @@
 }
 
 // Inputs
-.row {
+@mixin authInput {
   display: flex;
   flex-direction: column;
   margin-bottom: $spacing-m;

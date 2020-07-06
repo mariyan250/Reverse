@@ -1,9 +1,6 @@
 @import '../../index.scss';
 
 .login {
-  display: flex;
-  flex-direction: column;
-
   .login-intro {
     background: url('/img/login.jpg');
     background-position: 10%;
@@ -11,18 +8,10 @@
 
     .black-layer {
       background: $background-black-transparent;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-      justify-content: center;
-      align-items: center;
 
       h2,
       h3 {
         color: $text-white;
-        text-align: center;
-        font-weight: 500;
       }
 
       h2 {
@@ -31,34 +20,22 @@
 
       h3 {
         font-size: 28px;
-        margin-top: $spacing-xxs;
-        margin-bottom: $spacing-xxl;
-
       }
 
       span {
         background: $background-red;
-        display: inline-block;
-        padding: 0 $spacing-xs;
-        margin: $spacing-xs 0;
       }
     }
   }
 
   .aside {
-    padding: $spacing-xxl $spacing-l;
-
     form {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: $spacing-xxl 0;
-
       h2 {
-        text-align: center;
         font-size: 42px;
-        margin-top: $spacing-xl;
-        margin-bottom: $spacing-xxl;
+      }
+
+      .row {
+        @include authInput;
       }
 
       .auth-button {
@@ -66,10 +43,7 @@
       }
 
       .register-btn {
-        margin: $spacing-l 0 $spacing-s;
-        align-self: flex-end;
         font-size: 16px;
-        text-decoration: none;
         color: $text-black;
       }
     }
@@ -79,8 +53,6 @@
 // Responsive
 @media screen and (min-width: 500px) {
   .login {
-    flex-direction: row;
-
     .login-intro {
       flex: 2.5;
       background-position: 0%;
@@ -88,8 +60,6 @@
 
     .aside {
       flex: 1;
-      margin: auto 0;
-      padding: $spacing-xxl;
     }
   }
 }
