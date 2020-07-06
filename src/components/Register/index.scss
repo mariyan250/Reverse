@@ -1,20 +1,9 @@
 @import '../../index.scss';
 
 .register {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  padding: $spacing-xxl $spacing-l;
-
   form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
     h2 {
-      text-align: center;
       font-size: 42px;
-      margin: $spacing-xl 0 $spacing-xxl;
     }
 
     .row {
@@ -26,10 +15,7 @@
     }
 
     .login-btn {
-      margin: $spacing-l 0 $spacing-s;
-      align-self: flex-end;
       font-size: 16px;
-      text-decoration: none;
       color: $text-black;
     }
   }
@@ -38,12 +24,5 @@
 @media screen and (min-width: 500px) {
   .register {
     max-width: 30rem;
-    margin: 0 auto;
-
-    form {
-      h2 {
-        margin-top: $spacing-xs;
-      }
-    }
   }
 }

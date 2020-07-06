@@ -17,9 +17,9 @@ const Register = () => {
   }
 
   return (
-    <main className="register">
-      <form onSubmit={handleRegister}>
-        <h2>Sign Up</h2>
+    <main className="register vh-100 d-flex flex-column p-5 my-0 mx-auto">
+      <form className="d-flex flex-column justify-content-center" onSubmit={handleRegister}>
+        <h2 className="text-center mt-4 mb-5 mt-md-2">Sign Up</h2>
 
         <div className="row">
           <label htmlFor="name">Full Name</label>
@@ -47,7 +47,9 @@ const Register = () => {
 
         <button className="auth-button">Submit</button>
 
-        <Link to="/login" className="login-btn">Already have an account?</Link>
+        <Link to="/login"
+          className="login-btn mt-4 mb-3 align-self-end text-decoration-none"
+        >Already have an account?</Link>
       </form>
     </main>
   );

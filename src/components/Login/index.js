@@ -21,7 +21,7 @@ const Login = () => {
           className="black-layer d-flex flex-column justify-content-center align-items-center vh-100"
         >
           <h2 className="text-center font-weight-bold"> Welcome to
-          <span className="d-inline-block pl-2 pr-2 mt-2 mb-2 ml-md-3">Reverse</span>
+          <span className="d-inline-block px-2 my-2 ml-md-3">Reverse</span>
           </h2>
           <h3 className="text-center mt-1 mb-5">Sell your items now!</h3>
         </section>
@@ -31,7 +31,7 @@ const Login = () => {
         <form onSubmit={handleLogin}
           className="d-flex flex-column justify-content-center"
         >
-          <h2 className="text-center mt-5 mb-5">Sign In</h2>
+          <h2 className="text-center my-5">Sign In</h2>
 
           <div className="row">
             <label htmlFor="email">Email</label>
