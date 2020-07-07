@@ -4,8 +4,8 @@ import './index.scss';
 
 const Home = () => {
   return (
-    <main className="home">
-      <h1>Landing page!!!</h1>
+    <main className="home d-flex justify-content-center align-items-center vh-100">
+      <h1>Landing page!</h1>
     </main>
   );
 };
