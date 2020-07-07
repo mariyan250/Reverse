@@ -3,14 +3,14 @@ import React, { useState, createContext } from 'react';
 import './index.scss';
 
 // Router
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 // Components
-import HomePrivate from "../Home/Private";
-import Home from '../Home/Public';
-import Login from '../Login';
-import Register from '../Register';
-import NotFound from '../NotFound';
+import HomePrivate from '@screens/Home/Private';
+import Home from '@screens/Home/Public';
+import Login from '@screens/Login';
+import Register from '@screens/Register';
+import NotFound from '@screens/NotFound';
 
 export const UserContext = createContext();
 

@@ -6,8 +6,8 @@ import './index.scss';
 import { Link } from 'react-router-dom';
 
 // Components
-import Input from '../Auth/Input';
-import Button from '../Auth/Button';
+import Input from '@components/Auth/Input';
+import Button from '@components/Auth/Button';
 
 const Login = () => {
   const [email, setEmail] = useState('');
