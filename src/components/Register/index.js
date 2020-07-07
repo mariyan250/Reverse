@@ -32,18 +32,18 @@ const Register = () => {
 
         <section className="mb-4">
           <AuthInput name="email" label="Email" type="email"
-            onChange={(e) => setEmail(e.target.value)} value={email} />
+            onChange={(e) => setEmail(e.target.value)} value={email} required />
         </section>
 
         <section className="mb-4">
           <AuthInput name="password" label="Password" type="password"
-            onChange={(e) => setPassword(e.target.value)} value={password} />
+            onChange={(e) => setPassword(e.target.value)} value={password} required />
         </section>
 
 
         <section className="mb-4">
           <AuthInput name="rePassword" label="Repeat Password" type="password"
-            onChange={(e) => setRePassword(e.target.value)} value={rePassword} />
+            onChange={(e) => setRePassword(e.target.value)} value={rePassword} required />
         </section>
 
         <AuthButton text="Submit" />
