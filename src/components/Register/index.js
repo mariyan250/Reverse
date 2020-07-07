@@ -21,7 +21,7 @@ const Register = () => {
   }
 
   return (
-    <main className="register vh-100 d-flex flex-column py-5 px-4 my-0 mx-auto">
+    <main className="register vh-100 d-flex flex-column justify-content-center py-5 px-4 my-0 mx-auto">
       <form className="d-flex flex-column justify-content-center" onSubmit={handleRegister}>
         <h2 className="text-center mt-4 mb-5 mt-md-2">Sign Up</h2>
 
