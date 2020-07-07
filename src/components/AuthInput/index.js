@@ -6,7 +6,7 @@ const AuthInput = (props) => {
   return (
     <section className="auth-input">
       <label htmlFor={props.name}>{props.label}</label>
-      <input {...props} className="p-1" type={props.type} name={props.name} />
+      <input {...props} className="auth-input p-1" type={props.type} name={props.name} />
     </section>
   );
 };

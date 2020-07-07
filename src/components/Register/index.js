@@ -25,17 +25,26 @@ const Register = () => {
       <form className="d-flex flex-column justify-content-center" onSubmit={handleRegister}>
         <h2 className="text-center mt-4 mb-5 mt-md-2">Sign Up</h2>
 
-        <AuthInput name="username" label="Full Name" type="text"
-          onChange={(e) => setName(e.target.value)} value={name} required />
+        <section className="mb-4">
+          <AuthInput name="username" label="Full Name" type="text"
+            onChange={(e) => setName(e.target.value)} value={name} required />
+        </section>
 
-        <AuthInput name="email" label="Email" type="email"
-          onChange={(e) => setEmail(e.target.value)} value={email} />
+        <section className="mb-4">
+          <AuthInput name="email" label="Email" type="email"
+            onChange={(e) => setEmail(e.target.value)} value={email} />
+        </section>
 
-        <AuthInput name="password" label="Password" type="password"
-          onChange={(e) => setPassword(e.target.value)} value={password} />
+        <section className="mb-4">
+          <AuthInput name="password" label="Password" type="password"
+            onChange={(e) => setPassword(e.target.value)} value={password} />
+        </section>
 
-        <AuthInput name="rePassword" label="Repeat Password" type="password"
-          onChange={(e) => setRePassword(e.target.value)} value={rePassword} />
+
+        <section className="mb-4">
+          <AuthInput name="rePassword" label="Repeat Password" type="password"
+            onChange={(e) => setRePassword(e.target.value)} value={rePassword} />
+        </section>
 
         <AuthButton text="Submit" />
 
