@@ -5,13 +5,17 @@ import './index.scss';
 // Router
 import { Link } from 'react-router-dom';
 
+// Components
+import AuthInput from '../AuthInput';
+import AuthButton from '../AuthButton';
+
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleLogin = (e) => {
     e.preventDefault();
-    alert('Login!');
+    console.log({ email, password });
   }
 
   return (
@@ -27,25 +31,22 @@ const Login = () => {
         </section>
       </section>
 
-      <aside className="aside align-items-center align-self-center px-md-4 px-4 py-5">
+      <aside className="aside align-items-center align-self-center px-4 py-5">
         <form onSubmit={handleLogin}
           className="d-flex flex-column justify-content-center px-md-2 px-0"
         >
           <h2 className="text-center my-5">Sign In</h2>
 
-          <div className="row">
-            <label htmlFor="email">Email</label>
-            <input type="text" name="email" value={email}
-              onChange={(e) => setEmail(e.target.value)} required />
-          </div>
+          <section className="mb-3">
+            <AuthInput name="email" label="Email" type="email"
+              onChange={(e) => setEmail(e.target.value)} value={email} />
+          </section>
+          <section className="mb-3">
+            <AuthInput name="password" label="Password" type="password"
+              onChange={(e) => setPassword(e.target.value)} value={password} />
+          </section>
 
-          <div className="row">
-            <label htmlFor="password">Password</label>
-            <input type="password" name="password" value={password}
-              onChange={(e) => setPassword(e.target.value)} required />
-          </div>
-
-          <button className="auth-button">Submit</button>
+          <AuthButton text="Submit" />
 
           <Link to="/register"
             className="register-btn  mt-4 align-self-end text-decoration-none"

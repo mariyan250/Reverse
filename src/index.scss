@@ -1,6 +1,10 @@
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+// Bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
 
-@import './styles/reset.scss';
-@import './styles/typography.scss';
-@import './styles/variables.scss';
-@import './styles/mixins.scss';
+// Styles
+@import './styles/reset';
+@import './styles/typography';
+@import './styles/variables';
+@import './styles/mixins';
+@import './styles/functions';
+@import './styles/responsive';

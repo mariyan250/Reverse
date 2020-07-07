@@ -5,6 +5,10 @@ import './index.scss';
 // Router
 import { Link } from 'react-router-dom';
 
+// Components
+import AuthInput from '../AuthInput';
+import AuthButton from '../AuthButton';
+
 const Register = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -13,7 +17,7 @@ const Register = () => {
 
   const handleRegister = (e) => {
     e.preventDefault();
-    alert('Register!');
+    console.log({ name, email, password, rePassword });
   }
 
   return (
@@ -21,31 +25,19 @@ const Register = () => {
       <form className="d-flex flex-column justify-content-center" onSubmit={handleRegister}>
         <h2 className="text-center mt-4 mb-5 mt-md-2">Sign Up</h2>
 
-        <div className="row">
-          <label htmlFor="name">Full Name</label>
-          <input type="text" name="name" value={name}
-            onChange={(e) => setName(e.target.value)} required />
-        </div>
+        <AuthInput name="username" label="Full Name" type="text"
+          onChange={(e) => setName(e.target.value)} value={name} required />
 
-        <div className="row">
-          <label htmlFor="email">Email</label>
-          <input type="email" name="email" value={email}
-            onChange={(e) => setEmail(e.target.value)} required />
-        </div>
+        <AuthInput name="email" label="Email" type="email"
+          onChange={(e) => setEmail(e.target.value)} value={email} />
 
-        <div className="row">
-          <label htmlFor="password">Password</label>
-          <input type="password" name="password" value={password}
-            onChange={(e) => setPassword(e.target.value)} required />
-        </div>
+        <AuthInput name="password" label="Password" type="password"
+          onChange={(e) => setPassword(e.target.value)} value={password} />
 
-        <div className="row">
-          <label htmlFor="rePassword">Repeat Password</label>
-          <input type="password" name="rePassword" value={rePassword}
-            onChange={(e) => setRePassword(e.target.value)} required />
-        </div>
+        <AuthInput name="rePassword" label="Repeat Password" type="password"
+          onChange={(e) => setRePassword(e.target.value)} value={rePassword} />
 
-        <button className="auth-button">Submit</button>
+        <AuthButton text="Submit" />
 
         <Link to="/login"
           className="login-btn mt-4 mb-3 align-self-end text-decoration-none"

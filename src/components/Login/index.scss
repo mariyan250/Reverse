@@ -31,27 +31,22 @@
   .aside {
     form {
       h2 {
-        font-size: 42px;
-      }
-
-      .row {
-        @include authInput;
-      }
-
-      .auth-button {
-        @include authButton;
+        font-size: to-rem(42px);
       }
 
       .register-btn {
         font-size: 16px;
         color: $text-black;
+
+        @include media-breakpoint-md-up {
+          font-size: 30px;
+        }
       }
     }
   }
 }
 
-// Responsive
-@media screen and (min-width: 500px) {
+@include media-breakpoint-md-up {
   .login {
     .login-intro {
       flex: 2.5;

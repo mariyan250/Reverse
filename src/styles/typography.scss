@@ -1,12 +1,56 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import 'functions';
+
+html {
+  font: 14px/1.5 sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: serif;
+  line-height: 1.2;
+  margin: 0;
+}
+
+h1 {
+  font-size: to-rem(30px);
+}
+
+h2 {
+  font-size: to-rem(28px);
+}
+
+h3 {
+  font-size: to-rem(26px);
+}
+
+h4 {
+  font-size: to-rem(24px);
+}
+
+h5 {
+  font-size: to-rem(22px);
+}
+
+h6 {
+  font-size: to-rem(20px);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  width: 100%;
 }

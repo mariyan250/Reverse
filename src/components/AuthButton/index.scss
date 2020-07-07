@@ -1,0 +1,17 @@
+@import '../../index.scss';
+
+.auth-btn {
+  background: $background-red;
+  padding: $spacing-xs;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: $text-white;
+  margin-top: $spacing-s;
+  animation: appear 1 0.5s;
+
+  &:hover {
+    background: $background-red-hover;
+    cursor: pointer;
+  }
+}
