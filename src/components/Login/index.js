@@ -32,14 +32,14 @@ const Login = () => {
       </section>
 
       <aside className="aside align-items-center align-self-center px-4 py-5">
-        <form onSubmit={handleLogin} className="d-flex flex-column justify-content-center px-md-2">
+        <form onSubmit={handleLogin} className="d-flex flex-column justify-content-center py-4 px-md-2">
           <h2 className="text-center my-5">Sign In</h2>
 
-          <section className="mb-3">
+          <section className="mb-4">
             <AuthInput name="email" label="Email" type="email"
               onChange={(e) => setEmail(e.target.value)} value={email} required />
           </section>
-          <section className="mb-3">
+          <section className="mb-4">
             <AuthInput name="password" label="Password" type="password"
               onChange={(e) => setPassword(e.target.value)} value={password} required />
           </section>
