@@ -25,7 +25,7 @@ const Register = () => {
       <form className="d-flex flex-column justify-content-center" onSubmit={handleRegister}>
         <h2 className="text-center mt-4 mb-5 mt-md-2">Sign Up</h2>
 
-        <section className="mb-4">
+        <section className="mb-4 mt-2">
           <AuthInput name="username" label="Full Name" type="text"
             onChange={(e) => setName(e.target.value)} value={name} required />
         </section>
