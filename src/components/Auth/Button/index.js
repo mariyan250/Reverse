@@ -2,10 +2,10 @@
 import React from 'react';
 import './index.scss';
 
-const AuthButton = (props) => {
+const Button = (props) => {
   return (
     <button className="auth-btn" {...props}>{props.text}</button>
   );
 };
 
-export default AuthButton;
+export default Button;

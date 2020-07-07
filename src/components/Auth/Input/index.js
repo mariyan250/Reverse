@@ -2,7 +2,7 @@
 import React from 'react';
 import './index.scss';
 
-const AuthInput = (props) => {
+const Input = (props) => {
   return (
     <section className="auth-input">
       <label htmlFor={props.name}>{props.label}</label>
@@ -11,4 +11,4 @@ const AuthInput = (props) => {
   );
 };
 
-export default AuthInput;
+export default Input;

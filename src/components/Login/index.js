@@ -6,8 +6,8 @@ import './index.scss';
 import { Link } from 'react-router-dom';
 
 // Components
-import AuthInput from '../AuthInput';
-import AuthButton from '../AuthButton';
+import Input from '../Auth/Input';
+import Button from '../Auth/Button';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -36,15 +36,15 @@ const Login = () => {
           <h2 className="text-center my-5">Sign In</h2>
 
           <section className="mb-4">
-            <AuthInput name="email" label="Email" type="email"
+            <Input name="email" label="Email" type="email"
               onChange={(e) => setEmail(e.target.value)} value={email} required />
           </section>
           <section className="mb-4">
-            <AuthInput name="password" label="Password" type="password"
+            <Input name="password" label="Password" type="password"
               onChange={(e) => setPassword(e.target.value)} value={password} required />
           </section>
 
-          <AuthButton text="Submit" />
+          <Button text="Submit" />
 
           <Link to="/register"
             className="register-btn  mt-4 align-self-end text-decoration-none"

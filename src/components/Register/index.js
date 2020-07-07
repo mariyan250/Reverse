@@ -6,8 +6,8 @@ import './index.scss';
 import { Link } from 'react-router-dom';
 
 // Components
-import AuthInput from '../AuthInput';
-import AuthButton from '../AuthButton';
+import Input from '../Auth/Input';
+import Button from '../Auth/Button';
 
 const Register = () => {
   const [name, setName] = useState('');
@@ -26,27 +26,27 @@ const Register = () => {
         <h2 className="text-center mt-4 mb-5 mt-md-2">Sign Up</h2>
 
         <section className="mb-4 mt-2">
-          <AuthInput name="username" label="Full Name" type="text"
+          <Input name="username" label="Full Name" type="text"
             onChange={(e) => setName(e.target.value)} value={name} required />
         </section>
 
         <section className="mb-4">
-          <AuthInput name="email" label="Email" type="email"
+          <Input name="email" label="Email" type="email"
             onChange={(e) => setEmail(e.target.value)} value={email} required />
         </section>
 
         <section className="mb-4">
-          <AuthInput name="password" label="Password" type="password"
+          <Input name="password" label="Password" type="password"
             onChange={(e) => setPassword(e.target.value)} value={password} required />
         </section>
 
 
         <section className="mb-4">
-          <AuthInput name="rePassword" label="Repeat Password" type="password"
+          <Input name="rePassword" label="Repeat Password" type="password"
             onChange={(e) => setRePassword(e.target.value)} value={rePassword} required />
         </section>
 
-        <AuthButton text="Submit" />
+        <Button text="Submit" />
 
         <Link to="/login"
           className="login-btn mt-4 mb-3 align-self-end text-decoration-none"

@@ -3,9 +3,9 @@ import './index.scss';
 
 const NotFound = () => {
   return (
-    <div className="not-found vh-100 d-flex justify-content-center align-items-center">
+    <main className="not-found vh-100 d-flex justify-content-center align-items-center">
       <h1>Not Found!</h1>
-    </div >
+    </main >
   );
 };
 

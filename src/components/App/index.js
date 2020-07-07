@@ -6,9 +6,9 @@ import './index.scss';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 // Components
-import Home from '../Home';
+import HomePrivate from "../Home/Private";
+import Home from '../Home/Public';
 import Login from '../Login';
-import HomeLogged from '../HomeLogged';
 import Register from '../Register';
 import NotFound from '../NotFound';
 
@@ -21,7 +21,7 @@ const App = () => {
     <UserContext.Provider value={{ user }}>
       <BrowserRouter>
         <Switch>
-          <Route exact path='/' component={user ? HomeLogged : Home} />
+          <Route exact path='/' component={user ? HomePrivate : Home} />
           {!user && <Route path='/login' component={Login} />}
           {!user && <Route path='/register' component={Register} />}
           <Route path="*" component={NotFound} />
