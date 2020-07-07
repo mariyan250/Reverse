@@ -17,7 +17,7 @@ const Register = () => {
 
   const handleRegister = (e) => {
     e.preventDefault();
-    console.log({ name, email, password, rePassword });
+    alert('Register!');
   }
 
   return (
