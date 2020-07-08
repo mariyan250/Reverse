@@ -4,6 +4,7 @@ import './index.scss';
 
 // Components
 import Arrow from './components/Arrow';
+import Card from './components/Card';
 
 const Home = () => {
   return (
@@ -15,20 +16,11 @@ const Home = () => {
           <Arrow className="pulsing-arrow position-absolute" />
         </section>
       </section>
-      <section className="one vh-100 d-md-flex justify-content-md-around">
-        <article className="option-card">
-          <i class="fas fa-check mx-auto"></i>
-          <h2 className="mt-3">Sell your items.</h2>
-        </article>
-
-        <article className="option-card">
-          <i class="fas fa-money-bill-wave"></i>
-          <h2 className="mt-3">Get Your Money.</h2>
-        </article>
-
-        <article className="option-card">
-          <i class="fas fa-user"></i>
-          <h2 className="mt-3">Meet New People!</h2>
+      <section className="one vh-100">
+        <article className="mt-5 py-5 d-md-flex justify-content-md-around">
+          <Card iconName="fas fa-check" text="Sell your items." />
+          <Card iconName="fas fa-money-bill-wave" text="Get Your Money." />
+          <Card iconName="fas fa-user" text="Meet new people." />
         </article>
       </section>
     </main>

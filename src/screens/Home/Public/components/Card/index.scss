@@ -1,0 +1,11 @@
+@import '../../../../../index.scss';
+
+.option-card {
+  i {
+    font-size: to-rem(48px);
+  }
+
+  h2 {
+    font-size: to-rem(24px);
+  }
+}
