@@ -6,6 +6,7 @@ import './index.scss';
 import Arrow from './components/Arrow';
 
 const Home = () => {
+  return (
     <main className="home">
       <section className="background">
         <section className="black-layer vh-100 d-flex justify-content-center align-items-center flex-column text-center">
