@@ -1,26 +1,35 @@
 @import '../../../index';
 
 .home {
-  background: url('/img/home.jpg');
+  .background {
+    background: url('/img/home.jpg');
 
-  .black-layer {
-    background: $background-black-transparent;
+    .black-layer {
+      background: $background-black-transparent;
 
-    h1 {
-      font-size: to-rem(56px);
+      h1 {
+        font-size: to-rem(56px);
 
-      @include media-breakpoint-md-up {
-        font-size: to-rem(68px);
+        @include media-breakpoint-md-up {
+          font-size: to-rem(68px);
+        }
+      }
+
+      h1,
+      h2 {
+        color: $text-white;
+      }
+
+      .pulsing-arrow {
+        bottom: 2.5rem;
       }
     }
-
-    h1,
-    h2 {
-      color: $text-white;
-    }
-
-    .pulsing-arrow {
-      bottom: 2.5rem;
+  }
+  .one {
+    .option-card {
+      i {
+        font-size: to-rem(48px);
+      }
     }
   }
 }
