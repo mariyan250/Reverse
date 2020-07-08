@@ -12,7 +12,7 @@ const Home = () => {
         <h1 className="font-weight-bold">Reverse</h1>
         <h2 className="mt-4">The social network for traders.</h2>
 
-        <Arrow className="pulsing-arrow position-fixed" />
+        <Arrow className="pulsing-arrow position-absolute" />
       </section>
     </main>
   );

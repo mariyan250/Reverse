@@ -2,9 +2,9 @@
 import React from 'react';
 import './index.scss';
 
-const Arrow = (props) => {
+const Arrow = ({ className }) => {
   return (
-    <section {...props}>
+    <section className={className}>
       <section className="arrow d-flex flex-column">
         <article className="row d-flex mb-3">
           <span></span>
