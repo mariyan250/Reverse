@@ -17,7 +17,7 @@ const Home = () => {
         </section>
       </section>
       <section className="one vh-100">
-        <article className="mt-5 py-5 d-md-flex justify-content-md-around">
+        <article className="py-5 vh-100 d-flex flex-md-row flex-column justify-content-around">
           <Card iconName="fas fa-check" text="Sell your items." />
           <Card iconName="fas fa-money-bill-wave" text="Get Your Money." />
           <Card iconName="fas fa-user" text="Meet new people." />
