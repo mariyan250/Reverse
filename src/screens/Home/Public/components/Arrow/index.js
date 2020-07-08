@@ -6,15 +6,15 @@ const Arrow = (props) => {
   return (
     <section {...props}>
       <section className="arrow d-flex flex-column">
-        <article className="row mb-3">
+        <article className="row d-flex mb-3">
           <span></span>
           <span></span>
         </article>
-        <article className="row mb-3">
+        <article className="row d-flex mb-3">
           <span></span>
           <span></span>
         </article>
-        <article className="row">
+        <article className="row d-flex">
           <span></span>
           <span></span>
         </article>

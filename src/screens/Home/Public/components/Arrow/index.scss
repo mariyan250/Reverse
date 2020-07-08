@@ -2,8 +2,6 @@
 
 .arrow {
   .row {
-    display: flex;
-
     &:nth-child(1) {
       animation: pulsing 3s infinite 0.2s;
     }
@@ -18,12 +16,12 @@
 
     span {
       height: 0.3rem;
-      width: 3rem;
+      width: 2.8rem;
       background: $background-white;
 
       @include media-breakpoint-md-up {
         height: 0.2rem;
-        width: 2.5rem;
+        width: 2rem;
       }
     }
 
