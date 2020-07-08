@@ -1,1 +1,26 @@
 @import '../../../index';
+
+.home {
+  background: url('/img/home.jpg');
+
+  .black-layer {
+    background: $background-black-transparent;
+
+    h1 {
+      font-size: to-rem(56px);
+
+      @include media-breakpoint-md-up {
+        font-size: to-rem(68px);
+      }
+    }
+
+    h1,
+    h2 {
+      color: $text-white;
+    }
+
+    .pulsing-arrow {
+      bottom: 2rem;
+    }
+  }
+}

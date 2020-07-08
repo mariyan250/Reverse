@@ -4,7 +4,9 @@ import './index.scss';
 
 const Button = (props) => {
   return (
-    <button className="auth-btn" {...props}>{props.text}</button>
+    <button className="auth-btn" {...props}>
+      {props.text}
+    </button>
   );
 };
 
