@@ -20,11 +20,10 @@ const Home = () => {
         </section>
       </section>
 
-      <section className='one'>
-        <hr className='line mx-auto' />
-        <article className='vh-100 d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-around'>
+      <section className='two py-0 py-md-5'>
+        <article className='py-3 py-md-5 d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-around vh-100'>
           <Card iconName='fas fa-check' text='Sell your items.' />
-          <Card iconName='fas fa-money-bill-wave' text='Get Your Money.' />
+          <Card iconName='fas fa-truck' text='Ship your products.' />
           <Card iconName='fas fa-user' text='Meet new people.' />
         </article>
       </section>
