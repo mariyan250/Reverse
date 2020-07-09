@@ -75,7 +75,7 @@ const Register = () => {
 
         <Link
           to='/login'
-          className='login-btn mt-4 mb-3 align-self-end text-decoration-none'>
+          className='register-btn mt-4 mb-3 align-self-end text-decoration-none'>
           Already have an account?
         </Link>
       </form>
