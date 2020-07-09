@@ -4,9 +4,9 @@ import './index.scss';
 
 const Card = ({ iconName, text }) => {
   return (
-    <section className="option-card d-flex flex-column">
+    <section className='option-card d-flex flex-column'>
       <i class={`${iconName} align-self-center `}></i>
-      <h2 className="option-text mt-4 text-center ">{text}</h2>
+      <h2 className='option-text mt-4 text-center '>{text}</h2>
     </section>
   );
 };

@@ -4,8 +4,8 @@ import './index.scss';
 
 const HomePrivate = () => {
   return (
-    <main className="home-private">
-      <h1 className="text-center">Home Logged!</h1>
+    <main className='home-private'>
+      <h1 className='text-center'>Home Logged!</h1>
     </main>
   );
 };
