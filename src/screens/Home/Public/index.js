@@ -11,7 +11,6 @@ const Home = () => {
       <section className='home-intro'>
         <section className='black-layer d-flex flex-column justify-content-center align-items-center vh-100'>
           <h2 className='text-center font-weight-bold'>
-            {' '}
             Welcome to
             <span className='d-inline-block px-2 my-2 ml-md-3'>Reverse</span>
           </h2>
