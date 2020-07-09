@@ -1,8 +1,10 @@
 @import '../../../../../index.scss';
 
 .option-card {
+  width: 15rem;
+
   i {
-    font-size: to-rem(48px);
+    font-size: to-rem(52px);
   }
 
   h2 {

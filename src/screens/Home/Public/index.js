@@ -19,8 +19,10 @@ const Home = () => {
           <Arrow className='pulsing-arrow position-absolute' />
         </section>
       </section>
-      <section className='one vh-100'>
-        <article className='py-5 vh-100 d-flex flex-md-row flex-column justify-content-around'>
+
+      <section className='one'>
+        <hr className='line mx-auto' />
+        <article className='vh-100 d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-around'>
           <Card iconName='fas fa-check' text='Sell your items.' />
           <Card iconName='fas fa-money-bill-wave' text='Get Your Money.' />
           <Card iconName='fas fa-user' text='Meet new people.' />
