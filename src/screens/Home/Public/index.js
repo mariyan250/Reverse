@@ -3,17 +3,19 @@ import React from 'react';
 import './index.scss';
 
 // Components
-import Arrow from './components/Arrow';
 import Card from './components/Card';
 
 const Home = () => {
   return (
     <main className='home'>
-      <section className='background'>
-        <section className='black-layer vh-100 d-flex justify-content-center align-items-center flex-column text-center'>
-          <h1 className='font-weight-bold'>Reverse</h1>
-          <h2 className='mt-4'>The social network for traders.</h2>
-          <Arrow className='pulsing-arrow position-absolute' />
+      <section className='home-intro'>
+        <section className='black-layer d-flex flex-column justify-content-center align-items-center vh-100'>
+          <h2 className='text-center font-weight-bold'>
+            {' '}
+            Welcome to
+            <span className='d-inline-block px-2 my-2 ml-md-3'>Reverse</span>
+          </h2>
+          <h3 className='text-center mt-1 mb-5'>Sell your items now!</h3>
         </section>
       </section>
       <section className='one vh-100'>

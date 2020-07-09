@@ -1,33 +1,6 @@
 @import '../../index';
 
 .login {
-  .login-intro {
-    background: url('/img/login.jpg');
-    background-position: 10%;
-    background-size: cover;
-
-    .black-layer {
-      background: $background-black-transparent;
-
-      h2,
-      h3 {
-        color: $text-white;
-      }
-
-      h2 {
-        font-size: 48px;
-      }
-
-      h3 {
-        font-size: 28px;
-      }
-
-      span {
-        background: $background-red;
-      }
-    }
-  }
-
   .aside {
     form {
       h2 {
