@@ -15,14 +15,9 @@
     }
 
     span {
-      height: 0.3rem;
-      width: 2.8rem;
+      height: 0.2rem;
+      width: 2rem;
       background: $background-white;
-
-      @include media-breakpoint-md-up {
-        height: 0.2rem;
-        width: 2rem;
-      }
     }
 
     span:nth-child(1) {

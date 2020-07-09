@@ -16,19 +16,23 @@
 
       h2 {
         font-size: 48px;
+
+        span {
+          background: $background-red;
+        }
       }
 
       h3 {
         font-size: 28px;
       }
-
-      span {
-        background: $background-red;
-      }
     }
 
     .pulsing-arrow {
-      bottom: 3rem;
+      bottom: 2rem;
+
+      @include media-breakpoint-md-up {
+        bottom: 3rem;
+      }
     }
   }
 }
