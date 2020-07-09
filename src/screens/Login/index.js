@@ -1,4 +1,4 @@
-// React and Style
+// React and style
 import React, { useState } from 'react';
 import './index.scss';
 

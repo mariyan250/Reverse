@@ -3,7 +3,7 @@
     "baseUrl": "./src",
     "paths": {
       "screens/*": ["screens/*"],
-      "components/*": ["components/*"],
+      "services/*": ["services/*"],
       "shared/*": ["shared/*"]
     }
   }

@@ -1,3 +1,4 @@
+// React and style
 import React from 'react';
 import './index.scss';
 
