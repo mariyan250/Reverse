@@ -36,7 +36,55 @@
     }
   }
 
+  .one {
+    hr {
+      width: 4rem;
+      height: 0.3rem;
+      background: $red;
+      border-radius: 2rem;
+    }
+
+    & > article {
+      @include media-breakpoint-lg-up {
+        padding: 0 6rem !important;
+
+        h2 {
+          margin-bottom: 6rem !important;
+        }
+
+        article {
+          p {
+            max-width: 32rem;
+          }
+
+          img {
+            border-radius: 0.5rem;
+
+            @include media-breakpoint-md-up {
+              width: 450px;
+            }
+          }
+        }
+      }
+
+      @include media-breakpoint-xl-up {
+        padding: 0 10rem !important;
+      }
+
+      h2 {
+        font-size: 32px;
+      }
+
+      p {
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
   .two {
+    background: rgb(240, 240, 240) !important;
     article {
       @include media-breakpoint-md-up {
         height: 100% !important;
