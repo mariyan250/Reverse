@@ -84,7 +84,7 @@
   }
 
   .two {
-    background: rgb(240, 240, 240) !important;
+    background: $background-gray !important;
     article {
       @include media-breakpoint-md-up {
         height: 100% !important;
