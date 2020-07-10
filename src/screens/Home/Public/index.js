@@ -22,7 +22,7 @@ const Home = () => {
 
       <section className='one py-5'>
         <hr className='mb-5 mx-auto' />
-        <article className='d-md-flex flex-column px-4'>
+        <article className='d-md-flex flex-column px-3'>
           <h2 className='mt-2 mb-5 text-center'>Description</h2>
           <article className='d-flex flex-column flex-lg-row justify-content-between'>
             <p className='my-5 mx-4 my-lg-0'>
