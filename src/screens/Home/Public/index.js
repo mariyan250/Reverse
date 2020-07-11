@@ -26,18 +26,12 @@ const Home = () => {
           <h2 className='mt-2 mb-md-5 text-center'>Description</h2>
           <article className='d-flex flex-column flex-lg-row justify-content-between'>
             <p className='my-5 mx-2 my-lg-0'>
-              Reverse is not just a platform for selling items with ease, but
-              also a social network for people with same interests and needs.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              aut fuga ipsam! Consectetur illum, ex odit alias dignissimos sint
-              ea impedit beatae vitae asperiores quos? Autem nesciunt odit vero
-              eos!
+              Reverse is not just a platform for selling items with ease, but also a social network
+              for people with same interests and needs. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Debitis aut fuga ipsam! Consectetur illum, ex odit alias dignissimos
+              sint ea impedit beatae vitae asperiores quos? Autem nesciunt odit vero eos!
             </p>
-            <img
-              src='/img/cloths.jpg'
-              alt=''
-              className='img-fluid align-self-center'
-            />
+            <img src='/img/cloths.jpg' alt='' className='img-fluid align-self-center' />
           </article>
         </article>
       </section>

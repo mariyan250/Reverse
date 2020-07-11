@@ -5,6 +5,7 @@ $font-size: 14px;
 $red: #eb2525;
 $white: #fff;
 $black: #212121;
+$gray: #f8f8f8;
 
 // Text
 $text-red: $red;
@@ -15,7 +16,7 @@ $text-black: $black;
 $background-red: $red;
 $background-red-hover: #c21e1e;
 $background-white: $white;
-$background-gray: #f8f8f8;
+$background-gray: $gray;
 $background-black-transparent: rgba(0, 0, 0, 0.7);
 
 // Spacing
