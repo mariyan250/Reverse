@@ -2,7 +2,7 @@
 import React from 'react';
 import './index.scss';
 
-const Arrow = (props) => {
+function Arrow(props) {
   return (
     <section className={props.className}>
       <section className='arrow d-flex flex-column'>
@@ -21,6 +21,6 @@ const Arrow = (props) => {
       </section>
     </section>
   );
-};
+}
 
 export default Arrow;

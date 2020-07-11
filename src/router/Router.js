@@ -1,5 +1,5 @@
 // React
-import React from 'react';
+import React, { useContext } from 'react';
 
 // Router
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
@@ -11,18 +11,23 @@ import Login from 'screens/Login';
 import Register from 'screens/Register';
 import NotFound from 'screens/NotFound';
 
-const AppRouter = () => {
+// Contexts
+import { User } from '../contexts/user';
+
+function Router() {
+  const { user } = useContext(User);
+
   return (
     <BrowserRouter>
       <Switch>
+        {user && <Route exact path='/' component={HomePrivate} />}
+        {!user && <Route path='/login' component={Login} />}
+        {!user && <Route path='/register' component={Register} />}
         <Route exact path='/' component={Home} />
-        <Route path='/logged' component={HomePrivate} />
-        <Route path='/login' component={Login} />
-        <Route path='/register' component={Register} />
         <Route path='*' component={NotFound} />
       </Switch>
     </BrowserRouter>
   );
-};
+}
 
-export default AppRouter;
+export default Router;

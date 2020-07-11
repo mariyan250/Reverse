@@ -2,10 +2,17 @@
 import React from 'react';
 
 // Router
-import AppRouter from './AppRouter';
+import Router from './router/Router';
 
-const App = () => {
-  return <AppRouter />;
-};
+// Contexts
+import UserContext from './contexts/user';
+
+function App() {
+  return (
+    <UserContext>
+      <Router />
+    </UserContext>
+  );
+}
 
 export default App;
