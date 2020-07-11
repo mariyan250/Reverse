@@ -1,14 +1,19 @@
 // React and style
-import React from 'react';
+import React, { useState } from 'react';
 import './index.scss';
 
 // Components
 import Card from './components/Card';
 import Arrow from './components/Arrow';
+import AuthModal from './components/AuthModal';
 
 const Home = () => {
+  const [modalOpened, setModalOpened] = useState(false);
+
   return (
     <main className='home'>
+      <AuthModal isToggle={modalOpened} className='auth-m position-absolute' />
+
       <section className='home-intro'>
         <section className='black-layer d-flex flex-column justify-content-center align-items-center vh-100'>
           <h2 className='text-center font-weight-bold'>
@@ -17,6 +22,9 @@ const Home = () => {
           </h2>
           <h3 className='text-center mt-1 mb-5'>Sell your items now!</h3>
           <Arrow className='pulsing-arrow position-absolute' />
+          <i
+            className={`modal-btn position-absolute fas fa-${modalOpened ? 'times ' : 'bars '}`}
+            onClick={() => setModalOpened(!modalOpened)}></i>
         </section>
       </section>
 
@@ -26,10 +34,10 @@ const Home = () => {
           <h2 className='mt-2 mb-md-5 text-center'>Description</h2>
           <article className='d-flex flex-column flex-lg-row justify-content-between'>
             <p className='my-5 mx-2 my-lg-0'>
-              Reverse is not just a platform for selling items with ease, but also a social network
-              for people with same interests and needs. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Debitis aut fuga ipsam! Consectetur illum, ex odit alias dignissimos
-              sint ea impedit beatae vitae asperiores quos? Autem nesciunt odit vero eos!
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias numquam sequi
+              inventore delectus dolore nisi quaerat cum, consectetur, dolorum necessitatibus quos
+              velit fuga consequatur quam quasi expedita minus est repellendus laborum magni
+              accusamus nostrum praesentium nemo alias! Molestias, dicta sit.
             </p>
             <img src='/img/cloths.jpg' alt='' className='img-fluid align-self-center' />
           </article>

@@ -1,6 +1,19 @@
 @import '../../../index';
 
 .home {
+  .auth-m {
+    right: 4.5rem;
+    top: 5rem;
+
+    &.btn-close {
+      animation: close 1 1s;
+    }
+
+    &.btn-open {
+      animation: appear 1 1s;
+    }
+  }
+
   .home-intro {
     background: url('/img/home.jpg');
     background-position: 10%;
@@ -24,6 +37,13 @@
 
       h3 {
         font-size: 28px;
+      }
+
+      i {
+        font-size: 36px;
+        color: $white;
+        top: 1.5rem;
+        right: 1.7rem;
       }
     }
 

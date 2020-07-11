@@ -1,0 +1,21 @@
+@import '../../../../../index.scss';
+
+.auth-modal {
+  overflow: hidden;
+  width: 14rem;
+  height: 10rem;
+  background: $background-white;
+  border-radius: 0.5rem;
+
+  .auth-link {
+    flex: 1;
+    color: $text-red;
+    font-size: 18px;
+    text-decoration: none;
+
+    &:hover {
+      background: $background-red;
+      color: $text-white;
+    }
+  }
+}

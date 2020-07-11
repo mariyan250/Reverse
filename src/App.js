@@ -2,10 +2,10 @@
 import React from 'react';
 
 // Router
-import Router from './router/Router';
+import Router from 'router';
 
 // Contexts
-import UserContext from './contexts/user';
+import UserContext from 'contexts/user';
 
 function App() {
   return (
