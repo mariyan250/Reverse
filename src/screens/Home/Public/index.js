@@ -22,7 +22,9 @@ const Home = () => {
             <span className='d-inline-block px-2 my-2 ml-md-3'>Reverse</span>
           </h2>
           <h3 className='text-center mt-1 mb-5'>Sell your items now!</h3>
+
           <Arrow className='pulsing-arrow position-absolute' />
+
           <Hamburger
             className={`burger-menu position-absolute ${modalOpened ? 'toggled' : ''}`}
             onClick={() => setModalOpened(!modalOpened)}
