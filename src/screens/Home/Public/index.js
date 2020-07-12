@@ -5,6 +5,7 @@ import './index.scss';
 // Components
 import Card from './components/Card';
 import Arrow from './components/Arrow';
+import Hamburger from './components/Hamburger';
 import AuthModal from './components/AuthModal';
 
 const Home = () => {
@@ -12,7 +13,7 @@ const Home = () => {
 
   return (
     <main className='home'>
-      <AuthModal isToggle={modalOpened} className='auth-m position-absolute' />
+      {modalOpened && <AuthModal className='auth-m position-absolute' />}
 
       <section className='home-intro'>
         <section className='black-layer d-flex flex-column justify-content-center align-items-center vh-100'>
@@ -22,9 +23,10 @@ const Home = () => {
           </h2>
           <h3 className='text-center mt-1 mb-5'>Sell your items now!</h3>
           <Arrow className='pulsing-arrow position-absolute' />
-          <i
-            className={`modal-btn position-absolute fas fa-${modalOpened ? 'times ' : 'bars '}`}
-            onClick={() => setModalOpened(!modalOpened)}></i>
+          <Hamburger
+            className={`burger-menu position-absolute ${modalOpened ? 'toggled' : ''}`}
+            onClick={() => setModalOpened(!modalOpened)}
+          />
         </section>
       </section>
 
