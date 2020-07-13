@@ -13,14 +13,14 @@ function Header() {
   const [burgerOpened, setBurgerOpened] = useState(false);
 
   return (
-    <section className="header px-4 py-3 d-flex justify-content-between align-items-center">
+    <header className="header py-3 d-flex justify-content-between align-items-center">
       <h1>Reverse</h1>
 
       <ul className="d-none d-md-flex h-100 align-items-center m-0">
         <li className="ml-5">
           <NavLink to="/dashboard" className="link" activeClassName="active-link">
-            <i className="fas fa-columns mr-3" />
-            Dashboard
+            <i className="fas fa-home mr-3" />
+            Home
           </NavLink>
         </li>
 
@@ -33,8 +33,8 @@ function Header() {
 
         <li className="ml-5">
           <NavLink to="/register" className="link" activeClassName="active-link">
-            <i className="fas fa-user mr-3" />
-            Friends
+            <i className="fas fa-envelope mr-3" />
+            Messages
           </NavLink>
         </li>
 
@@ -51,8 +51,8 @@ function Header() {
         onClick={() => setBurgerOpened(!burgerOpened)}
       />
 
-      {burgerOpened && <Menu className="header-menu position-fixed d-md-none" />}
-    </section>
+      {burgerOpened && <Menu className="header-menu position-fixed d-md-none w-100" />}
+    </header>
   );
 }
 

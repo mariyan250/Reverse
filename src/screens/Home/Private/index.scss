@@ -1,1 +1,39 @@
 @import '../../../index';
+
+.home-private {
+  .search {
+    @include media-breakpoint-md-up {
+      position: absolute;
+      top: -0.4rem;
+      left: -12rem;
+    }
+
+    input {
+      font-size: 16px;
+
+      @include media-breakpoint-md-up {
+        padding: 0.2rem !important;
+      }
+    }
+
+    button {
+      padding: 0.83rem 1rem;
+      position: relative;
+      top: -0.6px;
+      border: none;
+      background: $background-red;
+      border-radius: 0.2rem;
+      margin-left: -2px;
+
+      @include media-breakpoint-md-up {
+        padding: 0.55rem 1rem;
+        top: -1.1px;
+      }
+    }
+
+    i {
+      color: $white;
+      font-size: 20px;
+    }
+  }
+}

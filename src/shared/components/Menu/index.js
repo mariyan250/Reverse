@@ -16,8 +16,8 @@ function Menu(props) {
               className="menu-link d-flex justify-content-center align-items-center text-decoration-none"
               activeClassName="link-active"
             >
-              <i className="fas fa-columns mr-3" />
-              Dashboard
+              <i className="fas fa-home mr-3" />
+              Home
             </NavLink>
           </li>
 
@@ -38,8 +38,8 @@ function Menu(props) {
               className="menu-link d-flex justify-content-center align-items-center text-decoration-none"
               activeClassName="link-active"
             >
-              <i className="fas fa-user mr-3" />
-              Friends
+              <i className="fas fa-envelope mr-3" />
+              Messages
             </NavLink>
           </li>
 

@@ -1,7 +1,12 @@
 @import '../../../index.scss';
 
-.header {
+header {
   background: $background-black;
+  padding: 0 2rem !important;
+
+  @include media-breakpoint-md-up {
+    padding: 0 5rem !important;
+  }
 
   h1 {
     color: $text-white;
@@ -27,6 +32,6 @@
   .header-menu {
     top: 10%;
     left: 0;
-    width: 100%;
+    z-index: 1;
   }
 }
