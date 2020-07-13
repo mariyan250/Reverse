@@ -2,35 +2,39 @@
 
 .home-private {
   .search {
-    input {
-      font-size: 16px;
-      @include media-breakpoint-md-up {
-        padding: 0.5rem !important;
+    .search-col {
+      padding: 0 0.6rem !important;
+
+      input {
+        font-size: 16px;
+        @include media-breakpoint-md-up {
+          padding: 0.5rem !important;
+        }
+
+        &::placeholder {
+          text-align: center;
+        }
       }
 
-      &::placeholder {
-        text-align: center;
+      button {
+        animation: appear 1 0.8s;
+        height: 100%;
+        width: 3.5rem;
+        border: none;
+        background: $background-primary;
+        border-radius: 0.2rem;
+        margin-left: -2px;
+
+        @include media-breakpoint-md-up {
+          padding: 0.8rem 1rem;
+          top: -0.5px;
+        }
       }
-    }
 
-    button {
-      animation: appear 1 0.8s;
-      height: 100%;
-      width: 3.5rem;
-      border: none;
-      background: $background-primary;
-      border-radius: 0.2rem;
-      margin-left: -2px;
-
-      @include media-breakpoint-md-up {
-        padding: 0.8rem 1rem;
-        top: -0.5px;
+      i {
+        color: $text-white;
+        font-size: 20px;
       }
-    }
-
-    i {
-      color: $text-white;
-      font-size: 20px;
     }
   }
 
@@ -40,7 +44,10 @@
     }
 
     h2 {
-      font-size: 32px;
+      font-size: 24px;
+      @include media-breakpoint-lg-up {
+        font-size: 32px;
+      }
     }
   }
 }
