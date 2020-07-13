@@ -1,0 +1,28 @@
+@import '../../../index.scss';
+
+.menu {
+  background: $background-black-transparent;
+  height: 18rem;
+
+  ul {
+    li {
+      flex: 1;
+
+      .menu-link {
+        flex: 1;
+        color: $text-white;
+        font-size: 16px;
+
+        i {
+          font-size: 22px;
+        }
+      }
+
+      .menu-link:hover,
+      .link-active {
+        background: $background-white;
+        color: $black;
+      }
+    }
+  }
+}
