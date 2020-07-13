@@ -12,7 +12,7 @@ function CategoryCard(props) {
           to={props.url}
           className="category-link d-flex flex-column justify-content-center align-items-center h-100 text-decoration-none"
         >
-          <img src={props.icon} />
+          <img src={props.icon} className="mt-2" alt="" />
           <p className="position-relative">{props.title}</p>
         </Link>
       </article>

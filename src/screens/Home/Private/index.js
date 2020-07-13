@@ -18,8 +18,8 @@ const HomePrivate = () => {
             <input
               type="text"
               name="search"
-              placeholder="What are you looking for?"
-              className="px-2 py-2"
+              placeholder="What are you searching?"
+              className="px-3 py-2"
               onChange={(e) => setSearchQuery(e.target.value)}
               value={searchQuery}
             />

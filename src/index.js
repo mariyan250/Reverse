@@ -24,6 +24,7 @@ import Home from 'screens/Home/Public';
 import Login from 'screens/Login';
 import Register from 'screens/Register';
 import HomePrivate from 'screens/Home/Private';
+import NotFound from 'screens/NotFound';
 
 const initialState = {};
 const history = createBrowserHistory();
@@ -58,6 +59,7 @@ ReactDOM.render(
           <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />
           <Route exact path="/" component={Home} />
+          <Route path="*" component={NotFound} />
         </Switch>
       </ConnectedRouter>
     </Provider>
