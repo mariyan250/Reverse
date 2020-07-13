@@ -30,4 +30,10 @@
       font-size: 20px;
     }
   }
+
+  .home-one {
+    @include media-breakpoint-lg-up {
+      padding: 0 6rem !important;
+    }
+  }
 }
