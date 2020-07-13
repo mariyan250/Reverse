@@ -18,7 +18,7 @@
 .toggled {
   .hamburger {
     span:nth-child(1) {
-      transform: rotate(-45deg) translate(-20%, 240%);
+      transform: rotate(-45deg) translate(-20%, 235%);
     }
 
     span:nth-child(2) {
@@ -26,7 +26,7 @@
     }
 
     span:nth-child(3) {
-      transform: rotate(45deg) translate(-20%, -240%);
+      transform: rotate(45deg) translate(-20%, -235%);
     }
   }
 }
