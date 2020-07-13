@@ -25,6 +25,7 @@ import Login from 'screens/Login';
 import Register from 'screens/Register';
 import HomePrivate from 'screens/Home/Private';
 import NotFound from 'screens/NotFound';
+import Search from 'screens/Search';
 
 const initialState = {};
 const history = createBrowserHistory();
@@ -55,6 +56,7 @@ ReactDOM.render(
     <Provider store={configureStore(initialState)}>
       <ConnectedRouter history={history}>
         <Switch>
+          <Route path="/search" component={Search} />
           <Route path="/dashboard" component={HomePrivate} />
           <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />

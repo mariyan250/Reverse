@@ -13,7 +13,7 @@ function Header() {
   const [burgerOpened, setBurgerOpened] = useState(false);
 
   return (
-    <header className="header py-3 d-flex justify-content-between align-items-center">
+    <header className="header position-fixed py-3 d-flex justify-content-between align-items-center">
       <h1>Reverse</h1>
 
       <ul className="d-none d-md-flex h-100 align-items-center m-0">

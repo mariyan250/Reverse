@@ -12,7 +12,7 @@ const HomePrivate = () => {
   return (
     <main className="home-private pb-1">
       <Header />
-      <form className="search mt-5 container-fluid px-1">
+      <form className="search container-fluid px-1">
         <div className="row mx-auto justify-content-center">
           <div className="search-col col-11 col-md-3 d-flex">
             <input
@@ -37,26 +37,31 @@ const HomePrivate = () => {
         <article className="container-fluid justify-content-center align-items-center">
           <div className="row">
             <div className="col-6 p-2 col-sm-3 col-md-2 p-md-2">
-              <CategoryCard icon="/img/home.svg" title="Home" url="/?search=realestate" />
+              <CategoryCard icon="/img/home.svg" title="Home" url="/search?q=home" />
             </div>
+
             <div className="col-6 p-2 col-sm-3 col-md-2 p-md-2">
               <CategoryCard
                 icon="/img/technology.svg"
                 title="Technology"
-                url="/?search=technology"
+                url="/search?q=technology"
               />
             </div>
+
             <div className="col-6 p-2 col-sm-3 col-md-2 p-md-2">
-              <CategoryCard icon="/img/car.svg" title="Automobile" url="/?search=automobile" />
+              <CategoryCard icon="/img/car.svg" title="Automobile" url="/search?q=automobile" />
             </div>
+
             <div className="col-6 p-2 col-sm-3 col-md-2 p-md-2">
-              <CategoryCard icon="/img/sport.svg" title="Sport" url="/?search=sport" />
+              <CategoryCard icon="/img/sport.svg" title="Sport" url="/search?q=sport" />
             </div>
+
             <div className="col-6 p-2 col-sm-3 col-md-2 p-md-2">
-              <CategoryCard icon="/img/tshirt.svg" title="Cloths" url="/?search=cloths" />
+              <CategoryCard icon="/img/tshirt.svg" title="Cloths" url="/search?q=cloths" />
             </div>
+
             <div className="col-6 p-2 col-sm-3 col-md-2 p-md-2">
-              <CategoryCard icon="/img/animal.svg" title="Pets" url="/?search=pets" />
+              <CategoryCard icon="/img/animal.svg" title="Pets" url="/search?q=pets" />
             </div>
           </div>
         </article>

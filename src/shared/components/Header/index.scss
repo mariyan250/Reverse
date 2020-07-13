@@ -3,6 +3,9 @@
 header {
   background: $background-secondary;
   padding: 0 2rem !important;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 
   @include media-breakpoint-md-up {
     padding: 0 5rem !important;
@@ -26,7 +29,7 @@ header {
   }
 
   .header-menu {
-    top: 10%;
+    top: 9.5%;
     left: 0;
     z-index: 1;
   }
