@@ -1,7 +1,7 @@
 @import '../../../index.scss';
 
 header {
-  background: $background-black;
+  background: $background-secondary;
   padding: 0 2rem !important;
 
   @include media-breakpoint-md-up {
@@ -20,7 +20,7 @@ header {
       }
 
       .active-link {
-        color: $text-red;
+        color: $text-primary;
       }
     }
   }

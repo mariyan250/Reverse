@@ -5,14 +5,13 @@
   box-shadow: 1px 1px 5px $silver;
 
   .category-link {
-    color: $text-black;
-
-    i {
-      font-size: 52px;
+    img {
+      width: 4rem;
     }
 
     p {
-      top: 2rem;
+      color: $text-secondary;
+      top: 1.6rem;
       font-size: 16px;
     }
   }

@@ -9,12 +9,12 @@
 
   .auth-link {
     flex: 1;
-    color: $text-red;
+    color: $text-primary;
     font-size: 16px;
     text-decoration: none;
 
     &:hover {
-      background: $background-red;
+      background: $background-primary;
       color: $text-white;
     }
   }

@@ -1,24 +1,28 @@
-/// Font
+// Font
 $font-size: 14px;
 
 // Colors
-$red: #eb2525;
+$primary: #e84118;
+$secondary: #212121;
 $white: #fff;
-$black: #212121;
 $gray: #f8f8f8;
-$silver: silver;
+$silver: #b2bec3;
 
 // Text
-$text-red: $red;
+$text-primary: $primary;
+$text-secondary: $secondary;
 $text-white: $white;
-$text-black: $black;
+$text-gray: $gray;
+$text-silver: $silver;
 
 // Background
-$background-red: $red;
-$background-red-hover: #c21e1e;
+$background-primary: $primary;
+$background-secondary: $secondary;
 $background-white: $white;
 $background-gray: $gray;
-$background-black: $black;
+$background-silver: $silver;
+
+$background-primary-hover: #c21e1e;
 $background-black-transparent: rgba(0, 0, 0, 0.7);
 
 // Spacing
