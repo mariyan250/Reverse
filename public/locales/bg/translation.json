@@ -1,0 +1,9 @@
+{
+  "home_screen": {
+    "title": "Добре дошли в този прекрасен React Redux стартер!"
+  },
+  "not_found_screen": {
+    "heading": "Оппс!",
+    "paragraph": "Страницата не е намерена!"
+  }
+}

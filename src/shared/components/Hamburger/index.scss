@@ -1,5 +1,4 @@
-@import '../../../../../index.scss';
-
+@import '../../../index.scss';
 .hamburger {
   width: 2.5rem;
   height: 2rem;
@@ -10,12 +9,16 @@
     background: $background-white;
     transition: 0.5s;
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .toggled {
   .hamburger {
     span:nth-child(1) {
-      transform: rotate(-45deg) translate(0, 405%);
+      transform: rotate(-45deg) translate(-20%, 240%);
     }
 
     span:nth-child(2) {
@@ -23,7 +26,7 @@
     }
 
     span:nth-child(3) {
-      transform: rotate(45deg) translate(0, -405%);
+      transform: rotate(45deg) translate(-20%, -240%);
     }
   }
 }

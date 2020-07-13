@@ -1,0 +1,9 @@
+{
+  "home_screen": {
+    "title": "Welcome to this awesome React Redux starter!"
+  },
+  "not_found_screen": {
+    "heading": "Oops!",
+    "paragraph": "Page not found!"
+  }
+}

@@ -4,9 +4,7 @@
     "paths": {
       "screens/*": ["screens/*"],
       "services/*": ["services/*"],
-      "shared/*": ["shared/*"],
-      "contexts/*": ["contexts/*"],
-      "router/*": ["router/*"]
+      "shared/*": ["shared/*"]
     }
   }
 }

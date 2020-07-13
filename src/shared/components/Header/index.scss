@@ -1,0 +1,9 @@
+@import '../../../index.scss';
+
+.header {
+  background: $background-black;
+
+  h1 {
+    color: $text-white;
+  }
+}

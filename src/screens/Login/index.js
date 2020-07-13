@@ -47,9 +47,7 @@ const Login = () => {
 
         <Button text='Submit' />
 
-        <Link
-          to='/register'
-          className='login-btn  mt-4 align-self-end text-decoration-none'>
+        <Link to='/register' className='login-btn  mt-4 align-self-end text-decoration-none'>
           Don't have an account?
         </Link>
       </form>

@@ -5,7 +5,7 @@ import './index.scss';
 // Components
 import Card from './components/Card';
 import Arrow from './components/Arrow';
-import Hamburger from './components/Hamburger';
+import Hamburger from 'shared/components/Hamburger';
 import AuthModal from './components/AuthModal';
 
 const Home = () => {

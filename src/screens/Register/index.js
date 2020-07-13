@@ -22,9 +22,7 @@ const Register = () => {
 
   return (
     <main className='register vh-100 d-flex flex-column justify-content-center py-5 px-4 my-0 mx-auto'>
-      <form
-        className='d-flex flex-column justify-content-center'
-        onSubmit={handleRegister}>
+      <form className='d-flex flex-column justify-content-center' onSubmit={handleRegister}>
         <h2 className='text-center mt-4 mb-5 mt-md-2'>Sign Up</h2>
 
         <section className='mb-4 mt-2'>
@@ -73,9 +71,7 @@ const Register = () => {
 
         <Button text='Submit' />
 
-        <Link
-          to='/login'
-          className='register-btn mt-4 mb-3 align-self-end text-decoration-none'>
+        <Link to='/login' className='register-btn mt-4 mb-3 align-self-end text-decoration-none'>
           Already have an account?
         </Link>
       </form>
