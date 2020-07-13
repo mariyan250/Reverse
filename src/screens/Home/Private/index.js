@@ -33,7 +33,7 @@ const HomePrivate = () => {
       </form>
 
       <section className="home-one mt-4 px-4">
-        <h2 className="my-5 mx-2">Categories</h2>
+        <h2 className="my-5 mx-2">Category</h2>
         <article className="container-fluid justify-content-center align-items-center">
           <div className="row">
             <div className="col-6 p-2 col-sm-3 col-md-2 p-md-2">
