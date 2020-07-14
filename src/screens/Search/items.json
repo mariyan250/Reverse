@@ -106,5 +106,14 @@
     "price": "10$",
     "location": "Pomorie",
     "seller": "Mariyan V."
+  },
+  {
+    "id": 12,
+    "name": "BMW M4",
+    "category": "automobile",
+    "img": "https://pvlimages.blob.core.windows.net/images/large/AG10769_20062019_24.jpg",
+    "price": "120 000$",
+    "location": "Pomorie",
+    "seller": "Mariyan V."
   }
 ]
