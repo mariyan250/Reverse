@@ -12,18 +12,18 @@ const HomePrivate = () => {
   return (
     <main className="home-private pb-1">
       <Header />
-      <form className="search container-fluid px-1">
+      <form className="search container-fluid px-1" action="/search">
         <div className="row mx-auto justify-content-center">
           <div className="search-col col-11 col-md-3 d-flex">
             <input
               type="text"
-              name="search"
+              name="q"
               placeholder="What are you searching?"
               className="px-3 py-2"
               onChange={(e) => setSearchQuery(e.target.value)}
               value={searchQuery}
             />
-            <div className={`col-auto p-0 ${searchQuery ? 'd-block' : 'd-none'}`}>
+            <div className={`col-auto p-0 ${searchQuery ? 'active-btn' : ''}`}>
               <button className="search-btn d-flex justify-content-center align-items-center">
                 <i className="fas fa-search" />
               </button>

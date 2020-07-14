@@ -1,0 +1,12 @@
+@import '../../../../index.scss';
+
+.item-list {
+  & > h2 {
+    margin-top: 6.5rem !important;
+    margin-bottom: 2rem !important;
+  }
+
+  ul {
+    background: $background-gray-darker;
+  }
+}

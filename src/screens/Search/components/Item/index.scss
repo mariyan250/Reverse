@@ -1,5 +1,18 @@
 @import '../../../../index.scss';
 
 .item {
-  box-shadow: 1px 1px 10px $silver;
+  background: $background-white;
+  box-shadow: 1px 1px 3px $silver;
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
 }

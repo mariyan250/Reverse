@@ -12,20 +12,22 @@
         @include media-breakpoint-md-up {
           padding: 0.5rem !important;
         }
+      }
 
-        &::placeholder {
-          text-align: center;
+      .active-btn {
+        button {
+          background: $background-primary !important;
         }
       }
 
       button {
-        animation: appear 1 0.8s;
         height: 100%;
         width: 3.5rem;
         border: none;
-        background: $background-primary;
+        background: $background-secondary;
         border-radius: 0.2rem;
         margin-left: -2px;
+        transition: background 0.5s;
 
         @include media-breakpoint-md-up {
           padding: 0.8rem 1rem;

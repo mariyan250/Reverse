@@ -6,13 +6,15 @@ $primary: #e84118;
 $secondary: #212121;
 $white: #fff;
 $gray: #f8f8f8;
-$silver: #b2bec3;
+$gray-darker: #f5f6fa;
+$silver: #bdc3c7;
 
 // Text
 $text-primary: $primary;
 $text-secondary: $secondary;
 $text-white: $white;
 $text-gray: $gray;
+$text-gray-darker: $gray-darker;
 $text-silver: $silver;
 
 // Background
@@ -20,6 +22,7 @@ $background-primary: $primary;
 $background-secondary: $secondary;
 $background-white: $white;
 $background-gray: $gray;
+$background-gray-darker: $gray-darker;
 $background-silver: $silver;
 
 $background-primary-hover: #c21e1e;
