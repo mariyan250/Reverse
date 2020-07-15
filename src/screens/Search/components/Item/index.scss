@@ -1,11 +1,6 @@
 @import '../../../../index.scss';
 
-// box shadow - make it reusable >>> GLOBAL LEVEL
-
 .item {
-  background: $background-white;
-  box-shadow: 1px 1px 3px $silver;
-
   .img-container::before {
     display: 'block';
     content: '';
@@ -14,20 +9,7 @@
 
   img {
     object-fit: cover;
-    position: absolute;
     top: 50%;
     transform: translateY(-50%);
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  h3 {
-    font-size: 16px;
-  }
-
-  h4 {
-    font-size: 24px;
   }
 }

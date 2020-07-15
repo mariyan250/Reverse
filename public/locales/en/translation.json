@@ -90,6 +90,12 @@
   },
 
   "search_screen": {
-    "heading": "Items"
+    "heading": "Items",
+
+    "item": {
+      "img": {
+        "alt": "Image"
+      }
+    }
   }
 }

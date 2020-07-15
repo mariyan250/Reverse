@@ -94,6 +94,12 @@
   },
 
   "search_screen": {
-    "heading": "Продукти"
+    "heading": "Продукти",
+
+    "item": {
+      "img": {
+        "alt": "Продукт"
+      }
+    }
   }
 }

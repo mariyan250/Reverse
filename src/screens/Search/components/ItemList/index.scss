@@ -1,13 +1,8 @@
 @import '../../../../index.scss';
 
-// TO REM & REMOVE IMPORTANT
 .item-list {
   & > h2 {
-    margin-top: 6.5rem !important;
-    margin-bottom: 2rem !important;
-  }
-
-  ul {
-    background: $background-gray-darker;
+    margin-top: to-rem(92px);
+    margin-bottom: to-rem(28px);
   }
 }

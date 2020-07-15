@@ -4,45 +4,50 @@
     "name": "Lenovo",
     "category": "technology",
     "img": "https://www.lenovo.com/medias/lenovo-laptop-thinkpad-x1-carbon-gen8-subseries-hero.png?context=bWFzdGVyfHJvb3R8ODQ4NDd8aW1hZ2UvcG5nfGgyMi9oOGYvMTA2NzQ1ODc3Mjk5NTAucG5nfDQzODYxOTc5ODA0MWJhZTQyYThjOTAzZjE0NDI2NWVjYjY5MjE3MGFiMWEzODhlN2UyMGUwNGZhMWRmOTJmNzg",
-    "price": "10$",
+    "price": "10",
     "location": "Sofia",
-    "seller": "Mariyan V."
+    "seller": "Mariyan V.",
+    "date": "8 July - 6:00"
   },
   {
     "id": 2,
     "name": "Carpet",
     "category": "home",
     "img": "https://pranekilimi.bg/upload/images/za-nas.jpg?1477653524940",
-    "price": "10$",
+    "price": "10",
     "location": "Sofia",
-    "seller": "Mariyan V."
+    "seller": "Mariyan V.",
+    "date": "8 July - 6:00"
   },
   {
     "id": 3,
     "name": "Table",
     "category": "home",
     "img": "https://www.knoll.com/static_resources/images/products/catalog/eco/parts/642TR/642TR-KC_KC_FZ.jpg",
-    "price": "10$",
+    "price": "10",
     "location": "Plovdiv",
-    "seller": "Mariyan V."
+    "seller": "Mariyan V.",
+    "date": "8 July - 6:00"
   },
   {
     "id": 4,
     "name": "Iphone X",
     "category": "technology",
     "img": "https://restore.bg/8407-thickbox_default/apple-iphone-x-64gb-space-gray.jpg",
-    "price": "10$",
+    "price": "10",
     "location": "Blagoevgrad",
-    "seller": "Mariyan V."
+    "seller": "Mariyan V.",
+    "date": "8 July - 6:00"
   },
   {
     "id": 5,
     "name": "Lenovo",
     "category": "technology",
     "img": "https://www.lenovo.com/medias/lenovo-laptop-thinkpad-x1-carbon-gen8-subseries-hero.png?context=bWFzdGVyfHJvb3R8ODQ4NDd8aW1hZ2UvcG5nfGgyMi9oOGYvMTA2NzQ1ODc3Mjk5NTAucG5nfDQzODYxOTc5ODA0MWJhZTQyYThjOTAzZjE0NDI2NWVjYjY5MjE3MGFiMWEzODhlN2UyMGUwNGZhMWRmOTJmNzg",
-    "price": "10$",
+    "price": "10",
     "location": "Smolyan",
-    "seller": "Mariyan V."
+    "seller": "Mariyan V.",
+    "date": "8 July - 6:00"
   },
   {
     "id": 6,
@@ -50,8 +55,9 @@
     "category": "home",
     "location": "Rudozem",
     "img": "https://pranekilimi.bg/upload/images/za-nas.jpg?1477653524940",
-    "price": "10$",
-    "seller": "Mariyan V."
+    "price": "10",
+    "seller": "Mariyan V.",
+    "date": "8 July - 6:00"
   },
   {
     "id": 7,
@@ -59,17 +65,19 @@
     "category": "home",
     "location": "St.Vlas",
     "img": "https://www.knoll.com/static_resources/images/products/catalog/eco/parts/642TR/642TR-KC_KC_FZ.jpg",
-    "price": "10$",
-    "seller": "Mariyan V."
+    "price": "10",
+    "seller": "Mariyan V.",
+    "date": "8 July - 6:00"
   },
   {
     "id": 22,
     "name": "Iphone X",
     "category": "technology",
     "img": "https://restore.bg/8407-thickbox_default/apple-iphone-x-64gb-space-gray.jpg",
-    "price": "10$",
+    "price": "10",
     "location": "Sliven",
-    "seller": "Mariyan V."
+    "seller": "Mariyan V.",
+    "date": "8 July - 6:00"
   },
   {
     "id": 8,
@@ -77,8 +85,9 @@
     "location": "Ruse",
     "category": "technology",
     "img": "https://www.lenovo.com/medias/lenovo-laptop-thinkpad-x1-carbon-gen8-subseries-hero.png?context=bWFzdGVyfHJvb3R8ODQ4NDd8aW1hZ2UvcG5nfGgyMi9oOGYvMTA2NzQ1ODc3Mjk5NTAucG5nfDQzODYxOTc5ODA0MWJhZTQyYThjOTAzZjE0NDI2NWVjYjY5MjE3MGFiMWEzODhlN2UyMGUwNGZhMWRmOTJmNzg",
-    "price": "10$",
-    "seller": "Mariyan V."
+    "price": "10",
+    "seller": "Mariyan V.",
+    "date": "8 July - 6:00"
   },
   {
     "id": 9,
@@ -86,34 +95,38 @@
     "category": "home",
     "location": "Varna",
     "img": "https://pranekilimi.bg/upload/images/za-nas.jpg?1477653524940",
-    "price": "10$",
-    "seller": "Mariyan V."
+    "price": "10",
+    "seller": "Mariyan V.",
+    "date": "8 July - 6:00"
   },
   {
     "id": 10,
     "name": "Table",
     "category": "home",
     "img": "https://www.knoll.com/static_resources/images/products/catalog/eco/parts/642TR/642TR-KC_KC_FZ.jpg",
-    "price": "10$",
+    "price": "10",
     "location": "Burgas",
-    "seller": "Mariyan V."
+    "seller": "Mariyan V.",
+    "date": "8 July - 1:00"
   },
   {
     "id": 11,
     "name": "Iphone X",
     "category": "technology",
     "img": "https://restore.bg/8407-thickbox_default/apple-iphone-x-64gb-space-gray.jpg",
-    "price": "10$",
+    "price": "10",
     "location": "Pomorie",
-    "seller": "Mariyan V."
+    "seller": "Mariyan V.",
+    "date": "8 July - 5:00"
   },
   {
     "id": 12,
     "name": "BMW M4",
     "category": "automobile",
     "img": "https://pvlimages.blob.core.windows.net/images/large/AG10769_20062019_24.jpg",
-    "price": "120 000$",
+    "price": "120 000",
     "location": "Pomorie",
-    "seller": "Mariyan V."
+    "seller": "Mariyan V.",
+    "date": "8 July - 4:00"
   }
 ]

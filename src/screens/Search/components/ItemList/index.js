@@ -14,7 +14,7 @@ function ItemList({ items }) {
   return (
     <section className="item-list container-fluid px-4">
       <h2>{t('search_screen.heading')}</h2>
-      <ul className="row pt-5 pb-1">
+      <ul className="row py-5 app-bg-gray-darker">
         {items && items.map((item) => <Item {...item} key={item.id} />)}
       </ul>
     </section>
