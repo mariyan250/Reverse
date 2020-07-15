@@ -5,6 +5,9 @@ import './index.scss';
 // Router
 import { Link } from 'react-router-dom';
 
+// Routes
+import { routes } from 'shared/constants/routes';
+
 // Translation
 import { useTranslation } from 'react-i18next';
 
@@ -79,7 +82,7 @@ const Register = () => {
         ))}
         <Button text={t('register_screen.button')} />
         <Link
-          to="/login"
+          to={routes.login}
           className="register-btn app-text-secondary mt-4 mb-3 align-self-end text-decoration-none"
         >
           {t('register_screen.option_button')}

@@ -7,6 +7,9 @@ import { Route, Switch } from 'react-router-dom';
 import { ConnectedRouter, routerMiddleware } from 'connected-react-router';
 import { createBrowserHistory } from 'history';
 
+// Routes
+import { routes } from 'shared/constants/routes';
+
 // Redux
 import { Provider } from 'react-redux';
 import { applyMiddleware, compose, createStore } from 'redux';
@@ -56,11 +59,11 @@ ReactDOM.render(
     <Provider store={configureStore(initialState)}>
       <ConnectedRouter history={history}>
         <Switch>
-          <Route path="/search" component={Search} />
-          <Route path="/dashboard" component={HomePrivate} />
-          <Route path="/login" component={Login} />
-          <Route path="/register" component={Register} />
-          <Route exact path="/" component={Home} />
+          <Route path={routes.search} component={Search} />
+          <Route path={routes.dashboard} component={HomePrivate} />
+          <Route path={routes.login} component={Login} />
+          <Route path={routes.register} component={Register} />
+          <Route exact path={routes.home} component={Home} />
           <Route path="*" component={NotFound} />
         </Switch>
       </ConnectedRouter>

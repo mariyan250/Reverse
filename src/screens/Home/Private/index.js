@@ -2,15 +2,15 @@
 import React, { useState } from 'react';
 import './index.scss';
 
+// Routes
+import { searchRoutes } from 'shared/constants/routes';
+
 // Translation
 import { useTranslation } from 'react-i18next';
 
 // Components
 import Header from 'shared/components/Header';
 import CategoryCard from './components/CategoryCard';
-
-// remove action from form
-// should be constant >> url="/search?q=home"
 
 const HomePrivate = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -20,32 +20,32 @@ const HomePrivate = () => {
     {
       icon: '/img/home.svg',
       title: t('home_screen.private.categories.titles.home'),
-      url: '/search?query=home',
+      url: searchRoutes.home,
     },
     {
       icon: '/img/technology.svg',
       title: t('home_screen.private.categories.titles.technology'),
-      url: '/search?query=technology',
+      url: searchRoutes.technology,
     },
     {
       icon: '/img/automobile.svg',
       title: t('home_screen.private.categories.titles.automobile'),
-      url: '/search?query=automobile',
+      url: searchRoutes.automobile,
     },
     {
       icon: '/img/sport.svg',
       title: t('home_screen.private.categories.titles.sport'),
-      url: '/search?query=sport',
+      url: searchRoutes.sport,
     },
     {
       icon: '/img/tshirt.svg',
       title: t('home_screen.private.categories.titles.cloths'),
-      url: '/search?query=cloths',
+      url: searchRoutes.cloths,
     },
     {
       icon: '/img/pets.svg',
       title: t('home_screen.private.categories.titles.pets'),
-      url: '/search?query=pets',
+      url: searchRoutes.pets,
     },
   ];
 
