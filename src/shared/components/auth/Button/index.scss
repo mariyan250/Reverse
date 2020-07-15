@@ -1,18 +1,11 @@
 @import '../../../../index.scss';
 
-// rethink, rewrite everything.
 .auth-btn {
-  background: $background-primary;
-  padding: $spacing-xs;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  color: $text-white;
-  margin-top: $spacing-s;
+  font-size: to-rem(18px);
   animation: appear 1 0.5s;
 
   &:hover {
-    background: $background-primary-hover;
+    background: $primary-hover;
     cursor: pointer;
   }
 }

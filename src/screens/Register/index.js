@@ -68,7 +68,7 @@ const Register = () => {
 
   const handleRegister = (e) => {
     e.preventDefault();
-    alert('Register!');
+    alert('Register');
   };
 
   return (

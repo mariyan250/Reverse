@@ -2,13 +2,17 @@
 import React from 'react';
 import './index.scss';
 
-// krastavici?
-// auth input on both elements?
-function Input(props) {
+function Input({ name, label, type, required, onChange }) {
   return (
     <section className="auth-input">
-      <label htmlFor={props.name}>{props.label}</label>
-      <input {...props} className="auth-input p-1" type={props.type} name={props.name} />
+      <label htmlFor={name}>{label}</label>
+      <input
+        className="auth-input p-1"
+        type={type}
+        name={name}
+        required={required}
+        onChange={onChange}
+      />
     </section>
   );
 }

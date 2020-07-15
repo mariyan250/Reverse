@@ -2,10 +2,9 @@
 import React from 'react';
 import './index.scss';
 
-// krastavici?
-function Hamburger(props) {
+function Hamburger({ className, onClick }) {
   return (
-    <section {...props}>
+    <section className={className} onClick={onClick}>
       <article className="hamburger d-flex flex-column justify-content-between">
         <span></span>
         <span></span>

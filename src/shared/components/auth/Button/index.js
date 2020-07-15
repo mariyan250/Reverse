@@ -2,12 +2,10 @@
 import React from 'react';
 import './index.scss';
 
-// v props krastavici ako doidat kvo she gi praim?
-// take only the props that are needed!
-function Button(props) {
+function Button({ text, onClick }) {
   return (
-    <button className="auth-btn" {...props}>
-      {props.text}
+    <button className="auth-btn app-bg-primary border-0 app-text-white mt-4 p-2" onClick={onClick}>
+      {text}
     </button>
   );
 }
