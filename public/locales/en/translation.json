@@ -37,6 +37,13 @@
 
       "img": {
         "alt": "Cloths"
+      },
+
+      "auth_modal": {
+        "links": {
+          "login": "Login",
+          "register": "Register"
+        }
       }
     }
   },

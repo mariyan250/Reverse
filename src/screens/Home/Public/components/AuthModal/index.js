@@ -2,12 +2,18 @@
 import React from 'react';
 import './index.scss';
 
+// Router
 import { Link } from 'react-router-dom';
 
+// Translation
+import { useTranslation } from 'react-i18next';
+
 function AuthModal({ className = '' }) {
+  const { t } = useTranslation();
+
   const links = [
-    { title: 'Login', route: '/login' },
-    { title: 'Register', route: '/register' },
+    { title: t('home_screen.public.auth_modal.links.login'), route: '/login' },
+    { title: t('home_screen.public.auth_modal.links.register'), route: '/register' },
   ];
 
   return (

@@ -36,8 +36,16 @@
         "heading": "Описание",
         "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias numquam sequi inventore delectus dolore nisi quaerat cum, consectetur, dolorum necessitatibus quos velit fuga consequatur quam quasi expedita minus est repellendus laborum magni accusamus nostrum praesentium nemo alias! Molestias, dicta sit"
       },
+
       "img": {
         "alt": "Дрехи"
+      },
+
+      "auth_modal": {
+        "links": {
+          "login": "Вход",
+          "register": "Регистрация"
+        }
       }
     }
   },

@@ -57,8 +57,6 @@
         }
 
         img {
-          border-radius: to-rem(5px);
-
           @include media-breakpoint-md-up {
             width: to-rem(450px);
           }
