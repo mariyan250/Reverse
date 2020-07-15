@@ -5,6 +5,8 @@ import './index.scss';
 // Router
 import { NavLink } from 'react-router-dom';
 
+// ROUTES?
+// TRANSLATIONS?
 function Menu(props) {
   return (
     <section {...props}>

@@ -1,0 +1,25 @@
+@import './variables.scss';
+
+.app-text-primary {
+  color: $primary;
+}
+
+.app-text-secondary {
+  color: $secondary;
+}
+
+.app-text-white {
+  color: $white;
+}
+
+.app-text-gray {
+  color: $gray;
+}
+
+.app-text-gray-darker {
+  color: $gray-darker;
+}
+
+.app-text-silver {
+  color: $silver;
+}

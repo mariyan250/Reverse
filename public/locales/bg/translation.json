@@ -1,9 +1,74 @@
 {
   "home_screen": {
-    "title": "Добре дошли в този прекрасен React Redux стартер!"
+    "private": {
+      "heading": "Категории",
+
+      "input": {
+        "placeholder": "Какво търсиш?"
+      },
+
+      "categories": {
+        "titles": {
+          "home": "За Дома",
+          "technology": "Техника",
+          "automobile": "Автомобили",
+          "sport": "Спорт",
+          "cloths": "Дрехи",
+          "pets": "Животни"
+        },
+
+        "img_alt": "Category"
+      }
+    },
+
+    "public": {
+      "heading": "Добре дошли в",
+      "app_name": "Reverse",
+      "second_heading": "Продай нещата си сега!",
+
+      "cards": {
+        "one": "Продай вещите си.",
+        "two": "Опаковай продукта.",
+        "three": "Нови запознанства."
+      },
+
+      "section_one": {
+        "heading": "Описание",
+        "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias numquam sequi inventore delectus dolore nisi quaerat cum, consectetur, dolorum necessitatibus quos velit fuga consequatur quam quasi expedita minus est repellendus laborum magni accusamus nostrum praesentium nemo alias! Molestias, dicta sit"
+      },
+      "img": {
+        "alt": "Дрехи"
+      }
+    }
   },
-  "not_found_screen": {
-    "heading": "Оппс!",
-    "paragraph": "Страницата не е намерена!"
+
+  "login_screen": {
+    "heading": "Вход",
+    "option_button": "Нямаш акаунт?",
+
+    "inputs": {
+      "labels": {
+        "email": "Е-Майл",
+        "password": "Парола"
+      }
+    },
+
+    "button": "Готово"
+  },
+
+  "register_screen": {
+    "heading": "Регистрация",
+    "option_button": "Вече притежаваш акаунт?",
+
+    "inputs": {
+      "labels": {
+        "username": "Потребителско име",
+        "email": "Е-Майл",
+        "password": "Парола",
+        "re_password": "Повтори Парола"
+      }
+    },
+
+    "button": "Готово"
   }
 }

@@ -2,68 +2,89 @@
 import React, { useState } from 'react';
 import './index.scss';
 
+// Translation
+import { useTranslation } from 'react-i18next';
+
 // Components
 import Header from 'shared/components/Header';
 import CategoryCard from './components/CategoryCard';
 
+// remove action from form
+// should be constant >> url="/search?q=home"
+
 const HomePrivate = () => {
   const [searchQuery, setSearchQuery] = useState('');
+  const { t } = useTranslation();
+
+  const categoryCards = [
+    {
+      icon: '/img/home.svg',
+      title: t('home_screen.private.categories.titles.home'),
+      url: '/search?query=home',
+    },
+    {
+      icon: '/img/technology.svg',
+      title: t('home_screen.private.categories.titles.technology'),
+      url: '/search?query=technology',
+    },
+    {
+      icon: '/img/automobile.svg',
+      title: t('home_screen.private.categories.titles.automobile'),
+      url: '/search?query=automobile',
+    },
+    {
+      icon: '/img/sport.svg',
+      title: t('home_screen.private.categories.titles.sport'),
+      url: '/search?query=sport',
+    },
+    {
+      icon: '/img/tshirt.svg',
+      title: t('home_screen.private.categories.titles.cloths'),
+      url: '/search?query=cloths',
+    },
+    {
+      icon: '/img/pets.svg',
+      title: t('home_screen.private.categories.titles.pets'),
+      url: '/search?query=pets',
+    },
+  ];
 
   return (
-    <main className="home-private pb-1">
+    <main className="home-private">
       <Header />
-      <form className="search container-fluid px-1" action="/search">
-        <div className="row mx-auto justify-content-center">
-          <div className="search-col col-11 col-md-3 d-flex">
+      <form className="search" action="/search">
+        <section className="d-flex mx-auto justify-content-center w-100">
+          <article className="search-col d-flex p-0 w-100">
             <input
               type="text"
-              name="q"
-              placeholder="What are you searching?"
-              className="px-3 py-2"
+              name="query"
+              placeholder={t('home_screen.private.input.placeholder')}
               onChange={(e) => setSearchQuery(e.target.value)}
               value={searchQuery}
             />
-            <div className={`col-auto p-0 ${searchQuery ? 'active-btn' : ''}`}>
-              <button className="search-btn d-flex justify-content-center align-items-center">
-                <i className="fas fa-search" />
+            <div className="p-0">
+              <button
+                className={`search-btn h-100 border-0 ${
+                  searchQuery ? 'app-bg-primary' : 'app-bg-secondary'
+                } d-flex justify-content-center align-items-center`}
+              >
+                <i className="fas fa-search app-text-white" />
               </button>
             </div>
-          </div>
-        </div>
+          </article>
+        </section>
       </form>
 
-      <section className="home-one mt-4 px-4">
-        <h2 className="mt-5 mb-4 mx-2">Category</h2>
+      <section className="home-one mt-4">
+        <h2 className="mt-5 mb-4 mx-2">{t('home_screen.private.heading')}</h2>
         <article className="container-fluid justify-content-center align-items-center">
-          <div className="row">
-            <div className="col-6 p-2 col-sm-3 col-md-2 p-md-2">
-              <CategoryCard icon="/img/home.svg" title="Home" url="/search?q=home" />
-            </div>
-
-            <div className="col-6 p-2 col-sm-3 col-md-2 p-md-2">
-              <CategoryCard
-                icon="/img/technology.svg"
-                title="Technology"
-                url="/search?q=technology"
-              />
-            </div>
-
-            <div className="col-6 p-2 col-sm-3 col-md-2 p-md-2">
-              <CategoryCard icon="/img/car.svg" title="Automobile" url="/search?q=automobile" />
-            </div>
-
-            <div className="col-6 p-2 col-sm-3 col-md-2 p-md-2">
-              <CategoryCard icon="/img/sport.svg" title="Sport" url="/search?q=sport" />
-            </div>
-
-            <div className="col-6 p-2 col-sm-3 col-md-2 p-md-2">
-              <CategoryCard icon="/img/tshirt.svg" title="Cloths" url="/search?q=cloths" />
-            </div>
-
-            <div className="col-6 p-2 col-sm-3 col-md-2 p-md-2">
-              <CategoryCard icon="/img/animal.svg" title="Pets" url="/search?q=pets" />
-            </div>
-          </div>
+          <section className="row">
+            {categoryCards.map((card) => (
+              <article className="col-6 p-2 col-sm-3 col-md-2 p-md-2">
+                <CategoryCard {...card} />
+              </article>
+            ))}
+          </section>
         </article>
       </section>
     </main>

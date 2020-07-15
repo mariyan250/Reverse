@@ -2,13 +2,13 @@
 
 .home {
   .auth-m {
-    right: 4.5rem;
-    top: 5rem;
+    right: to-rem(62px);
+    top: to-rem(72px);
   }
 
   .burger-menu {
-    top: 2rem;
-    right: 2rem;
+    top: to-rem(28px);
+    right: to-rem(28px);
   }
 
   .home-intro {
@@ -16,96 +16,68 @@
     background-position: 10%;
     background-size: cover;
 
-    .black-layer {
-      background: $background-black-transparent;
-
-      h2,
-      h3 {
-        color: $text-white;
-      }
-
-      h2 {
-        font-size: 48px;
-
-        span {
-          background: $background-primary;
-        }
-      }
-
-      h3 {
-        font-size: 28px;
-      }
-
-      i {
-        font-size: 36px;
-        color: $text-white;
-        top: 1.5rem;
-        right: 1.7rem;
-      }
-    }
-
     .pulsing-arrow {
-      bottom: 2rem;
+      bottom: to-rem(28px);
 
       @include media-breakpoint-md-up {
-        bottom: 3rem;
+        bottom: to-rem(42px);
       }
     }
   }
 
   .one {
     hr {
-      width: 4rem;
-      height: 0.3rem;
-      background: $red;
+      width: to-rem(48px);
+      height: to-rem(4px);
       border-radius: 2rem;
     }
 
     & > article {
+      padding: 0 to-rem(16px);
+
       @include media-breakpoint-lg-up {
-        padding: 0 6rem !important;
-
-        h2 {
-          margin-bottom: 6rem !important;
-        }
-
-        article {
-          p {
-            max-width: 32rem;
-          }
-
-          img {
-            border-radius: 0.5rem;
-
-            @include media-breakpoint-md-up {
-              width: 450px;
-            }
-          }
-        }
+        padding: 0 to-rem(92px);
       }
 
       @include media-breakpoint-xl-up {
-        padding: 0 10rem !important;
+        padding: 0 10rem;
       }
 
       h2 {
-        font-size: 32px;
+        margin-bottom: to-rem(42px);
+
+        @include media-breakpoint-lg-up {
+          margin-bottom: to-rem(68px);
+        }
       }
 
-      p {
-        font-size: 20px;
-        margin: 0;
-        padding: 0;
+      article {
+        p {
+          max-width: to-rem(400px);
+        }
+
+        img {
+          border-radius: to-rem(5px);
+
+          @include media-breakpoint-md-up {
+            width: to-rem(450px);
+          }
+        }
       }
     }
-  }
 
-  .two {
-    background: $background-gray !important;
-    article {
-      @include media-breakpoint-md-up {
-        height: 100% !important;
-      }
+    p {
+      font-size: to-rem(20px);
+    }
+  }
+}
+
+.two {
+  article {
+    height: 100vh;
+
+    @include media-breakpoint-md-up {
+      height: 100%;
     }
   }
 }

@@ -1,9 +1,71 @@
 {
   "home_screen": {
-    "title": "Welcome to this awesome React Redux starter!"
+    "private": {
+      "heading": "Categories",
+      "input": {
+        "placeholder": "What are you searching?"
+      },
+
+      "categories": {
+        "titles": {
+          "home": "Home",
+          "technology": "Technology",
+          "automobile": "Automobile",
+          "sport": "Sport",
+          "cloths": "Cloths",
+          "pets": "Pets"
+        },
+
+        "img_alt": "Category"
+      }
+    },
+    "public": {
+      "heading": "Welcome to",
+      "app_name": "Reverse",
+      "second_heading": "Sell your items now!",
+
+      "cards": {
+        "one": "Sell your items.",
+        "two": "Ship your product.",
+        "three": "Meet new people."
+      },
+
+      "section_one": {
+        "heading": "Description",
+        "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias numquam sequi inventore delectus dolore nisi quaerat cum, consectetur, dolorum necessitatibus quos velit fuga consequatur quam quasi expedita minus est repellendus laborum magni accusamus nostrum praesentium nemo alias! Molestias, dicta sit"
+      },
+
+      "img": {
+        "alt": "Cloths"
+      }
+    }
   },
-  "not_found_screen": {
-    "heading": "Oops!",
-    "paragraph": "Page not found!"
+
+  "login_screen": {
+    "heading": "Sign In",
+    "option_button": "Don't have an account?",
+
+    "inputs": {
+      "labels": {
+        "email": "Email",
+        "password": "Password"
+      }
+    },
+
+    "button": "Done"
+  },
+
+  "register_screen": {
+    "heading": "Sign Up",
+    "option_button": "Already have an account?",
+
+    "inputs": {
+      "labels": {
+        "username": "Username",
+        "email": "Email",
+        "password": "Password",
+        "re_password": "Repeat Password"
+      }
+    }
   }
 }

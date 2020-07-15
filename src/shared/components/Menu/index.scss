@@ -1,8 +1,9 @@
 @import '../../../index.scss';
 
+// refactor
 .menu {
   background: $background-black-transparent;
-  height: 18rem;
+  height: 18rem; // why it is used? for me it is not needed. :)
 
   ul {
     li {

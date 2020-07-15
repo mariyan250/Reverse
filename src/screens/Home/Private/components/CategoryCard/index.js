@@ -2,18 +2,24 @@
 import React from 'react';
 import './index.scss';
 
+// Router
 import { Link } from 'react-router-dom';
 
-function CategoryCard(props) {
+// Translation
+import { useTranslation } from 'react-i18next';
+
+function CategoryCard({ className, url, icon, title }) {
+  const { t } = useTranslation();
+
   return (
-    <section {...props}>
-      <article className="category-card">
+    <section className={className}>
+      <article className="category-card py-4 box-shadow">
         <Link
-          to={props.url}
-          className="category-link d-flex flex-column justify-content-center align-items-center h-100 text-decoration-none"
+          to={url}
+          className="category-link d-flex flex-column justify-content-center align-items-center text-decoration-none app-text-secondary"
         >
-          <img src={props.icon} className="mt-2" alt="" />
-          <p className="position-relative">{props.title}</p>
+          <img src={icon} className="mt-2" alt={t('home_screen.private.categories.img_alt')} />
+          <p className="position-relative">{title}</p>
         </Link>
       </article>
     </section>

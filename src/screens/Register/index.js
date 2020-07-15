@@ -5,15 +5,63 @@ import './index.scss';
 // Router
 import { Link } from 'react-router-dom';
 
+// Translation
+import { useTranslation } from 'react-i18next';
+
 // Components
 import Input from 'shared/components/auth/Input';
 import Button from 'shared/components/auth/Button';
 
 const Register = () => {
-  const [name, setName] = useState('');
+  const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [rePassword, setRePassword] = useState('');
+
+  const { t } = useTranslation();
+
+  const inputs = [
+    {
+      name: 'username',
+      label: t('register_screen.inputs.labels.username'),
+      type: 'text',
+      value: username,
+      required: true,
+      onChange(e) {
+        setUsername(e.target.value);
+      },
+    },
+    {
+      name: 'email',
+      label: t('register_screen.inputs.labels.email'),
+      type: 'email',
+      value: email,
+      required: true,
+      onChange(e) {
+        setEmail(e.target.value);
+      },
+    },
+    {
+      name: 'password',
+      label: t('register_screen.inputs.labels.password'),
+      type: 'password',
+      value: password,
+      required: true,
+      onChange(e) {
+        setPassword(e.target.value);
+      },
+    },
+    {
+      name: 'rePassword',
+      label: t('register_screen.inputs.labels.re_password'),
+      type: 'password',
+      value: rePassword,
+      required: true,
+      onChange(e) {
+        setRePassword(e.target.value);
+      },
+    },
+  ];
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -21,58 +69,20 @@ const Register = () => {
   };
 
   return (
-    <main className='register vh-100 d-flex flex-column justify-content-center py-5 px-4 my-0 mx-auto'>
-      <form className='d-flex flex-column justify-content-center' onSubmit={handleRegister}>
-        <h2 className='text-center mt-4 mb-5 mt-md-2'>Sign Up</h2>
-
-        <section className='mb-4 mt-2'>
-          <Input
-            name='username'
-            label='Full Name'
-            type='text'
-            onChange={(e) => setName(e.target.value)}
-            value={name}
-            required
-          />
-        </section>
-
-        <section className='mb-4'>
-          <Input
-            name='email'
-            label='Email'
-            type='email'
-            onChange={(e) => setEmail(e.target.value)}
-            value={email}
-            required
-          />
-        </section>
-
-        <section className='mb-4'>
-          <Input
-            name='password'
-            label='Password'
-            type='password'
-            onChange={(e) => setPassword(e.target.value)}
-            value={password}
-            required
-          />
-        </section>
-
-        <section className='mb-4'>
-          <Input
-            name='rePassword'
-            label='Repeat Password'
-            type='password'
-            onChange={(e) => setRePassword(e.target.value)}
-            value={rePassword}
-            required
-          />
-        </section>
-
-        <Button text='Submit' />
-
-        <Link to='/login' className='register-btn mt-4 mb-3 align-self-end text-decoration-none'>
-          Already have an account?
+    <main className="register vh-100 d-flex flex-column justify-content-center py-5 px-4 my-0 mx-auto">
+      <form className="d-flex flex-column justify-content-center" onSubmit={handleRegister}>
+        <h1 className="text-center mb-5">{t('register_screen.heading')}</h1>
+        {inputs.map((input) => (
+          <section className="mb-4">
+            <Input {...input} />
+          </section>
+        ))}
+        <Button text={t('register_screen.button')} />
+        <Link
+          to="/login"
+          className="register-btn app-text-secondary mt-4 mb-3 align-self-end text-decoration-none"
+        >
+          {t('register_screen.option_button')}
         </Link>
       </form>
     </main>

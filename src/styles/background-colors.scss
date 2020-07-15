@@ -1,0 +1,33 @@
+@import './variables.scss';
+
+.app-bg-primary {
+  background: $primary;
+}
+
+.app-bg-secondary {
+  background: $secondary;
+}
+
+.app-bg-white {
+  background: $white;
+}
+
+.app-bg-gray {
+  background: $gray;
+}
+
+.app-bg-gray-darker {
+  background: $gray-darker;
+}
+
+.app-bg-silver {
+  background: $silver;
+}
+
+.app-bg-black-transparent {
+  background: $black-transparent;
+}
+
+.app-bg-primary-hover {
+  background: $primary-hover;
+}

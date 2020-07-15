@@ -9,6 +9,9 @@ import { NavLink } from 'react-router-dom';
 import Hamburger from 'shared/components/Hamburger';
 import Menu from 'shared/components/Menu';
 
+// TRANSLATIONS
+// USE LOGO COMPONENT
+// const ROUTES on global level?
 function Header() {
   const [burgerOpened, setBurgerOpened] = useState(false);
 
