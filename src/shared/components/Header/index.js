@@ -5,48 +5,35 @@ import './index.scss';
 // Router
 import { NavLink } from 'react-router-dom';
 
+// Routes
+import { routes } from 'shared/constants/routes';
+
+// Translation
+import { useTranslation } from 'react-i18next';
+
 // Components
 import Hamburger from 'shared/components/Hamburger';
 import Menu from 'shared/components/Menu';
 
-// TRANSLATIONS
-// USE LOGO COMPONENT
-// const ROUTES on global level?
 function Header() {
   const [burgerOpened, setBurgerOpened] = useState(false);
+  const { t } = useTranslation();
+
+  const links = [{ to: routes.dashboard, iconName: 'fas fa-home', text: t('header.links.home') }];
 
   return (
-    <header className="header position-fixed py-3 d-flex justify-content-between align-items-center">
-      <h1>Reverse</h1>
+    <header className="header app-bg-secondary position-fixed py-3 px-4 px-md-5 d-flex justify-content-between align-items-center w-100">
+      <h1 className="app-text-white">{t('header.heading')}</h1>
 
       <ul className="d-none d-md-flex h-100 align-items-center m-0">
-        <li className="ml-5">
-          <NavLink to="/dashboard" className="link" activeClassName="active-link">
-            <i className="fas fa-home mr-3" />
-            Home
-          </NavLink>
-        </li>
-
-        <li className="ml-5">
-          <NavLink to="/login" className="link" activeClassName="active-link">
-            <i className="fas fa-folder mr-3" />
-            My Items
-          </NavLink>
-        </li>
-
-        <li className="ml-5">
-          <NavLink to="/register" className="link" activeClassName="active-link">
-            <i className="fas fa-envelope mr-3" />
-            Messages
-          </NavLink>
-        </li>
-
-        <li className="ml-5">
-          <NavLink to="/register" className="link" activeClassName="active-link">
-            <i className="fas fa-cog mr-3" />
-            Settings
-          </NavLink>
-        </li>
+        {links.map((link) => (
+          <li className="ml-5">
+            <NavLink to={link.to} className="link app-text-white">
+              <i className={`${link.iconName} mr-3`} />
+              {link.text}
+            </NavLink>
+          </li>
+        ))}
       </ul>
 
       <Hamburger

@@ -80,6 +80,19 @@
     "button": "Готово"
   },
 
+  "header": {
+    "heading": "Reverse",
+    "links": {
+      "home": "Начало"
+    }
+  },
+
+  "menu": {
+    "links": {
+      "home": "Начало"
+    }
+  },
+
   "search_screen": {
     "heading": "Продукти"
   }
