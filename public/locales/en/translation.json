@@ -74,5 +74,9 @@
         "re_password": "Repeat Password"
       }
     }
+  },
+
+  "search_screen": {
+    "heading": "Items"
   }
 }

@@ -78,5 +78,9 @@
     },
 
     "button": "Готово"
+  },
+
+  "search_screen": {
+    "heading": "Продукти"
   }
 }
