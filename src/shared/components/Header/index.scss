@@ -6,14 +6,14 @@ header {
 
   ul {
     li {
-      .link {
+      a {
         font-size: to-rem(16px);
       }
     }
   }
 
   .header-menu {
-    top: 9.5%;
+    top: 9.2%;
     left: 0;
     z-index: 1;
   }

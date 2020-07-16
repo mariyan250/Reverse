@@ -3,10 +3,7 @@
 .menu {
   ul {
     li {
-      height: to-rem(28px);
-
-      .menu-link {
-        flex: 1;
+      a {
         font-size: to-rem(16px);
 
         i {

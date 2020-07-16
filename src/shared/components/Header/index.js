@@ -19,29 +19,31 @@ function Header() {
   const [burgerOpened, setBurgerOpened] = useState(false);
   const { t } = useTranslation();
 
-  const links = [{ to: routes.dashboard, iconName: 'fas fa-home', text: t('header.links.home') }];
+  const links = [{ to: routes.dashboard, iconName: 'fas fa-home', text: 'header.links.home' }];
 
   return (
-    <header className="header app-bg-secondary position-sticky py-3 px-4 px-md-5 d-flex justify-content-between align-items-center w-100">
+    <header className="header app-bg-secondary position-sticky py-3 px-4 px-md-5 d-flex justify-content-between align-items-center">
       <h1 className="app-text-white">{t('header.heading')}</h1>
 
       <ul className="d-none d-md-flex h-100 align-items-center m-0">
         {links.map((link) => (
           <li className="ml-5">
-            <NavLink to={link.to} className="link app-text-white">
+            <NavLink to={link.to} className="app-text-white">
               <i className={`${link.iconName} mr-3`} />
-              {link.text}
+              {t(link.text)}
             </NavLink>
           </li>
         ))}
       </ul>
 
       <Hamburger
-        className={`hamburger d-md-none ${burgerOpened ? 'toggled' : ''}`}
+        className={`d-md-none ${burgerOpened ? 'toggled' : ''}`}
         onClick={() => setBurgerOpened(!burgerOpened)}
       />
 
-      {burgerOpened && <Menu className="header-menu position-fixed d-md-none w-100" />}
+      {burgerOpened && (
+        <Menu className="header-menu position-fixed d-md-none w-100" links={links} />
+      )}
     </header>
   );
 }
