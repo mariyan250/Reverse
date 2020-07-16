@@ -19,52 +19,53 @@ const HomePrivate = () => {
   const categoryCards = [
     {
       icon: '/img/home.svg',
-      title: t('home_screen.private.categories.titles.home'),
+      title: 'home_screen.private.categories.titles.home',
       url: searchRoutes.home,
     },
     {
       icon: '/img/technology.svg',
-      title: t('home_screen.private.categories.titles.technology'),
+      title: 'home_screen.private.categories.titles.technology',
       url: searchRoutes.technology,
     },
     {
       icon: '/img/automobile.svg',
-      title: t('home_screen.private.categories.titles.automobile'),
+      title: 'home_screen.private.categories.titles.automobile',
       url: searchRoutes.automobile,
     },
     {
       icon: '/img/sport.svg',
-      title: t('home_screen.private.categories.titles.sport'),
+      title: 'home_screen.private.categories.titles.sport',
       url: searchRoutes.sport,
     },
     {
       icon: '/img/tshirt.svg',
-      title: t('home_screen.private.categories.titles.cloths'),
+      title: 'home_screen.private.categories.titles.cloths',
       url: searchRoutes.cloths,
     },
     {
       icon: '/img/pets.svg',
-      title: t('home_screen.private.categories.titles.pets'),
+      title: 'home_screen.private.categories.titles.pets',
       url: searchRoutes.pets,
     },
   ];
 
   return (
-    <main className="home-private">
+    <>
       <Header />
-      <form className="search" action="/search">
-        <section className="d-flex mx-auto justify-content-center w-100">
-          <article className="search-col d-flex p-0 w-100">
+      <main className="home-private">
+        <form className="mx-auto my-5 px-4" action="/search">
+          <article className="d-flex">
             <input
               type="text"
               name="query"
               placeholder={t('home_screen.private.input.placeholder')}
               onChange={(e) => setSearchQuery(e.target.value)}
               value={searchQuery}
+              required
             />
-            <div className="p-0">
+            <div>
               <button
-                className={`search-btn h-100 border-0 ${
+                className={`h-100 border-0 ${
                   searchQuery ? 'app-bg-primary' : 'app-bg-secondary'
                 } d-flex justify-content-center align-items-center`}
               >
@@ -72,22 +73,18 @@ const HomePrivate = () => {
               </button>
             </div>
           </article>
-        </section>
-      </form>
+        </form>
 
-      <section className="home-one mt-4">
-        <h2 className="mt-5 mb-4 mx-2">{t('home_screen.private.heading')}</h2>
-        <article className="container-fluid justify-content-center align-items-center">
-          <section className="row">
+        <section className="home-one px-4">
+          <h2 className="mb-4">{t('home_screen.private.heading')}</h2>
+          <article className="card-container">
             {categoryCards.map((card) => (
-              <article className="col-6 p-2 col-sm-3 col-md-2 p-md-2">
-                <CategoryCard {...card} />
-              </article>
+              <CategoryCard {...card} />
             ))}
-          </section>
-        </article>
-      </section>
-    </main>
+          </article>
+        </section>
+      </main>
+    </>
   );
 };
 

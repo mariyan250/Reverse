@@ -1,13 +1,12 @@
 @import '../../../../../index.scss';
 
 .category-card {
-  .category-link {
-    img {
-      width: 4rem;
-    }
+  img {
+    width: to-rem(56px);
+  }
 
-    p {
-      top: 1rem;
+  p {
+    @include media-breakpoint-md-up {
       font-size: to-rem(16px);
     }
   }

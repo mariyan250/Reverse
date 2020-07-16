@@ -29,7 +29,6 @@
     hr {
       width: to-rem(48px);
       height: to-rem(4px);
-      border-radius: 2rem;
     }
 
     & > article {
@@ -54,6 +53,7 @@
       article {
         p {
           max-width: to-rem(400px);
+          font-size: to-rem(20px);
         }
 
         img {
@@ -62,10 +62,6 @@
           }
         }
       }
-    }
-
-    p {
-      font-size: to-rem(20px);
     }
   }
 }

@@ -5,26 +5,26 @@ import './index.scss';
 // Router
 import { Link } from 'react-router-dom';
 
+// Routes
+import { routes } from 'shared/constants/routes';
+
 // Translation
 import { useTranslation } from 'react-i18next';
 
-function AuthModal({ className = '' }) {
+function AuthModal({ className }) {
   const { t } = useTranslation();
 
   const links = [
-    { title: t('home_screen.public.auth_modal.links.login'), route: '/login' },
-    { title: t('home_screen.public.auth_modal.links.register'), route: '/register' },
+    { title: 'home_screen.public.auth_modal.links.login', route: routes.login },
+    { title: 'home_screen.public.auth_modal.links.register', route: routes.register },
   ];
 
   return (
     <section className={className}>
-      <article className="auth-modal d-flex flex-column justify-content-between align-items-center">
+      <article className="auth-modal overflow-hidden app-bg-white rounded">
         {links.map((link) => (
-          <Link
-            to={link.route}
-            className="auth-link w-100 d-flex justify-content-center align-items-center"
-          >
-            {link.title}
+          <Link to={link.route} className="d-block text-center app-text-primary py-3">
+            {t(link.title)}
           </Link>
         ))}
       </article>

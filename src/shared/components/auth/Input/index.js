@@ -6,13 +6,7 @@ function Input({ name, label, type, required, onChange }) {
   return (
     <section className="auth-input">
       <label htmlFor={name}>{label}</label>
-      <input
-        className="auth-input p-1"
-        type={type}
-        name={name}
-        required={required}
-        onChange={onChange}
-      />
+      <input className="p-1" type={type} name={name} required={required} onChange={onChange} />
     </section>
   );
 }

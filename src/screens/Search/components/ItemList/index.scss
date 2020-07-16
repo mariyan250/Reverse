@@ -1,6 +1,29 @@
 @import '../../../../index.scss';
 
 .item-list {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: to-rem(24px) to-rem(14px);
+
+    @include media-breakpoint-sm-up {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: to-rem(14px);
+    }
+
+    @include media-breakpoint-md-up {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include media-breakpoint-lg-up {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include media-breakpoint-xl-up {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
   & > h2 {
     margin-top: to-rem(92px);
     margin-bottom: to-rem(28px);

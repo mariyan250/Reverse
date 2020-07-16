@@ -5,16 +5,16 @@ import './index.scss';
 function Arrow(props) {
   return (
     <section className={props.className}>
-      <section className="arrow d-flex flex-column">
-        <article className="row d-flex mb-3">
+      <section className="arrow">
+        <article className="d-flex mb-3">
           <span className="app-bg-white"></span>
           <span className="app-bg-white"></span>
         </article>
-        <article className="row d-flex mb-3">
+        <article className="d-flex mb-3">
           <span className="app-bg-white"></span>
           <span className="app-bg-white"></span>
         </article>
-        <article className="row d-flex">
+        <article className="d-flex">
           <span className="app-bg-white"></span>
           <span className="app-bg-white"></span>
         </article>

@@ -22,7 +22,7 @@ function Header() {
   const links = [{ to: routes.dashboard, iconName: 'fas fa-home', text: t('header.links.home') }];
 
   return (
-    <header className="header app-bg-secondary position-fixed py-3 px-4 px-md-5 d-flex justify-content-between align-items-center w-100">
+    <header className="header app-bg-secondary position-sticky py-3 px-4 px-md-5 d-flex justify-content-between align-items-center w-100">
       <h1 className="app-text-white">{t('header.heading')}</h1>
 
       <ul className="d-none d-md-flex h-100 align-items-center m-0">

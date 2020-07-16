@@ -1,7 +1,7 @@
-// React and Style
+// React
 import React, { useState, useEffect } from 'react';
-import './index.scss';
 
+// Mock data
 import items from './items.json';
 
 // Components

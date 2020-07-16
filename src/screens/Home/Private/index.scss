@@ -1,27 +1,10 @@
 @import '../../../index';
 
 .home-private {
-  .search {
-    margin-top: to-rem(100px);
-    padding: 0 to-rem(26px);
+  form {
+    max-width: to-rem(500px);
 
-    @include media-breakpoint-sm-up {
-      padding: 0 to-rem(150px);
-    }
-
-    @include media-breakpoint-md-up {
-      padding: 0 to-rem(250px);
-    }
-
-    @include media-breakpoint-lg-up {
-      padding: 0 to-rem(350px);
-    }
-
-    @include media-breakpoint-xl-up {
-      padding: 0 to-rem(450px);
-    }
-
-    .search-col {
+    article {
       input {
         font-size: to-rem(16px);
         padding: to-rem(8px) to-rem(15px);
@@ -33,9 +16,8 @@
 
       button {
         width: to-rem(52px);
-        border-radius: to-rem(4px);
         margin-left: to-rem(-3px);
-        transition: background 0.5s; // To - var
+        transition: 0.5s;
 
         @include media-breakpoint-md-up {
           padding: to-rem(12px) to-rem(14px);
@@ -50,10 +32,26 @@
   }
 
   .home-one {
-    padding: 0 to-rem(21px);
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: to-rem(14px);
 
-    @include media-breakpoint-lg-up {
-      padding: 0 to-rem(92px);
+      @include media-breakpoint-sm-up {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @include media-breakpoint-md-up {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      @include media-breakpoint-lg-up {
+        grid-template-columns: repeat(5, 1fr);
+      }
+
+      @include media-breakpoint-xl-up {
+        grid-template-columns: repeat(6, 1fr);
+      }
     }
   }
 }

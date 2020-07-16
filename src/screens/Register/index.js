@@ -72,19 +72,18 @@ const Register = () => {
   };
 
   return (
-    <main className="register vh-100 d-flex flex-column justify-content-center py-5 px-4 my-0 mx-auto">
-      <form className="d-flex flex-column justify-content-center" onSubmit={handleRegister}>
+    <main className="register d-flex vh-100 align-items-center justify-content-center px-4 mx-auto">
+      <form onSubmit={handleRegister}>
         <h1 className="text-center mb-5">{t('register_screen.heading')}</h1>
+
         {inputs.map((input) => (
           <section className="mb-4">
             <Input {...input} />
           </section>
         ))}
-        <Button text={t('register_screen.button')} />
-        <Link
-          to={routes.login}
-          className="register-btn app-text-secondary mt-4 mb-3 align-self-end text-decoration-none"
-        >
+
+        <Button text={t('register_screen.button')} className="my-3" />
+        <Link to={routes.login} className="app-text-secondary mt-4 mb-3 text-decoration-none">
           {t('register_screen.option_button')}
         </Link>
       </form>

@@ -1,7 +1,7 @@
 @import '../../../../../index.scss';
 
 .arrow {
-  .row {
+  article {
     &:nth-child(1) {
       animation: appear 3s infinite 0.2s;
     }

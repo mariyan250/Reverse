@@ -30,6 +30,9 @@ import HomePrivate from 'screens/Home/Private';
 import NotFound from 'screens/NotFound';
 import Search from 'screens/Search';
 
+// Components
+import Header from 'shared/components/Header';
+
 const initialState = {};
 const history = createBrowserHistory();
 

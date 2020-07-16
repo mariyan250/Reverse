@@ -2,7 +2,9 @@
 
 .register {
   form {
-    .register-btn {
+    width: to-rem(350px);
+
+    a {
       font-size: to-rem(16px);
     }
   }

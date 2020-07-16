@@ -12,9 +12,9 @@ function ItemList({ items }) {
   const { t } = useTranslation();
 
   return (
-    <section className="item-list container-fluid px-4">
+    <section className="item-list px-4">
       <h2>{t('search_screen.heading')}</h2>
-      <ul className="row py-5 app-bg-gray-darker">
+      <ul className="app-bg-gray-darker pt-5 px-4">
         {items && items.map((item) => <Item {...item} key={item.id} />)}
       </ul>
     </section>

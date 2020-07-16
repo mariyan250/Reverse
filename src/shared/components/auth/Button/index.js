@@ -2,11 +2,13 @@
 import React from 'react';
 import './index.scss';
 
-function Button({ text, onClick }) {
+function Button({ text, onClick, className }) {
   return (
-    <button className="auth-btn app-bg-primary border-0 app-text-white mt-4 p-2" onClick={onClick}>
-      {text}
-    </button>
+    <section className={`auth-btn ${className}`}>
+      <button className="app-bg-primary border-0 app-text-white w-100 p-2" onClick={onClick}>
+        {text}
+      </button>
+    </section>
   );
 }
 

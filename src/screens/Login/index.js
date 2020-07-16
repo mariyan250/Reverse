@@ -51,18 +51,18 @@ const Login = () => {
 
   return (
     <main className="login d-flex vh-100 align-items-center justify-content-center px-4">
-      <form onSubmit={handleLogin} className="d-flex flex-column">
+      <form onSubmit={handleLogin}>
         <h1 className="text-center mb-5">{t('login_screen.heading')}</h1>
+
         {inputs.map((input) => (
           <section className="mb-4">
             <Input {...input} />
           </section>
         ))}
-        <Button text={t('login_screen.button')} />
-        <Link
-          to={routes.register}
-          className="login-btn app-text-secondary mt-4 align-self-end text-decoration-none"
-        >
+
+        <Button text={t('login_screen.button')} className="my-3" />
+
+        <Link to={routes.register} className="app-text-secondary text-decoration-none">
           {t('login_screen.option_button')}
         </Link>
       </form>
