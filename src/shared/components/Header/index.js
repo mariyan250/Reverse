@@ -22,7 +22,7 @@ function Header() {
   const links = [
     { to: routes.dashboard, text: 'header.links.home' },
     { to: routes.login, text: 'header.links.login' },
-    { to: routes.login, text: 'header.links.register' },
+    { to: routes.register, text: 'header.links.register' },
   ];
 
   return (
