@@ -1,30 +1,27 @@
 // React
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
-// Mock data
-import items from './items.json';
+// Connect Redux
+import { connect } from 'react-redux';
+import { getPosts } from '../../store/actions/postActions';
 
 // Components
 import Header from 'shared/components/Header';
 import ItemList from './components/ItemList';
 
-function Search({ location: { search } }) {
-  const [data, setData] = useState(null);
-
+function Search(props) {
   useEffect(() => {
-    const query = search.split('=')[1];
-    const itemsMatch = items.filter(
-      (item) => item.category === query || item.name.toLowerCase().includes(query.toLowerCase()),
-    );
-    setData(itemsMatch);
-  }, [search]);
+    props.getPosts();
+  }, [props]);
 
   return (
     <main className="search">
       <Header />
-      <ItemList items={data} />
+      <ItemList items={props.posts} />
     </main>
   );
 }
 
-export default Search;
+const mapStateToProps = (state) => ({ posts: state.posts.items });
+
+export default connect(mapStateToProps, { getPosts })(Search);

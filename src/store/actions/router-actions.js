@@ -1,7 +1,7 @@
-import { GET_ROUTER } from '../action-types/action-types';
+import { GET_ROUTER } from '../action-types';
 
-export const getRouterState = () => {
+export function getRouterState() {
   return {
     type: GET_ROUTER,
   };
-};
+}
