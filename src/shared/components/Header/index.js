@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import './index.scss';
 
 // Router
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 // Routes
 import { routes } from 'shared/constants/routes';
@@ -19,17 +19,25 @@ function Header() {
   const [burgerOpened, setBurgerOpened] = useState(false);
   const { t } = useTranslation();
 
-  const links = [{ to: routes.dashboard, iconName: 'fas fa-home', text: 'header.links.home' }];
+  const links = [
+    { to: routes.dashboard, text: 'header.links.home' },
+    { to: routes.login, text: 'header.links.login' },
+    { to: routes.login, text: 'header.links.register' },
+  ];
 
   return (
-    <header className="header app-bg-secondary position-sticky py-3 px-4 px-md-5 d-flex justify-content-between align-items-center">
-      <h1 className="app-text-white">{t('header.heading')}</h1>
+    <header className="app-bg-secondary position-sticky px-4 px-md-5 d-flex justify-content-between align-items-center">
+      <Link to="/">
+        <h1 className="app-text-white">{t('header.heading')}</h1>
+      </Link>
 
       <ul className="d-none d-md-flex h-100 align-items-center m-0">
         {links.map((link) => (
-          <li className="ml-5">
-            <NavLink to={link.to} className="app-text-white">
-              <i className={`${link.iconName} mr-3`} />
+          <li className="ml-5 h-100">
+            <NavLink
+              to={link.to}
+              className="app-text-white h-100 d-flex justify-content-center align-items-center"
+            >
               {t(link.text)}
             </NavLink>
           </li>

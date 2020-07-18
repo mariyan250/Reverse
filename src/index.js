@@ -30,7 +30,6 @@ import HomePrivate from 'screens/Home/Private';
 import NotFound from 'screens/NotFound';
 import Search from 'screens/Search';
 
-
 const initialState = {};
 const history = createBrowserHistory();
 

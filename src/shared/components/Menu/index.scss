@@ -1,14 +1,12 @@
 @import '../../../index.scss';
 
 .menu {
-  ul {
-    li {
-      a {
-        font-size: to-rem(16px);
+  li {
+    a {
+      font-size: to-rem(16px);
 
-        i {
-          font-size: to-rem(22px);
-        }
+      i {
+        font-size: to-rem(22px);
       }
     }
   }

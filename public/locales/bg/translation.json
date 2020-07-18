@@ -83,7 +83,9 @@
   "header": {
     "heading": "Reverse",
     "links": {
-      "home": "Начало"
+      "home": "Начало",
+      "login": "Вход",
+      "register": "Регистрация"
     }
   },
 

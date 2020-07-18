@@ -1,8 +1,9 @@
 @import '../../../index.scss';
 
 header {
-  top: 0;
+  height: to-rem(60px);
   z-index: 1;
+  top: 0;
 
   ul {
     li {
@@ -13,8 +14,9 @@ header {
   }
 
   .header-menu {
-    top: 9.2%;
+    top: to-rem(60px);
     left: 0;
     z-index: 1;
+    animation: appear 1 0.5s;
   }
 }

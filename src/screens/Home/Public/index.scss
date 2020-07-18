@@ -1,20 +1,14 @@
 @import '../../../index';
 
 .home {
-  .auth-m {
-    right: to-rem(62px);
-    top: to-rem(72px);
-  }
-
-  .burger-menu {
-    top: to-rem(28px);
-    right: to-rem(28px);
-  }
-
   .home-intro {
     background: url('/img/home.jpg');
     background-position: 10%;
     background-size: cover;
+
+    & > section {
+      height: 92vh;
+    }
 
     .pulsing-arrow {
       bottom: to-rem(28px);

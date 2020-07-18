@@ -51,20 +51,20 @@
   "login_screen": {
     "heading": "Sign In",
     "option_button": "Don't have an account?",
+    "button": "Done",
 
     "inputs": {
       "labels": {
         "email": "Email",
         "password": "Password"
       }
-    },
-
-    "button": "Done"
+    }
   },
 
   "register_screen": {
     "heading": "Sign Up",
     "option_button": "Already have an account?",
+    "button": "Done",
 
     "inputs": {
       "labels": {
@@ -79,7 +79,9 @@
   "header": {
     "heading": "Reverse",
     "links": {
-      "home": "Home"
+      "home": "Home",
+      "login": "Login",
+      "register": "Register"
     }
   },
 
