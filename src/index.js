@@ -29,6 +29,7 @@ import Register from 'screens/Register';
 import HomePrivate from 'screens/Home/Private';
 import NotFound from 'screens/NotFound';
 import Search from 'screens/Search';
+import Item from 'screens/Item';
 
 const initialState = {};
 const history = createBrowserHistory();
@@ -60,6 +61,7 @@ ReactDOM.render(
       <ConnectedRouter history={history}>
         <Switch>
           <Route path={routes.search} component={Search} />
+          <Route path={routes.item} component={Item} />
           <Route path={routes.dashboard} component={HomePrivate} />
           <Route path={routes.login} component={Login} />
           <Route path={routes.register} component={Register} />

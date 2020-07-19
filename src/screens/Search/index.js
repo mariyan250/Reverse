@@ -3,16 +3,16 @@ import React, { useEffect } from 'react';
 
 // Connect Redux
 import { connect } from 'react-redux';
-import { getPosts } from '../../store/actions/post';
+import { getPosts } from 'store/actions/post';
 
 // Components
 import Header from 'shared/components/Header';
 import ItemList from './components/ItemList';
 
-function Search({ getPosts, posts }) {
+function Search({ getPosts, posts, location: { search } }) {
   useEffect(() => {
-    getPosts();
-  }, [posts]);
+    getPosts(search);
+  }, []);
 
   return (
     <main className="search">

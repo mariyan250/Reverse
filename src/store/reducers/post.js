@@ -1,7 +1,8 @@
-import { GET_POSTS } from '../action-types';
+import { GET_POSTS, GET_POST } from '../action-types';
 
 const initialState = {
   items: [],
+  item: {},
 };
 
 export function postsReducer(state = initialState, action) {
@@ -10,6 +11,12 @@ export function postsReducer(state = initialState, action) {
       return {
         ...state,
         items: action.payload,
+      };
+
+    case GET_POST:
+      return {
+        ...state,
+        item: action.payload,
       };
 
     default:

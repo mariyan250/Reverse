@@ -4,6 +4,7 @@ export const routes = {
   register: '/register',
   search: '/search',
   dashboard: '/dashboard',
+  item: '/item/:id',
 };
 
 export const searchRoutes = {
