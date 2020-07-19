@@ -3,21 +3,21 @@ import React, { useEffect } from 'react';
 
 // Connect Redux
 import { connect } from 'react-redux';
-import { getPosts } from '../../store/actions/postActions';
+import { getPosts } from '../../store/actions/post';
 
 // Components
 import Header from 'shared/components/Header';
 import ItemList from './components/ItemList';
 
-function Search(props) {
+function Search({ getPosts, posts }) {
   useEffect(() => {
-    props.getPosts();
-  }, [props]);
+    getPosts();
+  }, [posts]);
 
   return (
     <main className="search">
       <Header />
-      <ItemList items={props.posts} />
+      <ItemList items={posts} />
     </main>
   );
 }

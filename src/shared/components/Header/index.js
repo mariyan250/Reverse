@@ -1,12 +1,14 @@
 // React and Style
-import React, { useState } from 'react';
+import React from 'react';
 import './index.scss';
 
-// Router
+// Router and Routes
 import { NavLink, Link } from 'react-router-dom';
-
-// Routes
 import { routes } from 'shared/constants/routes';
+
+// Redux
+import { connect } from 'react-redux';
+import { toggleHamburger } from 'store/actions/hamburger';
 
 // Translation
 import { useTranslation } from 'react-i18next';
@@ -15,8 +17,7 @@ import { useTranslation } from 'react-i18next';
 import Hamburger from 'shared/components/Hamburger';
 import Menu from 'shared/components/Menu';
 
-function Header() {
-  const [burgerOpened, setBurgerOpened] = useState(false);
+function Header(props) {
   const { t } = useTranslation();
 
   const links = [
@@ -45,15 +46,21 @@ function Header() {
       </ul>
 
       <Hamburger
-        className={`d-md-none ${burgerOpened ? 'toggled' : ''}`}
-        onClick={() => setBurgerOpened(!burgerOpened)}
+        className={`d-md-none ${props.burgerOpened ? 'toggled' : ''}`}
+        onClick={() => props.toggleHamburger(!props.burgerOpened)}
       />
 
-      {burgerOpened && (
+      {props.burgerOpened && (
         <Menu className="header-menu position-fixed d-md-none w-100" links={links} />
       )}
     </header>
   );
 }
 
-export default Header;
+const mapStateToProps = (state) => {
+  return {
+    burgerOpened: state.hamburger.isOpen,
+  };
+};
+
+export default connect(mapStateToProps, { toggleHamburger })(Header);

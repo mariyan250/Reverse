@@ -1,4 +1,4 @@
-import * as actions from './router-actions';
+import * as actions from './router';
 import * as types from '../action-types';
 
 describe('Actions', () => {

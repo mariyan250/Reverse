@@ -13,7 +13,7 @@ import { routes } from 'shared/constants/routes';
 // Redux
 import { Provider } from 'react-redux';
 import { applyMiddleware, compose, createStore } from 'redux';
-import { RootReducer } from './store/reducers/root-reducer';
+import { RootReducer } from 'store/reducers/root';
 
 // i18n
 import './i18n';
