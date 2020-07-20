@@ -4,9 +4,9 @@
     "name": "Lenovo",
     "category": "technology",
     "images": [
-      "https://www.lenovo.com/medias/lenovo-laptop-ideapad-120s-14-hero.png?context=bWFzdGVyfHJvb3R8Nzc4NjF8aW1hZ2UvcG5nfGg3My9oNTEvOTQ5NDA1OTEyMjcxOC5wbmd8OTcyMDdhMTFlNTBjZTg0NjQyZmM0YWM3OTM2N2QxOTg1ZDU2ZmY5N2JlMTZkN2RlMzg4ZDhjYjBiNGZhZDI1Mw",
-      "https://laptop.bg/system/product_landing_pages/laptop/717/ww-lenovo-laptop-v15-gallery-1.jpg",
-      "https://www.technopolis.bg/medias/sys_master/hcd/h64/11472840622110.jpg"
+      "https://s13emagst.akamaized.net/products/15874/15873942/images/res_b8032c207f90cec1988f271d669be260.jpg",
+      "https://s13emagst.akamaized.net/products/15874/15873942/images/res_7c3af5edf9fe802790e0792c179ac9d1.jpg",
+      "https://s13emagst.akamaized.net/products/15874/15873942/images/res_b27e9a34c756b4c5814d9eccdf745b5c.jpg"
     ],
     "price": "10",
     "location": "Sofia",
@@ -18,24 +18,12 @@
     "name": "Iphone X",
     "category": "technology",
     "images": [
-      "https://restore.bg/8407-thickbox_default/apple-iphone-x-64gb-space-gray.jpg",
-      "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios12-iphone-x-tech-spec-side-buttons.png"
+      "https://s13emagst.akamaized.net/products/17043/17042927/images/res_b0edd1ced6577580eaec29aad246405d.jpg",
+      "https://s13emagst.akamaized.net/products/17043/17042927/images/res_a395977c320f9b8440947b9cb2ef40af.jpg",
+      "https://s13emagst.akamaized.net/products/17043/17042927/images/res_15bda9b038fc372c49488bb599810eda.jpg"
     ],
     "price": "10",
     "location": "Blagoevgrad",
-    "seller": "Mariyan V.",
-    "date": "8 July - 6:00"
-  },
-  {
-    "id": 5,
-    "name": "BMW M4",
-    "category": "automobile",
-    "images": [
-      "https://pvlimages.blob.core.windows.net/images/verylarge/AG10769_20062019_24.jpg",
-      "https://pvlimages.blob.core.windows.net/images/verylarge/AG10769_20062019_24.jpg"
-    ],
-    "price": "100 000",
-    "location": "Rudozem",
     "seller": "Mariyan V.",
     "date": "8 July - 6:00"
   }
