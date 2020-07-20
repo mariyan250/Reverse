@@ -4,6 +4,14 @@
 .item-screen {
   display: grid;
 
+  .image-gallery-thumbnails {
+    display: none;
+
+    @include media-breakpoint-md-up {
+      display: block;
+    }
+  }
+
   @include media-breakpoint-lg-up {
     grid-template-columns: to-rem(600px) 1fr;
   }

@@ -37,7 +37,6 @@ function Item({ getPost, post, match }) {
               showPlayButton={false}
               showBullets={true}
               showFullscreenButton={false}
-              sizes={300}
             />
           )}
         </article>
