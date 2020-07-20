@@ -17,7 +17,7 @@ export function getPosts(query) {
 }
 
 export function getPost(id) {
-  const filteredPost = data.find((post) => post.id == id);
+  const filteredPost = data.find((post) => post.id.toString() === id);
   return {
     type: GET_POST,
     payload: filteredPost,
