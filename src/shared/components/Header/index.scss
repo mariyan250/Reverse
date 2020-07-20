@@ -2,7 +2,7 @@
 
 header {
   height: to-rem(60px);
-  z-index: 1;
+  z-index: 10;
   top: 0;
 
   ul {
@@ -16,7 +16,7 @@ header {
   .header-menu {
     top: to-rem(60px);
     left: 0;
-    z-index: 1;
+    z-index: 10;
     animation: appear 1 0.5s;
   }
 }

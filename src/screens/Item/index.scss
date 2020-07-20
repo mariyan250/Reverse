@@ -1,8 +1,14 @@
 @import '~react-image-gallery/styles/scss/image-gallery.scss';
+@import '../../index.scss';
 
-.item {
-  img {
-    transform: none;
-    top: 0%;
+.item-screen {
+  display: grid;
+
+  @include media-breakpoint-lg-up {
+    grid-template-columns: to-rem(600px) 1fr;
+  }
+
+  @include media-breakpoint-xl-up {
+    grid-template-columns: to-rem(700px) 1fr;
   }
 }

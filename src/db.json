@@ -3,7 +3,11 @@
     "id": 1,
     "name": "Lenovo",
     "category": "technology",
-    "img": "https://www.lenovo.com/medias/lenovo-laptop-thinkpad-x1-carbon-gen8-subseries-hero.png?context=bWFzdGVyfHJvb3R8ODQ4NDd8aW1hZ2UvcG5nfGgyMi9oOGYvMTA2NzQ1ODc3Mjk5NTAucG5nfDQzODYxOTc5ODA0MWJhZTQyYThjOTAzZjE0NDI2NWVjYjY5MjE3MGFiMWEzODhlN2UyMGUwNGZhMWRmOTJmNzg",
+    "images": [
+      "https://www.lenovo.com/medias/lenovo-laptop-ideapad-120s-14-hero.png?context=bWFzdGVyfHJvb3R8Nzc4NjF8aW1hZ2UvcG5nfGg3My9oNTEvOTQ5NDA1OTEyMjcxOC5wbmd8OTcyMDdhMTFlNTBjZTg0NjQyZmM0YWM3OTM2N2QxOTg1ZDU2ZmY5N2JlMTZkN2RlMzg4ZDhjYjBiNGZhZDI1Mw",
+      "https://laptop.bg/system/product_landing_pages/laptop/717/ww-lenovo-laptop-v15-gallery-1.jpg",
+      "https://www.technopolis.bg/medias/sys_master/hcd/h64/11472840622110.jpg"
+    ],
     "price": "10",
     "location": "Sofia",
     "seller": "Mariyan V.",
@@ -11,29 +15,12 @@
   },
   {
     "id": 2,
-    "name": "Carpet",
-    "category": "home",
-    "img": "https://pranekilimi.bg/upload/images/za-nas.jpg?1477653524940",
-    "price": "10",
-    "location": "Sofia",
-    "seller": "Mariyan V.",
-    "date": "8 July - 6:00"
-  },
-  {
-    "id": 3,
-    "name": "Table",
-    "category": "home",
-    "img": "https://www.knoll.com/static_resources/images/products/catalog/eco/parts/642TR/642TR-KC_KC_FZ.jpg",
-    "price": "10",
-    "location": "Plovdiv",
-    "seller": "Mariyan V.",
-    "date": "8 July - 6:00"
-  },
-  {
-    "id": 4,
     "name": "Iphone X",
     "category": "technology",
-    "img": "https://restore.bg/8407-thickbox_default/apple-iphone-x-64gb-space-gray.jpg",
+    "images": [
+      "https://restore.bg/8407-thickbox_default/apple-iphone-x-64gb-space-gray.jpg",
+      "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios12-iphone-x-tech-spec-side-buttons.png"
+    ],
     "price": "10",
     "location": "Blagoevgrad",
     "seller": "Mariyan V.",
@@ -41,92 +28,15 @@
   },
   {
     "id": 5,
-    "name": "Lenovo",
-    "category": "technology",
-    "img": "https://www.lenovo.com/medias/lenovo-laptop-thinkpad-x1-carbon-gen8-subseries-hero.png?context=bWFzdGVyfHJvb3R8ODQ4NDd8aW1hZ2UvcG5nfGgyMi9oOGYvMTA2NzQ1ODc3Mjk5NTAucG5nfDQzODYxOTc5ODA0MWJhZTQyYThjOTAzZjE0NDI2NWVjYjY5MjE3MGFiMWEzODhlN2UyMGUwNGZhMWRmOTJmNzg",
-    "price": "10",
-    "location": "Smolyan",
-    "seller": "Mariyan V.",
-    "date": "8 July - 6:00"
-  },
-  {
-    "id": 6,
-    "name": "Carpet",
-    "category": "home",
-    "location": "Rudozem",
-    "img": "https://pranekilimi.bg/upload/images/za-nas.jpg?1477653524940",
-    "price": "10",
-    "seller": "Mariyan V.",
-    "date": "8 July - 6:00"
-  },
-  {
-    "id": 7,
-    "name": "Table",
-    "category": "home",
-    "location": "St.Vlas",
-    "img": "https://www.knoll.com/static_resources/images/products/catalog/eco/parts/642TR/642TR-KC_KC_FZ.jpg",
-    "price": "10",
-    "seller": "Mariyan V.",
-    "date": "8 July - 6:00"
-  },
-  {
-    "id": 22,
-    "name": "Iphone X",
-    "category": "technology",
-    "img": "https://restore.bg/8407-thickbox_default/apple-iphone-x-64gb-space-gray.jpg",
-    "price": "10",
-    "location": "Sliven",
-    "seller": "Mariyan V.",
-    "date": "8 July - 6:00"
-  },
-  {
-    "id": 8,
-    "name": "Lenovo",
-    "location": "Ruse",
-    "category": "technology",
-    "img": "https://www.lenovo.com/medias/lenovo-laptop-thinkpad-x1-carbon-gen8-subseries-hero.png?context=bWFzdGVyfHJvb3R8ODQ4NDd8aW1hZ2UvcG5nfGgyMi9oOGYvMTA2NzQ1ODc3Mjk5NTAucG5nfDQzODYxOTc5ODA0MWJhZTQyYThjOTAzZjE0NDI2NWVjYjY5MjE3MGFiMWEzODhlN2UyMGUwNGZhMWRmOTJmNzg",
-    "price": "10",
-    "seller": "Mariyan V.",
-    "date": "8 July - 6:00"
-  },
-  {
-    "id": 9,
-    "name": "Carpet",
-    "category": "home",
-    "location": "Varna",
-    "img": "https://pranekilimi.bg/upload/images/za-nas.jpg?1477653524940",
-    "price": "10",
-    "seller": "Mariyan V.",
-    "date": "8 July - 6:00"
-  },
-  {
-    "id": 10,
-    "name": "Table",
-    "category": "home",
-    "img": "https://www.knoll.com/static_resources/images/products/catalog/eco/parts/642TR/642TR-KC_KC_FZ.jpg",
-    "price": "10",
-    "location": "Burgas",
-    "seller": "Mariyan V.",
-    "date": "8 July - 1:00"
-  },
-  {
-    "id": 11,
-    "name": "Iphone X",
-    "category": "technology",
-    "img": "https://restore.bg/8407-thickbox_default/apple-iphone-x-64gb-space-gray.jpg",
-    "price": "10",
-    "location": "Pomorie",
-    "seller": "Mariyan V.",
-    "date": "8 July - 5:00"
-  },
-  {
-    "id": 12,
     "name": "BMW M4",
     "category": "automobile",
-    "img": "https://images.pexels.com/photos/707046/pexels-photo-707046.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "price": "120 000",
-    "location": "Pomorie",
+    "images": [
+      "https://pvlimages.blob.core.windows.net/images/verylarge/AG10769_20062019_24.jpg",
+      "https://pvlimages.blob.core.windows.net/images/verylarge/AG10769_20062019_24.jpg"
+    ],
+    "price": "100 000",
+    "location": "Rudozem",
     "seller": "Mariyan V.",
-    "date": "8 July - 4:00"
+    "date": "8 July - 6:00"
   }
 ]

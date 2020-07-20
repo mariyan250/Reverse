@@ -16,7 +16,7 @@ function Item(props) {
       <Link to={`/item/${props.id}`} className="app-text-secondary">
         <section className="img-container d-flex overflow-hidden position-relative">
           <img
-            src={props.img}
+            src={props.images[0]}
             alt={t('search_screen.item.img.alt')}
             className="img-fluid position-absolute"
           />

@@ -13,7 +13,7 @@ function ItemList({ items }) {
 
   return (
     <section className="item-list px-4">
-      <h2>{t('search_screen.heading')}</h2>
+      <h1 className="text-center">{t('search_screen.heading')}</h1>
       <ul className="app-bg-gray-darker pt-5 px-4">
         {items && items.map((item) => <Item {...item} key={item.id} />)}
       </ul>
