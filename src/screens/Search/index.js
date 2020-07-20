@@ -12,7 +12,7 @@ import ItemList from './components/ItemList';
 function Search({ getPosts, posts, location: { search } }) {
   useEffect(() => {
     getPosts(search);
-  }, []);
+  }, [getPosts, search]);
 
   return (
     <main className="search">

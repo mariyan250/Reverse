@@ -15,9 +15,10 @@ i18n
   .use(initReactI18next)
   // init i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
+  // for debugging - just set to true and check browser console :)
   .init({
     fallbackLng: 'en',
-    debug: true,
+    debug: false,
 
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default

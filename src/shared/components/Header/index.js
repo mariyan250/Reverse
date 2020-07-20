@@ -21,9 +21,9 @@ function Header(props) {
   const { t } = useTranslation();
 
   const links = [
-    { to: routes.dashboard, text: 'header.links.home' },
-    { to: routes.login, text: 'header.links.login' },
-    { to: routes.register, text: 'header.links.register' },
+    { to: routes.dashboard, text: 'header.links.home', id: 1 },
+    { to: routes.login, text: 'header.links.login', id: 2 },
+    { to: routes.register, text: 'header.links.register', id: 3 },
   ];
 
   return (
@@ -34,7 +34,7 @@ function Header(props) {
 
       <ul className="d-none d-md-flex h-100 align-items-center m-0">
         {links.map((link) => (
-          <li className="ml-5 h-100">
+          <li className="ml-5 h-100" key={link.id}>
             <NavLink
               to={link.to}
               className="app-text-white h-100 d-flex justify-content-center align-items-center"

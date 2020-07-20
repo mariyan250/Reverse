@@ -21,31 +21,37 @@ const HomePrivate = () => {
       icon: '/img/home.svg',
       title: 'home_screen.private.categories.titles.home',
       url: searchRoutes.home,
+      id: 1,
     },
     {
       icon: '/img/technology.svg',
       title: 'home_screen.private.categories.titles.technology',
       url: searchRoutes.technology,
+      id: 2,
     },
     {
       icon: '/img/automobile.svg',
       title: 'home_screen.private.categories.titles.automobile',
       url: searchRoutes.automobile,
+      id: 3,
     },
     {
       icon: '/img/sport.svg',
       title: 'home_screen.private.categories.titles.sport',
       url: searchRoutes.sport,
+      id: 4,
     },
     {
       icon: '/img/tshirt.svg',
       title: 'home_screen.private.categories.titles.cloths',
       url: searchRoutes.cloths,
+      id: 5,
     },
     {
       icon: '/img/pets.svg',
       title: 'home_screen.private.categories.titles.pets',
       url: searchRoutes.pets,
+      id: 6,
     },
   ];
 
@@ -79,7 +85,7 @@ const HomePrivate = () => {
           <h2 className="mb-4">{t('home_screen.private.heading')}</h2>
           <article className="card-container">
             {categoryCards.map((card) => (
-              <CategoryCard {...card} />
+              <CategoryCard key={card.id} {...card} />
             ))}
           </article>
         </section>

@@ -12,9 +12,21 @@ import ImageGallery from 'react-image-gallery';
 function Item({ getPost, post, match }) {
   useEffect(() => {
     getPost(match.params.id);
-  }, []);
+  }, [getPost, post, match]);
 
   const images = [
+    {
+      original: 'https://picsum.photos/id/1018/1000/600/',
+      thumbnail: 'https://picsum.photos/id/1018/250/150/',
+    },
+    {
+      original: 'https://picsum.photos/id/1015/1000/600/',
+      thumbnail: 'https://picsum.photos/id/1015/250/150/',
+    },
+    {
+      original: 'https://picsum.photos/id/1019/1000/600/',
+      thumbnail: 'https://picsum.photos/id/1019/250/150/',
+    },
     {
       original: 'https://picsum.photos/id/1018/1000/600/',
       thumbnail: 'https://picsum.photos/id/1018/250/150/',
@@ -31,9 +43,17 @@ function Item({ getPost, post, match }) {
 
   return (
     <section className="item">
-      <ImageGallery items={images} showPlayButton={false} originalClass="img-gallery" />
-      <h2>{post.name}</h2>
-      <p>{post.price} $</p>
+      <ImageGallery
+        items={images}
+        showPlayButton={false}
+        showThumbnails={false}
+        showBullets={true}
+        showFullscreenButton={false}
+      />
+
+      <article className="item-description">
+        <h1>{post.name}</h1>
+      </article>
     </section>
   );
 }
