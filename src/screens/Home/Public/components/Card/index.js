@@ -11,7 +11,7 @@ function Card({ iconName, title }) {
   return (
     <section className="option-card text-center">
       <i className={`${iconName}`}></i>
-      <h2 className="mt-4">{t(title)}</h2>
+      <h4 className="mt-4">{t(title)}</h4>
     </section>
   );
 }

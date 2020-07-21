@@ -17,6 +17,6 @@
   }
 
   @include media-breakpoint-xl-up {
-    grid-template-columns: to-rem(700px) 1fr;
+    grid-template-columns: to-rem(650px) 1fr;
   }
 }

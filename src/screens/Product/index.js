@@ -31,7 +31,7 @@ function Product({ getPost, post, match }) {
   return (
     <>
       <Header />
-      <section className="item-screen p-lg-5 mt-lg-4">
+      <section className="item-screen p-lg-4">
         <article className="gallery">
           {post.images && (
             <ImageGallery
@@ -43,7 +43,7 @@ function Product({ getPost, post, match }) {
           )}
         </article>
 
-        <article className="item-description px-3 px-lg-4 py-4 py-lg-0">
+        <article className="item-description px-3 p-lg-4 py-4">
           <h1 className="mb-2">{post.name}</h1>
           <p className="mb-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, corrupti. Debitis
