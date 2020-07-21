@@ -1,9 +1,13 @@
 // React and style
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './index.scss';
 
 // Routes
 import { searchRoutes } from 'shared/constants/routes';
+
+// Redux
+import { connect } from 'react-redux';
+import { getPromoPosts } from 'store/actions/post';
 
 // Translation
 import { useTranslation } from 'react-i18next';
@@ -11,10 +15,15 @@ import { useTranslation } from 'react-i18next';
 // Components
 import Header from 'shared/components/Header';
 import CategoryCard from './components/CategoryCard';
+import ItemList from 'screens/SearchProduct/components/ItemList';
 
-const HomePrivate = () => {
+const HomePrivate = ({ getPromoPosts, promoPosts }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const { t } = useTranslation();
+
+  useEffect(() => {
+    getPromoPosts();
+  }, [getPromoPosts]);
 
   const categoryCards = [
     {
@@ -58,7 +67,7 @@ const HomePrivate = () => {
   return (
     <>
       <Header />
-      <main className="home-private">
+      <main className="home-private px-md-5">
         <form className="mx-auto my-5 px-4" action="/search">
           <article className="d-flex">
             <input
@@ -89,9 +98,17 @@ const HomePrivate = () => {
             ))}
           </article>
         </section>
+
+        <section className="home-two mt-4">
+          <ItemList items={promoPosts} title="home_screen.private.second_heading" />
+        </section>
       </main>
     </>
   );
 };
 
-export default HomePrivate;
+const mapStateToPros = (state) => ({
+  promoPosts: state.posts.items,
+});
+
+export default connect(mapStateToPros, { getPromoPosts })(HomePrivate);

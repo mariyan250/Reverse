@@ -23,3 +23,11 @@ export function getPost(id) {
     payload: filteredPost,
   };
 }
+
+export function getPromoPosts() {
+  const promoPosts = data.filter((post) => post.type === 'Promo');
+  return {
+    type: GET_POSTS,
+    payload: promoPosts,
+  };
+}

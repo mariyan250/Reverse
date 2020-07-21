@@ -2,6 +2,7 @@
   "home_screen": {
     "private": {
       "heading": "Категории",
+      "second_heading": "Промо",
 
       "input": {
         "placeholder": "Какво търсиш?"

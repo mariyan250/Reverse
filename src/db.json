@@ -11,7 +11,8 @@
     "price": "10",
     "location": "Sofia",
     "seller": "Mariyan V.",
-    "date": "8 July - 6:00"
+    "date": "8 July - 6:00",
+    "type": "Promo"
   },
   {
     "id": 2,

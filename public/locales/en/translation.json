@@ -2,6 +2,8 @@
   "home_screen": {
     "private": {
       "heading": "Categories",
+      "second_heading": "Promo",
+
       "input": {
         "placeholder": "What are you searching?"
       },
