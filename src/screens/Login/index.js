@@ -54,8 +54,8 @@ const Login = () => {
       <form onSubmit={handleLogin}>
         <h1 className="text-center mb-5">{t('login_screen.heading')}</h1>
 
-        {inputs.map((input) => (
-          <section className="mb-4">
+        {inputs.map((input, i) => (
+          <section className="mb-4" key={i}>
             <Input {...input} />
           </section>
         ))}

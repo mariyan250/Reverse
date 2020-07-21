@@ -33,7 +33,7 @@
       }
 
       @include media-breakpoint-xl-up {
-        padding: 0 10rem;
+        padding: 0 to-rem(140px);
       }
 
       h2 {
@@ -58,14 +58,14 @@
       }
     }
   }
-}
 
-.two {
-  article {
-    height: 100vh;
+  .two {
+    article {
+      height: 100vh;
 
-    @include media-breakpoint-md-up {
-      height: 100%;
+      @include media-breakpoint-md-up {
+        height: 100%;
+      }
     }
   }
 }

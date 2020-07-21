@@ -2,6 +2,7 @@
 import React from 'react';
 import './index.scss';
 
+// TODO translate
 const NotFound = () => {
   return (
     <main className="not-found vh-100 d-flex justify-content-center align-items-center">

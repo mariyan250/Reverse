@@ -10,7 +10,7 @@ import Arrow from './components/Arrow';
 // Translation
 import { useTranslation } from 'react-i18next';
 
-function Home() {
+function HomePublic() {
   const { t } = useTranslation();
 
   const cards = [
@@ -53,8 +53,8 @@ function Home() {
 
         <section className="two app-bg-gray">
           <article className="py-3 py-md-5 d-flex flex-column flex-md-row justify-content-around align-items-center">
-            {cards.map((card) => (
-              <Card {...card} />
+            {cards.map((card, i) => (
+              <Card key={i} {...card} />
             ))}
           </article>
         </section>
@@ -63,4 +63,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomePublic;

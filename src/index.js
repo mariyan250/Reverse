@@ -23,13 +23,13 @@ import './index.scss';
 
 // Screens
 import LoadingOverlay from 'react-loading-overlay';
-import Home from 'screens/Home/Public';
+import HomePublic from 'screens/Home/Public';
+import HomePrivate from 'screens/Home/Private';
 import Login from 'screens/Login';
 import Register from 'screens/Register';
-import HomePrivate from 'screens/Home/Private';
 import NotFound from 'screens/NotFound';
-import Search from 'screens/Search';
-import Item from 'screens/Item';
+import SearchProduct from 'screens/SearchProduct';
+import Product from 'screens/Product';
 
 const initialState = {};
 const history = createBrowserHistory();
@@ -60,12 +60,12 @@ ReactDOM.render(
     <Provider store={configureStore(initialState)}>
       <ConnectedRouter history={history}>
         <Switch>
-          <Route path={routes.search} component={Search} />
-          <Route path={routes.item} component={Item} />
+          <Route path={routes.search} component={SearchProduct} />
+          <Route path={routes.item} component={Product} />
           <Route path={routes.dashboard} component={HomePrivate} />
           <Route path={routes.login} component={Login} />
           <Route path={routes.register} component={Register} />
-          <Route exact path={routes.home} component={Home} />
+          <Route exact path={routes.home} component={HomePublic} />
           <Route path="*" component={NotFound} />
         </Switch>
       </ConnectedRouter>

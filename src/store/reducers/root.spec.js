@@ -1,4 +1,4 @@
-import { RootReducer } from './root-reducer';
+import { RootReducer } from './root';
 import { createStore } from 'redux';
 
 let store;

@@ -76,8 +76,8 @@ const Register = () => {
       <form onSubmit={handleRegister}>
         <h1 className="text-center mb-5">{t('register_screen.heading')}</h1>
 
-        {inputs.map((input) => (
-          <section className="mb-4">
+        {inputs.map((input, i) => (
+          <section className="mb-4" key={i}>
             <Input {...input} />
           </section>
         ))}

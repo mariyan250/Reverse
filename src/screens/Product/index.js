@@ -12,9 +12,11 @@ import ImageGallery from 'react-image-gallery';
 // Components
 import Header from 'shared/components/Header';
 
-function Item({ getPost, post, match }) {
+function Product({ getPost, post, match }) {
   useEffect(() => {
-    getPost(match.params.id);
+    if (match.params) {
+      getPost(match.params.id);
+    }
   }, [getPost, post, match]);
 
   const getImages = (data) => {
@@ -59,4 +61,4 @@ function Item({ getPost, post, match }) {
 
 const mapStateToProps = (state) => ({ post: state.posts.item });
 
-export default connect(mapStateToProps, { getPost })(Item);
+export default connect(mapStateToProps, { getPost })(Product);

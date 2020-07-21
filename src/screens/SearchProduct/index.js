@@ -9,7 +9,7 @@ import { getPosts } from 'store/actions/post';
 import Header from 'shared/components/Header';
 import ItemList from './components/ItemList';
 
-function Search({ getPosts, posts, location: { search } }) {
+function SearchProduct({ getPosts, posts, location: { search } }) {
   useEffect(() => {
     getPosts(search);
   }, [getPosts, search]);
@@ -24,4 +24,4 @@ function Search({ getPosts, posts, location: { search } }) {
 
 const mapStateToProps = (state) => ({ posts: state.posts.items });
 
-export default connect(mapStateToProps, { getPosts })(Search);
+export default connect(mapStateToProps, { getPosts })(SearchProduct);
