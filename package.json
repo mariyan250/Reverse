@@ -8,8 +8,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write \"**/*.+(js|jsx|json|scss|md)\"",
-    "test-coverage": "npm run test -- --coverage --watchAll=true",
-    "test-cypress": "cypress open"
+    "test-coverage": "npm run test -- --coverage --watchAll=true"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -51,15 +50,9 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "babel-preset-react-hmre": "^1.1.1",
-    "cypress": "^4.10.0",
-    "eslint": "^6.6.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-prettier": "^3.1.4",
     "jest-fetch-mock": "^3.0.3",
     "prettier": "^2.0.5",
     "react-hot-loader": "^4.12.21",
-    "react-test-renderer": "^16.13.1",
     "redux-devtools": "^3.5.0",
     "redux-devtools-extension": "^2.13.8",
     "redux-mock-store": "^1.5.4"
