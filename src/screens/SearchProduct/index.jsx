@@ -7,7 +7,7 @@ import { getPosts } from 'store/actions/post';
 
 // Components
 import Header from 'shared/components/Header';
-import ItemList from './components/ItemList';
+import ItemList from '../../shared/components/Product/ItemList';
 
 function SearchProduct({ getPosts, posts, location: { search } }) {
   useEffect(() => {

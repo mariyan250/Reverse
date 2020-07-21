@@ -15,7 +15,7 @@ import { useTranslation } from 'react-i18next';
 // Components
 import Header from 'shared/components/Header';
 import CategoryCard from './components/CategoryCard';
-import ItemList from 'screens/SearchProduct/components/ItemList';
+import ItemList from 'shared/components/Product/ItemList';
 
 const HomePrivate = ({ getPromoPosts, promoPosts }) => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -99,7 +99,7 @@ const HomePrivate = ({ getPromoPosts, promoPosts }) => {
           </article>
         </section>
 
-        <section className="home-two mt-4">
+        <section className="home-two mt-5 px-4">
           <ItemList items={promoPosts} title="home_screen.private.second_heading" />
         </section>
       </main>

@@ -19,4 +19,10 @@
   @include media-breakpoint-xl-up {
     grid-template-columns: to-rem(650px) 1fr;
   }
+
+  .item-description {
+    span {
+      font-size: to-rem(16px);
+    }
+  }
 }
