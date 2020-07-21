@@ -34,7 +34,7 @@ import Product from 'screens/Product';
 const initialState = {};
 const history = createBrowserHistory();
 
-const configureStore = (preloadedState) => {
+export const configureStore = (preloadedState) => {
   const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
   return createStore(
     RootReducer(history),

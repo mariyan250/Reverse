@@ -105,11 +105,11 @@ exports[`HomePublic Rendering should render the component with initial state 1`]
         <i
           class="fas fa-check"
         />
-        <h2
+        <h4
           class="mt-4"
         >
           home_screen.public.cards.one
-        </h2>
+        </h4>
       </section>
       <section
         class="option-card text-center"
@@ -117,11 +117,11 @@ exports[`HomePublic Rendering should render the component with initial state 1`]
         <i
           class="fas fa-truck"
         />
-        <h2
+        <h4
           class="mt-4"
         >
           home_screen.public.cards.two
-        </h2>
+        </h4>
       </section>
       <section
         class="option-card text-center"
@@ -129,11 +129,11 @@ exports[`HomePublic Rendering should render the component with initial state 1`]
         <i
           class="fas fa-user"
         />
-        <h2
+        <h4
           class="mt-4"
         >
           home_screen.public.cards.three
-        </h2>
+        </h4>
       </section>
     </article>
   </section>

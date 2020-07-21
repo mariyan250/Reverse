@@ -69,7 +69,7 @@ const HomePrivate = () => {
               value={searchQuery}
               required
             />
-            <div>
+            <article>
               <button
                 className={`h-100 border-0 ${
                   searchQuery ? 'app-bg-primary' : 'app-bg-secondary'
@@ -77,7 +77,7 @@ const HomePrivate = () => {
               >
                 <i className="fas fa-search app-text-white" />
               </button>
-            </div>
+            </article>
           </article>
         </form>
 

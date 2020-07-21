@@ -2,7 +2,7 @@ import React from 'react';
 import { render as rtlRender } from '@testing-library/react';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import { ConnectedRouter } from 'connected-react-router';
+import { ConnectedRouter } from 'connected-react-router/';
 import { createMemoryHistory } from 'history';
 import { RootReducer } from 'store/reducers/root';
 import { I18nextProvider } from 'react-i18next';

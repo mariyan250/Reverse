@@ -11,6 +11,7 @@ import ImageGallery from 'react-image-gallery';
 
 // Components
 import Header from 'shared/components/Header';
+import NotFound from 'screens/NotFound';
 
 function Product({ getPost, post, match }) {
   useEffect(() => {
@@ -27,6 +28,10 @@ function Product({ getPost, post, match }) {
       };
     });
   };
+
+  if (!post) {
+    return <NotFound />;
+  }
 
   return (
     <>

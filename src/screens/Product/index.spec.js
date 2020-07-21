@@ -1,25 +1,21 @@
 import React from 'react';
 import { render } from 'tests/test-utils';
-import Item from './index';
-import { RootReducer } from 'store/reducers/root';
-import { createMemoryHistory } from 'history';
-import { connectRouter } from 'connected-react-router';
+import Product from './index';
 
 describe('ItemScreen', () => {
   let initialState;
 
   beforeAll(() => {
-    const history = createMemoryHistory();
     initialState = {
-      router: connectRouter(history),
+      router: {},
     };
   });
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { container } = render(<Item />, { initialState });
+      const { container } = render(<Product />, { initialState });
 
-      expect(container.querySelector('body .item-screen')).toMatchSnapshot();
+      expect(container.querySelector('.item-screen')).toMatchSnapshot();
     });
   });
 });
