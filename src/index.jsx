@@ -23,8 +23,7 @@ import './index.scss';
 
 // Screens
 import LoadingOverlay from 'react-loading-overlay';
-import HomePublic from 'screens/Home/Public';
-import HomePrivate from 'screens/Home/Private';
+import Home from 'screens/Home/';
 import Login from 'screens/Login';
 import Register from 'screens/Register';
 import NotFound from 'screens/NotFound';
@@ -62,10 +61,9 @@ ReactDOM.render(
         <Switch>
           <Route path={routes.search} component={SearchProduct} />
           <Route path={routes.item} component={Product} />
-          <Route path={routes.dashboard} component={HomePrivate} />
           <Route path={routes.login} component={Login} />
           <Route path={routes.register} component={Register} />
-          <Route exact path={routes.home} component={HomePublic} />
+          <Route exact path={routes.home} component={Home} />
           <Route path="*" component={NotFound} />
         </Switch>
       </ConnectedRouter>

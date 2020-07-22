@@ -21,7 +21,7 @@ function Header(props) {
   const { t } = useTranslation();
 
   const links = [
-    { to: routes.dashboard, text: 'header.links.home', id: 1 },
+    { to: routes.home, text: 'header.links.home', id: 1 },
     { to: routes.login, text: 'header.links.login', id: 2 },
     { to: routes.register, text: 'header.links.register', id: 3 },
   ];

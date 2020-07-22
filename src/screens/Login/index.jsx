@@ -15,7 +15,7 @@ import { useTranslation } from 'react-i18next';
 import Input from 'shared/components/auth/Input';
 import Button from 'shared/components/auth/Button';
 
-const Login = () => {
+function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -68,6 +68,6 @@ const Login = () => {
       </form>
     </main>
   );
-};
+}
 
 export default Login;

@@ -15,7 +15,7 @@ import { useTranslation } from 'react-i18next';
 import Input from 'shared/components/auth/Input';
 import Button from 'shared/components/auth/Button';
 
-const Register = () => {
+function Register() {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -89,6 +89,6 @@ const Register = () => {
       </form>
     </main>
   );
-};
+}
 
 export default Register;

@@ -1,34 +1,8 @@
-@import '../../../index';
+@import '../../index';
 
 .home-private {
-  form {
+  .search {
     max-width: to-rem(500px);
-
-    article {
-      input {
-        font-size: to-rem(16px);
-        padding: to-rem(8px) to-rem(15px);
-
-        @include media-breakpoint-md-up {
-          padding: to-rem(8px) to-rem(15px);
-        }
-      }
-
-      button {
-        width: to-rem(52px);
-        margin-left: to-rem(-3px);
-        transition: 0.5s;
-
-        @include media-breakpoint-md-up {
-          padding: to-rem(12px) to-rem(14px);
-          top: to-rem(-0.5px);
-        }
-      }
-
-      i {
-        font-size: to-rem(20px);
-      }
-    }
   }
 
   .home-one {

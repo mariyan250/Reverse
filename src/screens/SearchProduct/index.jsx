@@ -15,7 +15,7 @@ function SearchProduct({ getPosts, posts, location: { search } }) {
   }, [getPosts, search]);
 
   return (
-    <main className="search">
+    <main className="search-product">
       <Header />
       <ItemList items={posts} title="search_screen.heading" />
     </main>
