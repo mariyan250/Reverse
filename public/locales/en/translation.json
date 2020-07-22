@@ -1,52 +1,23 @@
 {
   "home_screen": {
-    "private": {
-      "heading": "Categories",
-      "second_heading": "Promo",
+    "heading": "Categories",
+    "second_heading": "Promo",
 
-      "input": {
-        "placeholder": "What are you searching?"
-      },
-
-      "categories": {
-        "titles": {
-          "home": "Home",
-          "technology": "Technology",
-          "automobile": "Automobile",
-          "sport": "Sport",
-          "cloths": "Cloths",
-          "pets": "Pets"
-        },
-
-        "img_alt": "Category"
-      }
+    "input": {
+      "placeholder": "What are you searching?"
     },
-    "public": {
-      "heading": "Welcome to",
-      "app_name": "Reverse",
-      "second_heading": "Sell your items now!",
 
-      "cards": {
-        "one": "Sell your items.",
-        "two": "Ship your product.",
-        "three": "Meet new people."
+    "categories": {
+      "titles": {
+        "home": "Home",
+        "technology": "Technology",
+        "automobile": "Automobile",
+        "sport": "Sport",
+        "cloths": "Cloths",
+        "pets": "Pets"
       },
 
-      "section_one": {
-        "heading": "Description",
-        "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias numquam sequi inventore delectus dolore nisi quaerat cum, consectetur, dolorum necessitatibus quos velit fuga consequatur quam quasi expedita minus est repellendus laborum magni accusamus nostrum praesentium nemo alias! Molestias, dicta sit"
-      },
-
-      "img": {
-        "alt": "Cloths"
-      },
-
-      "auth_modal": {
-        "links": {
-          "login": "Login",
-          "register": "Register"
-        }
-      }
+      "img_alt": "Category"
     }
   },
 

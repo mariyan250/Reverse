@@ -1,16 +1,18 @@
 @import '../../../index.scss';
 
 form {
-  article {
-    input {
-      font-size: to-rem(16px);
+  max-width: to-rem(500px);
+
+  input {
+    font-size: to-rem(16px);
+    padding: to-rem(8px) to-rem(15px);
+
+    @include media-breakpoint-md-up {
       padding: to-rem(8px) to-rem(15px);
-
-      @include media-breakpoint-md-up {
-        padding: to-rem(8px) to-rem(15px);
-      }
     }
+  }
 
+  article {
     button {
       width: to-rem(52px);
       margin-left: to-rem(-3px);

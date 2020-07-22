@@ -1,53 +1,23 @@
 {
   "home_screen": {
-    "private": {
-      "heading": "Категории",
-      "second_heading": "Промо",
+    "heading": "Категории",
+    "second_heading": "Промо",
 
-      "input": {
-        "placeholder": "Какво търсиш?"
-      },
-
-      "categories": {
-        "titles": {
-          "home": "За Дома",
-          "technology": "Техника",
-          "automobile": "Автомобили",
-          "sport": "Спорт",
-          "cloths": "Дрехи",
-          "pets": "Животни"
-        },
-
-        "img_alt": "Category"
-      }
+    "input": {
+      "placeholder": "Какво търсиш?"
     },
 
-    "public": {
-      "heading": "Добре дошли в",
-      "app_name": "Reverse",
-      "second_heading": "Продай нещата си сега!",
-
-      "cards": {
-        "one": "Продай вещите си.",
-        "two": "Опаковай продукта.",
-        "three": "Нови запознанства."
+    "categories": {
+      "titles": {
+        "home": "За Дома",
+        "technology": "Техника",
+        "automobile": "Автомобили",
+        "sport": "Спорт",
+        "cloths": "Дрехи",
+        "pets": "Животни"
       },
 
-      "section_one": {
-        "heading": "Описание",
-        "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias numquam sequi inventore delectus dolore nisi quaerat cum, consectetur, dolorum necessitatibus quos velit fuga consequatur quam quasi expedita minus est repellendus laborum magni accusamus nostrum praesentium nemo alias! Molestias, dicta sit"
-      },
-
-      "img": {
-        "alt": "Дрехи"
-      },
-
-      "auth_modal": {
-        "links": {
-          "login": "Вход",
-          "register": "Регистрация"
-        }
-      }
+      "img_alt": "Category"
     }
   },
 

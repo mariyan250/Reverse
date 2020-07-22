@@ -28,32 +28,32 @@ function Home({ getPromoPosts, promoPosts }) {
   const categoryCards = [
     {
       icon: '/img/home.svg',
-      title: 'home_screen.private.categories.titles.home',
+      title: 'home_screen.categories.titles.home',
       url: searchRoutes.home,
     },
     {
       icon: '/img/technology.svg',
-      title: 'home_screen.private.categories.titles.technology',
+      title: 'home_screen.categories.titles.technology',
       url: searchRoutes.technology,
     },
     {
       icon: '/img/automobile.svg',
-      title: 'home_screen.private.categories.titles.automobile',
+      title: 'home_screen.categories.titles.automobile',
       url: searchRoutes.automobile,
     },
     {
       icon: '/img/sport.svg',
-      title: 'home_screen.private.categories.titles.sport',
+      title: 'home_screen.categories.titles.sport',
       url: searchRoutes.sport,
     },
     {
       icon: '/img/tshirt.svg',
-      title: 'home_screen.private.categories.titles.cloths',
+      title: 'home_screen.categories.titles.cloths',
       url: searchRoutes.cloths,
     },
     {
       icon: '/img/pets.svg',
-      title: 'home_screen.private.categories.titles.pets',
+      title: 'home_screen.categories.titles.pets',
       url: searchRoutes.pets,
     },
   ];
@@ -61,22 +61,32 @@ function Home({ getPromoPosts, promoPosts }) {
   return (
     <>
       <Header />
-      <main className="home-private px-md-5">
-        <section className="search my-5 mx-auto px-4">
+      <main className="home mx-auto vh-100 px-4">
+        <section className="my-4 my-md-5 d-flex">
           <Search />
         </section>
 
-        <section className="home-one px-4">
-          <h2 className="mb-4">{t('home_screen.private.heading')}</h2>
-          <article className="card-container">
-            {categoryCards.map((card, i) => (
-              <CategoryCard key={i} {...card} />
+        <section className="categories">
+          <h2 className="mb-4">{t('home_screen.heading')}</h2>
+
+          <article className="categories-container">
+            {categoryCards.map((category, i) => (
+              <CategoryCard
+                url={category.url}
+                icon={category.icon}
+                title={category.title}
+                key={i}
+              />
             ))}
           </article>
         </section>
 
-        <section className="home-two mt-5 px-4">
-          <ItemList items={promoPosts} title="home_screen.private.second_heading" />
+        <section className="promo-offers">
+          <h2 className="mt-5 mb-4">{t('home_screen.second_heading')}</h2>
+
+          <article className="promo-offers-container">
+            <ItemList items={promoPosts} />
+          </article>
         </section>
       </main>
     </>

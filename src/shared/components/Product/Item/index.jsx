@@ -9,32 +9,32 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 // TODO use translation for currency
-function Item(props) {
+function Item({ id, images, name, location, date, price }) {
   const { t } = useTranslation();
 
   return (
-    <li className="item app-bg-white box-shadow" {...props}>
-      <Link to={`/item/${props.id}`} className="app-text-secondary">
+    <li className="item app-bg-white box-shadow">
+      <Link to={`/item/${id}`} className="app-text-secondary">
         <section className="img-container d-flex overflow-hidden position-relative">
           <img
-            src={props.images[0]}
+            src={images[0]}
             alt={t('search_screen.item.img.alt')}
             className="img-fluid position-absolute"
           />
         </section>
 
         <section className="p-3">
-          <h2 className="my-3 text-center">{props.name}</h2>
+          <h2 className="my-3 text-center">{name}</h2>
           <p className="mt-4 mb-2 font-weight-light">
             <i className="fas fa-map-marker-alt mr-2" />
-            {props.location}
+            {location}
           </p>
           <article className="d-flex justify-content-between align-items-end">
             <p className="m-0">
               <i className="fas fa-clock mr-2" />
-              {props.date}
+              {date}
             </p>
-            <h4>{props.price} $</h4>
+            <h4>{price} $</h4>
           </article>
         </section>
       </Link>

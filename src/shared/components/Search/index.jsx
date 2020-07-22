@@ -10,12 +10,12 @@ function Search() {
   const { t } = useTranslation();
 
   return (
-    <form action="/search">
+    <form action="/search" className="w-100 mx-auto">
       <article className="d-flex">
         <input
           type="text"
           name="query"
-          placeholder={t('home_screen.private.input.placeholder')}
+          placeholder={t('home_screen.input.placeholder')}
           onChange={(e) => setSearchQuery(e.target.value)}
           value={searchQuery}
           required

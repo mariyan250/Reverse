@@ -1,12 +1,10 @@
 @import '../../index';
 
-.home-private {
-  .search {
-    max-width: to-rem(500px);
-  }
+.home {
+  max-width: to-rem(1200px);
 
-  .home-one {
-    .card-container {
+  .categories {
+    .categories-container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: to-rem(14px);
