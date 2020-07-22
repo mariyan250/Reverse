@@ -62,7 +62,7 @@ function Home({ getPromoPosts, promoPosts }) {
     <>
       <Header />
       <main className="home mx-auto px-4">
-        <section className="my-4 my-md-5 d-flex">
+        <section className="my-5 d-flex">
           <Search />
         </section>
 

@@ -19,11 +19,11 @@ function SearchProduct({ getPosts, posts, location: { search } }) {
     <>
       <Header />
       <main className="search-product px-4">
-        <section className="my-4 my-md-5 d-flex">
+        <section className="my-5 d-flex">
           <Search />
         </section>
 
-        <section className="products-container app-bg-gray-darker p-4">
+        <section className="products-container app-bg-gray-darker p-2 p-md-4">
           <ItemList items={posts} title="search_screen.heading" />
         </section>
       </main>
