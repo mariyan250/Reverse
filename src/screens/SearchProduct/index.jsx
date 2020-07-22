@@ -7,7 +7,8 @@ import { getPosts } from 'store/actions/post';
 
 // Components
 import Header from 'shared/components/Header';
-import ItemList from '../../shared/components/Product/ItemList';
+import ItemList from 'shared/components/Product/ItemList';
+import Search from 'shared/components/Search';
 
 function SearchProduct({ getPosts, posts, location: { search } }) {
   useEffect(() => {
@@ -15,10 +16,18 @@ function SearchProduct({ getPosts, posts, location: { search } }) {
   }, [getPosts, search]);
 
   return (
-    <main className="search-product">
+    <>
       <Header />
-      <ItemList items={posts} title="search_screen.heading" />
-    </main>
+      <main className="search-product px-4">
+        <section className="my-4 my-md-5 d-flex">
+          <Search />
+        </section>
+
+        <section className="products-container app-bg-gray-darker p-4">
+          <ItemList items={posts} title="search_screen.heading" />
+        </section>
+      </main>
+    </>
   );
 }
 

@@ -8,34 +8,8 @@ $white: #fff;
 $gray: #f8f8f8;
 $gray-darker: #f5f6fa;
 $silver: #bdc3c7;
-
 $primary-hover: #c21e1e;
 $black-transparent: rgba(0, 0, 0, 0.7);
 
-// Text
-$text-primary: $primary;
-$text-secondary: $secondary;
-$text-white: $white;
-$text-gray: $gray;
-$text-gray-darker: $gray-darker;
-$text-silver: $silver;
-
-// Background
-$background-primary: $primary;
-$background-secondary: $secondary;
-$background-white: $white;
-$background-gray: $gray;
-$background-gray-darker: $gray-darker;
-$background-silver: $silver;
-
-$background-primary-hover: #c21e1e;
-$background-black-transparent: rgba(0, 0, 0, 0.7);
-
-// Spacing
-$spacing-xxs: 0.25rem;
-$spacing-xs: 0.5rem;
-$spacing-s: 1rem;
-$spacing-m: 1.5rem;
-$spacing-l: 2rem;
-$spacing-xl: 2.5rem;
-$spacing-xxl: 3rem;
+// Layout
+$layout-max-width: to-rem(1200px);

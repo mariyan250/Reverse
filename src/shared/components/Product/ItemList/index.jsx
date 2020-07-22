@@ -7,11 +7,7 @@ import Item from '../Item';
 
 function ItemList({ items }) {
   return (
-    <section className="item-list">
-      <ul className="app-bg-gray-darker pt-5 px-4">
-        {items && items.map((item) => <Item {...item} key={item.id} />)}
-      </ul>
-    </section>
+    <ul className="item-list">{items && items.map((item) => <Item {...item} key={item.id} />)}</ul>
   );
 }
 

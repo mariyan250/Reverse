@@ -82,8 +82,8 @@ function Register() {
           </section>
         ))}
 
-        <Button text={t('register_screen.button')} className="my-3" />
-        <Link to={routes.login} className="app-text-secondary mt-4 mb-3 text-decoration-none">
+        <Button text={t('register_screen.button')} className="mt-5" />
+        <Link to={routes.login} className="app-text-secondary mt-4 mb-3 d-inline-block">
           {t('register_screen.option_button')}
         </Link>
       </form>

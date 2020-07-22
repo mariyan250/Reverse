@@ -28,6 +28,6 @@ export function getPromoPosts() {
   const promoPosts = data.filter((post) => post.type === 'Promo');
   return {
     type: GET_POSTS,
-    payload: promoPosts,
+    payload: promoPosts.slice(0, 5),
   };
 }

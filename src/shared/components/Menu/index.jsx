@@ -19,7 +19,7 @@ function Menu(props) {
             <li className="d-flex">
               <NavLink
                 to={link.to}
-                className="d-flex w-100 justify-content-center align-items-center text-decoration-none app-text-white app-bg-black-transparent py-4"
+                className="d-flex w-100 justify-content-center align-items-center app-text-white app-bg-black-transparent py-4"
               >
                 <i className={`${link.iconName} mr-3`} />
                 {t(link.text)}

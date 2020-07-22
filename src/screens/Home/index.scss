@@ -1,13 +1,13 @@
 @import '../../index';
 
 .home {
-  max-width: to-rem(1200px);
+  max-width: $layout-max-width;
 
   .categories {
     .categories-container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: to-rem(14px);
+      grid-gap: to-rem(22px);
 
       @include media-breakpoint-sm-up {
         grid-template-columns: repeat(3, 1fr);

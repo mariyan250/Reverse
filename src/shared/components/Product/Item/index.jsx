@@ -30,7 +30,7 @@ function Item({ id, images, name, location, date, price }) {
             {location}
           </p>
           <article className="d-flex justify-content-between align-items-end">
-            <p className="m-0">
+            <p>
               <i className="fas fa-clock mr-2" />
               {date}
             </p>

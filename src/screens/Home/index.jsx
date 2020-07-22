@@ -61,13 +61,13 @@ function Home({ getPromoPosts, promoPosts }) {
   return (
     <>
       <Header />
-      <main className="home mx-auto vh-100 px-4">
+      <main className="home mx-auto px-4">
         <section className="my-4 my-md-5 d-flex">
           <Search />
         </section>
 
         <section className="categories">
-          <h2 className="mb-4">{t('home_screen.heading')}</h2>
+          <h3 className="mb-4">{t('home_screen.heading')}</h3>
 
           <article className="categories-container">
             {categoryCards.map((category, i) => (
@@ -82,9 +82,9 @@ function Home({ getPromoPosts, promoPosts }) {
         </section>
 
         <section className="promo-offers">
-          <h2 className="mt-5 mb-4">{t('home_screen.second_heading')}</h2>
+          <h3 className="mt-5 mb-4">{t('home_screen.second_heading')}</h3>
 
-          <article className="promo-offers-container">
+          <article className="promo-offers-container p-2 app-bg-gray-darker">
             <ItemList items={promoPosts} />
           </article>
         </section>

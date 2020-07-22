@@ -15,6 +15,21 @@
     "type": "Promo"
   },
   {
+    "id": 100,
+    "name": "Lenovo",
+    "category": "technology",
+    "images": [
+      "https://s13emagst.akamaized.net/products/15874/15873942/images/res_b8032c207f90cec1988f271d669be260.jpg",
+      "https://s13emagst.akamaized.net/products/15874/15873942/images/res_7c3af5edf9fe802790e0792c179ac9d1.jpg",
+      "https://s13emagst.akamaized.net/products/15874/15873942/images/res_b27e9a34c756b4c5814d9eccdf745b5c.jpg"
+    ],
+    "price": "10",
+    "location": "Sofia",
+    "seller": "Mariyan V.",
+    "date": "8 July - 6:00",
+    "type": "Promo"
+  },
+  {
     "id": 3,
     "name": "Lenovo",
     "category": "technology",
