@@ -5,10 +5,31 @@
     font-size: to-rem(16px);
     width: to-rem(180px);
 
+    i {
+      transition: 0.4s;
+      font-size: to-rem(24px);
+    }
+
     &:hover {
       cursor: pointer;
       background: $gray;
       transition: background 0.2s;
+    }
+  }
+
+  .filter-dropdown-menu {
+    display: none;
+  }
+
+  &:hover {
+    .filter-dropdown-menu {
+      display: flex;
+    }
+
+    span {
+      i {
+        transform: rotate(180deg);
+      }
     }
   }
 }

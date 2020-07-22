@@ -3,11 +3,11 @@ import './index.scss';
 
 function FilterDropdown() {
   return (
-    <section className="filter-dropdown position-absolute app-bg-gray rounded-lg">
-      <ul>
-        <li>Filter by name.</li>
-      </ul>
-    </section>
+    <ul className="filter-dropdown position-absolute app-bg-gray rounded-lg box-shadow overflow-hidden d-flex flex-column justify-content-center">
+      <li className="py-2 text-center">Welcome</li>
+      <li className="py-2 text-center">Welcome</li>
+      <li className="py-2 text-center">Welcome</li>
+    </ul>
   );
 }
 
