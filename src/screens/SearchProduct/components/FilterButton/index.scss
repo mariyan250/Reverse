@@ -1,0 +1,14 @@
+@import '../../../../index.scss';
+
+.filter-button {
+  span {
+    font-size: to-rem(16px);
+    width: to-rem(180px);
+
+    &:hover {
+      cursor: pointer;
+      background: $gray;
+      transition: background 0.2s;
+    }
+  }
+}

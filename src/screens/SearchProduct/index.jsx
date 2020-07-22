@@ -1,7 +1,8 @@
 // React
 import React, { useEffect } from 'react';
+import './index.scss';
 
-// Connect Redux
+// Redux
 import { connect } from 'react-redux';
 import { getPosts } from 'store/actions/post';
 
@@ -9,6 +10,7 @@ import { getPosts } from 'store/actions/post';
 import Header from 'shared/components/Header';
 import ItemList from 'shared/components/Product/ItemList';
 import Search from 'shared/components/Search';
+import FilterButton from './components/FilterButton';
 
 function SearchProduct({ getPosts, posts, location: { search } }) {
   useEffect(() => {
@@ -18,9 +20,14 @@ function SearchProduct({ getPosts, posts, location: { search } }) {
   return (
     <>
       <Header />
-      <main className="search-product px-4">
+      <main className="search-product px-4 mx-auto">
         <section className="my-5 d-flex">
           <Search />
+        </section>
+
+        <section className="products-upper-line d-flex justify-content-between align-items-center mb-4">
+          <h3>Products</h3>
+          <FilterButton />
         </section>
 
         <section className="products-container app-bg-gray-darker p-2 p-md-4">
