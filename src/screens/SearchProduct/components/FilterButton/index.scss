@@ -1,35 +1,25 @@
 @import '../../../../index.scss';
 
 .filter-button {
-  span {
+  button {
     font-size: to-rem(16px);
-    width: to-rem(180px);
+    width: to-rem(150px);
 
     i {
       transition: 0.4s;
       font-size: to-rem(24px);
-    }
 
-    &:hover {
-      cursor: pointer;
-      background: $gray;
-      transition: background 0.2s;
-    }
-  }
-
-  .filter-dropdown-menu {
-    display: none;
-  }
-
-  &:hover {
-    .filter-dropdown-menu {
-      display: flex;
-    }
-
-    span {
-      i {
+      &.toggle {
         transform: rotate(180deg);
       }
     }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 }

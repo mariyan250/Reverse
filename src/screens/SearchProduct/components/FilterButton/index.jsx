@@ -5,17 +5,14 @@ import './index.scss';
 // Components
 import FilterDropdown from '../FilterDropdown';
 
-function FilterButton() {
+function FilterButton({ isOpen, onClick }) {
   return (
-    <section className="filter-button">
-      <span className="box-shadow rounded d-flex py-2 px-3 justify-content-center align-items-center position-relative">
+    <section className="filter-button" onClick={onClick}>
+      <button className="box-shadow rounded d-flex py-2 px-2 justify-content-center align-items-center position-relative border-0 app-bg-white">
         <p>Filter</p>
-        <i className="fas fa-angle-down ml-3" />
-
-        <section className="filter-dropdown-menu">
-          <FilterDropdown />
-        </section>
-      </span>
+        <i className={`fas fa-angle-down ml-3 ${isOpen && 'toggle'}`} />
+        {isOpen && <FilterDropdown />}
+      </button>
     </section>
   );
 }

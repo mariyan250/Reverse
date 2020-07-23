@@ -2,17 +2,16 @@
 
 .filter-dropdown {
   z-index: 1;
-  left: to-rem(-20px);
-  top: to-rem(40px);
+  left: to-rem(-50px);
+  top: to-rem(45px);
   width: to-rem(200px);
   animation: appear 1 0.2s;
 
   li {
-    height: to-rem(40px);
     font-size: to-rem(16px);
 
     &:hover {
-      background: gray;
+      background: $silver;
     }
   }
 }

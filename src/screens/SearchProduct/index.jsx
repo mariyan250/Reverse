@@ -1,5 +1,5 @@
 // React
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './index.scss';
 
 // Redux
@@ -13,6 +13,8 @@ import Search from 'shared/components/Search';
 import FilterButton from './components/FilterButton';
 
 function SearchProduct({ getPosts, posts, location: { search } }) {
+  const [open, setOpen] = useState(false);
+
   useEffect(() => {
     getPosts(search);
   }, [getPosts, search]);
@@ -27,7 +29,7 @@ function SearchProduct({ getPosts, posts, location: { search } }) {
 
         <section className="products-upper-line d-flex justify-content-between align-items-center mb-4">
           <h3>Products</h3>
-          <FilterButton />
+          <FilterButton isOpen={open} onClick={() => setOpen(!open)} location={20} />
         </section>
 
         <section className="products-container app-bg-gray-darker p-2 p-md-4">
