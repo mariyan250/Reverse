@@ -36,9 +36,9 @@ export function filterPost(posts, filter) {
   let filteredPosts;
 
   if (filter === 'lowest') {
-    filteredPosts = posts.sort((a, b) => a.price - b.price);
+    filteredPosts = [...posts].sort((a, b) => a.price - b.price);
   } else if (filter === 'highest') {
-    filteredPosts = posts.sort((a, b) => b.price - a.price);
+    filteredPosts = [...posts].sort((a, b) => b.price - a.price);
   }
 
   return {
