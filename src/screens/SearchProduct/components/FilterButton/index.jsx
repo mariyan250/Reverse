@@ -2,14 +2,19 @@
 import React from 'react';
 import './index.scss';
 
+// Translation
+import { useTranslation } from 'react-i18next';
+
 // Components
 import FilterDropdown from '../FilterDropdown';
 
 function FilterButton({ isOpen, onClick }) {
+  const { t } = useTranslation();
+
   return (
     <section className="filter-button" onClick={onClick}>
       <button className="box-shadow rounded d-flex py-2 px-2 justify-content-center align-items-center position-relative border-0 app-bg-white">
-        <p>Filter</p>
+        <p>{t('search_screen.filter_button')}</p>
         <i className={`fas fa-angle-down ml-3 ${isOpen && 'toggle'}`} />
         {isOpen && <FilterDropdown />}
       </button>

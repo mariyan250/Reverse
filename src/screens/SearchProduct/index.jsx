@@ -6,6 +6,9 @@ import './index.scss';
 import { connect } from 'react-redux';
 import { getPosts } from 'store/actions/post';
 
+// Translation
+import { useTranslation } from 'react-i18next';
+
 // Components
 import Header from 'shared/components/Header';
 import ItemList from 'shared/components/Product/ItemList';
@@ -14,6 +17,7 @@ import FilterButton from './components/FilterButton';
 
 function SearchProduct({ getPosts, posts, location: { search } }) {
   const [open, setOpen] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     getPosts(search);
@@ -28,7 +32,7 @@ function SearchProduct({ getPosts, posts, location: { search } }) {
         </section>
 
         <section className="products-upper-line d-flex justify-content-between align-items-center mb-4">
-          <h3>Products</h3>
+          <h3>{t('search_screen.heading')}</h3>
           <FilterButton isOpen={open} onClick={() => setOpen(!open)} location={20} />
         </section>
 

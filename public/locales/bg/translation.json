@@ -69,6 +69,14 @@
   "search_screen": {
     "heading": "Продукти",
 
+    "filter_button": "Филтрирай",
+
+    "filter_dropdown": {
+      "newest": "Най-нови",
+      "lowest": "Най-ниска цена",
+      "highest": "Най-висока цена"
+    },
+
     "item": {
       "img": {
         "alt": "Продукт"

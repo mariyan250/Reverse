@@ -24,7 +24,7 @@ function Item({ id, images, name, location, date, price }) {
         </section>
 
         <section className="p-3">
-          <h2 className="my-3 text-center">{name}</h2>
+          <h6 className="my-3 text-center">{name}</h6>
           <p className="mt-4 mb-2 font-weight-light">
             <i className="fas fa-map-marker-alt mr-2" />
             {location}

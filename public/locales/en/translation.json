@@ -65,7 +65,15 @@
   },
 
   "search_screen": {
-    "heading": "Items",
+    "heading": "Products",
+
+    "filter_button": "Filter",
+
+    "filter_dropdown": {
+      "newest": "Newest",
+      "lowest": "Lowest",
+      "highest": "Highest"
+    },
 
     "item": {
       "img": {
