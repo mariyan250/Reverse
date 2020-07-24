@@ -64,7 +64,7 @@ function Product({ getPost, post, match }) {
             maxime molestias sequi?
           </p>
 
-          <section className="item-description-second d-md-flex justify-content-between my-4">
+          <section className="item-description-second d-md-flex justify-content-between my-4 my-md-0 mt-md-5">
             <p>
               <i className="fas fa-map-marker-alt mr-3" />
               {post.location}
@@ -81,11 +81,11 @@ function Product({ getPost, post, match }) {
             </p>
           </section>
 
-          <section className="item-description-nav app-bg-white d-flex justify-content-around justify-content-sm-between align-items-center py-1 m-sm-0 mt-4 w-100">
-            <h3 className="text-center my-2 my-md-0">
+          <section className="item-description-nav app-bg-white d-flex justify-content-around justify-content-sm-between align-items-center py-1 m-sm-0 mt-4 mt-md-0 w-100">
+            <h5 className="text-center my-2 my-md-0">
               {post.price} {t('general.currency')}
-            </h3>
-            <span className="app-bg-primary app-text-white rounded py-3 px-5 px-md-4 py-md-2">
+            </h5>
+            <span className="app-bg-primary app-text-white rounded py-3 px-5 px-md-4 py-md-2 mr-2">
               {t('product.call_button')}
               <i className="fas fa-phone ml-3" />
             </span>
