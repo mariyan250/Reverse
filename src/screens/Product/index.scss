@@ -24,5 +24,28 @@
     span {
       font-size: to-rem(16px);
     }
+
+    .item-description-second {
+      p {
+        font-size: to-rem(18px);
+        margin: to-rem(24px) 0;
+
+        @include media-breakpoint-md-up {
+          margin: 0;
+        }
+      }
+    }
+
+    .item-description-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      box-shadow: 0px 0px 3px gray;
+
+      @include media-breakpoint-sm-up {
+        position: relative;
+        box-shadow: none;
+      }
+    }
   }
 }

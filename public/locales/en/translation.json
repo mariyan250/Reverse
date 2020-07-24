@@ -84,5 +84,9 @@
         "alt": "Image"
       }
     }
+  },
+
+  "product": {
+    "call_button": "Call"
   }
 }
