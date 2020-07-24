@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom';
 // Translation
 import { useTranslation } from 'react-i18next';
 
-// TODO use translation for currency
 function Item({ id, images, name, location, date, price }) {
   const { t } = useTranslation();
 

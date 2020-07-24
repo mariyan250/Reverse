@@ -1,5 +1,5 @@
 // React and style
-import React, { useEffect } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import './index.scss';
 
 // Routes
@@ -59,8 +59,9 @@ function Home({ getPromoPosts, promoPosts }) {
   ];
 
   return (
-    <>
+    <Fragment>
       <Header />
+
       <main className="home mx-auto px-4 px-md-5">
         <section className="my-5 d-flex">
           <Search />
@@ -89,7 +90,7 @@ function Home({ getPromoPosts, promoPosts }) {
           </article>
         </section>
       </main>
-    </>
+    </Fragment>
   );
 }
 

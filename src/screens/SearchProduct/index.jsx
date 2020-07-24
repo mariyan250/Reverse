@@ -1,5 +1,5 @@
 // React
-import React, { useEffect, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import './index.scss';
 
 // Redux
@@ -24,8 +24,9 @@ function SearchProduct({ getPosts, posts, location: { search } }) {
   }, [getPosts, search]);
 
   return (
-    <>
+    <Fragment>
       <Header />
+
       <main className="search-product px-4 mx-auto">
         <section className="my-5 d-flex">
           <Search />
@@ -40,7 +41,7 @@ function SearchProduct({ getPosts, posts, location: { search } }) {
           <ItemList items={posts} title="search_screen.heading" />
         </section>
       </main>
-    </>
+    </Fragment>
   );
 }
 

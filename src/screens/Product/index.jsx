@@ -1,5 +1,5 @@
 // React and style
-import React, { useEffect } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import './index.scss';
 
 // Redux
@@ -34,7 +34,7 @@ function Product({ getPost, post, match }) {
   }
 
   return (
-    <>
+    <Fragment>
       <Header />
       <section className="item-screen p-lg-4">
         <article className="gallery">
@@ -58,6 +58,7 @@ function Product({ getPost, post, match }) {
             debitis similique fugiat itaque, dolore doloribus magnam tempore natus ipsam aspernatur
             maxime molestias sequi?
           </p>
+
           <section className="item-description-nav d-flex justify-content-between align-items-center mt-4">
             <h1 className="app-text-pr">{post.price}$</h1>
             <span className="app-bg-primary app-text-white px-5 py-3 px-lg-4 py-lg-2 rounded">
@@ -66,7 +67,7 @@ function Product({ getPost, post, match }) {
           </section>
         </article>
       </section>
-    </>
+    </Fragment>
   );
 }
 
