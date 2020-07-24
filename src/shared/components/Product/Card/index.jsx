@@ -23,17 +23,19 @@ function Item({ id, images, name, location, date, price }) {
           />
         </section>
 
-        <section className="p-3 h-100 app-bg-gray-darker">
+        <section className="py-3 px-4 h-100 app-bg-gray">
           <p className="product-name text-center mb-4">{name}</p>
           <p className="product-location mb-3">
-            <i className="fas fa-map-marker mr-2" />
+            <i className="fas fa-map-marker-alt mr-2" />
             {location}
           </p>
-          <p className="product-date mb-3">
+          <p className="product-date mb-4">
             <i className="fas fa-clock mr-2" />
             {date}
           </p>
-          <p className="product-price mt-1">{price}$</p>
+          <p className="product-price">
+            {price} {t('general.currency')}
+          </p>
         </section>
       </Link>
     </li>

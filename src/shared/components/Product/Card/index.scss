@@ -1,12 +1,6 @@
 @import '../../../../index.scss';
 
 .item {
-  height: to-rem(465px);
-
-  @include media-breakpoint-md-up {
-    height: to-rem(420px);
-  }
-
   .img-container {
     img {
       object-fit: cover;

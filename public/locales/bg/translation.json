@@ -1,4 +1,8 @@
 {
+  "general": {
+    "currency": "лв."
+  },
+
   "home_screen": {
     "heading": "Категории",
     "second_heading": "Промо",

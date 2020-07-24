@@ -1,4 +1,8 @@
 {
+  "general": {
+    "currency": "$"
+  },
+
   "home_screen": {
     "heading": "Categories",
     "second_heading": "Promo",
