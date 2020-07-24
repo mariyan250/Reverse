@@ -15,7 +15,7 @@ import { useTranslation } from 'react-i18next';
 // Components
 import Header from 'shared/components/Header';
 import CategoryCard from './components/CategoryCard';
-import ItemList from 'shared/components/Product/ItemList';
+import ItemList from 'shared/components/Product/CardList';
 import Search from 'shared/components/Search';
 
 function Home({ getPromoPosts, promoPosts }) {

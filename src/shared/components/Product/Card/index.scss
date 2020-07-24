@@ -1,0 +1,33 @@
+@import '../../../../index.scss';
+
+.item {
+  height: to-rem(465px);
+
+  @include media-breakpoint-md-up {
+    height: to-rem(420px);
+  }
+
+  .img-container {
+    img {
+      object-fit: cover;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &::before {
+      display: 'block';
+      content: '';
+      padding-top: 100%;
+    }
+  }
+
+  section {
+    .product-name {
+      font-size: to-rem(16px);
+    }
+
+    .product-price {
+      font-size: to-rem(18px);
+    }
+  }
+}

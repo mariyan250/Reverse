@@ -3,7 +3,7 @@ import React from 'react';
 import './index.scss';
 
 // Components
-import Item from '../Item';
+import Item from '../Card';
 
 function ItemList({ items }) {
   return (
