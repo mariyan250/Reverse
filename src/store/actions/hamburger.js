@@ -8,3 +8,12 @@ export function toggleHamburger(state) {
     },
   };
 }
+
+export function closeHamburger() {
+  return {
+    type: TOGGLE_HAMBURGER,
+    payload: {
+      isOpen: false,
+    },
+  };
+}

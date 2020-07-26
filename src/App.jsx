@@ -2,8 +2,7 @@
 import React, { useEffect } from 'react';
 
 // Router
-import { Route, Switch } from 'react-router-dom';
-import { ConnectedRouter } from 'connected-react-router';
+import { Router, Route, Switch } from 'react-router-dom';
 
 // Routes
 import { routes } from 'shared/constants/routes';
@@ -31,7 +30,7 @@ function App({ history, getUser, user }) {
   }, [getUser]);
 
   return (
-    <ConnectedRouter history={history}>
+    <Router history={history}>
       <Header />
       <Switch>
         <Route path={routes.search} component={SearchProduct} />
@@ -42,7 +41,7 @@ function App({ history, getUser, user }) {
         <Route exact path={routes.home} component={Home} />
         <Route path="*" component={NotFound} />
       </Switch>
-    </ConnectedRouter>
+    </Router>
   );
 }
 

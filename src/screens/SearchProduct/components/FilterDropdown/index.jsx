@@ -7,15 +7,15 @@ import { useTranslation } from 'react-i18next';
 
 // Redux
 import { connect } from 'react-redux';
-import { filterPost, getPosts } from 'store/actions/post';
+import { filterPost } from 'store/actions/post';
 
-function FilterDropdown({ posts, filterPost, getPosts, search }) {
+function FilterDropdown({ posts, filterPost }) {
   const { t } = useTranslation();
 
   const links = [
     {
       text: 'search_screen.filter_dropdown.newest',
-      onClick: () => getPosts(search),
+      onClick: () => filterPost(posts, 'newest'),
     },
     {
       text: 'search_screen.filter_dropdown.lowest',
@@ -29,8 +29,8 @@ function FilterDropdown({ posts, filterPost, getPosts, search }) {
 
   return (
     <ul className="filter-dropdown position-absolute app-bg-white rounded-lg box-shadow overflow-hidden d-flex flex-column justify-content-center">
-      {links.map((link) => (
-        <li className="py-3 text-center" onClick={() => link.onClick()}>
+      {links.map((link, i) => (
+        <li className="py-3 text-center" key={i} onClick={() => link.onClick()}>
           {t(link.text)}
         </li>
       ))}
@@ -40,7 +40,6 @@ function FilterDropdown({ posts, filterPost, getPosts, search }) {
 
 const mapStateToProps = (state) => ({
   posts: state.posts.items,
-  search: state.router.location.search,
 });
 
-export default connect(mapStateToProps, { filterPost, getPosts })(FilterDropdown);
+export default connect(mapStateToProps, { filterPost })(FilterDropdown);

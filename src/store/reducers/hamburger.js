@@ -1,5 +1,5 @@
 import { TOGGLE_HAMBURGER } from '../action-types/index';
-import { LOCATION_CHANGE } from 'connected-react-router';
+import { LOCATION_CHANGE } from 'react-router-redux';
 
 const initialState = {
   isOpen: false,
@@ -11,7 +11,7 @@ export function hamburgerReducer(state = initialState, action) {
       return { isOpen: action.payload.isOpen };
 
     case LOCATION_CHANGE:
-      return { ...state, isOpen: false };
+      return { isOpen: false };
 
     default:
       return state;

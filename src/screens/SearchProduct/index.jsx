@@ -10,18 +10,17 @@ import { getPosts } from 'store/actions/post';
 import { useTranslation } from 'react-i18next';
 
 // Components
-import Header from 'shared/components/Header';
 import ItemList from 'shared/components/Product/CardList';
 import Search from 'shared/components/Search';
 import FilterButton from './components/FilterButton';
 
-function SearchProduct({ getPosts, posts, location: { search } }) {
+function SearchProduct({ getPosts, posts, location }) {
   const [open, setOpen] = useState(false);
   const { t } = useTranslation();
 
   useEffect(() => {
-    getPosts(search);
-  }, [getPosts, search]);
+    getPosts(location.search);
+  }, [getPosts, location]);
 
   return (
     <main className="search-product px-4 mx-auto">
