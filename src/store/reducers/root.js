@@ -3,7 +3,7 @@ import { postsReducer } from './post';
 import { hamburgerReducer } from './hamburger';
 import { userReducer } from './user';
 
-export const RootReducer = (history) =>
+export const RootReducer = () =>
   combineReducers({
     posts: postsReducer,
     hamburger: hamburgerReducer,

@@ -11,6 +11,7 @@ export function postsReducer(state = initialState, action) {
       return {
         ...state,
         items: action.payload,
+        item: [],
       };
 
     case GET_POST:
