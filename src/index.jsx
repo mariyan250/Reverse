@@ -26,7 +26,7 @@ import App from './App';
 const initialState = {};
 const history = createBrowserHistory();
 
-const configureStore = (preloadedState) => {
+export const configureStore = (preloadedState) => {
   const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
   return createStore(
     RootReducer(history),
@@ -53,5 +53,5 @@ ReactDOM.render(
       <App history={history} />
     </Provider>
   </Suspense>,
-  document.getElementById('root'),
+  document.getElementById('root') || document.createElement('div'),
 );

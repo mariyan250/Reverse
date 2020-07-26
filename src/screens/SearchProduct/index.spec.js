@@ -1,25 +1,23 @@
 import React from 'react';
-import { render } from 'tests/test-utils';
-import Search from './index';
+import { renderWithRouter } from 'tests/test-utils';
+import SearchProduct from './index';
 
-describe('Search', () => {
+describe('SearchProduct', () => {
   let initialState;
 
   beforeAll(() => {
     initialState = {
       router: {
-        location: {
-          search: '',
-        },
+        search: '',
       },
     };
   });
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { container } = render(<Search />, { initialState });
+      const { container } = renderWithRouter(<SearchProduct />, initialState);
 
-      expect(container.querySelector('.search')).toMatchSnapshot();
+      expect(container.querySelector('.search-product')).toMatchSnapshot();
     });
   });
 });

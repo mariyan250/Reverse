@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input Rendering should render the component with initial state 1`] = `
+<section
+  class="auth-input"
+>
+  <label />
+  <input
+    class="p-1"
+  />
+</section>
+`;

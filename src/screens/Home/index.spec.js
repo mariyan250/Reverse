@@ -1,8 +1,8 @@
 import React from 'react';
-import { render } from 'tests/test-utils';
-import HomePrivate from './index';
+import { renderWithRouter } from 'tests/test-utils';
+import Home from './index';
 
-describe('HomePrivate', () => {
+describe('Home', () => {
   let initialState;
 
   beforeAll(() => {
@@ -11,9 +11,9 @@ describe('HomePrivate', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { container } = render(<HomePrivate />, { initialState });
+      const { container } = renderWithRouter(<Home />, initialState);
 
-      expect(container.querySelector('.home-private')).toMatchSnapshot();
+      expect(container.querySelector('.home')).toMatchSnapshot();
     });
   });
 });

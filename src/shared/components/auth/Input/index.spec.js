@@ -1,8 +1,8 @@
 import React from 'react';
 import { renderWithRouter } from 'tests/test-utils';
-import Login from './index';
+import Input from './index';
 
-describe('Login', () => {
+describe('Input', () => {
   let initialState;
 
   beforeAll(() => {
@@ -11,9 +11,9 @@ describe('Login', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { container } = renderWithRouter(<Login />, initialState);
+      const { container } = renderWithRouter(<Input />, initialState);
 
-      expect(container.querySelector('.login')).toMatchSnapshot();
+      expect(container.querySelector('.auth-input')).toMatchSnapshot();
     });
   });
 });

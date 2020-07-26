@@ -38,7 +38,7 @@ function Header(props) {
   };
 
   return (
-    <header className="app-bg-secondary position-sticky px-4 px-md-5 d-flex justify-content-between align-items-center">
+    <header className="header app-bg-secondary position-sticky px-4 px-md-5 d-flex justify-content-between align-items-center">
       <Link to="/">
         <h1 className="app-text-white">{t('header.heading')}</h1>
       </Link>

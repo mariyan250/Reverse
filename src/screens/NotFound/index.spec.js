@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from 'tests/test-utils';
+import { renderWithRouter } from 'tests/test-utils';
 import NotFound from './index';
 
 describe('NotFound', () => {
@@ -11,9 +11,9 @@ describe('NotFound', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { container } = render(<NotFound />, { initialState });
+      const { container } = renderWithRouter(<NotFound />, initialState);
 
-      expect(container.querySelector('body .not-found')).toMatchSnapshot();
+      expect(container.querySelector('.not-found')).toMatchSnapshot();
     });
   });
 });

@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from 'tests/test-utils';
+import { renderWithRouter } from 'tests/test-utils';
 import Register from './index';
 
 describe('Register', () => {
@@ -11,9 +11,9 @@ describe('Register', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { container } = render(<Register />, { initialState });
+      const { container } = renderWithRouter(<Register />, initialState);
 
-      expect(container.querySelector('body .register')).toMatchSnapshot();
+      expect(container.querySelector('.register')).toMatchSnapshot();
     });
   });
 });

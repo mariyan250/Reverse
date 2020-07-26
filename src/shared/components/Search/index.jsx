@@ -10,7 +10,7 @@ function Search() {
   const { t } = useTranslation();
 
   return (
-    <form action="/search" className="w-100 mx-auto">
+    <form action="/search" className="search-form w-100 mx-auto">
       <article className="d-flex">
         <input
           type="text"
