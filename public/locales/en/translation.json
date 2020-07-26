@@ -58,7 +58,8 @@
     "links": {
       "home": "Home",
       "login": "Login",
-      "register": "Register"
+      "register": "Register",
+      "profile": "Profile"
     }
   },
 

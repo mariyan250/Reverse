@@ -1,39 +1,32 @@
-// React
+// React and ReactDOM
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 
-// Router
-import { Route, Switch } from 'react-router-dom';
-import { ConnectedRouter, routerMiddleware } from 'connected-react-router';
-import { createBrowserHistory } from 'history';
+// Styles
+import './index.scss';
 
-// Routes
-import { routes } from 'shared/constants/routes';
+// Translations
+import './i18n';
+
+// Translations Loading
+import LoadingOverlay from 'react-loading-overlay';
+
+// Router and History
+import { routerMiddleware } from 'connected-react-router';
+import { createBrowserHistory } from 'history';
 
 // Redux
 import { Provider } from 'react-redux';
 import { applyMiddleware, compose, createStore } from 'redux';
 import { RootReducer } from 'store/reducers/root';
 
-// i18n
-import './i18n';
-
-// Styles
-import './index.scss';
-
-// Screens
-import LoadingOverlay from 'react-loading-overlay';
-import Home from 'screens/Home/';
-import Login from 'screens/Login';
-import Register from 'screens/Register';
-import NotFound from 'screens/NotFound';
-import SearchProduct from 'screens/SearchProduct';
-import Product from 'screens/Product';
+// Entry component
+import App from './App';
 
 const initialState = {};
 const history = createBrowserHistory();
 
-export const configureStore = (preloadedState) => {
+const configureStore = (preloadedState) => {
   const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
   return createStore(
     RootReducer(history),
@@ -57,16 +50,7 @@ ReactDOM.render(
     }
   >
     <Provider store={configureStore(initialState)}>
-      <ConnectedRouter history={history}>
-        <Switch>
-          <Route path={routes.search} component={SearchProduct} />
-          <Route path={routes.item} component={Product} />
-          <Route path={routes.login} component={Login} />
-          <Route path={routes.register} component={Register} />
-          <Route exact path={routes.home} component={Home} />
-          <Route path="*" component={NotFound} />
-        </Switch>
-      </ConnectedRouter>
+      <App history={history} />
     </Provider>
   </Suspense>,
   document.getElementById('root'),

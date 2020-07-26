@@ -41,6 +41,7 @@
     "price": "1200",
     "location": "Blagoevgrad",
     "seller": "Mariyan V.",
-    "date": "8 July - 6:00"
+    "date": "8 July - 6:00",
+    "type": "Promo"
   }
 ]

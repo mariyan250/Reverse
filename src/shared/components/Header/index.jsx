@@ -20,10 +20,12 @@ import Menu from 'shared/components/Menu';
 function Header(props) {
   const { t } = useTranslation();
 
-  const links = [
+  const publicLinks = [
     { to: routes.login, text: 'header.links.login' },
     { to: routes.register, text: 'header.links.register' },
   ];
+
+  const privateLinks = [{ to: routes.profile, text: 'header.links.profile' }];
 
   return (
     <header className="app-bg-secondary position-sticky px-4 px-md-5 d-flex justify-content-between align-items-center">
@@ -32,7 +34,7 @@ function Header(props) {
       </Link>
 
       <ul className="d-none d-md-flex h-100 align-items-center m-0">
-        {links.map((link, i) => (
+        {(props.user ? privateLinks : publicLinks).map((link, i) => (
           <li className="ml-5 h-100" key={i}>
             <NavLink
               to={link.to}
@@ -50,7 +52,10 @@ function Header(props) {
       />
 
       {props.burgerOpened && (
-        <Menu className="header-menu position-fixed d-md-none w-100" links={links} />
+        <Menu
+          className="header-menu position-fixed d-md-none w-100"
+          links={props.user ? privateLinks : publicLinks}
+        />
       )}
     </header>
   );
@@ -59,6 +64,7 @@ function Header(props) {
 const mapStateToProps = (state) => {
   return {
     burgerOpened: state.hamburger.isOpen,
+    user: state.user,
   };
 };
 
