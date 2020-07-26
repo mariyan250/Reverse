@@ -34,7 +34,7 @@ function SearchProduct({ getPosts, posts, location: { search } }) {
 
         <section className="products-upper-line d-flex justify-content-between align-items-center mb-4">
           <h3>{t('search_screen.heading')}</h3>
-          <FilterButton isOpen={open} onClick={() => setOpen(!open)} location={20} />
+          <FilterButton isOpen={open} onClick={() => setOpen(!open)} />
         </section>
 
         <section className="products-container app-bg-gray-darker p-2 p-md-4">

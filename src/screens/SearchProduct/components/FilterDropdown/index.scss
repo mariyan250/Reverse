@@ -5,7 +5,7 @@
   left: to-rem(-50px);
   top: to-rem(45px);
   width: to-rem(200px);
-  animation: appear 1 0.2s;
+  animation: appear 1 $fast;
 
   li {
     font-size: to-rem(16px);

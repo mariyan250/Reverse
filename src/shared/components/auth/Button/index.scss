@@ -3,7 +3,7 @@
 .auth-btn {
   button {
     font-size: to-rem(18px);
-    animation: appear 1 0.5s;
+    animation: appear 1 $slow;
 
     &:hover {
       background: $primary-hover;

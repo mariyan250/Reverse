@@ -6,7 +6,7 @@
 
   span {
     height: to-rem(4px);
-    transition: 0.5s;
+    transition: $slow;
   }
 
   span:nth-child(2) {

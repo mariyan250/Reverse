@@ -6,7 +6,7 @@
     width: to-rem(150px);
 
     i {
-      transition: 0.4s;
+      transition: $normal;
       font-size: to-rem(24px);
 
       &.toggle {

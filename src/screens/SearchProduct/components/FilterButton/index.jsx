@@ -13,7 +13,7 @@ function FilterButton({ isOpen, onClick }) {
 
   return (
     <section className="filter-button" onClick={onClick}>
-      <button className="box-shadow rounded d-flex py-2 px-2 justify-content-center align-items-center position-relative border-0 app-bg-white">
+      <button className="box-shadow rounded d-flex p-2 justify-content-center align-items-center position-relative border-0 app-bg-white">
         <p>{t('search_screen.filter_button')}</p>
         <i className={`fas fa-angle-down ml-3 ${isOpen && 'toggle'}`} />
         {isOpen && <FilterDropdown />}
