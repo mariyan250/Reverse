@@ -9,6 +9,7 @@ import { routes } from 'shared/constants/routes';
 // Redux
 import { connect } from 'react-redux';
 import { toggleHamburger } from 'store/actions/hamburger';
+import { removeUser } from 'store/actions/user';
 
 // Translation
 import { useTranslation } from 'react-i18next';
@@ -27,6 +28,11 @@ function Header(props) {
 
   const privateLinks = [{ to: routes.profile, text: 'header.links.profile' }];
 
+  const handleLogout = () => {
+    props.removeUser();
+    window.locaton = '/';
+  };
+
   return (
     <header className="app-bg-secondary position-sticky px-4 px-md-5 d-flex justify-content-between align-items-center">
       <Link to="/">
@@ -44,6 +50,16 @@ function Header(props) {
             </NavLink>
           </li>
         ))}
+
+        {props.user && (
+          <li
+            className="logout-btn ml-3 py-2 px-3 app-bg-secondary app-text-white border-0"
+            onClick={handleLogout}
+          >
+            <i className="" />
+            {t('header.logout_btn')}
+          </li>
+        )}
       </ul>
 
       <Hamburger
@@ -68,4 +84,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps, { toggleHamburger })(Header);
+export default connect(mapStateToProps, { toggleHamburger, removeUser })(Header);

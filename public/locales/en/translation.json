@@ -55,6 +55,7 @@
 
   "header": {
     "heading": "Reverse",
+    "logout_btn": "Log out",
     "links": {
       "home": "Home",
       "login": "Login",

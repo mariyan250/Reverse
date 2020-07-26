@@ -1,5 +1,5 @@
 // React and style
-import React, { Fragment, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import './index.scss';
 
 // Routes
@@ -13,7 +13,6 @@ import { getPromoPosts } from 'store/actions/post';
 import { useTranslation } from 'react-i18next';
 
 // Components
-import Header from 'shared/components/Header';
 import CategoryCard from './components/CategoryCard';
 import ItemList from 'shared/components/Product/CardList';
 import Search from 'shared/components/Search';
@@ -59,38 +58,29 @@ function Home({ getPromoPosts, promoPosts }) {
   ];
 
   return (
-    <Fragment>
-      <Header />
+    <main className="home mx-auto px-4 px-md-5">
+      <section className="my-5 d-flex">
+        <Search />
+      </section>
 
-      <main className="home mx-auto px-4 px-md-5">
-        <section className="my-5 d-flex">
-          <Search />
-        </section>
+      <section className="categories">
+        <h3 className="mb-4">{t('home_screen.heading')}</h3>
 
-        <section className="categories">
-          <h3 className="mb-4">{t('home_screen.heading')}</h3>
+        <article className="categories-container">
+          {categoryCards.map((category, i) => (
+            <CategoryCard url={category.url} icon={category.icon} title={category.title} key={i} />
+          ))}
+        </article>
+      </section>
 
-          <article className="categories-container">
-            {categoryCards.map((category, i) => (
-              <CategoryCard
-                url={category.url}
-                icon={category.icon}
-                title={category.title}
-                key={i}
-              />
-            ))}
-          </article>
-        </section>
+      <section className="promo-offers">
+        <h3 className="mt-5 mb-4">{t('home_screen.second_heading')}</h3>
 
-        <section className="promo-offers">
-          <h3 className="mt-5 mb-4">{t('home_screen.second_heading')}</h3>
-
-          <article className="promo-offers-container p-2 app-bg-gray-darker">
-            <ItemList items={promoPosts} />
-          </article>
-        </section>
-      </main>
-    </Fragment>
+        <article className="promo-offers-container p-2 app-bg-gray-darker">
+          <ItemList items={promoPosts} />
+        </article>
+      </section>
+    </main>
   );
 }
 

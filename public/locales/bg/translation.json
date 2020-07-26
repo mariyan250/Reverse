@@ -57,6 +57,7 @@
 
   "header": {
     "heading": "Reverse",
+    "logout_btn": "Излез",
     "links": {
       "home": "Начало",
       "login": "Вход",

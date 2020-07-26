@@ -23,6 +23,8 @@ import SearchProduct from 'screens/SearchProduct';
 import Product from 'screens/Product';
 import Profile from 'screens/Profile';
 
+import Header from 'shared/components/Header';
+
 function App({ history, getUser, user }) {
   useEffect(() => {
     getUser();
@@ -30,6 +32,7 @@ function App({ history, getUser, user }) {
 
   return (
     <ConnectedRouter history={history}>
+      <Header />
       <Switch>
         <Route path={routes.search} component={SearchProduct} />
         <Route path={routes.item} component={Product} />

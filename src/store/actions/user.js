@@ -1,4 +1,4 @@
-import { GET_USER } from 'store/action-types';
+import { GET_USER, REMOVE_USER } from 'store/action-types';
 
 export function getUser() {
   return {
@@ -7,5 +7,12 @@ export function getUser() {
       email: 'mariyan250@gmail.com',
       username: 'mariyan250',
     },
+  };
+}
+
+export function removeUser() {
+  return {
+    type: REMOVE_USER,
+    payload: null,
   };
 }
