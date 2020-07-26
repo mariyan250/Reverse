@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 
 // Router
-import { Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // Routes
 import { routes } from 'shared/constants/routes';
@@ -24,13 +24,13 @@ import Profile from 'screens/Profile';
 
 import Header from 'shared/components/Header';
 
-function App({ history, getUser, user }) {
+function App({ getUser, user }) {
   useEffect(() => {
     getUser();
   }, [getUser]);
 
   return (
-    <Router history={history}>
+    <Router>
       <Header />
       <Switch>
         <Route path={routes.search} component={SearchProduct} />

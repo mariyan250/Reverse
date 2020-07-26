@@ -11,9 +11,6 @@ import './i18n';
 // Translations Loading
 import LoadingOverlay from 'react-loading-overlay';
 
-// Router and History
-import { createBrowserHistory } from 'history';
-
 // Redux
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
@@ -26,10 +23,9 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import App from './App';
 
 const initialState = {};
-const history = createBrowserHistory();
 
 export const configureStore = (preloadedState) => {
-  return createStore(RootReducer(history), preloadedState, composeWithDevTools());
+  return createStore(RootReducer(), preloadedState, composeWithDevTools());
 };
 
 ReactDOM.render(
@@ -47,7 +43,7 @@ ReactDOM.render(
     }
   >
     <Provider store={configureStore(initialState)}>
-      <App history={history} />
+      <App />
     </Provider>
   </Suspense>,
   document.getElementById('root') || document.createElement('div'),

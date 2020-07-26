@@ -1,13 +1,11 @@
 import React, { Suspense } from 'react';
-import { Router } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import { createMemoryHistory } from 'history';
 import { configureStore } from '../index';
 import LoadingOverlay from 'react-loading-overlay';
 
 export const renderWithRouter = (component, initialState = {}) => {
-  const history = createMemoryHistory();
   return render(
     <Suspense
       fallback={
@@ -23,7 +21,7 @@ export const renderWithRouter = (component, initialState = {}) => {
       }
     >
       <Provider store={configureStore(initialState)}>
-        <Router history={history}>{component}</Router>
+        <Router>{component}</Router>
       </Provider>
     </Suspense>,
   );
