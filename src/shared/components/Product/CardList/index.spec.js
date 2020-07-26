@@ -11,9 +11,9 @@ describe('Search', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { container } = renderWithRouter(<ItemList />, initialState);
+      const { asFragment } = renderWithRouter(<ItemList />, initialState);
 
-      expect(container.querySelector('.item-list')).toMatchSnapshot();
+      expect(asFragment(<ItemList />)).toMatchSnapshot();
     });
   });
 });

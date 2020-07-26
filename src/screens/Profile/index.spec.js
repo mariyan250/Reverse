@@ -11,9 +11,9 @@ describe('Search', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { container } = renderWithRouter(<Profile />, initialState);
+      const { asFragment } = renderWithRouter(<Profile />, initialState);
 
-      expect(container.querySelector('.profile')).toMatchSnapshot();
+      expect(asFragment(<Profile />)).toMatchSnapshot();
     });
   });
 });

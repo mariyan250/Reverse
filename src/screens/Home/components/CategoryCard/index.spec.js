@@ -11,9 +11,9 @@ describe('CategoryCard', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { container } = renderWithRouter(<CategoryCard />, initialState);
+      const { asFragment } = renderWithRouter(<CategoryCard />, initialState);
 
-      expect(container.querySelector('.category-card')).toMatchSnapshot();
+      expect(asFragment(<CategoryCard />)).toMatchSnapshot();
     });
   });
 });

@@ -50,5 +50,5 @@ ReactDOM.render(
       <App history={history} />
     </Provider>
   </Suspense>,
-  document.getElementById('root'),
+  document.getElementById('root') || document.createElement('div'),
 );

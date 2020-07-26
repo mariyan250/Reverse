@@ -11,9 +11,9 @@ describe('Button', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { container } = renderWithRouter(<Button />, initialState);
+      const { asFragment } = renderWithRouter(<Button />, initialState);
 
-      expect(container.querySelector('.auth-btn')).toMatchSnapshot();
+      expect(asFragment(<Button />)).toMatchSnapshot();
     });
   });
 });

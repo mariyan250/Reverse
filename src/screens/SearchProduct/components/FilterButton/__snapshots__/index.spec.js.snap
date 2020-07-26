@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Search Rendering should render the component with initial state 1`] = `
+exports[`FilterButton Rendering should render the component with initial state 1`] = `
 <DocumentFragment>
   <div
     class="_loading_overlay_wrapper _loading_overlay_wrapper--active css-m8dnq0"

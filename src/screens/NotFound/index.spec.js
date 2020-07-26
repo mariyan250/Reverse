@@ -11,9 +11,9 @@ describe('NotFound', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { container } = renderWithRouter(<NotFound />, initialState);
+      const { asFragment } = renderWithRouter(<NotFound />, initialState);
 
-      expect(container.querySelector('.not-found')).toMatchSnapshot();
+      expect(asFragment(<NotFound />)).toMatchSnapshot();
     });
   });
 });

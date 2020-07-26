@@ -15,9 +15,9 @@ describe('SearchProduct', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { container } = renderWithRouter(<SearchProduct />, initialState);
+      const { asFragment } = renderWithRouter(<SearchProduct />, initialState);
 
-      expect(container.querySelector('.search-product')).toMatchSnapshot();
+      expect(asFragment(<SearchProduct />)).toMatchSnapshot();
     });
   });
 });

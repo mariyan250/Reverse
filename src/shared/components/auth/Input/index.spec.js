@@ -11,9 +11,9 @@ describe('Input', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { container } = renderWithRouter(<Input />, initialState);
+      const { asFragment } = renderWithRouter(<Input />, initialState);
 
-      expect(container.querySelector('.auth-input')).toMatchSnapshot();
+      expect(asFragment(<Input />)).toMatchSnapshot();
     });
   });
 });

@@ -18,6 +18,7 @@ export function postsReducer(state = initialState, action) {
       return {
         ...state,
         item: action.payload,
+        items: [],
       };
 
     default:

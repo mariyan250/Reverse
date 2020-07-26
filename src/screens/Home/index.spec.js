@@ -11,9 +11,11 @@ describe('Home', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { container } = renderWithRouter(<Home />, initialState);
+      const { asFragment } = renderWithRouter(<Home />, initialState);
 
-      expect(container.querySelector('.home')).toMatchSnapshot();
+      expect(asFragment(<Home />)).toMatchSnapshot();
     });
+
+    it('should ', () => {});
   });
 });

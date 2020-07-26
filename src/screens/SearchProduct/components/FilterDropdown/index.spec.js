@@ -1,8 +1,8 @@
 import React from 'react';
 import { renderWithRouter } from 'tests/test-utils';
-import Login from './index';
+import FilterDropdown from './index';
 
-describe('Login', () => {
+describe('FilterDropdown', () => {
   let initialState;
 
   beforeAll(() => {
@@ -11,9 +11,9 @@ describe('Login', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { asFragment } = renderWithRouter(<Login />, initialState);
+      const { asFragment } = renderWithRouter(<FilterDropdown />, initialState);
 
-      expect(asFragment(<Login />)).toMatchSnapshot();
+      expect(asFragment(<FilterDropdown />)).toMatchSnapshot();
     });
   });
 });

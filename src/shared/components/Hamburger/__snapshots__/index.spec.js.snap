@@ -1,17 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Hamburger Rendering should render the component with initial state 1`] = `
-<article
-  class="hamburger d-flex flex-column justify-content-between"
->
-  <span
-    class="app-bg-white rounded-pill"
-  />
-  <span
-    class="app-bg-white align-self-end rounded-pill"
-  />
-  <span
-    class="app-bg-white align-self-end rounded-pill"
-  />
-</article>
+<DocumentFragment>
+  <section>
+    <article
+      class="hamburger d-flex flex-column justify-content-between"
+    >
+      <span
+        class="app-bg-white rounded-pill"
+      />
+      <span
+        class="app-bg-white align-self-end rounded-pill"
+      />
+      <span
+        class="app-bg-white align-self-end rounded-pill"
+      />
+    </article>
+  </section>
+</DocumentFragment>
 `;

@@ -13,9 +13,9 @@ describe('ItemScreen', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { container } = renderWithRouter(<Product />, initialState);
+      const { asFragment } = renderWithRouter(<Product />, initialState);
 
-      expect(container.querySelector('.product')).toMatchSnapshot();
+      expect(asFragment(<Product />)).toMatchSnapshot();
     });
   });
 });

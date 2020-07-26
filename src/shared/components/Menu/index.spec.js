@@ -11,9 +11,9 @@ describe('Menu', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { container } = renderWithRouter(<Menu />, initialState);
+      const { asFragment } = renderWithRouter(<Menu />, initialState);
 
-      expect(container.querySelector('.menu')).toMatchSnapshot();
+      expect(asFragment(<Menu />)).toMatchSnapshot();
     });
   });
 });

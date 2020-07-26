@@ -11,9 +11,9 @@ describe('Register', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { container } = renderWithRouter(<Register />, initialState);
+      const { asFragment } = renderWithRouter(<Register />, initialState);
 
-      expect(container.querySelector('.register')).toMatchSnapshot();
+      expect(asFragment(<Register />)).toMatchSnapshot();
     });
   });
 });

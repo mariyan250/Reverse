@@ -11,9 +11,9 @@ describe('Header', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { container } = renderWithRouter(<Header />, initialState);
+      const { asFragment } = renderWithRouter(<Header />, initialState);
 
-      expect(container.querySelector('.header')).toMatchSnapshot();
+      expect(asFragment(<Header />)).toMatchSnapshot();
     });
   });
 });
