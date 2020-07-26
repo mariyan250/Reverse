@@ -6,9 +6,7 @@ describe('ItemScreen', () => {
   let initialState;
 
   beforeAll(() => {
-    initialState = {
-      router: {},
-    };
+    initialState = {};
   });
 
   describe('Rendering', () => {

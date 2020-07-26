@@ -15,7 +15,5 @@ describe('Home', () => {
 
       expect(asFragment(<Home />)).toMatchSnapshot();
     });
-
-    it('should ', () => {});
   });
 });

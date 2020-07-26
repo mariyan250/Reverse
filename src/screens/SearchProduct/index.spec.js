@@ -6,11 +6,7 @@ describe('SearchProduct', () => {
   let initialState;
 
   beforeAll(() => {
-    initialState = {
-      router: {
-        search: '',
-      },
-    };
+    initialState = {};
   });
 
   describe('Rendering', () => {
