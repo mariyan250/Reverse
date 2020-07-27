@@ -1,36 +1,72 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header Rendering should render the component with initial state 1`] = `
-<DocumentFragment>
-  <div
-    class="_loading_overlay_wrapper _loading_overlay_wrapper--active css-m8dnq0"
-    data-testid="wrapper"
+<div>
+  <header
+    class="header app-bg-secondary position-sticky px-4 px-md-5 d-flex justify-content-between align-items-center"
+    data-testid="header"
   >
-    <div
-      class="_loading_overlay_overlay css-df17o1"
-      data-testid="overlay"
+    <a
+      href="/"
     >
-      <div
-        class="_loading_overlay_content css-42igfv"
+      <h1
+        class="app-text-white"
       >
-        <div
-          class="_loading_overlay_spinner css-50etie"
+        header.heading
+      </h1>
+    </a>
+    <ul
+      class="d-none d-md-flex h-100 align-items-center m-0"
+    >
+      <li
+        class="ml-5 h-100"
+      >
+        <a
+          aria-current="page"
+          class="app-text-white h-100 d-flex justify-content-center align-items-center active"
+          href="/"
         >
-          <svg
-            viewBox="25 25 50 50"
-          >
-            <circle
-              cx="50"
-              cy="50"
-              fill="none"
-              r="20"
-              stroke-miterlimit="10"
-              stroke-width="2"
-            />
-          </svg>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
+          header.links.home
+        </a>
+      </li>
+      <li
+        class="ml-5 h-100"
+      >
+        <a
+          class="app-text-white h-100 d-flex justify-content-center align-items-center"
+          href="/login"
+        >
+          header.links.login
+        </a>
+      </li>
+      <li
+        class="ml-5 h-100"
+      >
+        <a
+          class="app-text-white h-100 d-flex justify-content-center align-items-center"
+          href="/register"
+        >
+          header.links.register
+        </a>
+      </li>
+    </ul>
+    <section
+      class="d-md-none "
+    >
+      <article
+        class="hamburger d-flex flex-column justify-content-between"
+      >
+        <span
+          class="app-bg-white rounded-pill"
+        />
+        <span
+          class="app-bg-white align-self-end rounded-pill"
+        />
+        <span
+          class="app-bg-white align-self-end rounded-pill"
+        />
+      </article>
+    </section>
+  </header>
+</div>
 `;

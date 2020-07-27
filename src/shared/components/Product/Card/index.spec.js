@@ -1,5 +1,5 @@
 import React from 'react';
-import { renderWithRouter } from 'tests/test-utils';
+import { render, waitForElement } from 'tests/test-utils';
 import Item from './index';
 
 describe('Item', () => {
@@ -10,10 +10,10 @@ describe('Item', () => {
   });
 
   describe('Rendering', () => {
-    it('should render the component with initial state', () => {
-      const { asFragment } = renderWithRouter(<Item />, initialState);
-
-      expect(asFragment(<Item />)).toMatchSnapshot();
+    it('should render the component with initial state', async () => {
+      const { container, getByTestId } = render(<Item />, initialState);
+      await waitForElement(() => getByTestId('item'));
+      expect(container).toMatchSnapshot();
     });
   });
 });

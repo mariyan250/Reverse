@@ -58,7 +58,7 @@ function Home({ getPromoPosts, promoPosts }) {
   ];
 
   return (
-    <main className="home mx-auto px-4 px-md-5">
+    <main className="home mx-auto px-4 px-md-5" data-testid="home">
       <section className="my-5 d-flex">
         <Search />
       </section>

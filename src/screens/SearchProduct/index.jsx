@@ -23,7 +23,7 @@ function SearchProduct({ getPosts, posts, location }) {
   }, [getPosts, location]);
 
   return (
-    <main className="search-product px-4 mx-auto">
+    <main className="search-product px-4 mx-auto" data-testid="search-product">
       <section className="my-5 d-flex">
         <Search />
       </section>

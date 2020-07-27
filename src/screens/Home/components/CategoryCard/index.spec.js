@@ -1,5 +1,5 @@
 import React from 'react';
-import { renderWithRouter } from 'tests/test-utils';
+import { render, waitForElement } from 'tests/test-utils';
 import CategoryCard from './index';
 
 describe('CategoryCard', () => {
@@ -10,10 +10,10 @@ describe('CategoryCard', () => {
   });
 
   describe('Rendering', () => {
-    it('should render the component with initial state', () => {
-      const { asFragment } = renderWithRouter(<CategoryCard />, initialState);
-
-      expect(asFragment(<CategoryCard />)).toMatchSnapshot();
+    it('should render the component with initial state', async () => {
+      const { container, getByTestId } = render(<CategoryCard />, initialState);
+      await waitForElement(() => getByTestId('category-card'));
+      expect(container).toMatchSnapshot();
     });
   });
 });

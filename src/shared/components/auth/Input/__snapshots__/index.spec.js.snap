@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input Rendering should render the component with initial state 1`] = `
-<DocumentFragment>
+<div>
   <section
     class="auth-input"
   >
@@ -10,5 +10,5 @@ exports[`Input Rendering should render the component with initial state 1`] = `
       class="p-1"
     />
   </section>
-</DocumentFragment>
+</div>
 `;

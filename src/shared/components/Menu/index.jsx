@@ -13,7 +13,7 @@ function Menu(props) {
 
   return (
     <section {...props}>
-      <article className="menu app-bg-black-transparent">
+      <article className="menu app-bg-black-transparent" data-testid="menu">
         <ul>
           {props.links.map((link) => (
             <li className="d-flex">

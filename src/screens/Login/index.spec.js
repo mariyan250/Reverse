@@ -1,5 +1,5 @@
 import React from 'react';
-import { renderWithRouter } from 'tests/test-utils';
+import { render, waitForElement } from 'tests/test-utils';
 import Login from './index';
 
 describe('Login', () => {
@@ -10,10 +10,10 @@ describe('Login', () => {
   });
 
   describe('Rendering', () => {
-    it('should render the component with initial state', () => {
-      const { asFragment } = renderWithRouter(<Login />, initialState);
-
-      expect(asFragment(<Login />)).toMatchSnapshot();
+    it('should render the component with initial state', async () => {
+      const { container, getByTestId } = render(<Login />, initialState);
+      await waitForElement(() => getByTestId('login'));
+      expect(container).toMatchSnapshot();
     });
   });
 });

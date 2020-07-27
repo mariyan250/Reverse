@@ -1,5 +1,5 @@
 import React from 'react';
-import { renderWithRouter } from 'tests/test-utils';
+import { render } from 'tests/test-utils';
 import NotFound from './index';
 
 describe('NotFound', () => {
@@ -11,9 +11,8 @@ describe('NotFound', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { asFragment } = renderWithRouter(<NotFound />, initialState);
-
-      expect(asFragment(<NotFound />)).toMatchSnapshot();
+      const { container } = render(<NotFound />, initialState);
+      expect(container).toMatchSnapshot();
     });
   });
 });

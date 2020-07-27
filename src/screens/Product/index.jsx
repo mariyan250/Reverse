@@ -38,7 +38,7 @@ function Product({ getPost, post, match }) {
   }
 
   return (
-    <section className="product p-lg-4">
+    <section className="product p-lg-4" data-testid="product">
       <article className="gallery px-3">
         {post.images && (
           <ImageGallery

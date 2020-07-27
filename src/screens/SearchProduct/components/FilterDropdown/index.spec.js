@@ -1,5 +1,5 @@
 import React from 'react';
-import { renderWithRouter } from 'tests/test-utils';
+import { render, waitForElement } from 'tests/test-utils';
 import FilterDropdown from './index';
 
 describe('FilterDropdown', () => {
@@ -10,10 +10,10 @@ describe('FilterDropdown', () => {
   });
 
   describe('Rendering', () => {
-    it('should render the component with initial state', () => {
-      const { asFragment } = renderWithRouter(<FilterDropdown />, initialState);
-
-      expect(asFragment(<FilterDropdown />)).toMatchSnapshot();
+    it('should render the component with initial state', async () => {
+      const { container, getByTestId } = render(<FilterDropdown />, initialState);
+      await waitForElement(() => getByTestId('filter-dropdown'));
+      expect(container).toMatchSnapshot();
     });
   });
 });

@@ -28,7 +28,10 @@ function FilterDropdown({ posts, filterPost }) {
   ];
 
   return (
-    <ul className="filter-dropdown position-absolute app-bg-white rounded-lg box-shadow overflow-hidden d-flex flex-column justify-content-center">
+    <ul
+      className="filter-dropdown position-absolute app-bg-white rounded-lg box-shadow overflow-hidden d-flex flex-column justify-content-center"
+      data-testid="filter-dropdown"
+    >
       {links.map((link, i) => (
         <li className="py-3 text-center" key={i} onClick={() => link.onClick()}>
           {t(link.text)}

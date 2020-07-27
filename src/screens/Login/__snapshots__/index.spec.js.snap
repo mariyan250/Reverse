@@ -1,36 +1,71 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Login Rendering should render the component with initial state 1`] = `
-<DocumentFragment>
-  <div
-    class="_loading_overlay_wrapper _loading_overlay_wrapper--active css-m8dnq0"
-    data-testid="wrapper"
+<div>
+  <main
+    class="login d-flex vh-100 align-items-center justify-content-center px-4"
+    data-testid="login"
   >
-    <div
-      class="_loading_overlay_overlay css-df17o1"
-      data-testid="overlay"
-    >
-      <div
-        class="_loading_overlay_content css-42igfv"
+    <form>
+      <h1
+        class="text-center mb-5"
       >
-        <div
-          class="_loading_overlay_spinner css-50etie"
+        login_screen.heading
+      </h1>
+      <section
+        class="mb-4"
+      >
+        <section
+          class="auth-input"
         >
-          <svg
-            viewBox="25 25 50 50"
+          <label
+            for="email"
           >
-            <circle
-              cx="50"
-              cy="50"
-              fill="none"
-              r="20"
-              stroke-miterlimit="10"
-              stroke-width="2"
-            />
-          </svg>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
+            login_screen.inputs.labels.email
+          </label>
+          <input
+            class="p-1"
+            name="email"
+            required=""
+            type="email"
+          />
+        </section>
+      </section>
+      <section
+        class="mb-4"
+      >
+        <section
+          class="auth-input"
+        >
+          <label
+            for="password"
+          >
+            login_screen.inputs.labels.password
+          </label>
+          <input
+            class="p-1"
+            name="password"
+            required=""
+            type="password"
+          />
+        </section>
+      </section>
+      <section
+        class="auth-btn mt-5"
+      >
+        <button
+          class="app-bg-primary border-0 app-text-white w-100 p-2"
+        >
+          login_screen.button
+        </button>
+      </section>
+      <a
+        class="app-text-secondary d-inline-block mt-4 mb-3"
+        href="/register"
+      >
+        login_screen.option_button
+      </a>
+    </form>
+  </main>
+</div>
 `;

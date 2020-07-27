@@ -1,5 +1,6 @@
 import React from 'react';
-import { renderWithRouter } from 'tests/test-utils';
+import { render } from 'tests/test-utils';
+import { waitForElement, getByText } from '@testing-library/react';
 import Home from './index';
 
 describe('Home', () => {
@@ -10,10 +11,10 @@ describe('Home', () => {
   });
 
   describe('Rendering', () => {
-    it('should render the component with initial state', () => {
-      const { asFragment } = renderWithRouter(<Home />, initialState);
-
-      expect(asFragment(<Home />)).toMatchSnapshot();
+    it('should render the component with initial state', async () => {
+      const { container, getByTestId } = render(<Home />, initialState);
+      await waitForElement(() => getByTestId('home'));
+      expect(container).toMatchSnapshot();
     });
   });
 });

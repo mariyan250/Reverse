@@ -12,7 +12,7 @@ function Item({ id, images, name, location, date, price }) {
   const { t } = useTranslation();
 
   return (
-    <li className="item app-bg-white box-shadow overflow-hidden">
+    <li className="item app-bg-white box-shadow overflow-hidden" data-testid="item">
       <Link to={`/item/${id}`} className="app-text-secondary">
         <section className="img-container d-flex overflow-hidden position-relative">
           <img

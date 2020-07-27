@@ -72,7 +72,10 @@ function Register() {
   };
 
   return (
-    <main className="register d-flex vh-100 align-items-center justify-content-center px-4 mx-auto">
+    <main
+      className="register d-flex vh-100 align-items-center justify-content-center px-4 mx-auto"
+      data-testid="register"
+    >
       <form onSubmit={handleRegister}>
         <h1 className="text-center mb-5">{t('register_screen.heading')}</h1>
 

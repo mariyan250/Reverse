@@ -50,7 +50,10 @@ function Login() {
   ];
 
   return (
-    <main className="login d-flex vh-100 align-items-center justify-content-center px-4">
+    <main
+      className="login d-flex vh-100 align-items-center justify-content-center px-4"
+      data-testid="login"
+    >
       <form onSubmit={handleLogin}>
         <h1 className="text-center mb-5">{t('login_screen.heading')}</h1>
 

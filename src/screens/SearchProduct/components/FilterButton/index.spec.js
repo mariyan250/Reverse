@@ -1,5 +1,5 @@
 import React from 'react';
-import { renderWithRouter } from 'tests/test-utils';
+import { render, waitForElement } from 'tests/test-utils';
 import FilterButton from './index';
 
 describe('FilterButton', () => {
@@ -10,10 +10,10 @@ describe('FilterButton', () => {
   });
 
   describe('Rendering', () => {
-    it('should render the component with initial state', () => {
-      const { asFragment } = renderWithRouter(<FilterButton />, initialState);
-
-      expect(asFragment(<FilterButton />)).toMatchSnapshot();
+    it('should render the component with initial state', async () => {
+      const { container, getByTestId } = render(<FilterButton />, initialState);
+      await waitForElement(() => getByTestId('filter-button'));
+      expect(container).toMatchSnapshot();
     });
   });
 });
