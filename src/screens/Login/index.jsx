@@ -23,7 +23,6 @@ function Login() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    alert('Login!');
   };
 
   const inputs = [

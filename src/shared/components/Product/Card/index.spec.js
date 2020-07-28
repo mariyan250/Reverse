@@ -11,7 +11,7 @@ describe('Item', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', async () => {
-      const { container, getByTestId } = render(<Item />, initialState);
+      const { container, getByTestId } = render(<Item images={[]} />, initialState);
       await waitForElement(() => getByTestId('item'));
       expect(container).toMatchSnapshot();
     });

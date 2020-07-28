@@ -1,6 +1,5 @@
 import React from 'react';
-import { render } from 'tests/test-utils';
-import { waitForElement, getByText } from '@testing-library/react';
+import { render, waitForElement, cleanup } from 'tests/test-utils';
 import Home from './index';
 
 describe('Home', () => {
@@ -9,6 +8,8 @@ describe('Home', () => {
   beforeAll(() => {
     initialState = {};
   });
+
+  afterEach(cleanup);
 
   describe('Rendering', () => {
     it('should render the component with initial state', async () => {

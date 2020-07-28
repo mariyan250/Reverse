@@ -9,6 +9,10 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { configureStore } from '../index';
 
+// i18
+import { I18nextProvider } from 'react-i18next';
+import i18 from './i18n-test-setup';
+
 // Testing Libary
 import { render } from '@testing-library/react';
 
@@ -28,9 +32,11 @@ const customRender = (ui, options) => {
           />
         }
       >
-        <Provider store={configureStore(options)}>
-          <Router>{children}</Router>
-        </Provider>
+        <I18nextProvider i18n={i18}>
+          <Provider store={configureStore(options)}>
+            <Router>{children}</Router>
+          </Provider>
+        </I18nextProvider>
       </Suspense>
     );
   };

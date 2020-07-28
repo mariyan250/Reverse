@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, waitForElement } from 'tests/test-utils';
+import { render, waitForElement, cleanup } from 'tests/test-utils';
 import SearchProduct from './index';
 
 describe('SearchProduct', () => {
@@ -9,9 +9,14 @@ describe('SearchProduct', () => {
     initialState = {};
   });
 
+  afterEach(cleanup);
+
   describe('Rendering', () => {
     it('should render the component with initial state', async () => {
-      const { container, getByTestId } = render(<SearchProduct />, initialState);
+      const { container, getByTestId } = render(
+        <SearchProduct location={{ search: 'q=technology' }} />,
+        initialState,
+      );
       await waitForElement(() => getByTestId('search-product'));
       expect(container).toMatchSnapshot();
     });

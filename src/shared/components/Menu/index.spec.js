@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, waitForElement } from 'tests/test-utils';
+import { render, waitForElement, cleanup } from 'tests/test-utils';
 import Menu from './index';
 
 describe('Menu', () => {
@@ -9,9 +9,11 @@ describe('Menu', () => {
     initialState = {};
   });
 
+  afterEach(cleanup);
+
   describe('Rendering', () => {
     it('should render the component with initial state', async () => {
-      const { container, getByTestId } = render(<Menu />, initialState);
+      const { container, getByTestId } = render(<Menu links={[]} />, initialState);
       await waitForElement(() => getByTestId('menu'));
       expect(container).toMatchSnapshot();
     });

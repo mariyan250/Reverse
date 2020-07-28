@@ -4,8 +4,11 @@ exports[`NotFound Rendering should render the component with initial state 1`] =
 <div>
   <main
     class="not-found vh-100 d-flex justify-content-center align-items-center"
+    data-testid="not-found"
   >
-    <h1>
+    <h1
+      data-testid="not-found-text"
+    >
       Not Found!
     </h1>
   </main>

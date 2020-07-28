@@ -5,7 +5,7 @@ exports[`CategoryCard Rendering should render the component with initial state 1
   <a
     class="category-card py-2 py-md-4 box-shadow d-block text-center"
     data-testid="category-card"
-    href=""
+    href="/"
   >
     <img
       alt="home_screen.private.categories.img_alt"

@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Item Rendering should render the component with initial state 1`] = `
+<div>
+  <li
+    class="item app-bg-white box-shadow overflow-hidden"
+    data-testid="item"
+  >
+    <a
+      class="app-text-secondary"
+      href="/item/undefined"
+    >
+      <section
+        class="img-container d-flex overflow-hidden position-relative"
+      >
+        <img
+          alt="search_screen.item.img.alt"
+          class="img-fluid position-absolute p-3"
+        />
+      </section>
+      <section
+        class="py-3 px-4 h-100 app-bg-gray"
+      >
+        <p
+          class="product-name text-center mb-4"
+        />
+        <p
+          class="product-location mb-3"
+        >
+          <i
+            class="fas fa-map-marker-alt mr-2"
+          />
+        </p>
+        <p
+          class="product-date mb-4"
+        >
+          <i
+            class="fas fa-clock mr-2"
+          />
+        </p>
+        <p
+          class="product-price"
+        >
+           
+          general.currency
+        </p>
+      </section>
+    </a>
+  </li>
+</div>
+`;

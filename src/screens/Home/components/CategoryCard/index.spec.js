@@ -11,7 +11,7 @@ describe('CategoryCard', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', async () => {
-      const { container, getByTestId } = render(<CategoryCard />, initialState);
+      const { container, getByTestId } = render(<CategoryCard url="/" />, initialState);
       await waitForElement(() => getByTestId('category-card'));
       expect(container).toMatchSnapshot();
     });
