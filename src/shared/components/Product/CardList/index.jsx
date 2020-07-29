@@ -1,13 +1,15 @@
 // React and style
 import React from 'react';
-import './index.scss';
+import styles from './index.module.scss';
 
 // Components
 import Item from '../Card';
 
 function ItemList({ items }) {
   return (
-    <ul className="item-list">{items && items.map((item) => <Item {...item} key={item.id} />)}</ul>
+    <ul className={`${styles.list}`}>
+      {items && items.map((item) => <Item {...item} key={item.id} />)}
+    </ul>
   );
 }
 

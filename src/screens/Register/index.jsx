@@ -1,6 +1,6 @@
 // React and style
 import React, { useState } from 'react';
-import './index.scss';
+import styles from './index.module.scss';
 
 // Router
 import { Link } from 'react-router-dom';
@@ -73,20 +73,19 @@ function Register() {
 
   return (
     <main
-      className="register d-flex vh-100 align-items-center justify-content-center px-4 mx-auto"
-      data-testid="register"
+      className={`${styles.register} d-flex vh-100 align-items-center justify-content-center px-4 mx-auto`}
     >
       <form onSubmit={handleRegister}>
-        <h1 className="text-center mb-5">{t('register_screen.heading')}</h1>
+        <h1 className={`text-center mb-5`}>{t('register_screen.heading')}</h1>
 
         {inputs.map((input, i) => (
-          <section className="mb-4" key={i}>
+          <section className={`mb-4`} key={i}>
             <Input {...input} />
           </section>
         ))}
 
-        <Button text={t('register_screen.button')} className="mt-5" />
-        <Link to={routes.login} className="app-text-secondary mt-4 mb-5 d-inline-block">
+        <Button text={t('register_screen.button')} className={`mt-5`} />
+        <Link to={routes.login} className={`app-text-secondary mt-4 mb-5 d-inline-block`}>
           {t('register_screen.option_button')}
         </Link>
       </form>

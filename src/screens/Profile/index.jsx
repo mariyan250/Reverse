@@ -1,10 +1,9 @@
 // React and Style
 import React from 'react';
-import './index.scss';
 
 function Profile() {
   return (
-    <section className="profile">
+    <section>
       <h2>Profile</h2>
     </section>
   );

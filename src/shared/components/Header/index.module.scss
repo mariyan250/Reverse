@@ -5,13 +5,11 @@ header {
   z-index: 10;
   top: 0;
 
-  ul {
-    li {
-      font-size: to-rem(16px);
-    }
+  li {
+    font-size: to-rem(16px);
   }
 
-  .header-menu {
+  .menu {
     top: to-rem(60px);
     left: 0;
     z-index: 10;

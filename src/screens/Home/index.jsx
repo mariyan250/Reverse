@@ -1,6 +1,6 @@
 // React and style
 import React, { useEffect } from 'react';
-import './index.scss';
+import styles from './index.module.scss';
 
 // Routes
 import { searchRoutes } from 'shared/constants/routes';
@@ -58,25 +58,25 @@ function Home({ getPromoPosts, promoPosts }) {
   ];
 
   return (
-    <main className="home mx-auto px-4 px-md-5" data-testid="home">
-      <section className="my-5 d-flex">
+    <main className={`${styles.home} mx-auto px-4 px-md-5`}>
+      <section className={`my-5 d-flex`}>
         <Search />
       </section>
 
-      <section className="categories">
-        <h3 className="mb-4">{t('home_screen.heading')}</h3>
+      <section>
+        <h3 className={`mb-4`}>{t('home_screen.heading')}</h3>
 
-        <article className="categories-container">
+        <article className={`${styles.categories}`}>
           {categoryCards.map((category, i) => (
             <CategoryCard url={category.url} icon={category.icon} title={category.title} key={i} />
           ))}
         </article>
       </section>
 
-      <section className="promo-offers">
-        <h3 className="mt-5 mb-4">{t('home_screen.second_heading')}</h3>
+      <section>
+        <h3 className={`mt-5 mb-4`}>{t('home_screen.second_heading')}</h3>
 
-        <article className="promo-offers-container p-2 app-bg-gray-darker">
+        <article className={`p-2 app-bg-gray-darker`}>
           <ItemList items={promoPosts} />
         </article>
       </section>

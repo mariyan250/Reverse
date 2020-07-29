@@ -1,6 +1,6 @@
 // React and Style
 import React from 'react';
-import './index.scss';
+import styles from './index.module.scss';
 
 // Router
 import { NavLink } from 'react-router-dom';
@@ -13,13 +13,13 @@ function Menu(props) {
 
   return (
     <section {...props}>
-      <article className="menu app-bg-black-transparent" data-testid="menu">
+      <article className={`${styles.menu} app-bg-black-transparent`}>
         <ul>
           {props.links.map((link) => (
-            <li className="d-flex">
+            <li className={`d-flex`}>
               <NavLink
                 to={link.to}
-                className="d-flex w-100 justify-content-center align-items-center app-text-white app-bg-black-transparent py-4"
+                className={`d-flex w-100 justify-content-center align-items-center app-text-white app-bg-black-transparent py-4`}
               >
                 <i className={`${link.iconName} mr-3`} />
                 {t(link.text)}

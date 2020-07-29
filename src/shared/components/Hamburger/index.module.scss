@@ -20,10 +20,8 @@
   &:hover {
     cursor: pointer;
   }
-}
 
-.toggled {
-  .hamburger {
+  &.toggled {
     span:nth-child(1) {
       transform: rotate(-45deg) translate(-20%, 235%);
     }

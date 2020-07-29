@@ -1,6 +1,6 @@
 // React and Style
 import React from 'react';
-import './index.scss';
+import styles from './index.module.scss';
 
 // Router and Routes
 import { NavLink, Link } from 'react-router-dom';
@@ -39,19 +39,18 @@ function Header(props) {
 
   return (
     <header
-      className="header app-bg-secondary position-sticky px-4 px-md-5 d-flex justify-content-between align-items-center"
-      data-testid="header"
+      className={`app-bg-secondary position-sticky px-4 px-md-5 d-flex justify-content-between align-items-center`}
     >
       <Link to="/">
-        <h1 className="app-text-white">{t('header.heading')}</h1>
+        <h1 className={`app-text-white`}>{t('header.heading')}</h1>
       </Link>
 
-      <ul className="d-none d-md-flex h-100 align-items-center m-0">
+      <ul className={`d-none d-md-flex h-100 align-items-center m-0`}>
         {(props.user ? privateLinks : publicLinks).map((link, i) => (
-          <li className="ml-5 h-100" key={i}>
+          <li className={`ml-5 h-100`} key={i}>
             <NavLink
               to={link.to}
-              className="app-text-white h-100 d-flex justify-content-center align-items-center"
+              className={`app-text-white h-100 d-flex justify-content-center align-items-center`}
             >
               {t(link.text)}
             </NavLink>
@@ -60,23 +59,23 @@ function Header(props) {
 
         {props.user && (
           <li
-            className="logout-btn ml-3 py-2 px-3 app-bg-secondary app-text-white border-0"
+            className={`ml-3 py-2 px-3 app-bg-secondary app-text-white border-0`}
             onClick={handleLogout}
           >
-            <i className="" />
             {t('header.logout_btn')}
           </li>
         )}
       </ul>
 
       <Hamburger
-        className={`d-md-none ${props.burgerOpened ? 'toggled' : ''}`}
+        className={`d-md-none`}
         onClick={() => props.toggleHamburger(!props.burgerOpened)}
+        isOpen={props.burgerOpened}
       />
 
       {props.burgerOpened && (
         <Menu
-          className="header-menu position-fixed d-md-none w-100"
+          className={`${styles.menu} position-fixed d-md-none w-100`}
           links={props.user ? privateLinks : publicLinks}
         />
       )}

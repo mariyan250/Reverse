@@ -1,6 +1,6 @@
 // React and style
 import React, { useState } from 'react';
-import './index.scss';
+import styles from './index.module.scss';
 
 // Router
 import { Link } from 'react-router-dom';
@@ -50,21 +50,20 @@ function Login() {
 
   return (
     <main
-      className="login d-flex vh-100 align-items-center justify-content-center px-4"
-      data-testid="login"
+      className={`${styles.login} d-flex vh-100 align-items-center justify-content-center px-4`}
     >
-      <form onSubmit={handleLogin} data-testid="login-form">
-        <h1 className="text-center mb-5">{t('login_screen.heading')}</h1>
+      <form onSubmit={handleLogin}>
+        <h1 className={`text-center mb-5`}>{t('login_screen.heading')}</h1>
 
         {inputs.map((input, i) => (
-          <section className="mb-4" key={i}>
+          <section className={`mb-4`} key={i}>
             <Input {...input} />
           </section>
         ))}
 
-        <Button text={t('login_screen.button')} className="mt-5" />
+        <Button text={t('login_screen.button')} className={`mt-5`} />
 
-        <Link to={routes.register} className="app-text-secondary d-inline-block mt-4 mb-3">
+        <Link to={routes.register} className={`app-text-secondary d-inline-block mt-4 mb-3`}>
           {t('login_screen.option_button')}
         </Link>
       </form>
