@@ -22,7 +22,7 @@ function Product({ getPost, post, match }) {
     if (match.params) {
       getPost(match.params.id);
     }
-  }, [getPost, post, match]);
+  }, [getPost, match]);
 
   const getImages = (data) => {
     return data.images.map((val) => {
