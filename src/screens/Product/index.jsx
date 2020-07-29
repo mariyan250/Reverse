@@ -39,7 +39,7 @@ function Product({ getPost, post, match }) {
   }
 
   return (
-    <section className={`${styles.product} p-lg-4`}>
+    <section className={`${styles.product} mx-auto mt-lg-5`}>
       <article className={`px-3`}>
         {post.images && (
           <ImageGallery

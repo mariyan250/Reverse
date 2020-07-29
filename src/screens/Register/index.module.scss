@@ -1,15 +1,9 @@
 @import '../../index';
 
-.register {
-  form {
-    width: to-rem(350px);
+.form {
+  width: to-rem(350px);
 
-    a {
-      font-size: to-rem(16px);
-    }
-  }
-
-  @include media-breakpoint-md-up {
-    max-width: to-rem(400px);
+  a {
+    font-size: to-rem(16px);
   }
 }

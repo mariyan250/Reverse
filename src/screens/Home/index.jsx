@@ -65,17 +65,15 @@ function Home({ getPromoPosts, promoPosts }) {
 
       <section>
         <h3 className={`mb-4`}>{t('home_screen.heading')}</h3>
-
         <article className={`${styles.categories}`}>
           {categoryCards.map((category, i) => (
-            <CategoryCard url={category.url} icon={category.icon} title={category.title} key={i} />
+            <CategoryCard key={i} {...category} />
           ))}
         </article>
       </section>
 
       <section>
         <h3 className={`mt-5 mb-4`}>{t('home_screen.second_heading')}</h3>
-
         <article className={`p-2 app-bg-gray-darker`}>
           <ItemList items={promoPosts} />
         </article>

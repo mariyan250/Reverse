@@ -49,10 +49,8 @@ function Login() {
   ];
 
   return (
-    <main
-      className={`${styles.login} d-flex vh-100 align-items-center justify-content-center px-4`}
-    >
-      <form onSubmit={handleLogin}>
+    <main className={`d-flex vh-100 align-items-center justify-content-center px-4`}>
+      <form onSubmit={handleLogin} className={styles.form}>
         <h1 className={`text-center mb-5`}>{t('login_screen.heading')}</h1>
 
         {inputs.map((input, i) => (

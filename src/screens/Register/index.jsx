@@ -72,10 +72,8 @@ function Register() {
   };
 
   return (
-    <main
-      className={`${styles.register} d-flex vh-100 align-items-center justify-content-center px-4 mx-auto`}
-    >
-      <form onSubmit={handleRegister}>
+    <main className={`d-flex vh-100 align-items-center justify-content-center px-4 mx-auto`}>
+      <form onSubmit={handleRegister} className={styles.form}>
         <h1 className={`text-center mb-5`}>{t('register_screen.heading')}</h1>
 
         {inputs.map((input, i) => (

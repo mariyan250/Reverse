@@ -2,6 +2,7 @@
 
 .product {
   display: grid;
+  max-width: $layout-max-width;
 
   .image-gallery-thumbnails {
     display: none;
