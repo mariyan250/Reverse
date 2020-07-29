@@ -15,8 +15,8 @@ function Menu(props) {
     <section {...props}>
       <article className={`${styles.menu} app-bg-black-transparent`}>
         <ul>
-          {props.links.map((link) => (
-            <li className={`d-flex`}>
+          {props.links.map((link, i) => (
+            <li className={`d-flex`} key={i}>
               <NavLink
                 to={link.to}
                 className={`d-flex w-100 justify-content-center align-items-center app-text-white app-bg-black-transparent py-4`}
