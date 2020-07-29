@@ -53,7 +53,7 @@ function Login() {
       className="login d-flex vh-100 align-items-center justify-content-center px-4"
       data-testid="login"
     >
-      <form onSubmit={handleLogin}>
+      <form onSubmit={handleLogin} data-testid="login-form">
         <h1 className="text-center mb-5">{t('login_screen.heading')}</h1>
 
         {inputs.map((input, i) => (

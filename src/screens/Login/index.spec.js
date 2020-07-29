@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, waitForElement } from 'tests/test-utils';
+import { render, fireEvent, createEvent } from 'tests/test-utils';
 import Login from './index';
 
 describe('Login', () => {
@@ -10,9 +10,8 @@ describe('Login', () => {
   });
 
   describe('Rendering', () => {
-    it('should render the component with initial state', async () => {
-      const { container, getByTestId } = render(<Login />, initialState);
-      await waitForElement(() => getByTestId('login'));
+    it('should render the component with initial state', () => {
+      const { container } = render(<Login />, initialState);
       expect(container).toMatchSnapshot();
     });
   });

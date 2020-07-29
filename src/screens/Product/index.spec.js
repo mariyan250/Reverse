@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, waitForElement, cleanup } from 'tests/test-utils';
+import { render } from 'tests/test-utils';
 import Product from './index';
 
 describe('ItemScreen', () => {
@@ -9,15 +9,9 @@ describe('ItemScreen', () => {
     initialState = {};
   });
 
-  afterEach(cleanup);
-
   describe('Rendering', () => {
-    it('should render the component with initial state', async () => {
-      const { container, getByTestId } = render(
-        <Product match={{ params: { id: '3' } }} />,
-        initialState,
-      );
-      await waitForElement(() => getByTestId('product'));
+    it('should render the component with initial state', () => {
+      const { container } = render(<Product match={{ params: { id: '3' } }} />, initialState);
       expect(container).toMatchSnapshot();
     });
   });

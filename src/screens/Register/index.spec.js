@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, waitForElement } from 'tests/test-utils';
+import { render } from 'tests/test-utils';
 import Register from './index';
 
 describe('Register', () => {
@@ -10,9 +10,8 @@ describe('Register', () => {
   });
 
   describe('Rendering', () => {
-    it('should render the component with initial state', async () => {
-      const { container, getByTestId } = render(<Register />, initialState);
-      await waitForElement(() => getByTestId('register'));
+    it('should render the component with initial state', () => {
+      const { container } = render(<Register />, initialState);
       expect(container).toMatchSnapshot();
     });
   });

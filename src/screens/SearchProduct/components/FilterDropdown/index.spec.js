@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, waitForElement } from 'tests/test-utils';
+import { render } from 'tests/test-utils';
 import FilterDropdown from './index';
 
 describe('FilterDropdown', () => {
@@ -10,9 +10,8 @@ describe('FilterDropdown', () => {
   });
 
   describe('Rendering', () => {
-    it('should render the component with initial state', async () => {
-      const { container, getByTestId } = render(<FilterDropdown />, initialState);
-      await waitForElement(() => getByTestId('filter-dropdown'));
+    it('should render the component with initial state', () => {
+      const { container } = render(<FilterDropdown />, initialState);
       expect(container).toMatchSnapshot();
     });
   });

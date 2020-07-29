@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, waitForElement } from 'tests/test-utils';
+import { render } from 'tests/test-utils';
 import CategoryCard from './index';
 
 describe('CategoryCard', () => {
@@ -10,9 +10,8 @@ describe('CategoryCard', () => {
   });
 
   describe('Rendering', () => {
-    it('should render the component with initial state', async () => {
-      const { container, getByTestId } = render(<CategoryCard url="/" />, initialState);
-      await waitForElement(() => getByTestId('category-card'));
+    it('should render the component with initial state', () => {
+      const { container } = render(<CategoryCard url="/" />, initialState);
       expect(container).toMatchSnapshot();
     });
   });

@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, waitForElement } from 'tests/test-utils';
+import { render } from 'tests/test-utils';
 import FilterButton from './index';
 
 describe('FilterButton', () => {
@@ -10,9 +10,8 @@ describe('FilterButton', () => {
   });
 
   describe('Rendering', () => {
-    it('should render the component with initial state', async () => {
-      const { container, getByTestId } = render(<FilterButton />, initialState);
-      await waitForElement(() => getByTestId('filter-button'));
+    it('should render the component with initial state', () => {
+      const { container } = render(<FilterButton />, initialState);
       expect(container).toMatchSnapshot();
     });
   });

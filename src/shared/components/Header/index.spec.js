@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, waitForElement } from 'tests/test-utils';
+import { render } from 'tests/test-utils';
 import Header from './index';
 
 describe('Header', () => {
@@ -10,9 +10,8 @@ describe('Header', () => {
   });
 
   describe('Rendering', () => {
-    it('should render the component with initial state', async () => {
-      const { container, getByTestId } = render(<Header />, initialState);
-      await waitForElement(() => getByTestId('header'));
+    it('should render the component with initial state', () => {
+      const { container } = render(<Header />, initialState);
       expect(container).toMatchSnapshot();
     });
   });

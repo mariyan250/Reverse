@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, waitForElement } from 'tests/test-utils';
+import { render } from 'tests/test-utils';
 import Item from './index';
 
 describe('Item', () => {
@@ -10,9 +10,8 @@ describe('Item', () => {
   });
 
   describe('Rendering', () => {
-    it('should render the component with initial state', async () => {
-      const { container, getByTestId } = render(<Item images={[]} />, initialState);
-      await waitForElement(() => getByTestId('item'));
+    it('should render the component with initial state', () => {
+      const { container } = render(<Item images={[]} />, initialState);
       expect(container).toMatchSnapshot();
     });
   });
