@@ -2,7 +2,7 @@
 
 .item {
   .container {
-    img {
+    .img {
       object-fit: cover;
       top: 50%;
       transform: translateY(-50%);
@@ -16,12 +16,12 @@
   }
 
   section {
-    .product-name {
+    .name {
       font-size: to-rem(16px);
       font-weight: 600;
     }
 
-    .product-price {
+    .price {
       font-size: to-rem(18px);
     }
   }

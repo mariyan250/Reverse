@@ -39,7 +39,7 @@ function Header(props) {
 
   return (
     <header
-      className={`app-bg-secondary position-sticky px-4 px-md-5 d-flex justify-content-between align-items-center`}
+      className={`${styles.header} app-bg-secondary position-sticky px-4 px-md-5 d-flex justify-content-between align-items-center`}
     >
       <Link to="/">
         <h1 className={`app-text-white`}>{t('header.heading')}</h1>
@@ -67,11 +67,12 @@ function Header(props) {
         )}
       </ul>
 
-      <Hamburger
-        className={`d-md-none`}
-        onClick={() => props.toggleHamburger(!props.burgerOpened)}
-        isOpen={props.burgerOpened}
-      />
+      <section className={`d-md-none`}>
+        <Hamburger
+          onClick={() => props.toggleHamburger(!props.burgerOpened)}
+          isOpen={props.burgerOpened}
+        />
+      </section>
 
       {props.burgerOpened && (
         <Menu

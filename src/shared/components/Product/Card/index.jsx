@@ -14,25 +14,27 @@ function Item({ id, images, name, location, date, price }) {
   return (
     <li className={`${styles.item} app-bg-white box-shadow overflow-hidden`}>
       <Link to={`/item/${id}`} className={`app-text-secondary`}>
-        <section className={`container d-flex overflow-hidden position-relative`}>
+        <section
+          className={`${styles.container} d-flex overflow-hidden position-relative justify-content-center`}
+        >
           <img
             src={images[0]}
             alt={t('search_screen.item.img.alt')}
-            className={`img-fluid position-absolute p-3`}
+            className={`${styles.img} img-fluid position-absolute p-5`}
           />
         </section>
 
         <section className={`py-3 px-4 h-100 app-bg-gray`}>
-          <p className={`product-name text-center mb-4`}>{name}</p>
-          <p className={`product-location mb-3`}>
+          <p className={`${styles.name} text-center mb-4`}>{name}</p>
+          <p className={`mb-3`}>
             <i className={`fas fa-map-marker-alt mr-2`} />
             {location}
           </p>
-          <p className={`product-date mb-4`}>
+          <p className={`mb-4`}>
             <i className={`fas fa-clock mr-2`} />
             {date}
           </p>
-          <p className={`product-price`}>
+          <p className={`${styles.price}`}>
             {price} {t('general.currency')}
           </p>
         </section>
