@@ -1,6 +1,6 @@
 // React and Style
 import React, { useState } from 'react';
-import './index.scss';
+import styles from './index.module.scss';
 
 // Translation
 import { useTranslation } from 'react-i18next';
@@ -10,8 +10,8 @@ function Search() {
   const { t } = useTranslation();
 
   return (
-    <form action="/search" className="search-form w-100 mx-auto" data-testid="search">
-      <article className="d-flex">
+    <form action="/search" className={`${styles.form} w-100 mx-auto`}>
+      <article className={`d-flex`}>
         <input
           type="text"
           name="query"
@@ -27,7 +27,7 @@ function Search() {
               searchQuery ? 'app-bg-primary' : 'app-bg-secondary'
             } d-flex justify-content-center align-items-center`}
           >
-            <i className="fas fa-search app-text-white" />
+            <i className={`fas fa-search app-text-white`} />
           </button>
         </article>
       </article>
