@@ -61,7 +61,9 @@ function Login() {
           </section>
         ))}
 
-        <Button text={t('login_screen.button')} className={`mt-5`} />
+        <section className={`mt-5`}>
+          <Button text={t('login_screen.button')} />
+        </section>
 
         <Link to={routes.register} className={`app-text-secondary d-inline-block mt-4 mb-3`}>
           {t('login_screen.option_button')}

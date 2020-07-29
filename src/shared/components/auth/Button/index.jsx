@@ -2,13 +2,14 @@
 import React from 'react';
 import styles from './index.module.scss';
 
-function Button({ text, onClick, className }) {
+function Button({ text, onClick }) {
   return (
-    <section className={`${styles.button} ${className}`}>
-      <button className={`app-bg-primary border-0 app-text-white w-100 p-2`} onClick={onClick}>
-        {text}
-      </button>
-    </section>
+    <button
+      className={`${styles.button} app-bg-primary border-0 app-text-white w-100 p-2`}
+      onClick={onClick}
+    >
+      {text}
+    </button>
   );
 }
 

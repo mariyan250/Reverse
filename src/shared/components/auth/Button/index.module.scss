@@ -1,12 +1,10 @@
 @import '../../../../index.scss';
 
 .button {
-  button {
-    font-size: to-rem(18px);
-    animation: appear 1 $slow;
+  font-size: to-rem(18px);
+  animation: appear 1 $slow;
 
-    &:hover {
-      background: $primary-hover;
-    }
+  &:hover {
+    background: $primary-hover;
   }
 }

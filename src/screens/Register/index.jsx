@@ -84,7 +84,10 @@ function Register() {
           </section>
         ))}
 
-        <Button text={t('register_screen.button')} className={`mt-5`} />
+        <section className={`mt-5`}>
+          <Button text={t('register_screen.button')} />
+        </section>
+
         <Link to={routes.login} className={`app-text-secondary mt-4 mb-5 d-inline-block`}>
           {t('register_screen.option_button')}
         </Link>
