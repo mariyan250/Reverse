@@ -1,5 +1,6 @@
 import React from 'react';
-import { render } from 'tests/test-utils';
+import { withWrapper } from 'tests/test-utils';
+import { create } from 'react-test-renderer';
 import Register from './index';
 
 describe('Register', () => {
@@ -11,8 +12,8 @@ describe('Register', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { container } = render(<Register />, initialState);
-      expect(container).toMatchSnapshot();
+      const component = create(withWrapper(<Register />, initialState));
+      expect(component.toJSON()).toMatchSnapshot();
     });
   });
 });

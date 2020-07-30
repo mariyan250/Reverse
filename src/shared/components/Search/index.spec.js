@@ -1,5 +1,6 @@
 import React from 'react';
-import { render } from 'tests/test-utils';
+import { withWrapper } from 'tests/test-utils';
+import { create } from 'react-test-renderer';
 import Search from './index';
 
 describe('Search', () => {
@@ -11,8 +12,8 @@ describe('Search', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { container, getByTestId } = render(<Search />, initialState);
-      expect(container).toMatchSnapshot();
+      const component = create(withWrapper(<Search />, initialState));
+      expect(component.toJSON()).toMatchSnapshot();
     });
   });
 });

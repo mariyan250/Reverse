@@ -1,5 +1,6 @@
 import React from 'react';
-import { render } from 'tests/test-utils';
+import { withWrapper } from 'tests/test-utils';
+import { create } from 'react-test-renderer';
 import Hamburger from './index';
 
 describe('Hamburger', () => {
@@ -11,8 +12,8 @@ describe('Hamburger', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { container } = render(<Hamburger />, initialState);
-      expect(container).toMatchSnapshot();
+      const component = create(withWrapper(<Hamburger />, initialState));
+      expect(component.toJSON()).toMatchSnapshot();
     });
   });
 });

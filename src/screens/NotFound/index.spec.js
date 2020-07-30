@@ -1,5 +1,6 @@
 import React from 'react';
-import { render } from 'tests/test-utils';
+import { withWrapper } from 'tests/test-utils';
+import { create } from 'react-test-renderer';
 import NotFound from './index';
 
 describe('NotFound', () => {
@@ -11,8 +12,8 @@ describe('NotFound', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { container } = render(<NotFound />, initialState);
-      expect(container).toMatchSnapshot();
+      const component = create(withWrapper(<NotFound />, initialState));
+      expect(component.toJSON()).toMatchSnapshot();
     });
   });
 });

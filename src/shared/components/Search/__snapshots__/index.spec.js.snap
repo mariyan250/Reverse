@@ -1,32 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Search Rendering should render the component with initial state 1`] = `
-<div>
-  <form
-    action="/search"
-    class="search-form w-100 mx-auto"
-    data-testid="search"
+<form
+  action="/search"
+  className="form w-100 mx-auto"
+>
+  <article
+    className="d-flex"
   >
-    <article
-      class="d-flex"
-    >
-      <input
-        name="query"
-        placeholder="home_screen.input.placeholder"
-        required=""
-        type="text"
-        value=""
-      />
-      <article>
-        <button
-          class="h-100 border-0 app-bg-secondary d-flex justify-content-center align-items-center"
-        >
-          <i
-            class="fas fa-search app-text-white"
-          />
-        </button>
-      </article>
+    <input
+      name="query"
+      onChange={[Function]}
+      placeholder="home_screen.input.placeholder"
+      required={true}
+      type="text"
+      value=""
+    />
+    <article>
+      <button
+        className="h-100 border-0 app-bg-secondary d-flex justify-content-center align-items-center"
+      >
+        <i
+          className="fas fa-search app-text-white"
+        />
+      </button>
     </article>
-  </form>
-</div>
+  </article>
+</form>
 `;

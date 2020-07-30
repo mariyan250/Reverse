@@ -1,26 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FilterDropdown Rendering should render the component with initial state 1`] = `
-<div>
-  <ul
-    class="filter-dropdown position-absolute app-bg-white rounded-lg box-shadow overflow-hidden d-flex flex-column justify-content-center"
-    data-testid="filter-dropdown"
+<ul
+  className="filter-dropdown position-absolute app-bg-white rounded-lg box-shadow overflow-hidden d-flex flex-column justify-content-center"
+  data-testid="filter-dropdown"
+>
+  <li
+    className="py-3 text-center"
+    onClick={[Function]}
   >
-    <li
-      class="py-3 text-center"
-    >
-      search_screen.filter_dropdown.newest
-    </li>
-    <li
-      class="py-3 text-center"
-    >
-      search_screen.filter_dropdown.lowest
-    </li>
-    <li
-      class="py-3 text-center"
-    >
-      search_screen.filter_dropdown.highest
-    </li>
-  </ul>
-</div>
+    search_screen.filter_dropdown.newest
+  </li>
+  <li
+    className="py-3 text-center"
+    onClick={[Function]}
+  >
+    search_screen.filter_dropdown.lowest
+  </li>
+  <li
+    className="py-3 text-center"
+    onClick={[Function]}
+  >
+    search_screen.filter_dropdown.highest
+  </li>
+</ul>
 `;

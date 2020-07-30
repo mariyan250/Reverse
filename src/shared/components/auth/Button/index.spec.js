@@ -1,5 +1,6 @@
 import React from 'react';
-import { render } from 'tests/test-utils';
+import { withWrapper } from 'tests/test-utils';
+import { create } from 'react-test-renderer';
 import Button from './index';
 
 describe('Button', () => {
@@ -11,8 +12,8 @@ describe('Button', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { container } = render(<Button />, initialState);
-      expect(container).toMatchSnapshot();
+      const container = create(withWrapper(<Button />, initialState));
+      expect(container.toJSON()).toMatchSnapshot();
     });
   });
 });

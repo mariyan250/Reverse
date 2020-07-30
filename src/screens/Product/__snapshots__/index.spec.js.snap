@@ -1,203 +1,62 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ItemScreen Rendering should render the component with initial state 1`] = `
-<div>
-  <section
-    class="product p-lg-4"
-    data-testid="product"
+<section
+  className="product mx-auto mt-lg-5"
+>
+  <article
+    className="px-3"
+  />
+  <article
+    className="description p-4 pb-5 p-lg-5"
   >
-    <article
-      class="gallery px-3"
+    <h1
+      className="mb-3 mt-4 mt-md-0"
+    />
+    <p
+      className="mb-3 mt-4"
     >
-      <div
-        aria-live="polite"
-        class="image-gallery"
-      >
-        <div
-          class="image-gallery-content bottom"
-        >
-          <div
-            class="image-gallery-slide-wrapper bottom"
-          >
-            <button
-              aria-label="Previous Slide"
-              class="image-gallery-icon image-gallery-left-nav"
-              type="button"
-            >
-              <svg
-                class="image-gallery-svg"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1"
-                viewBox="6 0 12 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <polyline
-                  points="15 18 9 12 15 6"
-                />
-              </svg>
-            </button>
-            <button
-              aria-label="Next Slide"
-              class="image-gallery-icon image-gallery-right-nav"
-              type="button"
-            >
-              <svg
-                class="image-gallery-svg"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1"
-                viewBox="6 0 12 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <polyline
-                  points="9 18 15 12 9 6"
-                />
-              </svg>
-            </button>
-            <div
-              class="image-gallery-swipe"
-            >
-              <div
-                class="image-gallery-slides"
-              >
-                <div
-                  aria-label="Go to Slide 1"
-                  class="image-gallery-slide  center "
-                  role="button"
-                  style="transform: translate3d(0%, 0, 0);"
-                  tabindex="-1"
-                >
-                  <div>
-                    <img
-                      class="image-gallery-image"
-                      src="https://s13emagst.akamaized.net/products/17043/17042927/images/res_b0edd1ced6577580eaec29aad246405d.jpg"
-                    />
-                  </div>
-                </div>
-                <div
-                  aria-label="Go to Slide 2"
-                  class="image-gallery-slide  right "
-                  role="button"
-                  style="transform: translate3d(100%, 0, 0);"
-                  tabindex="-1"
-                >
-                  <div>
-                    <img
-                      class="image-gallery-image"
-                      src="https://s13emagst.akamaized.net/products/17043/17042927/images/res_a395977c320f9b8440947b9cb2ef40af.jpg"
-                    />
-                  </div>
-                </div>
-                <div
-                  aria-label="Go to Slide 3"
-                  class="image-gallery-slide  left "
-                  role="button"
-                  style="transform: translate3d(-100%, 0, 0);"
-                  tabindex="-1"
-                >
-                  <div>
-                    <img
-                      class="image-gallery-image"
-                      src="https://s13emagst.akamaized.net/products/17043/17042927/images/res_15bda9b038fc372c49488bb599810eda.jpg"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="image-gallery-bullets"
-            >
-              <div
-                aria-label="Bullet Navigation"
-                class="image-gallery-bullets-container"
-                role="navigation"
-              >
-                <button
-                  aria-label="Go to Slide 1"
-                  aria-pressed="true"
-                  class="image-gallery-bullet active"
-                  type="button"
-                />
-                <button
-                  aria-label="Go to Slide 2"
-                  aria-pressed="false"
-                  class="image-gallery-bullet"
-                  type="button"
-                />
-                <button
-                  aria-label="Go to Slide 3"
-                  aria-pressed="false"
-                  class="image-gallery-bullet"
-                  type="button"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-    <article
-      class="item-description p-4 pb-5 p-lg-5"
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem voluptatibus, laborum ut aliquid optio architecto quos libero sint odit earum fugiat alias. Consequuntur quam eaque, dolorum necessitatibus quisquam iste, harum pariatur quos qui placeat nam maiores debitis similique fugiat itaque, dolore doloribus magnam tempore natus ipsam aspernatur maxime molestias sequi?
+    </p>
+    <section
+      className="down d-md-flex justify-content-between my-4 my-md-0 mt-md-5"
     >
-      <h1
-        class="mb-3 mt-4 mt-md-0"
-      >
-        Iphone X, 128SD / 256SD, Black and White
-      </h1>
-      <p
-        class="mb-3 mt-4"
-      >
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem voluptatibus, laborum ut aliquid optio architecto quos libero sint odit earum fugiat alias. Consequuntur quam eaque, dolorum necessitatibus quisquam iste, harum pariatur quos qui placeat nam maiores debitis similique fugiat itaque, dolore doloribus magnam tempore natus ipsam aspernatur maxime molestias sequi?
+      <p>
+        <i
+          className="fas fa-map-marker-alt mr-3"
+        />
       </p>
-      <section
-        class="item-description-second d-md-flex justify-content-between my-4 my-md-0 mt-md-5"
+      <p>
+        <i
+          className="fas fa-clock mr-3"
+        />
+      </p>
+      <p
+        className="mb-5"
       >
-        <p>
-          <i
-            class="fas fa-map-marker-alt mr-3"
-          />
-          Blagoevgrad
-        </p>
-        <p>
-          <i
-            class="fas fa-clock mr-3"
-          />
-          8 July - 6:00
-        </p>
-        <p
-          class="mb-5"
-        >
-          <i
-            class="fas fa-user mr-3"
-          />
-          Mariyan V.
-        </p>
-      </section>
-      <section
-        class="item-description-nav app-bg-white d-flex justify-content-around justify-content-sm-between align-items-center py-1 m-sm-0 mt-4 mt-md-0 w-100"
+        <i
+          className="fas fa-user mr-3"
+        />
+      </p>
+    </section>
+    <section
+      className="nav app-bg-white d-flex justify-content-around justify-content-sm-between align-items-center py-1 m-sm-0 mt-4 mt-md-0 w-100"
+    >
+      <h5
+        className="text-center my-2 my-md-0"
       >
-        <h5
-          class="text-center my-2 my-md-0"
-        >
-          1200
-           
-          general.currency
-        </h5>
-        <span
-          class="app-bg-primary app-text-white rounded py-3 px-5 px-md-4 py-md-2 mr-2"
-        >
-          product.call_button
-          <i
-            class="fas fa-phone ml-3"
-          />
-        </span>
-      </section>
-    </article>
-  </section>
-</div>
+         
+        general.currency
+      </h5>
+      <span
+        className="app-bg-primary app-text-white rounded py-3 px-5 px-md-4 py-md-2 mr-2"
+      >
+        product.call_button
+        <i
+          className="fas fa-phone ml-3"
+        />
+      </span>
+    </section>
+  </article>
+</section>
 `;

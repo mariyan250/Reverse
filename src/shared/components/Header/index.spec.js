@@ -1,5 +1,6 @@
 import React from 'react';
-import { render } from 'tests/test-utils';
+import { withWrapper } from 'tests/test-utils';
+import { create } from 'react-test-renderer';
 import Header from './index';
 
 describe('Header', () => {
@@ -11,8 +12,8 @@ describe('Header', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { container } = render(<Header />, initialState);
-      expect(container).toMatchSnapshot();
+      const component = create(withWrapper(<Header />, initialState));
+      expect(component.toJSON()).toMatchSnapshot();
     });
   });
 });

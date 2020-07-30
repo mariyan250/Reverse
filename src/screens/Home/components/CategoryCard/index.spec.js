@@ -1,5 +1,6 @@
 import React from 'react';
-import { render } from 'tests/test-utils';
+import { withWrapper } from 'tests/test-utils';
+import { create } from 'react-test-renderer';
 import CategoryCard from './index';
 
 describe('CategoryCard', () => {
@@ -11,8 +12,8 @@ describe('CategoryCard', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { container } = render(<CategoryCard url="/" />, initialState);
-      expect(container).toMatchSnapshot();
+      const component = create(withWrapper(<CategoryCard url="/" />, initialState));
+      expect(component.toJSON()).toMatchSnapshot();
     });
   });
 });

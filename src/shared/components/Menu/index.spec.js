@@ -1,5 +1,6 @@
 import React from 'react';
-import { render } from 'tests/test-utils';
+import { withWrapper } from 'tests/test-utils';
+import { create } from 'react-test-renderer';
 import Menu from './index';
 
 describe('Menu', () => {
@@ -11,9 +12,9 @@ describe('Menu', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { container } = render(<Menu links={[]} />, initialState);
+      const component = create(withWrapper(<Menu links={[]} />, initialState));
 
-      expect(container).toMatchSnapshot();
+      expect(component.toJSON()).toMatchSnapshot();
     });
   });
 });

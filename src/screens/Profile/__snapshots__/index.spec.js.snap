@@ -1,13 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Search Rendering should render the component with initial state 1`] = `
-<div>
-  <section
-    class="profile"
-  >
-    <h2>
-      Profile
-    </h2>
-  </section>
-</div>
+<section>
+  <h2>
+    Profile
+  </h2>
+</section>
 `;

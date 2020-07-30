@@ -1,5 +1,6 @@
 import React from 'react';
-import { render } from 'tests/test-utils';
+import { withWrapper } from 'tests/test-utils';
+import { create } from 'react-test-renderer';
 import Item from './index';
 
 describe('Item', () => {
@@ -11,8 +12,8 @@ describe('Item', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const { container } = render(<Item images={[]} />, initialState);
-      expect(container).toMatchSnapshot();
+      const component = create(withWrapper(<Item images={[]} />, initialState));
+      expect(component.toJSON()).toMatchSnapshot();
     });
   });
 });

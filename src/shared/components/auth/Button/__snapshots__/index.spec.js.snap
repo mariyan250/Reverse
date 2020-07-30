@@ -1,13 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button Rendering should render the component with initial state 1`] = `
-<div>
-  <section
-    class="auth-btn undefined"
-  >
-    <button
-      class="app-bg-primary border-0 app-text-white w-100 p-2"
-    />
-  </section>
-</div>
+<button
+  className="button app-bg-primary border-0 app-text-white w-100 p-2"
+/>
 `;
