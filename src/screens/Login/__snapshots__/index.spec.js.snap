@@ -1,74 +1,74 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Login Rendering should render the component with initial state 1`] = `
-<main
-  className="d-flex vh-100 align-items-center justify-content-center px-4"
->
-  <form
-    className="form"
-    onSubmit={[Function]}
+<div>
+  <main
+    class="d-flex vh-100 align-items-center justify-content-center px-4"
   >
-    <h1
-      className="text-center mb-5"
+    <form
+      class="form"
+      data-testid="login-form"
     >
-      login_screen.heading
-    </h1>
-    <section
-      className="mb-4"
-    >
+      <h1
+        class="text-center mb-5"
+      >
+        login_screen.heading
+      </h1>
       <section
-        className="input"
+        class="mb-4"
       >
-        <label
-          htmlFor="email"
+        <section
+          class="input"
         >
-          login_screen.inputs.labels.email
-        </label>
-        <input
-          className="p-1"
-          name="email"
-          onChange={[Function]}
-          required={true}
-          type="email"
-        />
+          <label
+            for="email"
+          >
+            login_screen.inputs.labels.email
+          </label>
+          <input
+            class="p-1"
+            name="email"
+            required=""
+            type="email"
+          />
+        </section>
       </section>
-    </section>
-    <section
-      className="mb-4"
-    >
       <section
-        className="input"
+        class="mb-4"
       >
-        <label
-          htmlFor="password"
+        <section
+          class="input"
         >
-          login_screen.inputs.labels.password
-        </label>
-        <input
-          className="p-1"
-          name="password"
-          onChange={[Function]}
-          required={true}
-          type="password"
-        />
+          <label
+            for="password"
+          >
+            login_screen.inputs.labels.password
+          </label>
+          <input
+            class="p-1"
+            name="password"
+            required=""
+            type="password"
+          />
+        </section>
       </section>
-    </section>
-    <section
-      className="mt-5"
-    >
-      <button
-        className="button app-bg-primary border-0 app-text-white w-100 p-2"
+      <section
+        class="mt-5"
+        data-testid="login-button"
       >
-        login_screen.button
-      </button>
-    </section>
-    <a
-      className="app-text-secondary d-inline-block mt-4 mb-3"
-      href="/register"
-      onClick={[Function]}
-    >
-      login_screen.option_button
-    </a>
-  </form>
-</main>
+        <button
+          class="button app-bg-primary border-0 app-text-white w-100 p-2"
+        >
+          login_screen.button
+        </button>
+      </section>
+      <a
+        class="app-text-secondary d-inline-block mt-4 mb-3"
+        href="/register"
+      >
+        login_screen.option_button
+      </a>
+    </form>
+  </main>
+</div>
 `;

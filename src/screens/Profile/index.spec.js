@@ -1,9 +1,9 @@
 import React from 'react';
 import { withWrapper } from 'tests/test-utils';
-import { create } from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import Profile from './index';
 
-describe('Search', () => {
+describe('Profile', () => {
   let initialState;
 
   beforeAll(() => {
@@ -12,8 +12,8 @@ describe('Search', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const component = create(withWrapper(<Profile />, initialState));
-      expect(component.toJSON()).toMatchSnapshot();
+      const { container } = render(withWrapper(<Profile />), initialState);
+      expect(container).toMatchSnapshot();
     });
   });
 });

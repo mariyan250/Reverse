@@ -1,77 +1,71 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header Rendering should render the component with initial state 1`] = `
-<header
-  className="header app-bg-secondary position-sticky px-4 px-md-5 d-flex justify-content-between align-items-center"
->
-  <a
-    href="/"
-    onClick={[Function]}
+<div>
+  <header
+    class="header app-bg-secondary position-sticky px-4 px-md-5 d-flex justify-content-between align-items-center"
   >
-    <h1
-      className="app-text-white"
+    <a
+      href="/"
     >
-      header.heading
-    </h1>
-  </a>
-  <ul
-    className="d-none d-md-flex h-100 align-items-center m-0"
-  >
-    <li
-      className="ml-5 h-100"
-    >
-      <a
-        aria-current="page"
-        className="app-text-white h-100 d-flex justify-content-center align-items-center active"
-        href="/"
-        onClick={[Function]}
-        style={Object {}}
+      <h1
+        class="app-text-white"
       >
-        header.links.home
-      </a>
-    </li>
-    <li
-      className="ml-5 h-100"
+        header.heading
+      </h1>
+    </a>
+    <ul
+      class="d-none d-md-flex h-100 align-items-center m-0"
     >
-      <a
-        aria-current={null}
-        className="app-text-white h-100 d-flex justify-content-center align-items-center"
-        href="/login"
-        onClick={[Function]}
+      <li
+        class="ml-5 h-100"
       >
-        header.links.login
-      </a>
-    </li>
-    <li
-      className="ml-5 h-100"
-    >
-      <a
-        aria-current={null}
-        className="app-text-white h-100 d-flex justify-content-center align-items-center"
-        href="/register"
-        onClick={[Function]}
+        <a
+          aria-current="page"
+          class="app-text-white h-100 d-flex justify-content-center align-items-center active"
+          href="/"
+        >
+          header.links.home
+        </a>
+      </li>
+      <li
+        class="ml-5 h-100"
       >
-        header.links.register
-      </a>
-    </li>
-  </ul>
-  <section
-    className="d-md-none"
-  >
+        <a
+          class="app-text-white h-100 d-flex justify-content-center align-items-center"
+          href="/login"
+        >
+          header.links.login
+        </a>
+      </li>
+      <li
+        class="ml-5 h-100"
+      >
+        <a
+          class="app-text-white h-100 d-flex justify-content-center align-items-center"
+          href="/register"
+        >
+          header.links.register
+        </a>
+      </li>
+    </ul>
     <section
-      className="hamburger false d-flex flex-column justify-content-between"
-      onClick={[Function]}
+      class="d-md-none"
     >
-      <span
-        className="app-bg-white rounded-pill"
-      />
-      <span
-        className="app-bg-white align-self-end rounded-pill"
-      />
-      <span
-        className="app-bg-white align-self-end rounded-pill"
-      />
+      <section
+        class="hamburger false d-flex flex-column justify-content-between"
+      >
+        <span
+          class="app-bg-white rounded-pill"
+        />
+        <span
+          class="app-bg-white align-self-end rounded-pill"
+        />
+        <span
+          class="app-bg-white align-self-end rounded-pill"
+        />
+      </section>
     </section>
-  </section>
-</header>
+  </header>
+</div>
 `;

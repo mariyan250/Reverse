@@ -1,6 +1,6 @@
 import React from 'react';
 import { withWrapper } from 'tests/test-utils';
-import { create } from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import SearchProduct from './index';
 
 describe('SearchProduct', () => {
@@ -12,10 +12,11 @@ describe('SearchProduct', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const component = create(
-        withWrapper(<SearchProduct location={{ search: 'q=technology' }} />, initialState),
+      const { container } = render(
+        withWrapper(<SearchProduct location={{ search: 'q=technology' }} />),
+        initialState,
       );
-      expect(component.toJSON()).toMatchSnapshot();
+      expect(container).toMatchSnapshot();
     });
   });
 });

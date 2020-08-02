@@ -1,9 +1,9 @@
 import React from 'react';
 import { withWrapper } from 'tests/test-utils';
-import { create } from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import Product from './index';
 
-describe('ItemScreen', () => {
+describe('Product', () => {
   let initialState;
 
   beforeAll(() => {
@@ -12,10 +12,11 @@ describe('ItemScreen', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const component = create(
-        withWrapper(<Product match={{ params: { id: '3' } }} />, initialState),
+      const { container } = render(
+        withWrapper(<Product match={{ params: { id: '3' } }} />),
+        initialState,
       );
-      expect(component.toJSON()).toMatchSnapshot();
+      expect(container).toMatchSnapshot();
     });
   });
 });

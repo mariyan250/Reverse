@@ -1,19 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FilterButton Rendering should render the component with initial state 1`] = `
-<section
-  className="filter-button"
-  data-testid="filter-button"
->
-  <button
-    className="box-shadow rounded d-flex p-2 justify-content-center align-items-center position-relative border-0 app-bg-white"
+<div>
+  <section
+    class="filter-button"
+    data-testid="filter-button"
   >
-    <p>
-      search_screen.filter_button
-    </p>
-    <i
-      className="fas fa-angle-down ml-3 undefined"
-    />
-  </button>
-</section>
+    <button
+      class="box-shadow rounded d-flex p-2 justify-content-center align-items-center position-relative border-0 app-bg-white"
+    >
+      <p>
+        search_screen.filter_button
+      </p>
+      <i
+        class="fas fa-angle-down ml-3 undefined"
+      />
+    </button>
+  </section>
+</div>
 `;

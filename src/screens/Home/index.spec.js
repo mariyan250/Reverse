@@ -1,6 +1,6 @@
 import React from 'react';
 import { withWrapper } from 'tests/test-utils';
-import { create } from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import Home from './index';
 
 describe('Home', () => {
@@ -12,10 +12,8 @@ describe('Home', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const component = create(withWrapper(<Home />, initialState));
-      expect(component.toJSON()).toMatchSnapshot();
+      const { container } = render(withWrapper(<Home />), initialState);
+      expect(container).toMatchSnapshot();
     });
-
-    it('should get the promo posts and render them', () => {});
   });
 });

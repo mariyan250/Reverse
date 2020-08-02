@@ -1,11 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NotFound Rendering should render the component with initial state 1`] = `
-<main
-  className="vh-100 d-flex justify-content-center align-items-center"
->
-  <h1>
-    Not Found!
-  </h1>
-</main>
+<div>
+  <main
+    class="vh-100 d-flex justify-content-center align-items-center"
+  >
+    <h1>
+      Not Found!
+    </h1>
+  </main>
+</div>
 `;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { withWrapper } from 'tests/test-utils';
-import { create } from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import Login from './index';
 
 describe('Login', () => {
@@ -12,8 +12,8 @@ describe('Login', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const component = create(withWrapper(<Login />, initialState));
-      expect(component.toJSON()).toMatchSnapshot();
+      const { container } = render(withWrapper(<Login />), initialState);
+      expect(container).toMatchSnapshot();
     });
   });
 });

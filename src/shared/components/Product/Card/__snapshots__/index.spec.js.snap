@@ -1,49 +1,50 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Item Rendering should render the component with initial state 1`] = `
-<li
-  className="item app-bg-white box-shadow overflow-hidden"
->
-  <a
-    className="app-text-secondary"
-    href="/item/undefined"
-    onClick={[Function]}
+<div>
+  <li
+    class="item app-bg-white box-shadow overflow-hidden"
   >
-    <section
-      className="container d-flex overflow-hidden position-relative justify-content-center"
+    <a
+      class="app-text-secondary"
+      href="/item/undefined"
     >
-      <img
-        alt="search_screen.item.img.alt"
-        className="img img-fluid position-absolute p-5"
-      />
-    </section>
-    <section
-      className="py-3 px-4 h-100 app-bg-gray"
-    >
-      <p
-        className="name text-center mb-4"
-      />
-      <p
-        className="mb-3"
+      <section
+        class="container d-flex overflow-hidden position-relative justify-content-center"
       >
-        <i
-          className="fas fa-map-marker-alt mr-2"
+        <img
+          alt="search_screen.item.img.alt"
+          class="img img-fluid position-absolute p-5"
         />
-      </p>
-      <p
-        className="mb-4"
+      </section>
+      <section
+        class="py-3 px-4 h-100 app-bg-gray"
       >
-        <i
-          className="fas fa-clock mr-2"
+        <p
+          class="name text-center mb-4"
         />
-      </p>
-      <p
-        className="price"
-      >
-         
-        general.currency
-      </p>
-    </section>
-  </a>
-</li>
+        <p
+          class="mb-3"
+        >
+          <i
+            class="fas fa-map-marker-alt mr-2"
+          />
+        </p>
+        <p
+          class="mb-4"
+        >
+          <i
+            class="fas fa-clock mr-2"
+          />
+        </p>
+        <p
+          class="price"
+        >
+           
+          general.currency
+        </p>
+      </section>
+    </a>
+  </li>
+</div>
 `;

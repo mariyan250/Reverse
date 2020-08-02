@@ -1,6 +1,6 @@
 import React from 'react';
 import { withWrapper } from 'tests/test-utils';
-import { create } from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import FilterDropdown from './index';
 
 describe('FilterDropdown', () => {
@@ -12,8 +12,8 @@ describe('FilterDropdown', () => {
 
   describe('Rendering', () => {
     it('should render the component with initial state', () => {
-      const component = create(withWrapper(<FilterDropdown />, initialState));
-      expect(component.toJSON()).toMatchSnapshot();
+      const { container } = render(withWrapper(<FilterDropdown />), initialState);
+      expect(container).toMatchSnapshot();
     });
   });
 });

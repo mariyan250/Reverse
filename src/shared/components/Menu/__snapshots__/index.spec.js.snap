@@ -1,13 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Menu Rendering should render the component with initial state 1`] = `
-<section
-  links={Array []}
->
-  <article
-    className="menu app-bg-black-transparent"
+<div>
+  <section
+    links=""
   >
-    <ul />
-  </article>
-</section>
+    <article
+      class="menu app-bg-black-transparent"
+    >
+      <ul />
+    </article>
+  </section>
+</div>
 `;

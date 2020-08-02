@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Search Rendering should render the component with initial state 1`] = `
-<ul
-  className="list"
-/>
+exports[`ItemList Rendering should render the component with initial state 1`] = `
+<div>
+  <ul
+    class="list"
+  />
+</div>
 `;
