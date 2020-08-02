@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CategoryCard Rendering should render the component with initial state 1`] = `
+exports[`CategoryCard should render the component 1`] = `
 <div>
   <a
     class="card py-2 py-md-4 box-shadow d-block text-center"

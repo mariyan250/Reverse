@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SearchProduct Rendering should render the component with initial state 1`] = `
+exports[`SearchProduct should render the component 1`] = `
 <div>
   <main
     class="search px-4 mx-auto"

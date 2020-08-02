@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FilterDropdown Rendering should render the component with initial state 1`] = `
+exports[`FilterDropdown should render the component 1`] = `
 <div>
   <ul
     class="filter-dropdown position-absolute app-bg-white rounded-lg box-shadow overflow-hidden d-flex flex-column justify-content-center"

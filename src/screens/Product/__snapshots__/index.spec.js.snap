@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Product Rendering should render the component with initial state 1`] = `
+exports[`Product should render the component 1`] = `
 <div>
   <section
     class="product mx-auto mt-lg-5"

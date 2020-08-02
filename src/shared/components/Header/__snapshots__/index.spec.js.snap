@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header Rendering should render the component with initial state 1`] = `
+exports[`Header should render the component 1`] = `
 <div>
   <header
     class="header app-bg-secondary position-sticky px-4 px-md-5 d-flex justify-content-between align-items-center"

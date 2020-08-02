@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Login Rendering should render the component with initial state 1`] = `
+exports[`Login should render the component 1`] = `
 <div>
   <main
     class="d-flex vh-100 align-items-center justify-content-center px-4"

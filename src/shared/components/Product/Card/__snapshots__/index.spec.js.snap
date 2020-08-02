@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Item Rendering should render the component with initial state 1`] = `
+exports[`Item should render the component 1`] = `
 <div>
   <li
     class="item app-bg-white box-shadow overflow-hidden"

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Hamburger Rendering should render the component with initial state 1`] = `
+exports[`Hamburger should render the component 1`] = `
 <div>
   <section
     class="hamburger undefined d-flex flex-column justify-content-between"

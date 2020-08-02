@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ItemList Rendering should render the component with initial state 1`] = `
+exports[`ItemList should render the component 1`] = `
 <div>
   <ul
     class="list"
