@@ -54,6 +54,7 @@ exports[`Header should render the component 1`] = `
     >
       <section
         class="hamburger false d-flex flex-column justify-content-between"
+        role="hamburger"
       >
         <span
           class="app-bg-white rounded-pill"

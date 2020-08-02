@@ -16,14 +16,17 @@ function FilterDropdown({ posts, filterPost }) {
     {
       text: 'search_screen.filter_dropdown.newest',
       onClick: () => filterPost(posts, 'newest'),
+      role: 'filter-newest',
     },
     {
       text: 'search_screen.filter_dropdown.lowest',
       onClick: () => filterPost(posts, 'lowest'),
+      role: 'filter-lowest',
     },
     {
       text: 'search_screen.filter_dropdown.highest',
       onClick: () => filterPost(posts, 'highest'),
+      role: 'filter-highest',
     },
   ];
 
@@ -33,7 +36,7 @@ function FilterDropdown({ posts, filterPost }) {
       data-testid="filter-dropdown"
     >
       {links.map((link, i) => (
-        <li className="py-3 text-center" key={i} onClick={() => link.onClick()}>
+        <li className="py-3 text-center" key={i} role={link.role} onClick={() => link.onClick()}>
           {t(link.text)}
         </li>
       ))}

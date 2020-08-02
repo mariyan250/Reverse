@@ -9,6 +9,7 @@ function Hamburger({ isOpen, onClick }) {
         isOpen && styles.toggled
       } d-flex flex-column justify-content-between`}
       onClick={onClick}
+      role="hamburger"
     >
       <span className={`app-bg-white rounded-pill`}></span>
       <span className={`app-bg-white align-self-end rounded-pill`}></span>

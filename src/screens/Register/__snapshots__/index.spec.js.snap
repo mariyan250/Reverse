@@ -7,6 +7,7 @@ exports[`Register should render the component 1`] = `
   >
     <form
       class="form"
+      role="form"
     >
       <h1
         class="text-center mb-5"
@@ -28,6 +29,7 @@ exports[`Register should render the component 1`] = `
             class="p-1"
             name="username"
             required=""
+            role="usernameInput"
             type="text"
           />
         </section>
@@ -47,6 +49,7 @@ exports[`Register should render the component 1`] = `
             class="p-1"
             name="email"
             required=""
+            role="emailInput"
             type="email"
           />
         </section>
@@ -66,6 +69,7 @@ exports[`Register should render the component 1`] = `
             class="p-1"
             name="password"
             required=""
+            role="passwordInput"
             type="password"
           />
         </section>
@@ -85,6 +89,7 @@ exports[`Register should render the component 1`] = `
             class="p-1"
             name="rePassword"
             required=""
+            role="rePasswordInput"
             type="password"
           />
         </section>

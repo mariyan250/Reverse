@@ -7,7 +7,7 @@ exports[`Login should render the component 1`] = `
   >
     <form
       class="form"
-      data-testid="login-form"
+      role="form"
     >
       <h1
         class="text-center mb-5"
@@ -29,6 +29,7 @@ exports[`Login should render the component 1`] = `
             class="p-1"
             name="email"
             required=""
+            role="emailInput"
             type="email"
           />
         </section>
@@ -48,13 +49,13 @@ exports[`Login should render the component 1`] = `
             class="p-1"
             name="password"
             required=""
+            role="passwordInput"
             type="password"
           />
         </section>
       </section>
       <section
         class="mt-5"
-        data-testid="login-button"
       >
         <button
           class="button app-bg-primary border-0 app-text-white w-100 p-2"
