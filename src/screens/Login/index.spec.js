@@ -17,7 +17,7 @@ describe('Login', () => {
 
   it('should prevent default on form submit', () => {
     render(<Login />);
-    const form = screen.getByRole('form');
+    const form = screen.getByTestId('form');
     const event = createEvent.submit(form);
     fireEvent(form, event);
     expect(event.defaultPrevented).toBeTruthy();
@@ -25,7 +25,7 @@ describe('Login', () => {
 
   it('should change email input value', () => {
     render(<Login />);
-    const input = screen.getByRole('emailInput');
+    const input = screen.getByTestId('emailInput');
     const event = createEvent.change(input, { target: { value: 'email@gmail.com' } });
     fireEvent(input, event);
     expect(input.value).toBe('email@gmail.com');
@@ -34,7 +34,7 @@ describe('Login', () => {
 
   it('should change password input value', () => {
     render(<Login />);
-    const input = screen.getByRole('passwordInput');
+    const input = screen.getByTestId('passwordInput');
     const event = createEvent.change(input, { target: { value: 'password123' } });
     fireEvent(input, event);
     expect(input.value).toBe('password123');

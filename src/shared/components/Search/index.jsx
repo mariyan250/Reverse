@@ -19,6 +19,7 @@ function Search() {
           onChange={(e) => setSearchQuery(e.target.value)}
           value={searchQuery}
           required
+          data-testid="searchInput"
         />
 
         <article>

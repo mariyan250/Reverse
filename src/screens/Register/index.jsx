@@ -33,7 +33,7 @@ function Register() {
       onChange(e) {
         setUsername(e.target.value);
       },
-      role: 'usernameInput',
+      testId: 'usernameInput',
     },
     {
       name: 'email',
@@ -44,7 +44,7 @@ function Register() {
       onChange(e) {
         setEmail(e.target.value);
       },
-      role: 'emailInput',
+      testId: 'emailInput',
     },
     {
       name: 'password',
@@ -55,7 +55,7 @@ function Register() {
       onChange(e) {
         setPassword(e.target.value);
       },
-      role: 'passwordInput',
+      testId: 'passwordInput',
     },
     {
       name: 'rePassword',
@@ -66,7 +66,7 @@ function Register() {
       onChange(e) {
         setRePassword(e.target.value);
       },
-      role: 'rePasswordInput',
+      testId: 'rePasswordInput',
     },
   ];
 
@@ -76,7 +76,7 @@ function Register() {
 
   return (
     <main className={`d-flex vh-100 align-items-center justify-content-center px-4 mx-auto`}>
-      <form onSubmit={handleRegister} className={styles.form} role="form">
+      <form onSubmit={handleRegister} className={styles.form} data-testid="form">
         <h1 className={`text-center mb-5`}>{t('register_screen.heading')}</h1>
 
         {inputs.map((input, i) => (

@@ -4,7 +4,7 @@ exports[`Hamburger should render the component 1`] = `
 <div>
   <section
     class="hamburger undefined d-flex flex-column justify-content-between"
-    role="hamburger"
+    data-testid="hamburger"
   >
     <span
       class="app-bg-white rounded-pill"

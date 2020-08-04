@@ -35,7 +35,7 @@ function Login() {
       onChange(e) {
         setEmail(e.target.value);
       },
-      role: 'emailInput',
+      testId: 'emailInput',
     },
     {
       name: 'password',
@@ -46,13 +46,13 @@ function Login() {
       onChange(e) {
         setPassword(e.target.value);
       },
-      role: 'passwordInput',
+      testId: 'passwordInput',
     },
   ];
 
   return (
     <main className={`d-flex vh-100 align-items-center justify-content-center px-4`}>
-      <form onSubmit={handleLogin} className={styles.form} role="form">
+      <form onSubmit={handleLogin} className={styles.form} data-testid="form">
         <h1 className={`text-center mb-5`}>{t('login_screen.heading')}</h1>
 
         {inputs.map((input, i) => (

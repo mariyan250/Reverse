@@ -16,6 +16,7 @@ exports[`Home should render the component 1`] = `
           class="d-flex"
         >
           <input
+            data-testid="searchInput"
             name="query"
             placeholder="home_screen.input.placeholder"
             required=""

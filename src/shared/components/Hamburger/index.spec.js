@@ -18,6 +18,6 @@ describe('Hamburger', () => {
       '3': 'flex-column',
       '4': 'justify-content-between',
     };
-    expect(screen.getByRole('hamburger').classList).toHaveProperty('1', 'toggled');
+    expect(screen.getByTestId('hamburger').classList).toHaveProperty('1', 'toggled');
   });
 });

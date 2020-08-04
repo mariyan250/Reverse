@@ -61,6 +61,7 @@ function Header(props) {
           <li
             className={`ml-3 py-2 px-3 app-bg-secondary app-text-white border-0`}
             onClick={handleLogout}
+            data-testid="logout"
           >
             {t('header.logout_btn')}
           </li>

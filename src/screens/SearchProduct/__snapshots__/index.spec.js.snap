@@ -16,6 +16,7 @@ exports[`SearchProduct should render the component 1`] = `
           class="d-flex"
         >
           <input
+            data-testid="searchInput"
             name="query"
             placeholder="home_screen.input.placeholder"
             required=""
@@ -234,6 +235,7 @@ exports[`SearchProduct should set filterButton to open when click 1`] = `
           class="d-flex"
         >
           <input
+            data-testid="searchInput"
             name="query"
             placeholder="home_screen.input.placeholder"
             required=""

@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from './index.module.scss';
 
-function Input({ name, label, type, required, onChange, role }) {
+function Input({ name, label, type, required, onChange, testId }) {
   return (
     <section className={`${styles.input}`}>
       <label htmlFor={name}>{label}</label>
@@ -12,7 +12,7 @@ function Input({ name, label, type, required, onChange, role }) {
         name={name}
         required={required}
         onChange={onChange}
-        role={role}
+        data-testid={testId}
       />
     </section>
   );
