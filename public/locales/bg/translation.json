@@ -5,7 +5,7 @@
     "currency": "лв"
   },
 
-  "home_screen": {
+  "home": {
     "heading": "Категории",
     "second_heading": "Промо",
     "input": {
@@ -24,7 +24,7 @@
     }
   },
 
-  "login_screen": {
+  "login": {
     "heading": "Вход",
     "option_button": "Нямаш акаунт?",
     "inputs": {
@@ -36,7 +36,7 @@
     "button": "Готово"
   },
 
-  "register_screen": {
+  "register": {
     "heading": "Регистрация",
     "option_button": "Вече притежаваш акаунт?",
     "inputs": {
@@ -67,7 +67,7 @@
     }
   },
 
-  "search_screen": {
+  "search": {
     "heading": "Продукти",
     "filter_button": "Филтрирай",
     "filter_dropdown": {
@@ -85,5 +85,9 @@
 
   "product": {
     "call_button": "Обади се"
+  },
+
+  "not_found": {
+    "heading": "Страницата не съществува"
   }
 }

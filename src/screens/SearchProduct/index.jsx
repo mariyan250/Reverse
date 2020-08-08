@@ -30,12 +30,12 @@ function SearchProduct({ getPosts, posts, location }) {
       </div>
 
       <section className={`d-flex justify-content-between align-items-center mb-4`}>
-        <h2>{t('search_screen.heading')}</h2>
+        <h2>{t('search.heading')}</h2>
         <FilterButton isOpen={open} onClick={() => setOpen(!open)} role="filter-button" />
       </section>
 
       <div className={`app-bg-gray-darker p-2 p-md-4`}>
-        <ItemList items={posts} title="search_screen.heading" />
+        <ItemList items={posts} title="search.heading" />
       </div>
     </main>
   );

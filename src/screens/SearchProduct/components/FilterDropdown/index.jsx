@@ -14,17 +14,17 @@ function FilterDropdown({ posts, filterPost }) {
 
   const links = [
     {
-      text: 'search_screen.filter_dropdown.newest',
+      text: 'search.filter_dropdown.newest',
       onClick: () => filterPost(posts, 'newest'),
       role: 'filter-newest',
     },
     {
-      text: 'search_screen.filter_dropdown.lowest',
+      text: 'search.filter_dropdown.lowest',
       onClick: () => filterPost(posts, 'lowest'),
       role: 'filter-lowest',
     },
     {
-      text: 'search_screen.filter_dropdown.highest',
+      text: 'search.filter_dropdown.highest',
       onClick: () => filterPost(posts, 'highest'),
       role: 'filter-highest',
     },

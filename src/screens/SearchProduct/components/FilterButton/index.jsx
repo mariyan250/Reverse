@@ -12,13 +12,16 @@ function FilterButton({ isOpen, onClick, role }) {
   const { t } = useTranslation();
 
   return (
-    <div className="filter-button" onClick={onClick} role={role}>
-      <button className="box-shadow rounded d-flex p-2 justify-content-center align-items-center position-relative border-0 app-bg-white">
-        <p>{t('search_screen.filter_button')}</p>
-        <i className={`fas fa-angle-down ml-3 ${isOpen && 'toggle'}`} />
-        {isOpen && <FilterDropdown />}
-      </button>
-    </div>
+    <button
+      className="filter-button d-flex justify-content-center align-items-center position-relative box-shadow rounded p-2 border-0 app-bg-white"
+      onClick={onClick}
+      role={role}
+      aria-label="filter products"
+    >
+      <p>{t('search.filter_button')}</p>
+      <i className={`fas fa-angle-down ml-3 ${isOpen && 'toggle'}`} />
+      {isOpen && <FilterDropdown />}
+    </button>
   );
 }
 

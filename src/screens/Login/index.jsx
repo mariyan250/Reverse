@@ -28,7 +28,7 @@ function Login() {
   const inputs = [
     {
       name: 'email',
-      label: t('login_screen.inputs.labels.email'),
+      label: t('login.inputs.labels.email'),
       type: 'email',
       value: email,
       required: true,
@@ -37,7 +37,7 @@ function Login() {
     },
     {
       name: 'password',
-      label: t('login_screen.inputs.labels.password'),
+      label: t('login.inputs.labels.password'),
       type: 'password',
       value: password,
       required: true,
@@ -47,9 +47,9 @@ function Login() {
   ];
 
   return (
-    <main className={`d-flex vh-100 align-items-center justify-content-center px-4`}>
+    <main className={`d-flex align-items-center justify-content-center vh-100 px-4`}>
       <form onSubmit={handleLogin} className={styles.form} data-testid="form">
-        <h1 className={`text-center mb-5`}>{t('login_screen.heading')}</h1>
+        <h1 className={`text-center mb-5`}>{t('login.heading')}</h1>
 
         {inputs.map((input, i) => (
           <div className={`mb-4`} key={i}>
@@ -58,11 +58,11 @@ function Login() {
         ))}
 
         <div className={`mt-5`}>
-          <Button text={t('login_screen.button')} />
+          <Button text={t('login.button')} />
         </div>
 
-        <Link to={routes.register} className={`app-text-secondary d-inline-block mt-4 mb-3`}>
-          {t('login_screen.option_button')}
+        <Link to={routes.register} className={`app-text-secondary d-inline-block mt-4`}>
+          {t('login.option_button')}
         </Link>
       </form>
     </main>

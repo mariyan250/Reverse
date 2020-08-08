@@ -5,13 +5,12 @@
     "currency": "$"
   },
 
-  "home_screen": {
+  "home": {
     "heading": "Categories",
     "second_heading": "Promo",
     "input": {
       "placeholder": "What are you searching?"
     },
-
     "categories": {
       "titles": {
         "home": "Home",
@@ -25,7 +24,7 @@
     }
   },
 
-  "login_screen": {
+  "login": {
     "heading": "Sign In",
     "option_button": "Don't have an account?",
     "button": "Done",
@@ -37,7 +36,7 @@
     }
   },
 
-  "register_screen": {
+  "register": {
     "heading": "Sign Up",
     "option_button": "Already have an account?",
     "button": "Done",
@@ -68,7 +67,7 @@
     }
   },
 
-  "search_screen": {
+  "search": {
     "heading": "Products",
     "filter_button": "Filter",
     "filter_dropdown": {
@@ -85,5 +84,9 @@
 
   "product": {
     "call_button": "Call"
+  },
+
+  "not_found": {
+    "heading": "Not Found"
   }
 }

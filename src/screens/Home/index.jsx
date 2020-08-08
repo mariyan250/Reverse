@@ -27,44 +27,44 @@ function Home({ getPromoPosts, promoPosts }) {
   const categoryCards = [
     {
       icon: '/img/home.svg',
-      title: 'home_screen.categories.titles.home',
+      title: 'home.categories.titles.home',
       url: searchRoutes.home,
     },
     {
       icon: '/img/technology.svg',
-      title: 'home_screen.categories.titles.technology',
+      title: 'home.categories.titles.technology',
       url: searchRoutes.technology,
     },
     {
       icon: '/img/automobile.svg',
-      title: 'home_screen.categories.titles.automobile',
+      title: 'home.categories.titles.automobile',
       url: searchRoutes.automobile,
     },
     {
       icon: '/img/sport.svg',
-      title: 'home_screen.categories.titles.sport',
+      title: 'home.categories.titles.sport',
       url: searchRoutes.sport,
     },
     {
       icon: '/img/tshirt.svg',
-      title: 'home_screen.categories.titles.cloths',
+      title: 'home.categories.titles.cloths',
       url: searchRoutes.cloths,
     },
     {
       icon: '/img/pets.svg',
-      title: 'home_screen.categories.titles.pets',
+      title: 'home.categories.titles.pets',
       url: searchRoutes.pets,
     },
   ];
 
   return (
     <main className={`${styles.home} mx-auto px-4 px-md-5`}>
-      <div className={`my-5 d-flex`}>
+      <div className={`d-flex my-5`}>
         <Search />
       </div>
 
       <section>
-        <h2 className={`mb-4`}>{t('home_screen.heading')}</h2>
+        <h2 className={`mb-4`}>{t('home.heading')}</h2>
         <div className={`${styles.categories}`}>
           {categoryCards.map((category, i) => (
             <CategoryCard key={i} {...category} />
@@ -73,8 +73,8 @@ function Home({ getPromoPosts, promoPosts }) {
       </section>
 
       <section>
-        <h2 className={`mt-5 mb-4`}>{t('home_screen.second_heading')}</h2>
-        <div className={`p-2 app-bg-gray-darker`}>
+        <h2 className={`mt-5 mb-4`}>{t('home.second_heading')}</h2>
+        <div className={`app-bg-gray-darker p-2`}>
           <ItemList items={promoPosts} />
         </div>
       </section>

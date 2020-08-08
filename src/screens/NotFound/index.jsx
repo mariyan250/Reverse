@@ -1,11 +1,15 @@
 // React and style
 import React from 'react';
 
-// TODO translate
+// Translation
+import { useTranslation } from 'react-i18next';
+
 function NotFound() {
+  const { t } = useTranslation();
+
   return (
-    <main className={`vh-100 d-flex justify-content-center align-items-center`}>
-      <h1>Not Found!</h1>
+    <main className={`d-flex justify-content-center align-items-center vh-100`}>
+      <h1>{t('not_found.heading')}</h1>
     </main>
   );
 }

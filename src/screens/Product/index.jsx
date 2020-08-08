@@ -79,8 +79,8 @@ function Product({ getPost, post, match }) {
           </p>
         </div>
 
-        <article
-          className={`${styles.nav} app-bg-white d-flex justify-content-around justify-content-sm-between align-items-center py-1 m-sm-0 mt-4 mt-md-0 w-100`}
+        <div
+          className={`${styles.nav} d-flex justify-content-around justify-content-sm-between align-items-center app-bg-white py-1 m-sm-0 mt-4 mt-md-0 w-100`}
         >
           <p className={`text-center my-2 my-md-0`}>
             {post.price} {t('general.currency')}
@@ -89,7 +89,7 @@ function Product({ getPost, post, match }) {
             {t('product.call_button')}
             <i className={`fas fa-phone ml-3`} />
           </span>
-        </article>
+        </div>
       </section>
     </main>
   );
