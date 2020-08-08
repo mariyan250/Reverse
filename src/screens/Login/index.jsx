@@ -2,14 +2,14 @@
 import React, { useState } from 'react';
 import styles from './index.module.scss';
 
+// Translation
+import { useTranslation } from 'react-i18next';
+
 // Router
 import { Link } from 'react-router-dom';
 
 // Routes
 import { routes } from 'shared/constants/routes';
-
-// Translation
-import { useTranslation } from 'react-i18next';
 
 // Components
 import Input from 'shared/components/auth/Input';
@@ -32,9 +32,7 @@ function Login() {
       type: 'email',
       value: email,
       required: true,
-      onChange(e) {
-        setEmail(e.target.value);
-      },
+      onChange: (e) => setEmail(e.target.value),
       testId: 'emailInput',
     },
     {
@@ -43,9 +41,7 @@ function Login() {
       type: 'password',
       value: password,
       required: true,
-      onChange(e) {
-        setPassword(e.target.value);
-      },
+      onChange: (e) => setPassword(e.target.value),
       testId: 'passwordInput',
     },
   ];
@@ -56,14 +52,14 @@ function Login() {
         <h1 className={`text-center mb-5`}>{t('login_screen.heading')}</h1>
 
         {inputs.map((input, i) => (
-          <section className={`mb-4`} key={i}>
+          <div className={`mb-4`} key={i}>
             <Input {...input} />
-          </section>
+          </div>
         ))}
 
-        <section className={`mt-5`}>
+        <div className={`mt-5`}>
           <Button text={t('login_screen.button')} />
-        </section>
+        </div>
 
         <Link to={routes.register} className={`app-text-secondary d-inline-block mt-4 mb-3`}>
           {t('login_screen.option_button')}

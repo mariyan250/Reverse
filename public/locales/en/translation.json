@@ -8,7 +8,6 @@
   "home_screen": {
     "heading": "Categories",
     "second_heading": "Promo",
-
     "input": {
       "placeholder": "What are you searching?"
     },
@@ -22,7 +21,6 @@
         "cloths": "Cloths",
         "pets": "Pets"
       },
-
       "img_alt": "Category"
     }
   },
@@ -31,7 +29,6 @@
     "heading": "Sign In",
     "option_button": "Don't have an account?",
     "button": "Done",
-
     "inputs": {
       "labels": {
         "email": "Email",
@@ -44,7 +41,6 @@
     "heading": "Sign Up",
     "option_button": "Already have an account?",
     "button": "Done",
-
     "inputs": {
       "labels": {
         "username": "Username",
@@ -74,15 +70,12 @@
 
   "search_screen": {
     "heading": "Products",
-
     "filter_button": "Filter",
-
     "filter_dropdown": {
       "newest": "Newest",
       "lowest": "Lowest",
       "highest": "Highest"
     },
-
     "item": {
       "img": {
         "alt": "Image"

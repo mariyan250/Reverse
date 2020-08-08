@@ -2,11 +2,11 @@
 import React from 'react';
 import styles from './index.module.scss';
 
-// Router
-import { Link } from 'react-router-dom';
-
 // Translation
 import { useTranslation } from 'react-i18next';
+
+// Router
+import { Link } from 'react-router-dom';
 
 function CategoryCard({ url, icon, title }) {
   const { t } = useTranslation();

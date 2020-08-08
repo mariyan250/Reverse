@@ -2,9 +2,6 @@
 import React, { useEffect } from 'react';
 import styles from './index.module.scss';
 
-// Routes
-import { searchRoutes } from 'shared/constants/routes';
-
 // Redux
 import { connect } from 'react-redux';
 import { getPromoPosts } from 'store/actions/post';
@@ -12,10 +9,13 @@ import { getPromoPosts } from 'store/actions/post';
 // Translation
 import { useTranslation } from 'react-i18next';
 
+// Routes
+import { searchRoutes } from 'shared/constants/routes';
+
 // Components
+import Search from 'shared/components/Search';
 import CategoryCard from './components/CategoryCard';
 import ItemList from 'shared/components/Product/CardList';
-import Search from 'shared/components/Search';
 
 function Home({ getPromoPosts, promoPosts }) {
   const { t } = useTranslation();
@@ -59,24 +59,24 @@ function Home({ getPromoPosts, promoPosts }) {
 
   return (
     <main className={`${styles.home} mx-auto px-4 px-md-5`}>
-      <section className={`my-5 d-flex`}>
+      <div className={`my-5 d-flex`}>
         <Search />
-      </section>
+      </div>
 
       <section>
-        <h3 className={`mb-4`}>{t('home_screen.heading')}</h3>
-        <article className={`${styles.categories}`}>
+        <h2 className={`mb-4`}>{t('home_screen.heading')}</h2>
+        <div className={`${styles.categories}`}>
           {categoryCards.map((category, i) => (
             <CategoryCard key={i} {...category} />
           ))}
-        </article>
+        </div>
       </section>
 
       <section>
-        <h3 className={`mt-5 mb-4`}>{t('home_screen.second_heading')}</h3>
-        <article className={`p-2 app-bg-gray-darker`}>
+        <h2 className={`mt-5 mb-4`}>{t('home_screen.second_heading')}</h2>
+        <div className={`p-2 app-bg-gray-darker`}>
           <ItemList items={promoPosts} />
-        </article>
+        </div>
       </section>
     </main>
   );

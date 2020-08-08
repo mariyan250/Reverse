@@ -30,9 +30,7 @@ function Register() {
       type: 'text',
       value: username,
       required: true,
-      onChange(e) {
-        setUsername(e.target.value);
-      },
+      onChange: (e) => setUsername(e.target.value),
       testId: 'usernameInput',
     },
     {
@@ -41,9 +39,7 @@ function Register() {
       type: 'email',
       value: email,
       required: true,
-      onChange(e) {
-        setEmail(e.target.value);
-      },
+      onChange: (e) => setEmail(e.target.value),
       testId: 'emailInput',
     },
     {
@@ -52,9 +48,7 @@ function Register() {
       type: 'password',
       value: password,
       required: true,
-      onChange(e) {
-        setPassword(e.target.value);
-      },
+      onChange: (e) => setPassword(e.target.value),
       testId: 'passwordInput',
     },
     {
@@ -63,9 +57,7 @@ function Register() {
       type: 'password',
       value: rePassword,
       required: true,
-      onChange(e) {
-        setRePassword(e.target.value);
-      },
+      onChange: (e) => setRePassword(e.target.value),
       testId: 'rePasswordInput',
     },
   ];
@@ -80,14 +72,14 @@ function Register() {
         <h1 className={`text-center mb-5`}>{t('register_screen.heading')}</h1>
 
         {inputs.map((input, i) => (
-          <section className={`mb-4`} key={i}>
+          <div className={`mb-4`} key={i}>
             <Input {...input} />
-          </section>
+          </div>
         ))}
 
-        <section className={`mt-5`}>
+        <div className={`mt-5`}>
           <Button text={t('register_screen.button')} />
-        </section>
+        </div>
 
         <Link to={routes.login} className={`app-text-secondary mt-4 mb-5 d-inline-block`}>
           {t('register_screen.option_button')}

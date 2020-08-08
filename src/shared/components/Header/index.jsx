@@ -2,10 +2,6 @@
 import React from 'react';
 import styles from './index.module.scss';
 
-// Router and Routes
-import { NavLink, Link } from 'react-router-dom';
-import { routes } from 'shared/constants/routes';
-
 // Redux
 import { connect } from 'react-redux';
 import { toggleHamburger } from 'store/actions/hamburger';
@@ -13,6 +9,10 @@ import { removeUser } from 'store/actions/user';
 
 // Translation
 import { useTranslation } from 'react-i18next';
+
+// Router and Routes
+import { NavLink, Link } from 'react-router-dom';
+import { routes } from 'shared/constants/routes';
 
 // Components
 import Hamburger from 'shared/components/Hamburger';
@@ -42,7 +42,7 @@ function Header(props) {
       className={`${styles.header} app-bg-secondary position-sticky px-4 px-md-5 d-flex justify-content-between align-items-center`}
     >
       <Link to="/">
-        <h1 className={`app-text-white`}>{t('header.heading')}</h1>
+        <span className={`app-text-white`}>{t('header.heading')}</span>
       </Link>
 
       <ul className={`d-none d-md-flex h-100 align-items-center m-0`}>
@@ -68,12 +68,12 @@ function Header(props) {
         )}
       </ul>
 
-      <section className={`d-md-none`}>
+      <div className={`d-md-none`}>
         <Hamburger
           onClick={() => props.toggleHamburger(!props.burgerOpened)}
           isOpen={props.burgerOpened}
         />
-      </section>
+      </div>
 
       {props.burgerOpened && (
         <Menu

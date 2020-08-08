@@ -8,11 +8,9 @@
   "home_screen": {
     "heading": "Категории",
     "second_heading": "Промо",
-
     "input": {
       "placeholder": "Какво търсиш?"
     },
-
     "categories": {
       "titles": {
         "home": "За Дома",
@@ -22,7 +20,6 @@
         "cloths": "Дрехи",
         "pets": "Животни"
       },
-
       "img_alt": "Category"
     }
   },
@@ -30,21 +27,18 @@
   "login_screen": {
     "heading": "Вход",
     "option_button": "Нямаш акаунт?",
-
     "inputs": {
       "labels": {
         "email": "Е-Майл",
         "password": "Парола"
       }
     },
-
     "button": "Готово"
   },
 
   "register_screen": {
     "heading": "Регистрация",
     "option_button": "Вече притежаваш акаунт?",
-
     "inputs": {
       "labels": {
         "username": "Потребителско име",
@@ -53,7 +47,6 @@
         "re_password": "Повтори Парола"
       }
     },
-
     "button": "Готово"
   },
 
@@ -76,9 +69,7 @@
 
   "search_screen": {
     "heading": "Продукти",
-
     "filter_button": "Филтрирай",
-
     "filter_dropdown": {
       "newest": "Най-нови",
       "lowest": "Най-ниска цена",

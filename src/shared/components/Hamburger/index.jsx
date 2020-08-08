@@ -10,6 +10,7 @@ function Hamburger({ isOpen, onClick }) {
       } d-flex flex-column justify-content-between`}
       onClick={onClick}
       data-testid="hamburger"
+      aria-label="hamburger"
     >
       <span className={`app-bg-white rounded-pill`}></span>
       <span className={`app-bg-white align-self-end rounded-pill`}></span>

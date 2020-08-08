@@ -4,7 +4,7 @@ import styles from './index.module.scss';
 
 function Input({ name, label, type, required, onChange, testId }) {
   return (
-    <section className={`${styles.input}`}>
+    <div className={`${styles.input}`}>
       <label htmlFor={name}>{label}</label>
       <input
         className={`p-1`}
@@ -14,7 +14,7 @@ function Input({ name, label, type, required, onChange, testId }) {
         onChange={onChange}
         data-testid={testId}
       />
-    </section>
+    </div>
   );
 }
 

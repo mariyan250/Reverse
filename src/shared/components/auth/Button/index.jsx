@@ -7,6 +7,7 @@ function Button({ text, onClick }) {
     <button
       className={`${styles.button} app-bg-primary border-0 app-text-white w-100 p-2`}
       onClick={onClick}
+      aria-label={text}
     >
       {text}
     </button>

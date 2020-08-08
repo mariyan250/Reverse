@@ -2,18 +2,18 @@
 import React from 'react';
 import styles from './index.module.scss';
 
-// Router
-import { NavLink } from 'react-router-dom';
-
 // Translation
 import { useTranslation } from 'react-i18next';
+
+// Router
+import { NavLink } from 'react-router-dom';
 
 function Menu(props) {
   const { t } = useTranslation();
 
   return (
-    <section {...props}>
-      <article className={`${styles.menu} app-bg-black-transparent`}>
+    <div {...props}>
+      <div className={`${styles.menu} app-bg-black-transparent`}>
         <ul>
           {props.links &&
             props.links.map((link, i) => (
@@ -28,8 +28,8 @@ function Menu(props) {
               </li>
             ))}
         </ul>
-      </article>
-    </section>
+      </div>
+    </div>
   );
 }
 

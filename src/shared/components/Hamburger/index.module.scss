@@ -1,6 +1,8 @@
 @import '../../../index.scss';
 
 .hamburger {
+  display: inline-block;
+  background: transparent;
   width: to-rem(35px);
   height: to-rem(28px);
 

@@ -5,6 +5,12 @@
   z-index: 10;
   top: 0;
 
+  a {
+    span {
+      font-size: to-rem(32px);
+    }
+  }
+
   li {
     font-size: to-rem(16px);
   }

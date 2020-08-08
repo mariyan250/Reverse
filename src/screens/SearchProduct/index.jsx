@@ -1,4 +1,4 @@
-// React
+// React and Style
 import React, { useEffect, useState } from 'react';
 import styles from './index.module.scss';
 
@@ -16,6 +16,7 @@ import FilterButton from './components/FilterButton';
 
 function SearchProduct({ getPosts, posts, location }) {
   const [open, setOpen] = useState(false);
+
   const { t } = useTranslation();
 
   useEffect(() => {
@@ -24,18 +25,18 @@ function SearchProduct({ getPosts, posts, location }) {
 
   return (
     <main className={`${styles.search} px-4 mx-auto`}>
-      <section className={`my-5 d-flex`}>
+      <div className={`my-5 d-flex`}>
         <Search />
-      </section>
+      </div>
 
       <section className={`d-flex justify-content-between align-items-center mb-4`}>
-        <h3>{t('search_screen.heading')}</h3>
+        <h2>{t('search_screen.heading')}</h2>
         <FilterButton isOpen={open} onClick={() => setOpen(!open)} role="filter-button" />
       </section>
 
-      <section className={`app-bg-gray-darker p-2 p-md-4`}>
+      <div className={`app-bg-gray-darker p-2 p-md-4`}>
         <ItemList items={posts} title="search_screen.heading" />
-      </section>
+      </div>
     </main>
   );
 }

@@ -7,11 +7,12 @@ import { useTranslation } from 'react-i18next';
 
 function Search() {
   const [searchQuery, setSearchQuery] = useState('');
+
   const { t } = useTranslation();
 
   return (
     <form action="/search" className={`${styles.form} w-100 mx-auto`}>
-      <article className={`d-flex`}>
+      <div className={`d-flex`}>
         <input
           type="text"
           name="query"
@@ -22,7 +23,7 @@ function Search() {
           data-testid="searchInput"
         />
 
-        <article>
+        <div>
           <button
             className={`h-100 border-0 ${
               searchQuery ? 'app-bg-primary' : 'app-bg-secondary'
@@ -30,8 +31,8 @@ function Search() {
           >
             <i className={`fas fa-search app-text-white`} />
           </button>
-        </article>
-      </article>
+        </div>
+      </div>
     </form>
   );
 }

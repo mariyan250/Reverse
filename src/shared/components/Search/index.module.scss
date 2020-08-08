@@ -3,16 +3,16 @@
 .form {
   max-width: to-rem(500px);
 
-  input {
-    font-size: to-rem(16px);
-    padding: to-rem(8px) to-rem(15px);
-
-    @include media-breakpoint-md-up {
+  div {
+    input {
+      font-size: to-rem(16px);
       padding: to-rem(8px) to-rem(15px);
-    }
-  }
 
-  article {
+      @include media-breakpoint-md-up {
+        padding: to-rem(8px) to-rem(15px);
+      }
+    }
+
     button {
       width: to-rem(52px);
       margin-left: to-rem(-3px);
