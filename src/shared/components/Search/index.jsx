@@ -16,7 +16,7 @@ function Search() {
         <input
           type="text"
           name="query"
-          placeholder={t('home_screen.input.placeholder')}
+          placeholder={t('home.input.placeholder')}
           onChange={(e) => setSearchQuery(e.target.value)}
           value={searchQuery}
           required
