@@ -8,7 +8,7 @@ function NotFound() {
   const { t } = useTranslation();
 
   return (
-    <main className={`d-flex justify-content-center align-items-center vh-100`}>
+    <main className="d-flex justify-content-center align-items-center vh-100">
       <h1>{t('not_found.heading')}</h1>
     </main>
   );

@@ -25,16 +25,16 @@ function SearchProduct({ getPosts, posts, location }) {
 
   return (
     <main className={`${styles.search} px-4 mx-auto`}>
-      <div className={`my-5 d-flex`}>
+      <div className="my-5 d-flex">
         <Search />
       </div>
 
-      <section className={`d-flex justify-content-between align-items-center mb-4`}>
+      <section className="d-flex justify-content-between align-items-center mb-4">
         <h2>{t('search.heading')}</h2>
         <FilterButton isOpen={open} onClick={() => setOpen(!open)} role="filter-button" />
       </section>
 
-      <div className={`app-bg-gray-darker p-2 p-md-4`}>
+      <div className="app-bg-gray-darker p-2 p-md-4">
         <ItemList items={posts} title="search.heading" />
       </div>
     </main>

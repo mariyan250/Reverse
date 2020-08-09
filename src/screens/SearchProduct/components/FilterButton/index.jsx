@@ -1,6 +1,6 @@
 // React and Style
 import React from 'react';
-import './index.scss';
+import styles from './index.module.scss';
 
 // Translation
 import { useTranslation } from 'react-i18next';
@@ -13,13 +13,15 @@ function FilterButton({ isOpen, onClick, role }) {
 
   return (
     <button
-      className="filter-button d-flex justify-content-center align-items-center position-relative box-shadow rounded p-2 border-0 app-bg-white"
+      className={`${styles.button} ${
+        isOpen ? styles.toggle : ''
+      } d-flex justify-content-center align-items-center position-relative box-shadow rounded p-2 border-0 app-bg-white`}
       onClick={onClick}
       role={role}
       aria-label="filter products"
     >
       <p>{t('search.filter_button')}</p>
-      <i className={`fas fa-angle-down ml-3 ${isOpen && 'toggle'}`} />
+      <i className="fas fa-angle-down ml-3" />
       {isOpen && <FilterDropdown />}
     </button>
   );

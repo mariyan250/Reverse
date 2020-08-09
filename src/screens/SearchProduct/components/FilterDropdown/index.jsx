@@ -1,6 +1,6 @@
 // React and Style
 import React from 'react';
-import './index.scss';
+import styles from './index.module.scss';
 
 // Translation
 import { useTranslation } from 'react-i18next';
@@ -32,7 +32,7 @@ function FilterDropdown({ posts, filterPost }) {
 
   return (
     <ul
-      className="filter-dropdown position-absolute app-bg-white rounded-lg box-shadow overflow-hidden d-flex flex-column justify-content-center"
+      className={`${styles.dropdown} position-absolute app-bg-white rounded-lg box-shadow overflow-hidden d-flex flex-column justify-content-center`}
       data-testid="filter-dropdown"
     >
       {links.map((link, i) => (

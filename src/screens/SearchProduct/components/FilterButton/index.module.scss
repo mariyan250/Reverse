@@ -1,16 +1,12 @@
 @import '../../../../index.scss';
 
-.filter-button {
+.button {
   font-size: to-rem(16px);
-  width: to-rem(150px);
+  width: to-rem(140px);
 
   i {
     transition: $normal;
     font-size: to-rem(24px);
-
-    &.toggle {
-      transform: rotate(180deg);
-    }
   }
 
   &:focus {
@@ -19,5 +15,11 @@
 
   &:hover {
     cursor: pointer;
+  }
+
+  &.toggle {
+    i {
+      transform: rotate(180deg);
+    }
   }
 }

@@ -59,12 +59,12 @@ function Home({ getPromoPosts, promoPosts }) {
 
   return (
     <main className={`${styles.home} mx-auto px-4 px-md-5`}>
-      <div className={`d-flex my-5`}>
+      <div className="d-flex my-5">
         <Search />
       </div>
 
       <section>
-        <h2 className={`mb-4`}>{t('home.heading')}</h2>
+        <h2 className="mb-4">{t('home.heading')}</h2>
         <div className={`${styles.categories}`}>
           {categoryCards.map((category, i) => (
             <CategoryCard key={i} {...category} />
@@ -73,8 +73,8 @@ function Home({ getPromoPosts, promoPosts }) {
       </section>
 
       <section>
-        <h2 className={`mt-5 mb-4`}>{t('home.second_heading')}</h2>
-        <div className={`app-bg-gray-darker p-2`}>
+        <h2 className="mt-5 mb-4">{t('home.second_heading')}</h2>
+        <div className="app-bg-gray-darker p-2">
           <ItemList items={promoPosts} />
         </div>
       </section>

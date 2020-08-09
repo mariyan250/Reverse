@@ -7,7 +7,7 @@ import Item from '../Card';
 
 function ItemList({ items }) {
   return (
-    <ul className={`${styles.list}`}>
+    <ul className={styles.list}>
       {items && items.map((item) => <Item {...item} key={item.id} />)}
     </ul>
   );

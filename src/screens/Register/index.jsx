@@ -72,16 +72,16 @@ function Register() {
         <h1 className={`text-center mb-5`}>{t('register.heading')}</h1>
 
         {inputs.map((input, i) => (
-          <div className={`mb-4`} key={i}>
+          <div className="mb-4" key={i}>
             <Input {...input} />
           </div>
         ))}
 
-        <div className={`mt-5`}>
+        <div className="mt-5">
           <Button text={t('register.button')} />
         </div>
 
-        <Link to={routes.login} className={`app-text-secondary mt-4 d-inline-block`}>
+        <Link to={routes.login} className="app-text-secondary mt-4 d-inline-block">
           {t('register.option_button')}
         </Link>
       </form>

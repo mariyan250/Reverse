@@ -1,14 +1,16 @@
 @import '../../../index.scss';
 
 .hamburger {
-  display: inline-block;
-  background: transparent;
   width: to-rem(35px);
-  height: to-rem(28px);
+  height: to-rem(30px);
 
   span {
     height: to-rem(4px);
     transition: $slow;
+  }
+
+  span:nth-child(1) {
+    width: 100%;
   }
 
   span:nth-child(2) {
@@ -21,11 +23,12 @@
 
   &:hover {
     cursor: pointer;
+    outline: none;
   }
 
   &.toggled {
     span:nth-child(1) {
-      transform: rotate(-45deg) translate(-20%, 235%);
+      transform: rotate(-45deg) translate(-25%, 235%);
     }
 
     span:nth-child(2) {
@@ -33,8 +36,8 @@
     }
 
     span:nth-child(3) {
-      transform: rotate(45deg) translate(-20%, -235%);
-      width: to-rem(35px);
+      transform: rotate(45deg) translate(-25%, -235%);
+      width: 100%;
     }
   }
 }

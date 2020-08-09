@@ -1,8 +1,8 @@
 @import '../../../../index.scss';
 
-.filter-dropdown {
+.dropdown {
   z-index: 1;
-  left: to-rem(-50px);
+  left: to-rem(-60px);
   top: to-rem(45px);
   width: to-rem(200px);
   animation: appear 1 $fast;

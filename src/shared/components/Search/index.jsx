@@ -12,7 +12,7 @@ function Search() {
 
   return (
     <form action="/search" className={`${styles.form} w-100 mx-auto`}>
-      <div className={`d-flex`}>
+      <div className="d-flex">
         <input
           type="text"
           name="query"
@@ -25,11 +25,11 @@ function Search() {
 
         <div>
           <button
-            className={`h-100 border-0 ${
+            className={`${
               searchQuery ? 'app-bg-primary' : 'app-bg-secondary'
-            } d-flex justify-content-center align-items-center`}
+            } h-100 border-0 d-flex justify-content-center align-items-center`}
           >
-            <i className={`fas fa-search app-text-white`} />
+            <i className="fas fa-search app-text-white" />
           </button>
         </div>
       </div>

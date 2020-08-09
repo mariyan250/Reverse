@@ -13,7 +13,7 @@ function Item({ id, images, name, location, date, price }) {
 
   return (
     <li className={`${styles.item} app-bg-white box-shadow overflow-hidden`}>
-      <Link to={`/item/${id}`} className={`app-text-secondary`}>
+      <Link to={`/item/${id}`} className="app-text-secondary">
         <div
           className={`${styles.container} d-flex overflow-hidden position-relative justify-content-center`}
         >
@@ -24,14 +24,14 @@ function Item({ id, images, name, location, date, price }) {
           />
         </div>
 
-        <div className={`py-3 px-4 h-100 app-bg-gray`}>
+        <div className="py-3 px-4 h-100 app-bg-gray">
           <p className={`${styles.name} text-center mb-4`}>{name}</p>
-          <p className={`mb-3`}>
-            <i className={`fas fa-map-marker-alt mr-2`} />
+          <p className="mb-3">
+            <i className="fas fa-map-marker-alt mr-2" />
             {location}
           </p>
-          <p className={`mb-4`}>
-            <i className={`fas fa-clock mr-2`} />
+          <p className="mb-4">
+            <i className="fas fa-clock mr-2" />
             {date}
           </p>
           <p className={`${styles.price}`}>

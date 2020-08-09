@@ -47,21 +47,21 @@ function Login() {
   ];
 
   return (
-    <main className={`d-flex align-items-center justify-content-center vh-100 px-4`}>
+    <main className="d-flex align-items-center justify-content-center vh-100 px-4">
       <form onSubmit={handleLogin} className={styles.form} data-testid="form">
-        <h1 className={`text-center mb-5`}>{t('login.heading')}</h1>
+        <h1 className="text-center mb-5">{t('login.heading')}</h1>
 
         {inputs.map((input, i) => (
-          <div className={`mb-4`} key={i}>
+          <div className="mb-4" key={i}>
             <Input {...input} />
           </div>
         ))}
 
-        <div className={`mt-5`}>
+        <div className="mt-5">
           <Button text={t('login.button')} />
         </div>
 
-        <Link to={routes.register} className={`app-text-secondary d-inline-block mt-4`}>
+        <Link to={routes.register} className="app-text-secondary d-inline-block mt-4">
           {t('login.option_button')}
         </Link>
       </form>

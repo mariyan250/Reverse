@@ -39,18 +39,18 @@ function Header(props) {
 
   return (
     <header
-      className={`${styles.header} app-bg-secondary position-sticky px-4 px-md-5 d-flex justify-content-between align-items-center`}
+      className={`${styles.header} d-flex justify-content-between align-items-center app-bg-secondary position-sticky px-4 px-md-5`}
     >
       <Link to="/">
-        <span className={`app-text-white`}>{t('header.heading')}</span>
+        <span className="app-text-white">{t('header.heading')}</span>
       </Link>
 
-      <ul className={`d-none d-md-flex h-100 align-items-center m-0`}>
+      <ul className="d-none d-md-flex h-100 align-items-center m-0">
         {(props.user ? privateLinks : publicLinks).map((link, i) => (
-          <li className={`ml-5 h-100`} key={i}>
+          <li className="ml-5 h-100" key={i}>
             <NavLink
               to={link.to}
-              className={`app-text-white h-100 d-flex justify-content-center align-items-center`}
+              className="app-text-white h-100 d-flex justify-content-center align-items-center"
             >
               {t(link.text)}
             </NavLink>
@@ -59,7 +59,7 @@ function Header(props) {
 
         {props.user && (
           <li
-            className={`ml-3 py-2 px-3 app-bg-secondary app-text-white border-0`}
+            className="ml-3 py-2 px-3 app-bg-secondary app-text-white border-0"
             onClick={handleLogout}
             data-testid="logout"
           >
@@ -68,7 +68,7 @@ function Header(props) {
         )}
       </ul>
 
-      <div className={`d-md-none`}>
+      <div className="d-md-none">
         <Hamburger
           onClick={() => props.toggleHamburger(!props.burgerOpened)}
           isOpen={props.burgerOpened}
