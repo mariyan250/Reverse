@@ -3,15 +3,15 @@
 exports[`CategoryCard should render the component 1`] = `
 <div>
   <a
-    class="card py-2 py-md-4 box-shadow d-block text-center"
+    class="card d-block box-shadow text-center py-2 py-md-4"
     href="/"
   >
     <img
-      alt="home_screen.private.categories.img_alt"
+      alt="home.categories.img_alt"
       class="mt-2"
     />
     <p
-      class="mt-3 mb-0 app-text-secondary"
+      class="app-text-secondary mt-3 mb-0"
     />
   </a>
 </div>

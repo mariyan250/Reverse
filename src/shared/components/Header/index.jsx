@@ -4,7 +4,7 @@ import styles from './index.module.scss';
 
 // Redux
 import { connect } from 'react-redux';
-import { toggleHamburger } from 'store/actions/hamburger';
+import { toggleHamburger, closeHamburger } from 'store/actions/hamburger';
 import { removeUser } from 'store/actions/user';
 
 // Translation
@@ -50,7 +50,7 @@ function Header(props) {
           <li className="ml-5 h-100" key={i}>
             <NavLink
               to={link.to}
-              className="app-text-white h-100 d-flex justify-content-center align-items-center"
+              className="d-flex justify-content-center align-items-center app-text-white h-100"
             >
               {t(link.text)}
             </NavLink>
@@ -92,4 +92,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps, { toggleHamburger, removeUser })(Header);
+export default connect(mapStateToProps, { toggleHamburger, removeUser, closeHamburger })(Header);

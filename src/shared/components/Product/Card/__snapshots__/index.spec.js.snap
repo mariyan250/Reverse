@@ -9,15 +9,15 @@ exports[`Item should render the component 1`] = `
       class="app-text-secondary"
       href="/item/undefined"
     >
-      <section
+      <div
         class="container d-flex overflow-hidden position-relative justify-content-center"
       >
         <img
           alt="search_screen.item.img.alt"
           class="img img-fluid position-absolute p-5"
         />
-      </section>
-      <section
+      </div>
+      <div
         class="py-3 px-4 h-100 app-bg-gray"
       >
         <p
@@ -43,7 +43,7 @@ exports[`Item should render the component 1`] = `
            
           general.currency
         </p>
-      </section>
+      </div>
     </a>
   </li>
 </div>

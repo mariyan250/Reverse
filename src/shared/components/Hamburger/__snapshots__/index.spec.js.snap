@@ -2,8 +2,9 @@
 
 exports[`Hamburger should render the component 1`] = `
 <div>
-  <section
-    class="hamburger undefined d-flex flex-column justify-content-between"
+  <button
+    aria-label="toggle menu"
+    class="hamburger undefined d-flex flex-column justify-content-between border-0 bg-transparent"
     data-testid="hamburger"
   >
     <span
@@ -15,6 +16,6 @@ exports[`Hamburger should render the component 1`] = `
     <span
       class="app-bg-white align-self-end rounded-pill"
     />
-  </section>
+  </button>
 </div>
 `;

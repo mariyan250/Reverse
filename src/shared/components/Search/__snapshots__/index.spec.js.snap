@@ -6,27 +6,27 @@ exports[`Search should render the component 1`] = `
     action="/search"
     class="form w-100 mx-auto"
   >
-    <article
+    <div
       class="d-flex"
     >
       <input
         data-testid="searchInput"
         name="query"
-        placeholder="home_screen.input.placeholder"
+        placeholder="home.input.placeholder"
         required=""
         type="text"
         value=""
       />
-      <article>
+      <div>
         <button
-          class="h-100 border-0 app-bg-secondary d-flex justify-content-center align-items-center"
+          class="app-bg-secondary h-100 border-0 d-flex justify-content-center align-items-center"
         >
           <i
             class="fas fa-search app-text-white"
           />
         </button>
-      </article>
-    </article>
+      </div>
+    </div>
   </form>
 </div>
 `;

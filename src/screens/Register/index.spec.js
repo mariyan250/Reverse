@@ -22,7 +22,7 @@ describe('Register', () => {
     expect(event.defaultPrevented).toBeTruthy();
   });
 
-  it('should change username input value', () => {
+  it('should change username input value', async () => {
     render(<Register />);
     const input = screen.getByTestId('usernameInput');
     const event = createEvent.change(input, { target: { value: 'avatar123' } });
@@ -31,7 +31,7 @@ describe('Register', () => {
     waitForElementToBeRemoved(() => input);
   });
 
-  it('should change email input value', () => {
+  it('should change email input value', async () => {
     render(<Register />);
     const input = screen.getByTestId('emailInput');
     const event = createEvent.change(input, { target: { value: 'email@gmail.com' } });
@@ -40,7 +40,7 @@ describe('Register', () => {
     waitForElementToBeRemoved(() => input);
   });
 
-  it('should change password input value', () => {
+  it('should change password input value', async () => {
     render(<Register />);
     const input = screen.getByTestId('passwordInput');
     const event = createEvent.change(input, { target: { value: 'password123' } });
@@ -49,7 +49,7 @@ describe('Register', () => {
     waitForElementToBeRemoved(() => input);
   });
 
-  it('should change repeat password input value', () => {
+  it('should change repeat password input value', async () => {
     render(<Register />);
     const input = screen.getByTestId('rePasswordInput');
     const event = createEvent.change(input, { target: { value: 'password123' } });

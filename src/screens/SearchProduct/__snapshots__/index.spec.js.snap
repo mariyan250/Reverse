@@ -3,62 +3,59 @@
 exports[`SearchProduct should render the component 1`] = `
 <div>
   <main
-    class="search px-4 mx-auto"
+    class="search mx-auto px-4"
   >
-    <section
-      class="my-5 d-flex"
+    <div
+      class="my-5"
     >
       <form
         action="/search"
         class="form w-100 mx-auto"
       >
-        <article
+        <div
           class="d-flex"
         >
           <input
             data-testid="searchInput"
             name="query"
-            placeholder="home_screen.input.placeholder"
+            placeholder="home.input.placeholder"
             required=""
             type="text"
             value=""
           />
-          <article>
+          <div>
             <button
-              class="h-100 border-0 app-bg-secondary d-flex justify-content-center align-items-center"
+              class="app-bg-secondary h-100 border-0 d-flex justify-content-center align-items-center"
             >
               <i
                 class="fas fa-search app-text-white"
               />
             </button>
-          </article>
-        </article>
+          </div>
+        </div>
       </form>
-    </section>
+    </div>
     <section
       class="d-flex justify-content-between align-items-center mb-4"
     >
-      <h3>
-        search_screen.heading
-      </h3>
-      <section
-        class="filter-button"
+      <h2>
+        search.heading
+      </h2>
+      <button
+        aria-label="filter products"
+        class="button  d-flex justify-content-center align-items-center position-relative box-shadow rounded p-2 border-0 app-bg-white"
         role="filter-button"
       >
-        <button
-          class="box-shadow rounded d-flex p-2 justify-content-center align-items-center position-relative border-0 app-bg-white"
-        >
-          <p>
-            search_screen.filter_button
-          </p>
-          <i
-            class="fas fa-angle-down ml-3 false"
-          />
-        </button>
-      </section>
+        <p>
+          search.filter_button
+        </p>
+        <i
+          class="fas fa-angle-down ml-3"
+        />
+      </button>
     </section>
-    <section
-      class="app-bg-gray-darker p-2 p-md-4"
+    <div
+      class="app-bg-gray-darker p-2"
     >
       <ul
         class="list"
@@ -70,7 +67,7 @@ exports[`SearchProduct should render the component 1`] = `
             class="app-text-secondary"
             href="/item/1"
           >
-            <section
+            <div
               class="container d-flex overflow-hidden position-relative justify-content-center"
             >
               <img
@@ -78,8 +75,8 @@ exports[`SearchProduct should render the component 1`] = `
                 class="img img-fluid position-absolute p-5"
                 src="https://s13emagst.akamaized.net/products/31489/31488238/images/res_cf71f94f6a0749441e0c420bf54540c4.jpg"
               />
-            </section>
-            <section
+            </div>
+            <div
               class="py-3 px-4 h-100 app-bg-gray"
             >
               <p
@@ -110,7 +107,7 @@ exports[`SearchProduct should render the component 1`] = `
                  
                 general.currency
               </p>
-            </section>
+            </div>
           </a>
         </li>
         <li
@@ -120,7 +117,7 @@ exports[`SearchProduct should render the component 1`] = `
             class="app-text-secondary"
             href="/item/2"
           >
-            <section
+            <div
               class="container d-flex overflow-hidden position-relative justify-content-center"
             >
               <img
@@ -128,8 +125,8 @@ exports[`SearchProduct should render the component 1`] = `
                 class="img img-fluid position-absolute p-5"
                 src="https://s13emagst.akamaized.net/products/15874/15873942/images/res_b8032c207f90cec1988f271d669be260.jpg"
               />
-            </section>
-            <section
+            </div>
+            <div
               class="py-3 px-4 h-100 app-bg-gray"
             >
               <p
@@ -160,7 +157,7 @@ exports[`SearchProduct should render the component 1`] = `
                  
                 general.currency
               </p>
-            </section>
+            </div>
           </a>
         </li>
         <li
@@ -170,7 +167,7 @@ exports[`SearchProduct should render the component 1`] = `
             class="app-text-secondary"
             href="/item/3"
           >
-            <section
+            <div
               class="container d-flex overflow-hidden position-relative justify-content-center"
             >
               <img
@@ -178,8 +175,8 @@ exports[`SearchProduct should render the component 1`] = `
                 class="img img-fluid position-absolute p-5"
                 src="https://s13emagst.akamaized.net/products/17043/17042927/images/res_b0edd1ced6577580eaec29aad246405d.jpg"
               />
-            </section>
-            <section
+            </div>
+            <div
               class="py-3 px-4 h-100 app-bg-gray"
             >
               <p
@@ -210,253 +207,11 @@ exports[`SearchProduct should render the component 1`] = `
                  
                 general.currency
               </p>
-            </section>
+            </div>
           </a>
         </li>
       </ul>
-    </section>
-  </main>
-</div>
-`;
-
-exports[`SearchProduct should set filterButton to open when click 1`] = `
-<div>
-  <main
-    class="search px-4 mx-auto"
-  >
-    <section
-      class="my-5 d-flex"
-    >
-      <form
-        action="/search"
-        class="form w-100 mx-auto"
-      >
-        <article
-          class="d-flex"
-        >
-          <input
-            data-testid="searchInput"
-            name="query"
-            placeholder="home_screen.input.placeholder"
-            required=""
-            type="text"
-            value=""
-          />
-          <article>
-            <button
-              class="h-100 border-0 app-bg-secondary d-flex justify-content-center align-items-center"
-            >
-              <i
-                class="fas fa-search app-text-white"
-              />
-            </button>
-          </article>
-        </article>
-      </form>
-    </section>
-    <section
-      class="d-flex justify-content-between align-items-center mb-4"
-    >
-      <h3>
-        search_screen.heading
-      </h3>
-      <section
-        class="filter-button"
-        role="filter-button"
-      >
-        <button
-          class="box-shadow rounded d-flex p-2 justify-content-center align-items-center position-relative border-0 app-bg-white"
-        >
-          <p>
-            search_screen.filter_button
-          </p>
-          <i
-            class="fas fa-angle-down ml-3 toggle"
-          />
-          <ul
-            class="filter-dropdown position-absolute app-bg-white rounded-lg box-shadow overflow-hidden d-flex flex-column justify-content-center"
-            data-testid="filter-dropdown"
-          >
-            <li
-              class="py-3 text-center"
-              role="filter-newest"
-            >
-              search_screen.filter_dropdown.newest
-            </li>
-            <li
-              class="py-3 text-center"
-              role="filter-lowest"
-            >
-              search_screen.filter_dropdown.lowest
-            </li>
-            <li
-              class="py-3 text-center"
-              role="filter-highest"
-            >
-              search_screen.filter_dropdown.highest
-            </li>
-          </ul>
-        </button>
-      </section>
-    </section>
-    <section
-      class="app-bg-gray-darker p-2 p-md-4"
-    >
-      <ul
-        class="list"
-      >
-        <li
-          class="item app-bg-white box-shadow overflow-hidden"
-        >
-          <a
-            class="app-text-secondary"
-            href="/item/1"
-          >
-            <section
-              class="container d-flex overflow-hidden position-relative justify-content-center"
-            >
-              <img
-                alt="search_screen.item.img.alt"
-                class="img img-fluid position-absolute p-5"
-                src="https://s13emagst.akamaized.net/products/31489/31488238/images/res_cf71f94f6a0749441e0c420bf54540c4.jpg"
-              />
-            </section>
-            <section
-              class="py-3 px-4 h-100 app-bg-gray"
-            >
-              <p
-                class="name text-center mb-4"
-              >
-                Lenovo IdeaPad 3, 15.6, AMD Ryzen™
-              </p>
-              <p
-                class="mb-3"
-              >
-                <i
-                  class="fas fa-map-marker-alt mr-2"
-                />
-                Sofia
-              </p>
-              <p
-                class="mb-4"
-              >
-                <i
-                  class="fas fa-clock mr-2"
-                />
-                8 July - 6:00
-              </p>
-              <p
-                class="price"
-              >
-                979.99
-                 
-                general.currency
-              </p>
-            </section>
-          </a>
-        </li>
-        <li
-          class="item app-bg-white box-shadow overflow-hidden"
-        >
-          <a
-            class="app-text-secondary"
-            href="/item/2"
-          >
-            <section
-              class="container d-flex overflow-hidden position-relative justify-content-center"
-            >
-              <img
-                alt="search_screen.item.img.alt"
-                class="img img-fluid position-absolute p-5"
-                src="https://s13emagst.akamaized.net/products/15874/15873942/images/res_b8032c207f90cec1988f271d669be260.jpg"
-              />
-            </section>
-            <section
-              class="py-3 px-4 h-100 app-bg-gray"
-            >
-              <p
-                class="name text-center mb-4"
-              >
-                Lenovo G50-30, 15.6, Intel Pentium™
-              </p>
-              <p
-                class="mb-3"
-              >
-                <i
-                  class="fas fa-map-marker-alt mr-2"
-                />
-                Sofia
-              </p>
-              <p
-                class="mb-4"
-              >
-                <i
-                  class="fas fa-clock mr-2"
-                />
-                8 July - 6:00
-              </p>
-              <p
-                class="price"
-              >
-                600
-                 
-                general.currency
-              </p>
-            </section>
-          </a>
-        </li>
-        <li
-          class="item app-bg-white box-shadow overflow-hidden"
-        >
-          <a
-            class="app-text-secondary"
-            href="/item/3"
-          >
-            <section
-              class="container d-flex overflow-hidden position-relative justify-content-center"
-            >
-              <img
-                alt="search_screen.item.img.alt"
-                class="img img-fluid position-absolute p-5"
-                src="https://s13emagst.akamaized.net/products/17043/17042927/images/res_b0edd1ced6577580eaec29aad246405d.jpg"
-              />
-            </section>
-            <section
-              class="py-3 px-4 h-100 app-bg-gray"
-            >
-              <p
-                class="name text-center mb-4"
-              >
-                Iphone X, 128SD / 256SD, Black and White
-              </p>
-              <p
-                class="mb-3"
-              >
-                <i
-                  class="fas fa-map-marker-alt mr-2"
-                />
-                Blagoevgrad
-              </p>
-              <p
-                class="mb-4"
-              >
-                <i
-                  class="fas fa-clock mr-2"
-                />
-                8 July - 6:00
-              </p>
-              <p
-                class="price"
-              >
-                1200
-                 
-                general.currency
-              </p>
-            </section>
-          </a>
-        </li>
-      </ul>
-    </section>
+    </div>
   </main>
 </div>
 `;

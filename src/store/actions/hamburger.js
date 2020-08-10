@@ -1,4 +1,4 @@
-import { TOGGLE_HAMBURGER } from '../action-types';
+import { TOGGLE_HAMBURGER, CLOSE_HAMBURGER } from '../action-types';
 
 export function toggleHamburger(state) {
   return {
@@ -11,9 +11,6 @@ export function toggleHamburger(state) {
 
 export function closeHamburger() {
   return {
-    type: TOGGLE_HAMBURGER,
-    payload: {
-      isOpen: false,
-    },
+    type: CLOSE_HAMBURGER,
   };
 }

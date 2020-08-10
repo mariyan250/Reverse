@@ -3,110 +3,26 @@
 exports[`FilterDropdown should render the component 1`] = `
 <div>
   <ul
-    class="filter-dropdown position-absolute app-bg-white rounded-lg box-shadow overflow-hidden d-flex flex-column justify-content-center"
+    class="dropdown position-absolute app-bg-white rounded-lg box-shadow overflow-hidden d-flex flex-column justify-content-center"
     data-testid="filter-dropdown"
   >
     <li
       class="py-3 text-center"
       role="filter-newest"
     >
-      search_screen.filter_dropdown.newest
+      search.filter_dropdown.newest
     </li>
     <li
       class="py-3 text-center"
       role="filter-lowest"
     >
-      search_screen.filter_dropdown.lowest
+      search.filter_dropdown.lowest
     </li>
     <li
       class="py-3 text-center"
       role="filter-highest"
     >
-      search_screen.filter_dropdown.highest
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`FilterDropdown should sort the newest when clicked highest 1`] = `
-<div>
-  <ul
-    class="filter-dropdown position-absolute app-bg-white rounded-lg box-shadow overflow-hidden d-flex flex-column justify-content-center"
-    data-testid="filter-dropdown"
-  >
-    <li
-      class="py-3 text-center"
-      role="filter-newest"
-    >
-      search_screen.filter_dropdown.newest
-    </li>
-    <li
-      class="py-3 text-center"
-      role="filter-lowest"
-    >
-      search_screen.filter_dropdown.lowest
-    </li>
-    <li
-      class="py-3 text-center"
-      role="filter-highest"
-    >
-      search_screen.filter_dropdown.highest
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`FilterDropdown should sort the newest when clicked lowest 1`] = `
-<div>
-  <ul
-    class="filter-dropdown position-absolute app-bg-white rounded-lg box-shadow overflow-hidden d-flex flex-column justify-content-center"
-    data-testid="filter-dropdown"
-  >
-    <li
-      class="py-3 text-center"
-      role="filter-newest"
-    >
-      search_screen.filter_dropdown.newest
-    </li>
-    <li
-      class="py-3 text-center"
-      role="filter-lowest"
-    >
-      search_screen.filter_dropdown.lowest
-    </li>
-    <li
-      class="py-3 text-center"
-      role="filter-highest"
-    >
-      search_screen.filter_dropdown.highest
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`FilterDropdown should sort the newest when clicked newest 1`] = `
-<div>
-  <ul
-    class="filter-dropdown position-absolute app-bg-white rounded-lg box-shadow overflow-hidden d-flex flex-column justify-content-center"
-    data-testid="filter-dropdown"
-  >
-    <li
-      class="py-3 text-center"
-      role="filter-newest"
-    >
-      search_screen.filter_dropdown.newest
-    </li>
-    <li
-      class="py-3 text-center"
-      role="filter-lowest"
-    >
-      search_screen.filter_dropdown.lowest
-    </li>
-    <li
-      class="py-3 text-center"
-      role="filter-highest"
-    >
-      search_screen.filter_dropdown.highest
+      search.filter_dropdown.highest
     </li>
   </ul>
 </div>

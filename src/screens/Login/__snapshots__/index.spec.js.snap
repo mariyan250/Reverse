@@ -3,7 +3,7 @@
 exports[`Login should render the component 1`] = `
 <div>
   <main
-    class="d-flex vh-100 align-items-center justify-content-center px-4"
+    class="d-flex align-items-center justify-content-center vh-100 px-4"
   >
     <form
       class="form"
@@ -12,18 +12,18 @@ exports[`Login should render the component 1`] = `
       <h1
         class="text-center mb-5"
       >
-        login_screen.heading
+        login.heading
       </h1>
-      <section
+      <div
         class="mb-4"
       >
-        <section
+        <div
           class="input"
         >
           <label
             for="email"
           >
-            login_screen.inputs.labels.email
+            login.inputs.labels.email
           </label>
           <input
             class="p-1"
@@ -32,18 +32,18 @@ exports[`Login should render the component 1`] = `
             required=""
             type="email"
           />
-        </section>
-      </section>
-      <section
+        </div>
+      </div>
+      <div
         class="mb-4"
       >
-        <section
+        <div
           class="input"
         >
           <label
             for="password"
           >
-            login_screen.inputs.labels.password
+            login.inputs.labels.password
           </label>
           <input
             class="p-1"
@@ -52,22 +52,23 @@ exports[`Login should render the component 1`] = `
             required=""
             type="password"
           />
-        </section>
-      </section>
-      <section
+        </div>
+      </div>
+      <div
         class="mt-5"
       >
         <button
+          aria-label="login.button"
           class="button app-bg-primary border-0 app-text-white w-100 p-2"
         >
-          login_screen.button
+          login.button
         </button>
-      </section>
+      </div>
       <a
-        class="app-text-secondary d-inline-block mt-4 mb-3"
+        class="app-text-secondary d-inline-block mt-4"
         href="/register"
       >
-        login_screen.option_button
+        login.option_button
       </a>
     </form>
   </main>

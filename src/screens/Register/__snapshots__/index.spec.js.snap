@@ -12,18 +12,18 @@ exports[`Register should render the component 1`] = `
       <h1
         class="text-center mb-5"
       >
-        register_screen.heading
+        register.heading
       </h1>
-      <section
+      <div
         class="mb-4"
       >
-        <section
+        <div
           class="input"
         >
           <label
             for="username"
           >
-            register_screen.inputs.labels.username
+            register.inputs.labels.username
           </label>
           <input
             class="p-1"
@@ -32,18 +32,18 @@ exports[`Register should render the component 1`] = `
             required=""
             type="text"
           />
-        </section>
-      </section>
-      <section
+        </div>
+      </div>
+      <div
         class="mb-4"
       >
-        <section
+        <div
           class="input"
         >
           <label
             for="email"
           >
-            register_screen.inputs.labels.email
+            register.inputs.labels.email
           </label>
           <input
             class="p-1"
@@ -52,18 +52,18 @@ exports[`Register should render the component 1`] = `
             required=""
             type="email"
           />
-        </section>
-      </section>
-      <section
+        </div>
+      </div>
+      <div
         class="mb-4"
       >
-        <section
+        <div
           class="input"
         >
           <label
             for="password"
           >
-            register_screen.inputs.labels.password
+            register.inputs.labels.password
           </label>
           <input
             class="p-1"
@@ -72,18 +72,18 @@ exports[`Register should render the component 1`] = `
             required=""
             type="password"
           />
-        </section>
-      </section>
-      <section
+        </div>
+      </div>
+      <div
         class="mb-4"
       >
-        <section
+        <div
           class="input"
         >
           <label
             for="rePassword"
           >
-            register_screen.inputs.labels.re_password
+            register.inputs.labels.re_password
           </label>
           <input
             class="p-1"
@@ -92,22 +92,23 @@ exports[`Register should render the component 1`] = `
             required=""
             type="password"
           />
-        </section>
-      </section>
-      <section
+        </div>
+      </div>
+      <div
         class="mt-5"
       >
         <button
+          aria-label="register.button"
           class="button app-bg-primary border-0 app-text-white w-100 p-2"
         >
-          register_screen.button
+          register.button
         </button>
-      </section>
+      </div>
       <a
-        class="app-text-secondary mt-4 mb-5 d-inline-block"
+        class="app-text-secondary mt-4 d-inline-block"
         href="/login"
       >
-        register_screen.option_button
+        register.option_button
       </a>
     </form>
   </main>

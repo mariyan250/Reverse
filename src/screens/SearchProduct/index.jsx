@@ -24,8 +24,8 @@ function SearchProduct({ getPosts, posts, location }) {
   }, [getPosts, location]);
 
   return (
-    <main className={`${styles.search} px-4 mx-auto`}>
-      <div className="my-5 d-flex">
+    <main className={`${styles.search} mx-auto px-4`}>
+      <div className="my-5">
         <Search />
       </div>
 
@@ -34,7 +34,7 @@ function SearchProduct({ getPosts, posts, location }) {
         <FilterButton isOpen={open} onClick={() => setOpen(!open)} role="filter-button" />
       </section>
 
-      <div className="app-bg-gray-darker p-2 p-md-4">
+      <div className="app-bg-gray-darker p-2">
         <ItemList items={posts} title="search.heading" />
       </div>
     </main>

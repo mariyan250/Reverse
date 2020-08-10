@@ -3,10 +3,10 @@
 exports[`NotFound should render the component 1`] = `
 <div>
   <main
-    class="vh-100 d-flex justify-content-center align-items-center"
+    class="d-flex justify-content-center align-items-center vh-100"
   >
     <h1>
-      Not Found!
+      not_found.heading
     </h1>
   </main>
 </div>

@@ -2,19 +2,16 @@
 
 exports[`FilterButton should render the component 1`] = `
 <div>
-  <section
-    class="filter-button"
+  <button
+    aria-label="filter products"
+    class="button  d-flex justify-content-center align-items-center position-relative box-shadow rounded p-2 border-0 app-bg-white"
   >
-    <button
-      class="box-shadow rounded d-flex p-2 justify-content-center align-items-center position-relative border-0 app-bg-white"
-    >
-      <p>
-        search_screen.filter_button
-      </p>
-      <i
-        class="fas fa-angle-down ml-3 undefined"
-      />
-    </button>
-  </section>
+    <p>
+      search.filter_button
+    </p>
+    <i
+      class="fas fa-angle-down ml-3"
+    />
+  </button>
 </div>
 `;

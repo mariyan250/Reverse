@@ -1,7 +1,15 @@
 // React and Style
-import React from 'react';
+import React, { useEffect } from 'react';
 
-function Profile() {
+// Redux
+import { connect } from 'react-redux';
+import { closeHamburger } from 'store/actions/hamburger';
+
+function Profile({ closeHamburger }) {
+  useEffect(() => {
+    closeHamburger();
+  }, [closeHamburger]);
+
   return (
     <section>
       <h2>Profile</h2>
@@ -9,4 +17,4 @@ function Profile() {
   );
 }
 
-export default Profile;
+export default connect(null, { closeHamburger })(Profile);

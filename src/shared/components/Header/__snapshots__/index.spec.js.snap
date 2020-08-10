@@ -3,16 +3,16 @@
 exports[`Header should render the component 1`] = `
 <div>
   <header
-    class="header app-bg-secondary position-sticky px-4 px-md-5 d-flex justify-content-between align-items-center"
+    class="header d-flex justify-content-between align-items-center app-bg-secondary position-sticky px-4 px-md-5"
   >
     <a
       href="/"
     >
-      <h1
+      <span
         class="app-text-white"
       >
         header.heading
-      </h1>
+      </span>
     </a>
     <ul
       class="d-none d-md-flex h-100 align-items-center m-0"
@@ -22,7 +22,7 @@ exports[`Header should render the component 1`] = `
       >
         <a
           aria-current="page"
-          class="app-text-white h-100 d-flex justify-content-center align-items-center active"
+          class="d-flex justify-content-center align-items-center app-text-white h-100 active"
           href="/"
         >
           header.links.home
@@ -32,7 +32,7 @@ exports[`Header should render the component 1`] = `
         class="ml-5 h-100"
       >
         <a
-          class="app-text-white h-100 d-flex justify-content-center align-items-center"
+          class="d-flex justify-content-center align-items-center app-text-white h-100"
           href="/login"
         >
           header.links.login
@@ -42,18 +42,19 @@ exports[`Header should render the component 1`] = `
         class="ml-5 h-100"
       >
         <a
-          class="app-text-white h-100 d-flex justify-content-center align-items-center"
+          class="d-flex justify-content-center align-items-center app-text-white h-100"
           href="/register"
         >
           header.links.register
         </a>
       </li>
     </ul>
-    <section
+    <div
       class="d-md-none"
     >
-      <section
-        class="hamburger false d-flex flex-column justify-content-between"
+      <button
+        aria-label="toggle menu"
+        class="hamburger false d-flex flex-column justify-content-between border-0 bg-transparent"
         data-testid="hamburger"
       >
         <span
@@ -65,8 +66,8 @@ exports[`Header should render the component 1`] = `
         <span
           class="app-bg-white align-self-end rounded-pill"
         />
-      </section>
-    </section>
+      </button>
+    </div>
   </header>
 </div>
 `;

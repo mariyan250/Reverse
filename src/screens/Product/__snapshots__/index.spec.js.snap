@@ -1,74 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Product should not render posts when no params 1`] = `
-<div>
-  <section
-    class="product mx-auto mt-lg-5"
-  >
-    <article
-      class="px-3"
-    />
-    <article
-      class="description p-4 pb-5 p-lg-5"
-    >
-      <h1
-        class="mb-3 mt-4 mt-md-0"
-      />
-      <p
-        class="mb-3 mt-4"
-      >
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem voluptatibus, laborum ut aliquid optio architecto quos libero sint odit earum fugiat alias. Consequuntur quam eaque, dolorum necessitatibus quisquam iste, harum pariatur quos qui placeat nam maiores debitis similique fugiat itaque, dolore doloribus magnam tempore natus ipsam aspernatur maxime molestias sequi?
-      </p>
-      <section
-        class="down d-md-flex justify-content-between my-4 my-md-0 mt-md-5"
-      >
-        <p>
-          <i
-            class="fas fa-map-marker-alt mr-3"
-          />
-        </p>
-        <p>
-          <i
-            class="fas fa-clock mr-3"
-          />
-        </p>
-        <p
-          class="mb-5"
-        >
-          <i
-            class="fas fa-user mr-3"
-          />
-        </p>
-      </section>
-      <section
-        class="nav app-bg-white d-flex justify-content-around justify-content-sm-between align-items-center py-1 m-sm-0 mt-4 mt-md-0 w-100"
-      >
-        <h5
-          class="text-center my-2 my-md-0"
-        >
-           
-          general.currency
-        </h5>
-        <span
-          class="app-bg-primary app-text-white rounded py-3 px-5 px-md-4 py-md-2 mr-2"
-        >
-          product.call_button
-          <i
-            class="fas fa-phone ml-3"
-          />
-        </span>
-      </section>
-    </article>
-  </section>
-</div>
-`;
-
 exports[`Product should render the component 1`] = `
 <div>
-  <section
+  <main
     class="product mx-auto mt-lg-5"
   >
-    <article
+    <div
       class="px-3"
     >
       <div
@@ -202,8 +139,8 @@ exports[`Product should render the component 1`] = `
           </div>
         </div>
       </div>
-    </article>
-    <article
+    </div>
+    <section
       class="description p-4 pb-5 p-lg-5"
     >
       <h1
@@ -216,7 +153,7 @@ exports[`Product should render the component 1`] = `
       >
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem voluptatibus, laborum ut aliquid optio architecto quos libero sint odit earum fugiat alias. Consequuntur quam eaque, dolorum necessitatibus quisquam iste, harum pariatur quos qui placeat nam maiores debitis similique fugiat itaque, dolore doloribus magnam tempore natus ipsam aspernatur maxime molestias sequi?
       </p>
-      <section
+      <div
         class="down d-md-flex justify-content-between my-4 my-md-0 mt-md-5"
       >
         <p>
@@ -239,17 +176,17 @@ exports[`Product should render the component 1`] = `
           />
           Mariyan V.
         </p>
-      </section>
-      <section
-        class="nav app-bg-white d-flex justify-content-around justify-content-sm-between align-items-center py-1 m-sm-0 mt-4 mt-md-0 w-100"
+      </div>
+      <div
+        class="nav d-flex justify-content-around justify-content-sm-between align-items-center app-bg-white py-1 m-sm-0 mt-4 mt-md-0 w-100"
       >
-        <h5
+        <p
           class="text-center my-2 my-md-0"
         >
           1200
            
           general.currency
-        </h5>
+        </p>
         <span
           class="app-bg-primary app-text-white rounded py-3 px-5 px-md-4 py-md-2 mr-2"
         >
@@ -258,20 +195,8 @@ exports[`Product should render the component 1`] = `
             class="fas fa-phone ml-3"
           />
         </span>
-      </section>
-    </article>
-  </section>
-</div>
-`;
-
-exports[`Product should return not found when there is no post 1`] = `
-<div>
-  <main
-    class="vh-100 d-flex justify-content-center align-items-center"
-  >
-    <h1>
-      Not Found!
-    </h1>
+      </div>
+    </section>
   </main>
 </div>
 `;

@@ -2,13 +2,13 @@
 
 exports[`Input should render the component 1`] = `
 <div>
-  <section
+  <div
     class="input"
   >
     <label />
     <input
       class="p-1"
     />
-  </section>
+  </div>
 </div>
 `;

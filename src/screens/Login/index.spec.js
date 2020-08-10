@@ -23,7 +23,7 @@ describe('Login', () => {
     expect(event.defaultPrevented).toBeTruthy();
   });
 
-  it('should change email input value', () => {
+  it('should change email input value', async () => {
     render(<Login />);
     const input = screen.getByTestId('emailInput');
     const event = createEvent.change(input, { target: { value: 'email@gmail.com' } });

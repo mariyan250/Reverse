@@ -2,14 +2,14 @@
 
 exports[`Menu should render the component 1`] = `
 <div>
-  <section
+  <div
     links=""
   >
-    <article
+    <div
       class="menu app-bg-black-transparent"
     >
       <ul />
-    </article>
-  </section>
+    </div>
+  </div>
 </div>
 `;

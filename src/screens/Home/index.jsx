@@ -5,6 +5,7 @@ import styles from './index.module.scss';
 // Redux
 import { connect } from 'react-redux';
 import { getPromoPosts } from 'store/actions/post';
+import { closeHamburger } from 'store/actions/hamburger';
 
 // Translation
 import { useTranslation } from 'react-i18next';
@@ -17,12 +18,13 @@ import Search from 'shared/components/Search';
 import CategoryCard from './components/CategoryCard';
 import ItemList from 'shared/components/Product/CardList';
 
-function Home({ getPromoPosts, promoPosts }) {
+function Home({ getPromoPosts, promoPosts, closeHamburger }) {
   const { t } = useTranslation();
 
   useEffect(() => {
+    closeHamburger();
     getPromoPosts();
-  }, [getPromoPosts]);
+  }, [getPromoPosts, closeHamburger]);
 
   const categoryCards = [
     {
@@ -86,4 +88,4 @@ const mapStateToPros = (state) => ({
   promoPosts: state.posts.items,
 });
 
-export default connect(mapStateToPros, { getPromoPosts })(Home);
+export default connect(mapStateToPros, { getPromoPosts, closeHamburger })(Home);
