@@ -32,7 +32,7 @@ function FilterDropdown({ posts, filterPost }) {
 
   return (
     <ul
-      className={`${styles.dropdown} position-absolute app-bg-white rounded-lg box-shadow overflow-hidden d-flex flex-column justify-content-center`}
+      className={`${styles.dropdown} position-absolute app-bg-white rounded-lg overflow-hidden d-flex flex-column justify-content-center`}
       data-testid="filter-dropdown"
     >
       {links.map((link, i) => (

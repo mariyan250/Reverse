@@ -3,6 +3,7 @@
 .button {
   font-size: to-rem(16px);
   width: to-rem(140px);
+  box-shadow: $shadow-small;
 
   i {
     transition: $timing-normal;

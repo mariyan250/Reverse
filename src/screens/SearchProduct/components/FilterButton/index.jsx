@@ -15,7 +15,7 @@ function FilterButton({ isOpen, onClick, role }) {
     <button
       className={`${styles.button} ${
         isOpen ? styles.toggle : ''
-      } d-flex justify-content-center align-items-center position-relative box-shadow rounded p-2 border-0 app-bg-white`}
+      } d-flex justify-content-center align-items-center position-relative rounded p-2 border-0 app-bg-white`}
       onClick={onClick}
       role={role}
       aria-label="filter products"

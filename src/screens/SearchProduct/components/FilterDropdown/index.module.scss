@@ -6,6 +6,7 @@
   top: to-rem(45px);
   width: to-rem(200px);
   animation: appear 1 $timing-fast;
+  box-shadow: $shadow-small;
 
   li {
     font-size: to-rem(16px);
