@@ -19,6 +19,6 @@
     top: to-rem(60px);
     left: 0;
     z-index: 10;
-    animation: appear 1 $slow;
+    animation: appear 1 $timing-slow;
   }
 }

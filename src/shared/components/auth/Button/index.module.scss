@@ -2,7 +2,7 @@
 
 .button {
   font-size: to-rem(18px);
-  animation: appear 1 $slow;
+  animation: appear 1 $timing-slow;
 
   &:hover {
     background: $primary-hover;
