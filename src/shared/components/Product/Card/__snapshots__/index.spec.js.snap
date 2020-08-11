@@ -3,14 +3,14 @@
 exports[`Item should render the component 1`] = `
 <div>
   <li
-    class="item app-bg-white box-shadow overflow-hidden"
+    class="item app-bg-white overflow-hidden"
   >
     <a
       class="app-text-secondary"
       href="/item/undefined"
     >
       <div
-        class="container d-flex overflow-hidden position-relative justify-content-center"
+        class="container d-flex position-relative justify-content-center"
       >
         <img
           alt="search_screen.item.img.alt"
@@ -21,7 +21,7 @@ exports[`Item should render the component 1`] = `
         class="py-3 px-4 h-100 app-bg-gray"
       >
         <p
-          class="name text-center mb-4"
+          class="mb-4"
         />
         <p
           class="mb-3"
@@ -37,9 +37,7 @@ exports[`Item should render the component 1`] = `
             class="fas fa-clock mr-2"
           />
         </p>
-        <p
-          class="price"
-        >
+        <p>
            
           general.currency
         </p>

@@ -8,7 +8,6 @@ export function getPosts(query) {
 
   if (query !== '') {
     queryString = query.split('=')[1].toLowerCase();
-
     filteredPosts = data.filter(
       (post) =>
         post.name.toLowerCase().includes(queryString) ||
@@ -18,7 +17,7 @@ export function getPosts(query) {
 
   return {
     type: GET_POSTS,
-    payload: query !== '' ? filteredPosts : data,
+    payload: query !== '' ? filteredPosts : null,
   };
 }
 

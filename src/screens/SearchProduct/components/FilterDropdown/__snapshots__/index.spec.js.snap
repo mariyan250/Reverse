@@ -3,7 +3,7 @@
 exports[`FilterDropdown should render the component 1`] = `
 <div>
   <ul
-    class="dropdown position-absolute app-bg-white rounded-lg box-shadow overflow-hidden d-flex flex-column justify-content-center"
+    class="dropdown position-absolute app-bg-white rounded-lg overflow-hidden d-flex flex-column justify-content-center"
     data-testid="filter-dropdown"
   >
     <li

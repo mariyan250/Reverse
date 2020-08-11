@@ -3,7 +3,7 @@
 exports[`CategoryCard should render the component 1`] = `
 <div>
   <a
-    class="card d-block box-shadow text-center py-2 py-md-4"
+    class="card d-block text-center py-2 py-md-4"
     href="/"
   >
     <img
@@ -11,7 +11,7 @@ exports[`CategoryCard should render the component 1`] = `
       class="mt-2"
     />
     <p
-      class="app-text-secondary mt-3 mb-0"
+      class="app-text-secondary mt-3"
     />
   </a>
 </div>

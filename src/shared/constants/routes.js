@@ -9,7 +9,7 @@ export const routes = {
 
 export const searchRoutes = {
   home: '/search?query=home',
-  technology: '/search?q=technology',
+  technology: '/search?query=technology',
   automobile: '/search?query=automobile',
   sport: '/search?query=sport',
   cloths: '/search?query=cloths',

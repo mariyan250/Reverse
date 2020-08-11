@@ -15,34 +15,34 @@ exports[`Header should render the component 1`] = `
       </span>
     </a>
     <ul
-      class="d-none d-md-flex h-100 align-items-center m-0"
+      class="d-none d-md-flex justify-content-between align-items-center h-100 m-0"
     >
       <li
-        class="ml-5 h-100"
+        class="ml-5"
       >
         <a
           aria-current="page"
-          class="d-flex justify-content-center align-items-center app-text-white h-100 active"
+          class="d-flex justify-content-center align-items-center app-text-white active"
           href="/"
         >
           header.links.home
         </a>
       </li>
       <li
-        class="ml-5 h-100"
+        class="ml-5"
       >
         <a
-          class="d-flex justify-content-center align-items-center app-text-white h-100"
+          class="d-flex justify-content-center align-items-center app-text-white"
           href="/login"
         >
           header.links.login
         </a>
       </li>
       <li
-        class="ml-5 h-100"
+        class="ml-5"
       >
         <a
-          class="d-flex justify-content-center align-items-center app-text-white h-100"
+          class="d-flex justify-content-center align-items-center app-text-white"
           href="/register"
         >
           header.links.register

@@ -45,7 +45,7 @@ exports[`Home should render the component 1`] = `
         class="categories"
       >
         <a
-          class="card d-block box-shadow text-center py-2 py-md-4"
+          class="card d-block text-center py-2 py-md-4"
           href="/search?query=home"
         >
           <img
@@ -54,13 +54,13 @@ exports[`Home should render the component 1`] = `
             src="/img/home.svg"
           />
           <p
-            class="app-text-secondary mt-3 mb-0"
+            class="app-text-secondary mt-3"
           >
             home.categories.titles.home
           </p>
         </a>
         <a
-          class="card d-block box-shadow text-center py-2 py-md-4"
+          class="card d-block text-center py-2 py-md-4"
           href="/search?q=technology"
         >
           <img
@@ -69,13 +69,13 @@ exports[`Home should render the component 1`] = `
             src="/img/technology.svg"
           />
           <p
-            class="app-text-secondary mt-3 mb-0"
+            class="app-text-secondary mt-3"
           >
             home.categories.titles.technology
           </p>
         </a>
         <a
-          class="card d-block box-shadow text-center py-2 py-md-4"
+          class="card d-block text-center py-2 py-md-4"
           href="/search?query=automobile"
         >
           <img
@@ -84,13 +84,13 @@ exports[`Home should render the component 1`] = `
             src="/img/automobile.svg"
           />
           <p
-            class="app-text-secondary mt-3 mb-0"
+            class="app-text-secondary mt-3"
           >
             home.categories.titles.automobile
           </p>
         </a>
         <a
-          class="card d-block box-shadow text-center py-2 py-md-4"
+          class="card d-block text-center py-2 py-md-4"
           href="/search?query=sport"
         >
           <img
@@ -99,13 +99,13 @@ exports[`Home should render the component 1`] = `
             src="/img/sport.svg"
           />
           <p
-            class="app-text-secondary mt-3 mb-0"
+            class="app-text-secondary mt-3"
           >
             home.categories.titles.sport
           </p>
         </a>
         <a
-          class="card d-block box-shadow text-center py-2 py-md-4"
+          class="card d-block text-center py-2 py-md-4"
           href="/search?query=cloths"
         >
           <img
@@ -114,13 +114,13 @@ exports[`Home should render the component 1`] = `
             src="/img/tshirt.svg"
           />
           <p
-            class="app-text-secondary mt-3 mb-0"
+            class="app-text-secondary mt-3"
           >
             home.categories.titles.cloths
           </p>
         </a>
         <a
-          class="card d-block box-shadow text-center py-2 py-md-4"
+          class="card d-block text-center py-2 py-md-4"
           href="/search?query=pets"
         >
           <img
@@ -129,7 +129,7 @@ exports[`Home should render the component 1`] = `
             src="/img/pets.svg"
           />
           <p
-            class="app-text-secondary mt-3 mb-0"
+            class="app-text-secondary mt-3"
           >
             home.categories.titles.pets
           </p>
@@ -149,14 +149,14 @@ exports[`Home should render the component 1`] = `
           class="list"
         >
           <li
-            class="item app-bg-white box-shadow overflow-hidden"
+            class="item app-bg-white overflow-hidden"
           >
             <a
               class="app-text-secondary"
               href="/item/1"
             >
               <div
-                class="container d-flex overflow-hidden position-relative justify-content-center"
+                class="container d-flex position-relative justify-content-center"
               >
                 <img
                   alt="search_screen.item.img.alt"
@@ -168,7 +168,7 @@ exports[`Home should render the component 1`] = `
                 class="py-3 px-4 h-100 app-bg-gray"
               >
                 <p
-                  class="name text-center mb-4"
+                  class="mb-4"
                 >
                   Lenovo IdeaPad 3, 15.6, AMD Ryzen™
                 </p>
@@ -188,9 +188,7 @@ exports[`Home should render the component 1`] = `
                   />
                   8 July - 6:00
                 </p>
-                <p
-                  class="price"
-                >
+                <p>
                   979.99
                    
                   general.currency
@@ -199,14 +197,14 @@ exports[`Home should render the component 1`] = `
             </a>
           </li>
           <li
-            class="item app-bg-white box-shadow overflow-hidden"
+            class="item app-bg-white overflow-hidden"
           >
             <a
               class="app-text-secondary"
               href="/item/2"
             >
               <div
-                class="container d-flex overflow-hidden position-relative justify-content-center"
+                class="container d-flex position-relative justify-content-center"
               >
                 <img
                   alt="search_screen.item.img.alt"
@@ -218,7 +216,7 @@ exports[`Home should render the component 1`] = `
                 class="py-3 px-4 h-100 app-bg-gray"
               >
                 <p
-                  class="name text-center mb-4"
+                  class="mb-4"
                 >
                   Lenovo G50-30, 15.6, Intel Pentium™
                 </p>
@@ -238,9 +236,7 @@ exports[`Home should render the component 1`] = `
                   />
                   8 July - 6:00
                 </p>
-                <p
-                  class="price"
-                >
+                <p>
                   600
                    
                   general.currency
@@ -249,14 +245,14 @@ exports[`Home should render the component 1`] = `
             </a>
           </li>
           <li
-            class="item app-bg-white box-shadow overflow-hidden"
+            class="item app-bg-white overflow-hidden"
           >
             <a
               class="app-text-secondary"
               href="/item/3"
             >
               <div
-                class="container d-flex overflow-hidden position-relative justify-content-center"
+                class="container d-flex position-relative justify-content-center"
               >
                 <img
                   alt="search_screen.item.img.alt"
@@ -268,7 +264,7 @@ exports[`Home should render the component 1`] = `
                 class="py-3 px-4 h-100 app-bg-gray"
               >
                 <p
-                  class="name text-center mb-4"
+                  class="mb-4"
                 >
                   Iphone X, 128SD / 256SD, Black and White
                 </p>
@@ -288,9 +284,7 @@ exports[`Home should render the component 1`] = `
                   />
                   8 July - 6:00
                 </p>
-                <p
-                  class="price"
-                >
+                <p>
                   1200
                    
                   general.currency

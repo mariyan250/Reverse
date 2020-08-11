@@ -3,7 +3,7 @@
 exports[`SearchProduct should render the component 1`] = `
 <div>
   <main
-    class="search mx-auto px-4"
+    class="search mx-auto px-4 px-md-5"
   >
     <div
       class="my-5"
@@ -43,7 +43,7 @@ exports[`SearchProduct should render the component 1`] = `
       </h2>
       <button
         aria-label="filter products"
-        class="button  d-flex justify-content-center align-items-center position-relative box-shadow rounded p-2 border-0 app-bg-white"
+        class="button  d-flex justify-content-center align-items-center position-relative rounded p-2 border-0 app-bg-white"
         role="filter-button"
       >
         <p>
@@ -61,14 +61,14 @@ exports[`SearchProduct should render the component 1`] = `
         class="list"
       >
         <li
-          class="item app-bg-white box-shadow overflow-hidden"
+          class="item app-bg-white overflow-hidden"
         >
           <a
             class="app-text-secondary"
             href="/item/1"
           >
             <div
-              class="container d-flex overflow-hidden position-relative justify-content-center"
+              class="container d-flex position-relative justify-content-center"
             >
               <img
                 alt="search_screen.item.img.alt"
@@ -80,7 +80,7 @@ exports[`SearchProduct should render the component 1`] = `
               class="py-3 px-4 h-100 app-bg-gray"
             >
               <p
-                class="name text-center mb-4"
+                class="mb-4"
               >
                 Lenovo IdeaPad 3, 15.6, AMD Ryzen™
               </p>
@@ -100,9 +100,7 @@ exports[`SearchProduct should render the component 1`] = `
                 />
                 8 July - 6:00
               </p>
-              <p
-                class="price"
-              >
+              <p>
                 979.99
                  
                 general.currency
@@ -111,14 +109,14 @@ exports[`SearchProduct should render the component 1`] = `
           </a>
         </li>
         <li
-          class="item app-bg-white box-shadow overflow-hidden"
+          class="item app-bg-white overflow-hidden"
         >
           <a
             class="app-text-secondary"
             href="/item/2"
           >
             <div
-              class="container d-flex overflow-hidden position-relative justify-content-center"
+              class="container d-flex position-relative justify-content-center"
             >
               <img
                 alt="search_screen.item.img.alt"
@@ -130,7 +128,7 @@ exports[`SearchProduct should render the component 1`] = `
               class="py-3 px-4 h-100 app-bg-gray"
             >
               <p
-                class="name text-center mb-4"
+                class="mb-4"
               >
                 Lenovo G50-30, 15.6, Intel Pentium™
               </p>
@@ -150,9 +148,7 @@ exports[`SearchProduct should render the component 1`] = `
                 />
                 8 July - 6:00
               </p>
-              <p
-                class="price"
-              >
+              <p>
                 600
                  
                 general.currency
@@ -161,14 +157,14 @@ exports[`SearchProduct should render the component 1`] = `
           </a>
         </li>
         <li
-          class="item app-bg-white box-shadow overflow-hidden"
+          class="item app-bg-white overflow-hidden"
         >
           <a
             class="app-text-secondary"
             href="/item/3"
           >
             <div
-              class="container d-flex overflow-hidden position-relative justify-content-center"
+              class="container d-flex position-relative justify-content-center"
             >
               <img
                 alt="search_screen.item.img.alt"
@@ -180,7 +176,7 @@ exports[`SearchProduct should render the component 1`] = `
               class="py-3 px-4 h-100 app-bg-gray"
             >
               <p
-                class="name text-center mb-4"
+                class="mb-4"
               >
                 Iphone X, 128SD / 256SD, Black and White
               </p>
@@ -200,9 +196,7 @@ exports[`SearchProduct should render the component 1`] = `
                 />
                 8 July - 6:00
               </p>
-              <p
-                class="price"
-              >
+              <p>
                 1200
                  
                 general.currency

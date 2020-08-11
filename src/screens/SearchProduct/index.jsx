@@ -24,7 +24,7 @@ function SearchProduct({ getPosts, posts, location }) {
   }, [getPosts, location]);
 
   return (
-    <main className={`${styles.search} mx-auto px-4`}>
+    <main className={`${styles.search} mx-auto px-4 px-md-5`}>
       <div className="my-5">
         <Search />
       </div>
