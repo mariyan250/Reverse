@@ -1,6 +1,8 @@
 @import '../../../../index.scss';
 
 .item {
+  box-shadow: $shadow-small;
+
   .container {
     .img {
       object-fit: cover;
