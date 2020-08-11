@@ -1,6 +1,12 @@
 @import '../../../../index.scss';
 
 .card {
+  box-shadow: $shadow-small;
+
+  &:hover {
+    box-shadow: $shadow-normal;
+  }
+
   img {
     width: to-rem(48px);
   }

@@ -45,12 +45,12 @@ function Header(props) {
         <span className="app-text-white">{t('header.heading')}</span>
       </Link>
 
-      <ul className="d-none d-md-flex h-100 align-items-center m-0">
+      <ul className="d-none d-md-flex justify-content-between align-items-center h-100 m-0">
         {(props.user ? privateLinks : publicLinks).map((link, i) => (
-          <li className="ml-5 h-100" key={i}>
+          <li className="ml-5" key={i}>
             <NavLink
               to={link.to}
-              className="d-flex justify-content-center align-items-center app-text-white h-100"
+              className="d-flex justify-content-center align-items-center app-text-white"
             >
               {t(link.text)}
             </NavLink>
@@ -58,12 +58,15 @@ function Header(props) {
         ))}
 
         {props.user && (
-          <li
-            className="ml-3 py-2 px-3 app-bg-secondary app-text-white border-0"
-            onClick={handleLogout}
-            data-testid="logout"
-          >
-            {t('header.logout_btn')}
+          <li className="ml-5">
+            <button
+              onClick={handleLogout}
+              className="border-0 bg-transparent app-text-white"
+              data-testid="logout"
+              aria-label="logout button"
+            >
+              {t('header.logout_btn')}
+            </button>
           </li>
         )}
       </ul>
@@ -77,7 +80,7 @@ function Header(props) {
 
       {props.burgerOpened && (
         <Menu
-          className={`${styles.menu} position-fixed d-md-none w-100`}
+          className={`${styles.menu} d-md-none position-fixed w-100`}
           links={props.user ? privateLinks : publicLinks}
         />
       )}
