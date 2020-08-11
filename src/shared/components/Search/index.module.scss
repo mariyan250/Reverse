@@ -16,7 +16,7 @@
     button {
       width: to-rem(52px);
       margin-left: to-rem(-3px);
-      transition: $slow;
+      transition: $timing-slow;
 
       @include media-breakpoint-md-up {
         padding: to-rem(12px) to-rem(14px);
