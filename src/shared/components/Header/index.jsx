@@ -79,10 +79,9 @@ function Header(props) {
       </div>
 
       {props.burgerOpened && (
-        <Menu
-          className={`${styles.menu} d-md-none position-fixed w-100`}
-          links={props.user ? privateLinks : publicLinks}
-        />
+        <div className={`${styles.menu} d-md-none position-fixed w-100`}>
+          <Menu links={props.user ? privateLinks : publicLinks} />
+        </div>
       )}
     </header>
   );
