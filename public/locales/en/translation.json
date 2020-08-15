@@ -79,7 +79,8 @@
       "img": {
         "alt": "Image"
       }
-    }
+    },
+    "not_found": "No results found!"
   },
 
   "product": {

@@ -50,8 +50,8 @@ function SearchProduct({ getPosts, posts, location }) {
           </div>
         </div>
       ) : (
-        <div className="text-center">
-          <h2>No Posts Found!</h2>
+        <div className="text-center pt-3">
+          <h2>{t('search.not_found')}</h2>
         </div>
       )}
     </main>
