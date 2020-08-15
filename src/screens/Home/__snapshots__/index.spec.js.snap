@@ -61,7 +61,7 @@ exports[`Home should render the component 1`] = `
         </a>
         <a
           class="card d-block text-center py-2 py-md-4"
-          href="/search?q=technology"
+          href="/search?query=technology"
         >
           <img
             alt="home.categories.img_alt"

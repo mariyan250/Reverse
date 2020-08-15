@@ -2,14 +2,21 @@
 
 exports[`Menu should render the component 1`] = `
 <div>
-  <div
-    links=""
+  <ul
+    class="menu app-bg-black-transparent"
   >
-    <div
-      class="menu app-bg-black-transparent"
-    >
-      <ul />
-    </div>
-  </div>
+    <li>
+      <button
+        aria-label="logout button"
+        class="d-flex justify-content-center align-items-center text-center w-100 app-text-white app-bg-black-transparent py-4 border-0"
+        data-testid="logout"
+      >
+        header.logout_btn
+        <i
+          class="fas fa-sign-out-alt ml-3"
+        />
+      </button>
+    </li>
+  </ul>
 </div>
 `;
