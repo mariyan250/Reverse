@@ -11,7 +11,7 @@ import { removeUser } from 'store/actions/user';
 import { useTranslation } from 'react-i18next';
 
 // Router and Routes
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink, Link, useHistory } from 'react-router-dom';
 import { routes } from 'shared/constants/routes';
 
 // Components
@@ -20,6 +20,7 @@ import Menu from 'shared/components/Menu';
 
 function Header(props) {
   const { t } = useTranslation();
+  const history = useHistory();
 
   const publicLinks = [
     { to: routes.home, text: 'header.links.home' },
@@ -34,7 +35,7 @@ function Header(props) {
 
   const handleLogout = () => {
     props.removeUser();
-    window.location = '/';
+    history.push('/login');
   };
 
   return (
@@ -88,11 +89,9 @@ function Header(props) {
   );
 }
 
-const mapStateToProps = (state) => {
-  return {
-    burgerOpened: state.hamburger.isOpen,
-    user: state.user,
-  };
-};
+const mapStateToProps = (state) => ({
+  burgerOpened: state.hamburger.isOpen,
+  user: state.user,
+});
 
 export default connect(mapStateToProps, { toggleHamburger, removeUser, closeHamburger })(Header);

@@ -2,4 +2,8 @@
 
 .search {
   max-width: $layout-max-width;
+
+  .loading {
+    margin-top: to-rem(150px);
+  }
 }

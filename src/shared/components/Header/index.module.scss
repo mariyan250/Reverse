@@ -27,6 +27,7 @@
     top: to-rem(60px);
     left: 0;
     z-index: 10;
+    height: 10rem;
     animation: appear 1 $timing-slow;
 
     button {
