@@ -51,6 +51,7 @@ function Header(props) {
             <NavLink
               to={link.to}
               className="d-flex justify-content-center align-items-center app-text-white"
+              activeClassName={styles.active}
             >
               {t(link.text)}
             </NavLink>
@@ -61,11 +62,11 @@ function Header(props) {
           <li className="ml-5">
             <button
               onClick={handleLogout}
-              className="border-0 bg-transparent app-text-white"
+              className="border-0 bg-transparent app-text-white d-flex align-items-end"
               data-testid="logout"
               aria-label="logout button"
             >
-              {t('header.logout_btn')}
+              <i className="fas fa-sign-out-alt h-100" />
             </button>
           </li>
         )}

@@ -5,14 +5,22 @@
   z-index: 10;
   top: 0;
 
-  a {
+  & > a {
     span {
       font-size: to-rem(32px);
     }
   }
 
-  li {
-    font-size: to-rem(16px);
+  ul {
+    li {
+      font-size: to-rem(16px);
+
+      button {
+        i {
+          font-size: to-rem(24px);
+        }
+      }
+    }
   }
 
   .menu {
@@ -20,5 +28,9 @@
     left: 0;
     z-index: 10;
     animation: appear 1 $timing-slow;
+
+    button {
+      outline: none;
+    }
   }
 }
