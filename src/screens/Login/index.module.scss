@@ -1,7 +1,8 @@
 @import '../../index';
 
 .form {
-  width: to-rem(350px);
+  max-width: to-rem(350px);
+  margin-top: to-rem(120px);
 
   a {
     font-size: to-rem(16px);

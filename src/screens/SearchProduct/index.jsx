@@ -10,9 +10,9 @@ import { getPosts } from 'store/actions/post';
 import { useTranslation } from 'react-i18next';
 
 // Components
-import ItemList from 'shared/components/Product/CardList';
-import Search from 'shared/components/Search';
-import Loading from 'shared/components/Loading';
+import ItemList from 'components/Product/CardList';
+import Search from 'components/Search';
+import Loading from 'components/Loading';
 import FilterButton from './components/FilterButton';
 
 function SearchProduct({ getPosts, posts, location }) {

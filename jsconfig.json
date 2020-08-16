@@ -4,7 +4,8 @@
     "paths": {
       "screens/*": ["screens/*"],
       "services/*": ["services/*"],
-      "shared/*": ["shared/*"],
+      "components/*": ["components/*"],
+      "constants/*": ["constants/*"],
       "store/*": ["store/*"],
       "tests/*": ["tests/*"]
     }

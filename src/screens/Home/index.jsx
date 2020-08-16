@@ -11,12 +11,12 @@ import { closeHamburger } from 'store/actions/hamburger';
 import { useTranslation } from 'react-i18next';
 
 // Routes
-import { searchRoutes } from 'shared/constants/routes';
+import { searchRoutes } from 'constants/routes';
 
 // Components
-import Search from 'shared/components/Search';
+import Search from 'components/Search';
 import CategoryCard from './components/CategoryCard';
-import ItemList from 'shared/components/Product/CardList';
+import ItemList from 'components/Product/CardList';
 
 function Home({ getPromoPosts, promoPosts, closeHamburger }) {
   const { t } = useTranslation();

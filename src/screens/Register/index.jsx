@@ -1,27 +1,33 @@
 // React and style
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './index.module.scss';
 
-// Router
-import { Link } from 'react-router-dom';
+// Redux
+import { connect } from 'react-redux';
+import { closeHamburger } from 'store/actions/hamburger';
 
-// Routes
-import { routes } from 'shared/constants/routes';
+// Router and Routes
+import { Link } from 'react-router-dom';
+import { routes } from 'constants/routes';
 
 // Translation
 import { useTranslation } from 'react-i18next';
 
 // Components
-import Input from 'shared/components/auth/Input';
-import Button from 'shared/components/auth/Button';
+import Input from 'components/auth/Input';
+import Button from 'components/auth/Button';
 
-function Register() {
+function Register({ closeHamburger }) {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [rePassword, setRePassword] = useState('');
 
   const { t } = useTranslation();
+
+  useEffect(() => {
+    closeHamburger();
+  }, []);
 
   const inputs = [
     {
@@ -67,9 +73,9 @@ function Register() {
   };
 
   return (
-    <main className={`d-flex vh-100 align-items-center justify-content-center px-4 mx-auto`}>
-      <form onSubmit={handleRegister} className={styles.form} data-testid="form">
-        <h1 className={`text-center mb-5`}>{t('register.heading')}</h1>
+    <main className="px-4">
+      <form onSubmit={handleRegister} className={`${styles.form} mx-auto`} data-testid="form">
+        <h1 className="text-center mb-5">{t('register.heading')}</h1>
 
         {inputs.map((input, i) => (
           <div className="mb-4" key={i}>
@@ -89,4 +95,4 @@ function Register() {
   );
 }
 
-export default Register;
+export default connect(null, { closeHamburger })(Register);

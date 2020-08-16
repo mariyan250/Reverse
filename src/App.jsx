@@ -5,7 +5,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // Routes
-import { routes } from 'shared/constants/routes';
+import { routes } from 'constants/routes';
 
 // Redux
 import { connect } from 'react-redux';
@@ -22,7 +22,7 @@ import SearchProduct from 'screens/SearchProduct';
 import Product from 'screens/Product';
 import Profile from 'screens/Profile';
 
-import Header from 'shared/components/Header';
+import Header from 'components/Header';
 
 function App({ getUser, user }) {
   useEffect(() => {

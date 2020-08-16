@@ -12,11 +12,11 @@ import { useTranslation } from 'react-i18next';
 
 // Router and Routes
 import { NavLink, Link, useHistory } from 'react-router-dom';
-import { routes } from 'shared/constants/routes';
+import { routes } from 'constants/routes';
 
 // Components
-import Hamburger from 'shared/components/Hamburger';
-import Menu from 'shared/components/Menu';
+import Hamburger from 'components/Hamburger';
+import Menu from 'components/Menu';
 
 function Header(props) {
   const { t } = useTranslation();
@@ -35,7 +35,7 @@ function Header(props) {
 
   const handleLogout = () => {
     props.removeUser();
-    history.push('/login');
+    history.push('/');
   };
 
   return (

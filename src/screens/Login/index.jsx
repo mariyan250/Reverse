@@ -1,6 +1,10 @@
 // React and style
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './index.module.scss';
+
+// Redux
+import { connect } from 'react-redux';
+import { closeHamburger } from 'store/actions/hamburger';
 
 // Translation
 import { useTranslation } from 'react-i18next';
@@ -9,17 +13,21 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 // Routes
-import { routes } from 'shared/constants/routes';
+import { routes } from 'constants/routes';
 
 // Components
-import Input from 'shared/components/auth/Input';
-import Button from 'shared/components/auth/Button';
+import Input from 'components/auth/Input';
+import Button from 'components/auth/Button';
 
-function Login() {
+function Login({ closeHamburger }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const { t } = useTranslation();
+
+  useEffect(() => {
+    closeHamburger();
+  }, []);
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -47,8 +55,8 @@ function Login() {
   ];
 
   return (
-    <main className="d-flex align-items-center justify-content-center vh-100 px-4">
-      <form onSubmit={handleLogin} className={styles.form} data-testid="form">
+    <main className="px-4">
+      <form onSubmit={handleLogin} className={`${styles.form} mx-auto`} data-testid="form">
         <h1 className="text-center mb-5">{t('login.heading')}</h1>
 
         {inputs.map((input, i) => (
@@ -69,4 +77,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default connect(null, { closeHamburger })(Login);

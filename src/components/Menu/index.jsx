@@ -18,7 +18,7 @@ function Menu({ links, removeUser, user }) {
 
   const handleLogout = () => {
     removeUser();
-    history.push('/login');
+    history.push('/');
   };
 
   return (
