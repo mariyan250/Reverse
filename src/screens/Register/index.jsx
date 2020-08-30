@@ -27,7 +27,7 @@ function Register({ closeHamburger }) {
 
   useEffect(() => {
     closeHamburger();
-  }, []);
+  }, [closeHamburger]);
 
   const inputs = [
     {
