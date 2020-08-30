@@ -27,7 +27,7 @@ function Login({ closeHamburger }) {
 
   useEffect(() => {
     closeHamburger();
-  }, []);
+  }, [closeHamburger]);
 
   const handleLogin = (e) => {
     e.preventDefault();
