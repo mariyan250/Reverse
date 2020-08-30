@@ -11,7 +11,7 @@ function Search() {
   const { t } = useTranslation();
 
   return (
-    <form action="/search" className={`${styles.form} w-100 mx-auto`}>
+    <form action="/search" className={`${styles.form} w-100 mx-auto`} aria-label="Search form">
       <div className="d-flex">
         <input
           type="text"
@@ -19,7 +19,8 @@ function Search() {
           placeholder={t('home.input.placeholder')}
           onChange={(e) => setSearchQuery(e.target.value)}
           value={searchQuery}
-          required
+          required={true}
+          aria-label="Search input field."
           data-testid="searchInput"
         />
 
@@ -28,6 +29,7 @@ function Search() {
             className={`${
               searchQuery ? 'app-bg-primary' : 'app-bg-secondary'
             } h-100 border-0 d-flex justify-content-center align-items-center`}
+            aria-label="Search button"
           >
             <i className="fas fa-search app-text-white" />
           </button>
