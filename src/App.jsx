@@ -1,10 +1,8 @@
 // React
 import React, { useEffect } from 'react';
 
-// Router
+// Router and Routes
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
-// Routes
 import { routes } from 'constants/routes';
 
 // Redux
@@ -22,6 +20,7 @@ import SearchProduct from 'screens/SearchProduct';
 import Product from 'screens/Product';
 import Profile from 'screens/Profile';
 
+// Components
 import Header from 'components/Header';
 
 function App({ getUser, user }) {

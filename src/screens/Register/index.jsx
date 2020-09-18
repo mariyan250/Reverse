@@ -14,8 +14,8 @@ import { routes } from 'constants/routes';
 import { useTranslation } from 'react-i18next';
 
 // Components
-import Input from 'components/auth/Input';
-import Button from 'components/auth/Button';
+import Input from 'components/AuthInput';
+import Button from 'components/AuthButton';
 
 function Register({ closeHamburger }) {
   const [username, setUsername] = useState('');

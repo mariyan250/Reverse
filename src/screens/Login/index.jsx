@@ -16,8 +16,8 @@ import { Link } from 'react-router-dom';
 import { routes } from 'constants/routes';
 
 // Components
-import Input from 'components/auth/Input';
-import Button from 'components/auth/Button';
+import Input from 'components/AuthInput';
+import Button from 'components/AuthButton';
 
 function Login({ closeHamburger }) {
   const [email, setEmail] = useState('');

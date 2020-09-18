@@ -5,9 +5,13 @@
   z-index: 10;
   top: 0;
 
-  & > a {
-    span {
-      font-size: to-rem(32px);
+  .header-content {
+    max-width: $layout-max-width;
+
+    & > a {
+      span {
+        font-size: to-rem(32px);
+      }
     }
   }
 
