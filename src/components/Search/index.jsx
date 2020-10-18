@@ -2,6 +2,9 @@
 import React, { useState } from 'react';
 import styles from './index.module.scss';
 
+// Router
+import { useHistory } from 'react-router-dom';
+
 // Translation
 import { useTranslation } from 'react-i18next';
 
@@ -10,17 +13,22 @@ function Search() {
 
   const { t } = useTranslation();
 
+  const history = useHistory();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    history.push(searchQuery !== '' ? `/search?q=${searchQuery}` : '/');
+  };
+
   return (
-    <form action="/search" className={`${styles.form} w-100 mx-auto`} aria-label="Search form">
+    <form className={`${styles.form} w-100 mx-auto`} aria-label="search" onSubmit={handleSubmit}>
       <div className="d-flex">
         <input
           type="text"
-          name="query"
           placeholder={t('home.input.placeholder')}
           onChange={(e) => setSearchQuery(e.target.value)}
           value={searchQuery}
-          required={true}
-          aria-label="Search input field."
+          aria-label="search"
           data-testid="searchInput"
         />
 
@@ -29,7 +37,7 @@ function Search() {
             className={`${
               searchQuery ? 'app-bg-primary' : 'app-bg-secondary'
             } h-100 border-0 d-flex justify-content-center align-items-center`}
-            aria-label="Search button"
+            aria-label="search"
           >
             <i className="fas fa-search app-text-white" />
           </button>
