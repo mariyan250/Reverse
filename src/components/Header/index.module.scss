@@ -9,6 +9,10 @@
     max-width: $layout-max-width;
 
     & > a {
+      &.active {
+        color: blue;
+      }
+
       span {
         font-size: to-rem(32px);
       }
