@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 // Components
 import FilterDropdown from '../FilterDropdown';
 
-function FilterButton({ isOpen, onClick, role }) {
+function FilterButton({ isOpen, onClick, onBlur }) {
   const { t } = useTranslation();
 
   return (
@@ -17,7 +17,8 @@ function FilterButton({ isOpen, onClick, role }) {
         isOpen ? styles.toggle : ''
       } d-flex justify-content-center align-items-center position-relative rounded p-2 border-0 app-bg-white`}
       onClick={onClick}
-      role={role}
+      onBlur={onBlur}
+      role="filter-button"
       aria-label="filter products"
     >
       <p>{t('search.filter_button')}</p>

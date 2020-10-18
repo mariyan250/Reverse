@@ -39,7 +39,7 @@ function Menu({ links, removeUser, user }) {
           <button
             onClick={handleLogout}
             data-testid="logout"
-            aria-label="logout button"
+            aria-label="logout"
             className="d-flex justify-content-center align-items-center text-center w-100 app-text-white app-bg-black-transparent py-4 border-0"
           >
             {t('header.logout_btn')}

@@ -28,10 +28,7 @@ function Header(props) {
     { to: routes.register, text: 'header.links.register' },
   ];
 
-  const privateLinks = [
-    { to: routes.home, text: 'header.links.home' },
-    { to: routes.profile, text: 'header.links.profile' },
-  ];
+  const privateLinks = [{ to: routes.profile, text: 'header.links.profile' }];
 
   const handleLogout = () => {
     props.removeUser();

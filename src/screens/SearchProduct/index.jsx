@@ -28,6 +28,14 @@ function SearchProduct({ getPosts, posts, location }) {
     }, 1000);
   }, [getPosts, location]);
 
+  const handleFilterClick = () => {
+    setOpen(!open);
+  };
+
+  const handleFilterBlur = () => {
+    setOpen(false);
+  };
+
   return (
     <main className={`${styles.search} mx-auto px-4 px-md-5`}>
       <div className="my-5">
@@ -42,11 +50,11 @@ function SearchProduct({ getPosts, posts, location }) {
         <div>
           <section className="d-flex justify-content-between align-items-center mb-4">
             <h2>{t('search.heading')}</h2>
-            <FilterButton isOpen={open} onClick={() => setOpen(!open)} role="filter-button" />
+            <FilterButton isOpen={open} onClick={handleFilterClick} onBlur={handleFilterBlur} />
           </section>
 
           <div className="app-bg-gray-darker p-2">
-            <ItemList items={posts} title="search.heading" />
+            <ItemList items={posts} />
           </div>
         </div>
       ) : (
