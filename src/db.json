@@ -12,7 +12,8 @@
     "location": "Sofia",
     "seller": "Mariyan V.",
     "date": "8 July - 6:00",
-    "type": "Promo"
+    "type": "Promo",
+    "stars": 3
   },
   {
     "id": 2,
@@ -27,7 +28,8 @@
     "location": "Sofia",
     "seller": "Mariyan V.",
     "date": "8 July - 6:00",
-    "type": "Promo"
+    "type": "Promo",
+    "stars": 4
   },
   {
     "id": 3,
@@ -42,6 +44,7 @@
     "location": "Blagoevgrad",
     "seller": "Mariyan V.",
     "date": "8 July - 6:00",
-    "type": "Promo"
+    "type": "Promo",
+    "stars": 5
   }
 ]

@@ -18,7 +18,6 @@ function FilterButton({ isOpen, onClick, onBlur }) {
       } d-flex justify-content-center align-items-center position-relative rounded p-2 border-0 app-bg-white`}
       onClick={onClick}
       onBlur={onBlur}
-      role="filter-button"
       aria-label="filter products"
     >
       <p>{t('search.filter_button')}</p>

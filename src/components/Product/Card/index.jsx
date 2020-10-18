@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 // Translation
 import { useTranslation } from 'react-i18next';
 
-function Item({ id, images, name, location, date, price }) {
+function Item({ id, images, name, price, stars }) {
   const { t } = useTranslation();
 
   return (
@@ -27,7 +27,11 @@ function Item({ id, images, name, location, date, price }) {
             <p className={`${styles['item-name']} mb-2`}>{name}</p>
 
             <div className={`${styles['item-stars']} mb-3`}>
-              <i className="fas fa-star"></i>
+              {Array(stars)
+                .fill()
+                .map(() => (
+                  <i className="fas fa-star"></i>
+                ))}
             </div>
 
             <div className="d-flex justify-content-between align-items-center">
