@@ -4,4 +4,5 @@
 - React
 - Redux
 - Sass
-- Translations with i18.
+- Translations with i18
+- Bootstrap
